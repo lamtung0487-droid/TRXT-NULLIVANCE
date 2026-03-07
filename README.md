@@ -4,12 +4,14 @@
 
 ### Tensor-Recursive eXtended Topology — Version 7
 
-**A unified theoretical physics framework deriving the Standard Model from Clifford algebra Cl(6)**
+**A unified theoretical physics framework: Superfluid Universe Model**  
+**Deriving the Standard Model, spacetime, and cosmology from Clifford algebra Cl(6)**
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](#requirements)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](#-getting-started)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Predictions: 18](https://img.shields.io/badge/Predictions-18-orange.svg)](#-falsifiable-predictions)
 [![Proofs: 4 Theorems](https://img.shields.io/badge/Proofs-4%20Theorems-red.svg)](#-four-theorem-proof-programme)
+[![Layers: 0→4](https://img.shields.io/badge/Layers-0→4-purple.svg)](#-the-superfluid-universe-5-layer-architecture)
 
 </div>
 
@@ -18,6 +20,13 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [The Superfluid Universe: 5-Layer Architecture](#-the-superfluid-universe-5-layer-architecture)
+  - [Layer 0 — Logic Tensor Field (NVState)](#layer-0--logic-tensor-field-nvstate)
+  - [Layer 1 — Logic Tension & Acoustic Metric](#layer-1--logic-tension--acoustic-metric)
+  - [Layer 2 — Emergent Fermions & Gauge Diversity](#layer-2--emergent-fermions--gauge-diversity)
+  - [Layer 3 — Pre-Geometric Quantum Foam (NJL Condensate)](#layer-3--pre-geometric-quantum-foam-njl-condensate)
+  - [Layer 3→4 — The Big Condensation](#layer-34--the-big-condensation)
+  - [Layer 4 — Classical Observable Universe](#layer-4--classical-observable-universe)
 - [Motivation](#-motivation)
 - [Theoretical Foundation](#-theoretical-foundation)
 - [Four-Theorem Proof Programme](#-four-theorem-proof-programme)
@@ -25,6 +34,7 @@
 - [Falsifiable Predictions](#-falsifiable-predictions)
 - [Baryogenesis: Zero Free Parameters](#-baryogenesis-zero-free-parameters)
 - [Experimental Timeline](#-experimental-timeline)
+- [Source Code by Layer](#-source-code-by-layer)
 - [Repository Structure](#-repository-structure)
 - [Getting Started](#-getting-started)
 - [Citation](#-citation)
@@ -34,16 +44,154 @@
 
 ## 🔬 Overview
 
-**TRXT** (Tensor-Recursive eXtended Topology) is a first-principles theoretical framework that derives particle masses, mixing angles, and cosmological parameters from a **single algebraic structure**: the Clifford algebra **Cl(6)**.
+**TRXT** (Tensor-Recursive eXtended Topology) is a first-principles theoretical framework that models the **universe as a superfluid condensate**. In this picture:
 
-Unlike conventional BSM (Beyond the Standard Model) approaches that introduce new free parameters, TRXT works in the opposite direction — it *reduces* the parameter count by deriving Standard Model quantities from algebraic and topological constraints.
+- **Spacetime is not fundamental** — it *emerges* from a pre-geometric logic tensor field through a series of phase transitions (Layer 0 → Layer 4)
+- **Particles are topological defects** — fermions, bosons, and dark matter are quantized vortex excitations of the superfluid vacuum
+- The **Higgs boson is a composite NJL condensate**, not an elementary scalar
+- **All Standard Model parameters** (masses, mixing angles, coupling constants) are derived from a single algebraic structure: the **Clifford algebra Cl(6)**
 
-**Key claims:**
-- The Higgs boson is a **composite NJL (Nambu–Jona-Lasinio) condensate**, not an elementary scalar
-- The master energy scale **M\* = 365 GeV** is derived from Cl(6) with **zero free parameters**
-- Electroweak boson masses (Higgs, W, Z) emerge from **BCS-type gap equations** on an Abrikosov vortex lattice
-- **18 quantitative predictions** span neutrino physics, collider searches, and cosmology
-- The baryon-to-photon ratio **η_B** is derived with **zero free parameters**
+The framework produces **18 quantitative predictions** — from neutrino masses to dark energy — with **zero or minimal free parameters**, many testable by experiments running between 2026–2035.
+
+### What Makes TRXT Different
+
+| Feature | Standard Model | TRXT |
+|---------|---------------|------|
+| Free parameters | ~25 (unexplained) | 0–1 (algebraically derived) |
+| Higgs boson | Elementary scalar | Composite NJL condensate |
+| Spacetime | Background (given) | Emergent (Layer 0→4) |
+| Vacuum | Trivial | Superfluid with topological defects |
+| Dark matter | Unknown particle | Dark Tower vortex modes |
+| Dark energy | Cosmological constant (fine-tuned) | Vacuum energy of condensate |
+| Baryon asymmetry | Requires new physics | Derived from Cl(6) at 2-loop |
+
+---
+
+## 🌊 The Superfluid Universe: 5-Layer Architecture
+
+The central insight of TRXT is that the universe undergoes a sequence of **emergent phase transitions**, analogous to how superfluid Helium-3 develops increasingly complex ordered phases as it cools. The framework describes 5 layers of emergence, from pure logic to observable physics:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    TRXT LAYER ARCHITECTURE                       │
+│                                                                 │
+│  Layer 0   Logic Tensor Field (NVState)                         │
+│     │      Pure information, no spacetime, no geometry          │
+│     ▼      ← Pre-geometric foundation                          │
+│  Layer 1   Logic Tension → Acoustic Metric                      │
+│     │      4D Lorentzian signature crystallizes                 │
+│     ▼      ← Spacetime birth                                   │
+│  Layer 2   Emergent Fermions & Gauge Diversity                  │
+│     │      Topological defects → particles, SU(N) gauge fields  │
+│     ▼      ← Matter birth                                      │
+│  Layer 3   Pre-Geometric Quantum Foam (NJL)                     │
+│     │      Planck-scale foam, NJL effective Lagrangian          │
+│     │      BCS gap equations, Abrikosov vortex lattice          │
+│     ▼      ← "The Big Condensation"                            │
+│  Layer 4   Classical Observable Universe                        │
+│            SM particles, gravity, cosmology                     │
+│            Everything we measure                                │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Layer 0 — Logic Tensor Field (NVState)
+
+> *"Before spacetime, there is logic."*
+
+- **Nature**: A pure **information-theoretic tensor field** — the NVState (Nullivance State)
+- **No spacetime**: No classical geometry, no metric, no manifold
+- **No particles**: No fermions, no bosons — just logical relations
+- **Mathematical object**: Abstract tensor recursion over logic values
+- **Ontology**: The universe begins as structured information, not substance
+- **Reference**: Appendix Y (Layer 0), Appendix Z (Ontological foundations)
+
+**Physical analogy**: Like the quantum wave function before measurement — pure potential, no actualized geometry.
+
+### Layer 1 — Logic Tension & Acoustic Metric
+
+> *"Logic develops tension; spacetime crystallizes."*
+
+- **Logic tension**: The NVState develops internal contradictions ("tension") that drive emergence
+- **Acoustic metric**: A 4D **Lorentzian metric** emerges as the effective "sound cone" of logic wave propagation
+- **Signature selection**: The (3+1)D signature is selected dynamically (not imposed)
+- **α-quenching**: Singularities are resolved by finite information density
+- **Weak equivalence**: Emerges from soliton center-of-mass dynamics
+
+**Physical analogy**: Like phonons in a crystal defining an effective "light cone" — the metric is emergent, not fundamental.
+
+### Layer 2 — Emergent Fermions & Gauge Diversity
+
+> *"Topological knots in the logic field become matter."*
+
+- **Fermionization**: Bound topological defects of the logic field acquire fermionic statistics
+- **Gauge symmetries**: SU(3) × SU(2) × U(1) emerges from the **linking patterns** of defects
+- **Division algebras**: ℝ, ℂ, ℍ, 𝕆 encode color, generations, and chirality
+- **3 generations**: Arise from **D₄ triality** of Spin(8) ⊂ Cl(6)
+- **Dark energy seed**: Dynamical quintessence field from residual vacuum tension
+
+**Physical analogy**: Like vortex lines in a superfluid acquiring quantized circulation — particles are "knots" in the substrate.
+
+### Layer 3 — Pre-Geometric Quantum Foam (NJL Condensate)
+
+> *"The Planck-scale foam condenses into a superfluid."*
+
+This is the most computationally rich layer, where the bulk of TRXT's source code operates:
+
+- **NJL mechanism**: A **Nambu–Jona-Lasinio four-fermion interaction** among pre-geometric fermions triggers spontaneous symmetry breaking
+- **BCS gap equations**: The condensate gap Δ(T) is solved self-consistently, yielding the **master scale M\* = 365 GeV**
+- **Abrikosov vortex lattice**: The condensate organizes into a **hexagonal vortex lattice** with q=6 (proven from Cl(6))
+- **Boson masses**: W, Z, Higgs are quantized excitations (phonons/magnons) of the vortex lattice
+- **CP violation**: The 2-loop thermal self-energy of Cl(6) generates δ_CP = α_w²/(8π²)
+- **No Einstein-Hilbert action yet**: Gravity is not fundamental at this layer — it emerges later
+
+**Source code for Layer 3:**
+| Script | Purpose |
+|--------|---------|
+| `v34_proof_program.py` | Proves 4 theorems: q=6, coupling, modes, Koide |
+| `v35_Mstar_gap_research.py` | M\* residual closure via Sakharov gravity |
+| `baryogenesis/deep_2loop_calculation.py` | Full 2-loop NJL self-energy → δ_CP |
+| `baryogenesis/solve_three_gaps_v2.py` | Definitive G1+G2+G3 resolution |
+| `baryogenesis/step1_bubble_wall_profile.py` | Electroweak bubble wall dynamics |
+| `baryogenesis/steps234_cp_source_eta_B.py` | CP source → baryon asymmetry η_B |
+
+### Layer 3→4 — The Big Condensation
+
+> *"Quantum foam freezes into classical spacetime."*
+
+The transition from Layer 3 to Layer 4 is the **most dramatic event in cosmology** — analogous to a superfluid phase transition:
+
+- **Condensation**: The pre-geometric quantum foam **condenses** into a smooth (3+1)D manifold
+- **Entropy collapse**: S_foam ≫ S_manifold (massive entropy decrease)
+- **Inflation**: Emerges as logic relaxation — the condensate decompresses to fill spacetime
+- **CMB radiation**: The "condensation radiation" — residual acoustic oscillations from the phase transition
+- **Gravity birth**: The Einstein-Hilbert action emerges from Sakharov's induced gravity mechanism
+- **Timescale**: Before/after the Planck time t_Planck
+
+**Physical analogy**: Like water vapor condensing into liquid — the disordered phase (foam) organize into long-range order (manifold). The "Big Bang" is not an explosion but a **phase transition**.
+
+### Layer 4 — Classical Observable Universe
+
+> *"Everything we see, measure, and predict."*
+
+This is the layer of **all observable physics**:
+
+- **Standard Model**: All particle physics emerges from the residual condensate structure
+- **Boson masses**: From BCS modes on the Abrikosov lattice (Higgs = 125.2 GeV, W = 80.3 GeV, Z = 91.3 GeV)
+- **Fermion masses**: From Koide circulant with θ₀ = 2/9 (Chern-Simons)
+- **Neutrino masses**: From G₂/SU(3) coset geometry (R = 1/37)
+- **Dark sector**: Dark phonon (ΔNeff = 0.0953) + Dark Tower SIDM candidate (5.7 GeV)
+- **Dark energy**: Vacuum energy w₀ = −1.000 (exact ΛCDM)
+- **Gravity**: Emergent metric from Layer 1, quantized via Sakharov mechanism
+
+**Source code for Layer 4:**
+| Script | Purpose |
+|--------|---------|
+| `predictions/predict_fermion_masses.py` | Lepton masses, Cabibbo angle |
+| `predictions/predict_neutrino_observables.py` | Neutrino spectrum, mass ordering |
+| `predictions/predict_cosmological.py` | Dark energy, ΔNeff, CMB, GW |
+| `predictions/predict_collider_signatures.py` | σ meson, dark tower, SIDM |
+| `predictions/falsifiable_*.py` | 4 genuinely falsifiable predictions |
+| `code/bbn/PRyMordial/` | BBN verification (primordial nucleosynthesis) |
 
 ---
 
@@ -227,7 +375,81 @@ See `source_code/baryogenesis/` for the complete derivation chain.
 
 ---
 
-## 📂 Repository Structure
+## � Source Code by Layer
+
+Every source file in this repository maps to a specific layer of the TRXT architecture. Here is the complete mapping:
+
+### Layer 3 — Condensate Physics & Proof Programme
+
+These scripts operate at the **pre-geometric quantum foam** level, proving the algebraic structure of the NJL condensate:
+
+| Script | Lines | Layer | What it computes |
+|--------|-------|-------|-----------------|
+| `source_code/v34_proof_program.py` | ~1200 | L3 | **Core proof programme**: Proves T1 (q=6 from Cl(6)), T2 (1/g_eff = 9π+10), T3 (mode selection q_H, q_W, q_Z), T4 (Koide phase θ₀ = 2/9). Contains complete Abrikosov lattice BCS analysis |
+| `source_code/v35_Mstar_gap_research.py` | ~800 | L3 | **M\* residual closure**: Maps Λ_UV conventions, derives Λ_UV from Sakharov induced gravity, applies 2-loop NJL corrections and α_em running corrections |
+| `source_code/regenerate_blank_figures.py` | ~300 | L3→4 | Regenerates SPARC rotation curve figures and NGC 2403 phase transition visualization |
+
+### Layer 3 — Baryogenesis (Zero-Parameter η_B Derivation)
+
+The baryogenesis chain derives the baryon-to-photon ratio **entirely** from Cl(6) algebra:
+
+| Script | Lines | Purpose | Output |
+|--------|-------|---------|--------|
+| `source_code/baryogenesis/step1_bubble_wall_profile.py` | ~400 | Solves O(3) bounce equation for electroweak phase transition; computes φ(z), wall thickness L_w, bounce action S₃/T | `results/step1_results.json` |
+| `source_code/baryogenesis/deep_2loop_calculation.py` | 1292 | Full 2-loop Cl(6) thermal self-energy → derives δ_CP = α_w²/(8π²) = 1.42 × 10⁻⁵ | `results/deep_2loop_results.json` |
+| `source_code/baryogenesis/derive_delta_cp_v2.py` | 1142 | Systematic scan of δ_CP formula vs numerical results, verifying the algebraic derivation | — |
+| `source_code/baryogenesis/proof_delta_cp_rigorous.py` | ~400 | Algebraic proof: coset factor d/N_gen = 2 from G₂/SU(3) geometry | `results/proof_rigorous_results.json` |
+| `source_code/baryogenesis/proof_delta_cp_corrected.py` | 635 | Corrected proof with multiple independent η_B estimation methods | `results/proof_corrected_results.json` |
+| `source_code/baryogenesis/steps234_cp_source_eta_B.py` | 760 | CP source integration through bubble wall → η_B master equation | `results/steps234_results.json` |
+| `source_code/baryogenesis/solve_three_gaps_v2.py` | 495 | **DEFINITIVE**: Resolves all 3 gaps (G1+G2+G3), produces final η_B(v_w) curve | `results/three_gaps_corrected_results.json` |
+
+**Execution order:** step1 → deep_2loop → derive_v2 → proof_rigorous → steps234 → **solve_three_gaps_v2** (definitive)
+
+### Layer 4 — Observable Predictions (Post-dictions)
+
+These scripts compute quantities that **match existing measurements** (validation of the framework):
+
+| Script | What it predicts | Key results |
+|--------|-----------------|-------------|
+| `source_code/predictions/predict_fermion_masses.py` | Charged lepton masses (m_e, m_μ, m_τ), Cabibbo angle V_us | Koide K=2/3 exact, m_τ error −0.040%, V_us error −0.70% |
+| `source_code/predictions/predict_neutrino_observables.py` | Neutrino masses m₁,m₂,m₃, Σm_ν, mass ratio R, 0νββ m_ee | R = 1/37 (zero parameters), Σm_ν = 59.9 meV |
+| `source_code/predictions/predict_cosmological.py` | Dark energy w₀, ΔNeff, CMB sound speed, GW background | w₀ = −1 (exact ΛCDM), ΔNeff = 0.0268 |
+| `source_code/predictions/predict_collider_signatures.py` | Harmonic spectrum, σ meson, Dark Tower DM candidate | m_σ = 730 GeV, m_DT1 = 5.70 GeV, σ/m = 0.24 cm²/g |
+
+### Layer 4 — Falsifiable Predictions (Experimental Tests)
+
+These are **genuinely new predictions** that upcoming experiments can confirm or refute:
+
+| Script | Prediction | Decisive experiment |
+|--------|-----------|-------------------|
+| `source_code/predictions/falsifiable_neutrino_sector.py` | Σm_ν = 59.9 meV, R = 1/37, Normal Hierarchy | JUNO (2026–2028), DESI Y3–Y5 |
+| `source_code/predictions/falsifiable_dark_phonon.py` | ΔNeff = 0.0953, detectable at 3.5σ by CMB-S4 | CMB-S4 (2030) |
+| `source_code/predictions/falsifiable_sigma_meson.py` | m_σ = 730 GeV, Γ ≈ 58 GeV, BR(tt̄) = 93% | HL-LHC (2030+), FCC-hh |
+| `source_code/predictions/falsifiable_dark_energy_desi.py` | w₀ = −1.000 exactly (ΛCDM), 3–4σ tension with DESI DR2 | DESI DR3–DR5, Euclid |
+
+### Layer 4 — BBN Verification (Primordial Nucleosynthesis)
+
+| Component | Purpose |
+|-----------|---------|
+| `code/bbn/PRyMordial/` | Third-party BBN code (git submodule) for primordial nucleosynthesis |
+| `code/bbn/PRyMordial/PRyM/PRyM_main.py` | Main BBN integration driver |
+| `code/bbn/PRyMordial/PRyM/PRyM_thermo.py` | Thermodynamic functions: T(t), ρ(T) |
+| `code/bbn/PRyMordial/PRyM/PRyM_nuclear_net12.py` | Fast 12-nucleus reaction network |
+| `code/bbn/PRyMordial/PRyM/PRyM_nuclear_net63.py` | Complete 63-nucleus reaction network |
+| `code/bbn/PRyMordial/PRyMrates/` | Nuclear reaction rates + thermal data tables |
+
+### Data Files (Computed Results)
+
+| File | Content |
+|------|---------|
+| `source_code/neff_definitive_results.json` | ΔNeff = 0.0953, T_dec = 221 MeV (dark phonon) |
+| `source_code/phonon_mass_results.json` | Dark phonon is true massless Goldstone boson |
+| `source_code/baryogenesis/results/*.json` | 6 JSON files with complete baryogenesis chain results |
+| `source_code/predictions/results/*.json` | 6 JSON files with all prediction outputs |
+
+---
+
+## �📂 Repository Structure
 
 ```
 TRXT-NULLIVANCE/
@@ -355,6 +577,6 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 
 <div align="center">
 
-**TRXT V7** — *Deriving the Standard Model from algebra, not assumptions.*
+**TRXT V7** — *The universe is a superfluid. Particles are its vortices. Algebra is its language.*
 
 </div>
