@@ -1,0 +1,101 @@
+{
+  "model": "TRXT V7",
+  "script": "predict_collider_signatures.py",
+  "master_scale": {
+    "M_star_BCS_GeV": 365.093811440228,
+    "M_star_obs_GeV": 365.2406779985944,
+    "formula": "E(p,q) = M* * (1/p + 1/q)"
+  },
+  "sm_particle_validation": {
+    "Higgs": {
+      "mode": [
+        5,
+        7
+      ],
+      "predicted_GeV": 125.17502106522103,
+      "pdg_GeV": 125.2,
+      "error_pct": -0.019951225861798327
+    },
+    "W_boson": {
+      "mode": [
+        5,
+        50
+      ],
+      "predicted_GeV": 80.32063851685017,
+      "pdg_GeV": 80.377,
+      "error_pct": -0.07012140680770429
+    },
+    "Z_boson": {
+      "mode": [
+        8,
+        8
+      ],
+      "predicted_GeV": 91.273452860057,
+      "pdg_GeV": 91.1876,
+      "error_pct": 0.094149709014167
+    }
+  },
+  "sigma_meson": {
+    "mass_BCS_GeV": 730.187622880456,
+    "mass_obs_GeV": 730.4813559971888,
+    "formula": "m_sigma = 2*M* (NJL mean-field)",
+    "decay_width_GeV": 58.10648478297265,
+    "LHC_accessible": true
+  },
+  "dark_tower": {
+    "DT1_mass_MeV": 5704.590803753563,
+    "DT1_mode": [
+      128,
+      128
+    ],
+    "SIDM_sigma_over_m_cm2_per_g": 0.24,
+    "Bullet_Cluster_PASS": true,
+    "masses": [
+      [
+        7,
+        128,
+        5.704590803753563,
+        5.706885593728037
+      ],
+      [
+        8,
+        256,
+        2.8522954018767814,
+        2.8534427968640186
+      ],
+      [
+        9,
+        512,
+        1.4261477009383907,
+        1.4267213984320093
+      ],
+      [
+        10,
+        1024,
+        0.7130738504691954,
+        0.7133606992160046
+      ],
+      [
+        11,
+        2048,
+        0.3565369252345977,
+        0.3566803496080023
+      ],
+      [
+        12,
+        4096,
+        0.17826846261729884,
+        0.17834017480400116
+      ]
+    ]
+  },
+  "q_uniqueness_check": {
+    "W_q_pred": 50,
+    "W_q_true": 50,
+    "Z_q_pred": 8,
+    "Z_q_true": 8,
+    "H_q_pred": 7,
+    "H_q_true": 7
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "calculation": "Definitive \u0394N_eff for TRXT dark phonon (true Goldstone)",
+  "phonon_status": "TRUE MASSLESS GOLDSTONE (from U(1)_A symmetry analysis)",
+  "thermal_history": {
+    "DT1_SM_T_dec_MeV": 221.07228340569654,
+    "phi_DT1_T_dec_MeV": 139.62974420235585,
+    "effective_T_dec_MeV": 221.07228340569654,
+    "weakest_link": "DT-1\u2194SM",
+    "g_star_s_at_dec": 42.22821157878102,
+    "g_star_s_bath_at_dec": 41.22821157878102
+  },
+  "temperature_ratios": {
+    "T_phi_over_T_nu": 0.6388584685084372,
+    "T_phi_over_T_gamma": 0.4559953613206496,
+    "T_nu_over_T_gamma": 0.7137658555036082
+  },
+  "PREDICTION": {
+    "Delta_Neff": 0.09518764351572341,
+    "N_eff_total": 3.1391876435157235,
+    "uncertainty_from_QCD_crossover": "\u00b120% in g_*s \u2192 \u0394N_eff varies by factor ~1.5"
+  },
+  "observational_status": {
+    "Planck_2018_tension_sigma": 0.8775743736219019,
+    "CMB_S4_detection_sigma": 3.1729214505241137,
+    "BBN_Delta_Yp": 0.0012374393657044044
+  },
+  "bugs_fixed_from_old_analysis": [
+    "g_coupled_final: 2.0 \u2192 3.909 (must include neutrinos in total entropy)",
+    "g_*s(T_dec): step function \u2192 smooth lattice QCD interpolation"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "predictions": {
+    "R_analytic": 0.02702702702702703,
+    "R_exp": 0.029557239728759472,
+    "tension_sigma": -2.0425721515560733,
+    "JUNO_DUNE_significance": 17.12076448918552,
+    "Sigma_mnu_meV": 59.87641531789415,
+    "m_ee_min_meV": 0.45156870817566486,
+    "m_ee_max_meV": 4.564425091350641,
+    "m_beta_meV": 8.834861359649008,
+    "m1_meV": 1.392474774834748,
+    "m2_meV": 8.354848649008485,
+    "m3_meV": 50.129091894050916,
+    "mass_ordering": "NH"
+  },
+  "falsifiability": {
+    "excluded_by_JUNO_if_R_above": 0.028,
+    "excluded_by_DESI_if_Sigma_below_meV": 14.876415317894152,
+    "nEXO_sensitive_to_mee_max": false,
+    "LEGEND1000_decisive": true
+  },
+  "status": "FALSIFIABLE \u2014 4 independent experimental tests in 2026-2032"
+}

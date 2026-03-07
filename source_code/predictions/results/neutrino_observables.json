@@ -1,0 +1,47 @@
+{
+  "model": "TRXT V7",
+  "script": "predict_neutrino_observables.py",
+  "algebraic_structure": {
+    "d": 6,
+    "d_interpretation": "dim(G2/SU(3)) = 14 - 8 = 6",
+    "M_0_GeV": 985252340064092.1,
+    "M_R_GeV": [
+      985252340064092.1,
+      5911514040384553.0,
+      3.5469084242307316e+16
+    ]
+  },
+  "unique_prediction_R": {
+    "R_analytic": 0.02702702702702703,
+    "R_exact": "1/37",
+    "R_experimental": 0.029510155316606928,
+    "error_pct": -8.414487361855773,
+    "sigma": -2.969111969111966,
+    "uniqueness": "ZERO free parameters, fixed by d=dim(G2/SU(3))"
+  },
+  "neutrino_masses_eV": {
+    "y_D_natural": 1.0,
+    "y_D_best_fit": 0.9026011800946171,
+    "m_nu1_eV": 0.0013924784159893245,
+    "m_nu2_eV": 0.008354870495935947,
+    "m_nu3_eV": 0.05012922297561568,
+    "sum_mnu_eV": 0.05987657188754095,
+    "sum_mnu_bound_eV": 0.072,
+    "sum_consistent": true
+  },
+  "delta_m_sq": {
+    "dm21_sq_pred_eV2": 6.786486486486484e-05,
+    "dm31_sq_pred_eV2": 0.0025109999999999985,
+    "dm21_sq_exp_eV2": 7.41e-05,
+    "dm31_sq_exp_eV2": 0.002511,
+    "R_pred": 0.027027027027027032
+  },
+  "experimental_tests": {
+    "m_ee_max_meV": 3.4515682767163067,
+    "m_ee_bound_meV": 36.0,
+    "m_ee_PASS": true,
+    "m_beta_meV": 8.834884461752154,
+    "KATRIN_PASS": true
+  },
+  "status": "PASS"
+}

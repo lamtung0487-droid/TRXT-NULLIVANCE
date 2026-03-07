@@ -1,0 +1,37 @@
+{
+  "model": "TRXT V7",
+  "script": "predict_cosmological.py",
+  "dark_energy": {
+    "epsilon_V": 1.3097242868035642e-19,
+    "w_0": -1.0,
+    "delta_w": 0.0,
+    "m_sigma_GeV": 730.187622880456,
+    "description": "w0 = -1 to 1 part in 10^89, indistinguishable from Lambda"
+  },
+  "dark_phonon": {
+    "scenario_a_exact_U1A": {
+      "Delta_Neff": 0.026772117683587393,
+      "g_s_dec": 106.75,
+      "T_dec_GeV": 365.093811440228,
+      "CMB_S4_detectable": false
+    },
+    "scenario_b_anomalous_U1A": {
+      "Delta_Neff": 0.0,
+      "CMB_S4_detectable": false
+    }
+  },
+  "cmb": {
+    "c_s_dark": 0.2,
+    "v_F": 0.2,
+    "c_s_SM": 0.5773502691896258,
+    "EDE_phase_shift_description": "O(0.3%) CMB peak shift, LiteBIRD testable"
+  },
+  "gravitational_waves": {
+    "T_star_GeV": 365.093811440228,
+    "f_peak_Hz": 9.59634383038143e-07,
+    "Omega_GW_h2": 7e-13,
+    "PT_order": 2,
+    "LISA_detectable": true
+  },
+  "status": "PASS"
+}

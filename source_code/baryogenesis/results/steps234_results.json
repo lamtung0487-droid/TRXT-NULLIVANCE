@@ -1,0 +1,18 @@
+{
+  "delta_CP_derived": 1.4201600727999055e-05,
+  "delta_CP_manuscript": 1.35e-05,
+  "agreement_percent": 5.1970424296226225,
+  "formula": "alpha_w^2 / (8 pi^2)",
+  "alpha_w_Tnuc": 0.03348601870005729,
+  "eta_B_derived": 9.1492129633293e-12,
+  "eta_B_observed": 6.14e-10,
+  "eta_ratio": 0.014900998311611237,
+  "wall_thickness_L_w": 0.004327363815583785,
+  "T_nuc": 158.5,
+  "free_parameters": 0,
+  "caveats": [
+    "Coefficient needs full 2-loop calculation",
+    "Thermal CTP calculation not done",
+    "Witt basis phase mechanism identified but not computed"
+  ]
+}

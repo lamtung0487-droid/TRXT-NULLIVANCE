@@ -1,0 +1,19 @@
+{
+  "predictions": {
+    "Delta_Neff": 0.09518764351572341,
+    "N_eff_total": 3.1391876435157235,
+    "T_dec_MeV": 221.07228340569654,
+    "QCD_uncertainty_fraction": 0.2,
+    "Y_p": 0.24832743936570442,
+    "Delta_Yp": 0.0012374393657044044,
+    "D_H_times_1e5": 25.147593821757862,
+    "Delta_DH": 0.047593821757861705,
+    "CMB_l1_shift": -4.7218574805762925
+  },
+  "detectability": {
+    "CMB_S4_sigma": 3.5254682783601266,
+    "CMB_S4_decisive": true,
+    "Simons_Obs_sigma": 1.3598234787960486
+  },
+  "status": "FALSIFIABLE \u2014 CMB-S4 (2030) is decisive at 3.5\u03c3"
+}

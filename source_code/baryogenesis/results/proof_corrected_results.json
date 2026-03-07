@@ -1,0 +1,36 @@
+{
+  "delta_CP": {
+    "formula": "alpha_w^2 * (N_gen-1) / (16*pi^2)",
+    "value": 1.4201600727999055e-05,
+    "manuscript": 1.35e-05,
+    "agreement_pct": 5.1970424296226225,
+    "coset_factor_proven": true
+  },
+  "thermal_factor": {
+    "value": 5.380600410804883,
+    "delta_CP_extracted": 7.641313871115864e-05,
+    "note": "Extraction normalization uncertain, formula value is the clean result"
+  },
+  "eta_B": {
+    "method_A1_master_top": 9.1492129633293e-12,
+    "method_A3_master_Nc": 2.7447638889987896e-11,
+    "method_B1_diffusion": 2.6300378035801005e-15,
+    "method_C_coupled": 8.051495754266524e-15,
+    "method_F_manuscript_prefactor": 8.131731379809829e-10,
+    "observed": 6.14e-10,
+    "ratio_method_F": 1.3243862182100699
+  },
+  "mass_normalization": {
+    "m1_broken": 365.24,
+    "m2_broken": 894.6516336541279,
+    "m3_broken": 2191.44,
+    "note": "m_i = lambda_i \u00d7 M*, lambda = {1, sqrt(6), 6}"
+  },
+  "transport_parameters": {
+    "D_q": 0.03785488958990536,
+    "v_w": 0.05,
+    "Gamma_ws": 0.00013346790371396015,
+    "diffusion_length": 0.7570977917981072,
+    "wall_thickness": 0.004327
+  }
+}
