@@ -5,12 +5,17 @@ from scipy.sparse.linalg import spsolve
 
 def run_npl_sparc_pde_gate3():
     """
-    STRICT GATE 3: SPARC ROTATION CURVES VIA GLOBAL PDE SOLVER
-    Master Protocol V2.0 Compliance: Solve Global Poisson Field Equation without 
-    heuristic algebraic approximations. No parameter tuning per galaxy.
+    PDE SOLVER DEMO on MOCK galaxies -- NOT A VALIDATION GATE.
+
+    Lab gate-integrity finding (2026-07-09): this script generates synthetic
+    galaxies and sets v_obs = v_model + noise (see the loop below), so a
+    chi^2 ~ 1 outcome is guaranteed by construction and carries zero
+    evidential weight. It remains useful as a solver smoke test only.
+    The real Gate 3 runs on data/sparc/Rotmod_LTG via
+    experiments/v17_gates/Gate3_GalacticRotation_SPARC.py.
     """
-    print("=== TRXT Nullivance: SPARC ROTATION CURVES (Gate 3 - V11) ===")
-    print("Enforcing Article II.1: Global PDE Mandate for Galactic Dynamics")
+    print("=== TRXT Nullivance: NPL PDE SOLVER DEMO (MOCK DATA - NOT A GATE) ===")
+    print("WARNING: synthetic self-generated data; chi^2 here validates nothing.")
     
     # Constants
     G = 4.3009e-6 # kpc M_sun^-1 (km/s)^2
@@ -154,18 +159,18 @@ def run_npl_sparc_pde_gate3():
     median_chi2 = np.median(chi2_list)
     good_fits = sum(1 for c in chi2_list if c < 5.0)
     
-    print("\nRESULTS: GATE 3 SPARC PDE EVALUATION")
+    print("\nRESULTS: NPL PDE SOLVER DEMO (MOCK DATA)")
     print("-" * 50)
-    print(f"Total Galaxies Evaluated: {n_galaxies}")
+    print(f"Total Mock Galaxies Evaluated: {n_galaxies}")
     print(f"Mean Reduced Chi-Squared: {mean_chi2:.2f}")
     print(f"Median Reduced Chi-Squared: {median_chi2:.2f}")
-    print(f"Galaxies passing threshold (\chi^2 < 5.0): {good_fits} ({good_fits/n_galaxies*100:.1f}%)")
-    
+    print(f"Mock galaxies with chi^2 < 5.0: {good_fits} ({good_fits/n_galaxies*100:.1f}%)")
+
     if median_chi2 < 5.0 and good_fits/n_galaxies > 0.9:
-        print("VERDICT: GATE 3 PASS (Universal NPL-PDE explains Rotation Curves without local tuning)")
-        status = "PASS"
+        print("VERDICT: DEMO OK (solver reproduces its own mock data - NOT A GATE PASS)")
+        status = "DEMO"
     else:
-        print("VERDICT: GATE 3 FAIL")
+        print("VERDICT: DEMO FAIL (solver cannot even fit its own mock data)")
         status = "FAIL"
         
     # Visualization

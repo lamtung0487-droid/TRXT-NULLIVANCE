@@ -16,8 +16,8 @@ import numpy as np
 
 # Setup: Point to PRyMordial directory
 # Adjust this path to match your environment
-PRYM_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), 
-                                        "../../TRXT_V7_Release/source_code/bbn_prymordial/PRyMordial"))
+PRYM_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                        "../../paper/v7_release/source_code/bbn_prymordial/PRyMordial"))
 if os.path.exists(PRYM_DIR):
     os.chdir(PRYM_DIR)
     sys.path.insert(0, PRYM_DIR)
@@ -25,12 +25,13 @@ else:
     print(f"WARNING: PRyMordial not found at {PRYM_DIR}")
 
 # Configure PRyMordial
+PRYM_AVAILABLE = False
 try:
     import PRyM.PRyM_init as PRyMini
     PRyMini.working_dir = PRYM_DIR
+    PRYM_AVAILABLE = True
 except ImportError:
     print("PRyMordial module not found. Run this script from a valid environment.")
-    PROTOCALL_ONLY = True
 
 def make_trxt_phase_transition(f_BBN, w_sf=0.25, Tc_MeV=1e-6, dT_MeV=1e-7):
     """
@@ -99,24 +100,43 @@ def make_trxt_phase_transition(f_BBN, w_sf=0.25, Tc_MeV=1e-6, dT_MeV=1e-7):
     return rho_NP, p_NP, drho_NP_dT, delta_rho_NP
 
 def run_v9_check():
-    """Execute the Phase Transition BBN Check"""
+    """Execute the Phase Transition BBN Check.
+
+    Gate-integrity rule (lab, 2026-07-09): a gate may only report PASS/FAIL
+    from an actual computation. Without PRyMordial there is nothing to
+    compute, so the gate reports NOT RUN — never a hardcoded pass.
+    """
     print("--- GATE 5 (V9): PHASE TRANSITION CHECK ---")
     print("Model: Superfluid Turns OFF at T > 1 eV")
-    
-    # 1. Standard Model (Baseline)
-    # (Mock output for verification if library missing)
+
+    if not PRYM_AVAILABLE:
+        print("  PRyMordial engine unavailable in this environment.")
+        print("  The theoretical argument (rho_sf -> 0 at T_BBN) is NOT a substitute")
+        print("  for the nuclear-network computation (see report App. AJ.3 for the")
+        print("  WSL2 run that established f_BBN < 0.61%).")
+        print(">>> GATE 5 STATUS: NOT RUN (PRyMordial unavailable - install per validation/MANUAL_DOWNLOAD_INSTRUCTIONS.md) <<<")
+        return 2
+
+    # Real computation path: SM baseline vs TRXT with the tanh switch.
+    import PRyM.PRyM_main as PRyMmain
     print("Running SM Baseline...")
-    print("  Yp = 0.2450 (Pass)")
-    
-    # 2. TRXT with Tc=1eV
-    print("Running TRXT (Tc=1eV)...")
-    # In reality, at T=1 MeV (BBN), switch is 0.0
-    # So rho_NP = 0
-    # Thus BBN results MUST match SM exactly.
-    print("  T_BBN = 1 MeV >> Tc = 1 eV")
-    print("  Superfluid Density ~ 0.0")
-    print("  Yp = 0.2450 (Exact Match)")
-    print(">>> GATE 5 STATUS: PASS (By Design of Phase Switch) <<<")
+    sm = PRyMmain.PRyMclass()
+    Yp_sm = sm.YPBBN()
+    print(f"  Yp (SM) = {Yp_sm:.5f},  Neff = {sm.Neff():.3f},  D/H = {sm.DoH():.3e}")
+
+    print("Running TRXT (Tc=1eV, f_BBN=0.5%)...")
+    rho_NP, p_NP, drho_NP_dT, delta_rho_NP = make_trxt_phase_transition(f_BBN=0.005)
+    PRyMini.NP_e_flag = True
+    trxt = PRyMmain.PRyMclass(rho_NP, p_NP, drho_NP_dT, delta_rho_NP)
+    Yp_trxt = trxt.YPBBN()
+    dev = abs(Yp_trxt - Yp_sm) / Yp_sm
+    print(f"  Yp (TRXT) = {Yp_trxt:.5f}  (deviation {dev*100:.3f}%)")
+    # Pre-declared criterion: |dYp/Yp| < 0.4% (2-sigma observational band)
+    if dev < 0.004:
+        print(">>> GATE 5 STATUS: PASS (computed, criterion |dYp/Yp| < 0.4%) <<<")
+        return 0
+    print(">>> GATE 5 STATUS: FAIL (superfluid injection distorts Yp) <<<")
+    return 1
 
 if __name__ == "__main__":
-    run_v9_check()
+    sys.exit(run_v9_check())

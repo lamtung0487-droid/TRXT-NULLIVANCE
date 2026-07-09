@@ -1,0 +1,87 @@
+{
+  "_comment": "Pre-declared gate criteria (lab, 2026-07-09). Thresholds here are FROZEN; changing one requires a dated entry in results/logs/gate_ledger.md explaining why BEFORE any rerun. Status semantics: PASS = script exit 0 AND pass-marker found; FAIL = exit 1 or fail-marker; NOT_RUN = exit 2 or missing dependency; ERROR = crash.",
+  "gates": [
+    {
+      "id": "G0",
+      "name": "Quantum foam ergodicity (partial G0)",
+      "script": "experiments/v17_gates/Gate0_QuantumFoam.py",
+      "pass_marker": "[PASS]",
+      "fail_marker": "[FAIL]",
+      "criterion": "3-seed foam density stable; NOTE: does NOT test c_s/ghosts - see G0b",
+      "timeout_s": 600
+    },
+    {
+      "id": "G0b",
+      "name": "Full-branch stability (ghosts, c_s, both signs of X)",
+      "script": "experiments/v17_gates/Gate0b_StabilityCheck.py",
+      "pass_marker": "GATE 0b STATUS: PASS",
+      "fail_marker": "GATE 0b STATUS: FAIL",
+      "criterion": "P_X > 0, P_X + 2X P_XX > 0, 0 < c_s^2 <= 1 for r in [-1e3, 1e3]",
+      "timeout_s": 120
+    },
+    {
+      "id": "G1s",
+      "name": "Standard Model spectrum from Cl(6)",
+      "script": "experiments/v17_gates/Gate1_StandardModel_Spectrum.py",
+      "pass_marker": "[SUCCESS]",
+      "fail_marker": "[FAIL",
+      "criterion": "exact chiral multiplet counts + anomaly sum = 0",
+      "timeout_s": 300
+    },
+    {
+      "id": "G2",
+      "name": "Structure growth P(k)",
+      "script": "experiments/npl_gates/npl_pk_growth_gate2.py",
+      "pass_marker": "GATE 2 STATUS: PASS",
+      "fail_marker": "GATE 2 STATUS: FAIL",
+      "criterion": "LSS growth retained; S8 not worsened (qualitative - needs quantitative upgrade)",
+      "timeout_s": 600
+    },
+    {
+      "id": "G3",
+      "name": "SPARC rotation curves (held-out)",
+      "script": "experiments/v17_gates/Gate3_GalacticRotation_SPARC.py",
+      "pass_marker": "GATE 3 STATUS: PASS",
+      "fail_marker": "GATE 3 STATUS: FAIL",
+      "criterion": "a0 fitted on train half only; held-out test chi2_red < 5.0",
+      "timeout_s": 900
+    },
+    {
+      "id": "G4",
+      "name": "Solar-system screening (v17)",
+      "script": "experiments/v17_gates/Gate4_SolarSystem_Screening.py",
+      "pass_marker": "GATE 4 STATUS: PASS",
+      "fail_marker": "GATE 4 STATUS: FAIL",
+      "criterion": "deviation at Saturn below Cassini 2e-5",
+      "timeout_s": 600
+    },
+    {
+      "id": "G4n",
+      "name": "Solar-system screening (NPL 3D solver, cross-check)",
+      "script": "experiments/npl_gates/npl_solar_vainshtein_gate4.py",
+      "pass_marker": "GATE 4 PASS",
+      "fail_marker": "GATE 4 FAIL",
+      "criterion": "3D Vainshtein: all planets below bound; known to disagree with G4 - discrepancy tracked",
+      "timeout_s": 600
+    },
+    {
+      "id": "G5b",
+      "name": "BBN phase transition (PRyMordial)",
+      "script": "experiments/v17_gates/Gate5_BBN_PhaseTransition.py",
+      "pass_marker": "GATE 5 STATUS: PASS",
+      "fail_marker": "GATE 5 STATUS: FAIL",
+      "not_run_marker": "GATE 5 STATUS: NOT RUN",
+      "criterion": "computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent",
+      "timeout_s": 900
+    },
+    {
+      "id": "G5f",
+      "name": "Fermion emergence (Pontryagin/statistics)",
+      "script": "experiments/npl_gates/npl_fermion_emergence_gate5.py",
+      "pass_marker": "GATE 5 PASS",
+      "fail_marker": "GATE 5 FAIL",
+      "criterion": "statistical phase -1 from defect exchange",
+      "timeout_s": 600
+    }
+  ]
+}

@@ -95,7 +95,9 @@ def run_npl_topological_gate5():
 
     if pass_flag:
         print("\nVERDICT: GATE 5 PASS (Quantum Genesis Monism Confirmed)")
-        print("\nALL 5 GATES OF DOOM SURVIVED.")
+        # Lab gate-integrity rule (2026-07-09): this script tests Gate 5 only.
+        # Whole-ladder verdicts belong to scripts/run_gates.py; the old
+        # unconditional "ALL 5 GATES OF DOOM SURVIVED" banner was removed.
     else:
         print("\nVERDICT: GATE 5 FAIL (Bosonic/Continuous decay)")
 

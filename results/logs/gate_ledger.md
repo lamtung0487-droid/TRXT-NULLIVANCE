@@ -29,3 +29,31 @@ Logs: `results/logs/gate{0,1_spectrum,3_v17,3_npl,4_v17,4_npl,5_v17,5_npl}_20260
 ### Most serious integrity concern
 
 The suite's PASS banners are not earned: NPL G3 validates the model against data generated *by the model*; G5 declares victory with the physics module missing; the final "ALL GATES SURVIVED" banner prints regardless of failures. As currently written, the gate suite cannot fail — which under MASTER-PROTOCOL Article II/V means it is not a validation system.
+
+## GATE REPORT 2026-07-09 16:43 (scripts/run_gates.py)
+
+Code state: 0dafd83 Add RESEARCH_ATLAS: full knowledge base from sequential 191-page read  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G0 Quantum foam ergodicity (partial G0) | **PASS** | 3-seed foam density stable; NOTE: does NOT test c_s/ghosts - see G0b | results\logs\G0_20260709.log |
+| G0b Full-branch stability (ghosts, c_s, both signs of X) | **FAIL** | P_X > 0, P_X + 2X P_XX > 0, 0 < c_s^2 <= 1 for r in [-1e3, 1e3] | results\logs\G0b_20260709.log |
+| G1s Standard Model spectrum from Cl(6) | **PASS** | exact chiral multiplet counts + anomaly sum = 0 | results\logs\G1s_20260709.log |
+| G2 Structure growth P(k) | **PASS** | LSS growth retained; S8 not worsened (qualitative - needs quantitative upgrade) | results\logs\G2_20260709.log |
+| G3 SPARC rotation curves (held-out) | **PASS** | a0 fitted on train half only; held-out test chi2_red < 5.0 | results\logs\G3_20260709.log |
+| G4 Solar-system screening (v17) | **PASS** | deviation at Saturn below Cassini 2e-5 | results\logs\G4_20260709.log |
+| G4n Solar-system screening (NPL 3D solver, cross-check) | **FAIL** | 3D Vainshtein: all planets below bound; known to disagree with G4 - discrepancy tracked | results\logs\G4n_20260709.log |
+| G5b BBN phase transition (PRyMordial) | **PASS** | computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent | results\logs\G5b_20260709.log |
+| G5f Fermion emergence (Pontryagin/statistics) | **PASS** | statistical phase -1 from defect exchange | results\logs\G5f_20260709.log |
+
+### Verdict: **BLOCKED (first failure: G0b)**
+
+## GATE REPORT 2026-07-09 16:46 (scripts/run_gates.py)
+
+Code state: 0dafd83 Add RESEARCH_ATLAS: full knowledge base from sequential 191-page read  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G5b BBN phase transition (PRyMordial) | **PASS** | computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent | results\logs\G5b_20260709.log |
+
+### Verdict: **LADDER CLEAR**

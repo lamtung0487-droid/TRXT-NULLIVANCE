@@ -96,6 +96,9 @@ Code: `github.com/lamtung0487-droid/TRXT-NULLIVANCE`; contact Vietthuc@giugocvie
 | I-8 | Sector p: winding number (element of π₁ = ℤ²) equated to *dimension of a representation block* (AC.2) — category mismatch needing a mathematician audit | p. 156 |
 | I-9 | Gate-1 monistic pass = relabeled CDM kinematics with calibrated drag (own admission) vs "Gate 1 PASS" headline | pp. 135–136, 148 |
 | I-10 | Mapping Rule 4 "p,q < 5 unstable" (one line, no proof) vs Universal Stability Theorem "ALL modes stable" | pp. 47, 113 |
+| I-11 | WEP derivation (T.5/p. 19) uses TOTAL energy density integral as inertial mass; spectrum uses gap-only — mutually exclusive (found 2026-07-09, `derivation_soliton_geometry_20260709.md`) | p. 19 vs pp. 44, 92 |
+
+**Registry resolutions (lab, 2026-07-09):** I-1 RESOLVED — only the R ∝ p geometry (K.2/§8.4) is consistent with the 1/p law; App. T.1 (R ∝ 1/p²) is internally invalid, excision recommended. I-2 RESOLVED NEGATIVELY — static energy is bounded below (linear in p from K.2's own functional; VK bound C·(pq)^{3/4} in the Hopfion class) and cannot be discarded; see decision fork F1/F2/F3. I-8 CONFIRMED AS ERROR — AC.2 audit (`audit_ac2_sectors_20260709.md`): block selection arbitrary (true SU(2)-charged dim = 7, not 5), dimension sums reach every integer 1–15 (zero selective power), winding≠dimension map undefined, Z⁰-wraps-color mismatch; "C2 RESOLVED" downgraded to OPEN.
 
 ## 6. GATE SCORECARD (report's final audit, p. 149 + lab re-run 2026-07-09)
 
@@ -106,8 +109,10 @@ Code: `github.com/lamtung0487-droid/TRXT-NULLIVANCE`; contact Vietthuc@giugocvie
 | G2 P(k)/S8 | PASS (r > 0.98, 8% suppression) | PASS* (qualitative criterion) |
 | G3 SPARC | PASS (B2 96.5%) | v17 script: fitted a₀, χ² = 4.9986 marginal; NPL script: mock data (invalid) |
 | G4 Cassini | PASS (1e-12) | v17 PASS; NPL 3D FAILS at Neptune/Pluto — unresolved solver contradiction |
-| G5 BBN | CONDITIONAL PASS (f < 0.61%) | Local script hardcodes Yp (PRyMordial absent on Windows; real run was on WSL2) |
+| G5 BBN | CONDITIONAL PASS (f < 0.61%) | **Fixed 2026-07-09: PRyMordial now runs locally** — Yp = 0.24689, Neff = 3.044, TRXT(Tc=1eV) deviation 0.000% — first earned computational pass |
 | G6 CMB | PASS (distance priors) | not re-run |
+
+**Gate suite overhaul (2026-07-09):** central runner `scripts/run_gates.py` + frozen criteria `scripts/gates_criteria.json`; scripts can no longer self-declare ladder success; mock-data NPL G3 demoted to DEMO; v17 G3 now uses held-out validation (a0 fit on train half → test χ²_red = 4.75 PASS; train 5.33, best a0 at grid edge 3350 — extend grid, flagged); new **G0b full-branch stability gate FAILS honestly** (X<0 ghost/superluminal window) — current official verdict: **BLOCKED (G0b)**, which is the correct scientific state.
 
 ## 7. THE LAB'S STANDING VERDICTS (as of 2026-07-09)
 

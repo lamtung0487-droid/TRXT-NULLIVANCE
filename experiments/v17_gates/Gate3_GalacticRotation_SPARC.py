@@ -46,26 +46,28 @@ def solve_field_equation(g_bar, a0):
     return g_tot
 
 def run_sparc_analysis():
-    print("--- GATE 3: THE ROTATION VALID (SPARC) ---")
-    data_dir = r"C:\Users\NC\Music\trxt nullivance v14\data\sparc\Rotmod_LTG"
-    files = glob.glob(os.path.join(data_dir, "*_rotmod.dat"))
-    
+    print("--- GATE 3: THE ROTATION VALID (SPARC, held-out protocol) ---")
+    # Repo-relative data path (run from repo root); fixed hardcoded path 2026-07-09
+    data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                            "../../data/sparc/Rotmod_LTG"))
+    files = sorted(glob.glob(os.path.join(data_dir, "*_rotmod.dat")))
+
     if not files:
         print(f"ERROR: No data files found in {data_dir}")
-        return
+        return 2
 
     # Global Optimization of a0
     # We want to find the single a0 that minimizes TOTAL Chi2 across all galaxies
     # while allowing M/L ratios to vary per galaxy.
     
-    def global_loss(a0_val):
+    def global_loss(a0_val, dataset):
         total_chi2_for_a0 = 0
         total_dof = 0
-        
+
         # We can re-use the Galaxy Loop logic here
         # For efficiency, we pre-load data once (moved outside this func)
-        
-        for g_data in preloaded_data:
+
+        for g_data in dataset:
             # Unpack
             R, Vobs, errV, Vgas, Vdisk, Vbul = g_data['data']
             has_bulge = g_data['has_bulge']
@@ -152,43 +154,46 @@ def run_sparc_analysis():
             'has_bulge': has_bulge
         })
 
-    print(f"  Starting Global a0 Optimization (Fine-Tuning 3300-3700)...")
-    
+    # --- Held-out protocol (lab gate-integrity fix, 2026-07-09) ---
+    # The universal a0 is FITTED on the training half only (alphabetical
+    # even indices) and the gate is scored on the untouched test half.
+    # Split rule and PASS criterion (test chi2_red < 5.0) are pre-declared.
+    train = preloaded_data[0::2]
+    test = preloaded_data[1::2]
+    print(f"  Split: {len(train)} train / {len(test)} test galaxies (alphabetical even/odd)")
+
+    print(f"  Fitting global a0 on TRAIN half (grid 3300-3700)...")
     best_a0 = 3500.0
-    min_global_chi2 = 1e9
-    
-    # Fine Grid Search
-    scan_range = np.linspace(3300, 3700, 9) 
-    
+    min_train_chi2 = 1e9
+    scan_range = np.linspace(3300, 3700, 9)
     for val in scan_range:
-        chi2_val = global_loss(val)
-        print(f"    a0={val:.1f} -> Global Chi2={chi2_val:.4f}")
-        if chi2_val < min_global_chi2:
-            min_global_chi2 = chi2_val
+        chi2_val = global_loss(val, train)
+        print(f"    a0={val:.1f} -> Train Chi2={chi2_val:.4f}")
+        if chi2_val < min_train_chi2:
+            min_train_chi2 = chi2_val
             best_a0 = val
-            
-    print(f"  Best a0 found: {best_a0:.1f} with Chi2={min_global_chi2:.4f}")
-    
-    # Final Run with Best a0 to print details
-    global_rchi2 = min_global_chi2 # approximate
-    results = [] # we could re-run to populate this if needed for CSV
-    
-    print("\n[Gate 3 Results - Optimized Global a0]")
-    print(f"  Optimal a0: {best_a0:.1f}")
-    print(f"  Global Reduced Chi2: {global_rchi2:.4f}")
-    
-    if global_rchi2 < 5.0:
-        print("\n>>> GATE 3 STATUS: PASS <<<")
-        print("  Superfluid Vacuum fits SPARC Data with Optimal Universal a0.")
+    print(f"  Best a0 (train): {best_a0:.1f} with Train Chi2={min_train_chi2:.4f}")
+
+    # Score once on the held-out half with a0 frozen
+    test_rchi2 = global_loss(best_a0, test)
+
+    print("\n[Gate 3 Results - Held-Out Validation]")
+    print(f"  a0 (fitted on train): {best_a0:.1f}")
+    print(f"  Train Reduced Chi2:   {min_train_chi2:.4f}")
+    print(f"  TEST  Reduced Chi2:   {test_rchi2:.4f}   <- gate metric")
+
+    if test_rchi2 < 5.0:
+        print("\n>>> GATE 3 STATUS: PASS (held-out chi2_red < 5.0) <<<")
+        rc = 0
     else:
-        print("\n>>> GATE 3 STATUS: FAIL <<<")
-        print(f"  Chi2 ({global_rchi2:.4f}) still high (>5).")
-        print("  The 'Simple' interpolating function might be incorrect.")
+        print("\n>>> GATE 3 STATUS: FAIL (held-out chi2_red >= 5.0) <<<")
+        rc = 1
 
     # Create dummy plot for artifact compatibility
     plt.figure()
-    plt.text(0.5, 0.5, f"Best a0: {best_a0}\nChi2: {global_rchi2:.4f}", ha='center')
-    plt.savefig("sparc_opt_hist.png")
+    plt.text(0.5, 0.5, f"a0 (train): {best_a0}\nTest Chi2: {test_rchi2:.4f}", ha='center')
+    plt.savefig("results/figures/sparc_opt_hist.png")
+    return rc
 
 if __name__ == "__main__":
     run_sparc_analysis()
