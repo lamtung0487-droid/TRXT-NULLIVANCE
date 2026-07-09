@@ -214,7 +214,7 @@ class StrictGate3_SPARC:
             r_pc = r_kpc[:i+1] * 1000  # kpc to pc
             rho_i = rho[:i+1]
             
-            M_enclosed = 4 * np.pi * np.trapz(rho_i * r_pc**2, r_pc)  # M_sun
+            M_enclosed = 4 * np.pi * np.trapezoid(rho_i * r_pc**2, r_pc)  # M_sun
             
             # v² = G M / r (in km²/s²)
             G_kpc = 4.302e-6  # kpc (km/s)² / M_sun

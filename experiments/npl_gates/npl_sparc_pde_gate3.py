@@ -54,7 +54,7 @@ def run_npl_sparc_pde_gate3():
         
         # u(R) -> r * ( - GM_tot / r ) -> d(u)/dr = d(GM)/dr -> flat (simplification for isolated)
         # Assuming Phi -> 0 at infinity, we can just set Dirichlet u(R) = -G M_tot
-        M_tot = np.trapz(4 * np.pi * r_grid**2 * rho_total, r_grid)
+        M_tot = np.trapezoid(4 * np.pi * r_grid**2 * rho_total, r_grid)
         main_diag[-1] = 1.0
         rhs[-1] = -G * M_tot
         
