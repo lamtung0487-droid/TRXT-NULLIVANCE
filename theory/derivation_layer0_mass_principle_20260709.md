@@ -53,8 +53,9 @@ The poetic thesis of App. AL — "matter is the incompleteness of the void" — 
 
 **Numerical verification (today, on the framework's own kernel;** `experiments/layer0/bp_mass_quantization.py`, log `results/logs/bp_quantization_20260709.log`**):**
 - Test A (saturation): a relaxed Q = 2 Belavin–Polyakov configuration gives E/(4π|Q|) = **0.988**.
-- Test B (dynamics): random field under the report's own heat-flow step: E/(4πI) = 1.536 → 1.267 → 1.216 → 1.158 → 1.125 → **1.091** (t = 0…2000), descending toward 1 while Q_net stays exactly integer through every annihilation (−15 → −1). Smooth energy drains; what remains is quantized lumps.
-- Known lattice artifacts (sub-3-site lumps fall through the lattice; Q=1 torus mismatch) flagged in the script header.
+- Test B (dynamics): random field under the report's own heat-flow step: E/(4πI) = 1.536 → 1.267 → 1.216 → 1.158 → 1.125 → **1.091** (t = 0…2000), descending toward 1. Robustness (seed 777, L = 160, t = 4000): **1.092** — trend confirmed. Smooth energy drains; what remains is quantized lumps.
+- **[Corrected per referee F2:]** Q_net is integer at every snapshot but is **not conserved by the discrete kernel** (robustness run: −13 → +3): sub-lattice lumps fall through the grid. On the discrete substrate, topological protection is therefore *approximate*; the violation rate must be quantified (new GAP-5). The exact-conservation statement applies to the continuum flow only.
+- Known lattice artifacts (sub-3-site lumps; the Q = 1 torus-seam artifact invalidates that datapoint — see referee F3) flagged in the script header.
 
 ### 3.3 The scale: dimensional transmutation (the hierarchy, solved where it lives)
 
