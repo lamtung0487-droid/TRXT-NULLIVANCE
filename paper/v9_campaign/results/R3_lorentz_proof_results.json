@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-02-13 10:24:38",
+  "phase": "R3: Lorentz Invariance Emergence",
+  "checks": {
+    "Ghost-free (P_X > 0)": true,
+    "Subluminal (c_s\u00b2 \u2264 1)": true,
+    "Stable (c_s\u00b2 > 0)": true,
+    "\u03b1\u2084 > 0 (subluminal dispersion)": true,
+    "GW170817 (c_gw = c)": true,
+    "Fermi-LAT (no photon LIV)": true
+  },
+  "all_pass": true,
+  "sound_speed_formula": "c_s\u00b2 = (c\u2082 + 2c\u2084X) / (c\u2082 + 6c\u2084X)",
+  "limits": {
+    "vacuum (r=0)": 1.0,
+    "conformal (r\u2192\u221e)": 0.3333333333333333,
+    "galactic (r=1)": 0.42857142857142855
+  },
+  "alpha_4_sign": "positive (proven analytically)",
+  "cgw_deviation": 0.0,
+  "gw170817_bound": 5e-16,
+  "references": [
+    "Babichev, Mukhanov, Vikman (2008) JHEP 02, 101",
+    "Nicolis, Rattazzi, Trincherini (2009) PRD 79, 064036",
+    "LIGO/Virgo GW170817: arXiv:1710.05834",
+    "Creminelli & Vernizzi (2017) arXiv:1710.05877",
+    "Fermi-LAT GRB 090510: arXiv:0908.1832"
+  ],
+  "protocol": "Master Protocol V2.0 \u2014 Single Lagrangian derivation"
+}

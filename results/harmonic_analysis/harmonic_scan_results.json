@@ -1,0 +1,73 @@
+{
+  "_metadata": {
+    "analysis": "Harmonic Resonance Mode Scan",
+    "M_star_GeV": 365.24067799778356,
+    "max_mode": 100,
+    "source_m_tau": 1.7768599999999999,
+    "source_alpha": 0.0072973525693
+  },
+  "matches": [
+    {
+      "particle": "W",
+      "matches": [
+        {
+          "p": 5,
+          "q": 50,
+          "mass_predicted": 80.35294915951239,
+          "mass_experimental": 80.3692,
+          "deviation_sigma": 1.2218677058357097,
+          "relative_error": -0.00020220234228553893
+        }
+      ]
+    },
+    {
+      "particle": "Z",
+      "matches": []
+    },
+    {
+      "particle": "Higgs",
+      "matches": [
+        {
+          "p": 5,
+          "q": 7,
+          "mass_predicted": 125.22537531352579,
+          "mass_experimental": 125.2,
+          "deviation_sigma": 0.23068466841622962,
+          "relative_error": 0.00020267822304940303
+        },
+        {
+          "p": 3,
+          "q": 100,
+          "mass_predicted": 125.39929944590568,
+          "mass_experimental": 125.2,
+          "deviation_sigma": 1.8118131445970933,
+          "relative_error": 0.0015918486094702896
+        },
+        {
+          "p": 3,
+          "q": 99,
+          "mass_predicted": 125.43619244368324,
+          "mass_experimental": 125.2,
+          "deviation_sigma": 2.1472040334839706,
+          "relative_error": 0.001886521115680805
+        },
+        {
+          "p": 3,
+          "q": 98,
+          "mass_predicted": 125.47383835978279,
+          "mass_experimental": 125.2,
+          "deviation_sigma": 2.4894396343889658,
+          "relative_error": 0.0021872073465078776
+        },
+        {
+          "p": 3,
+          "q": 97,
+          "mass_predicted": 125.512260480338,
+          "mass_experimental": 125.2,
+          "deviation_sigma": 2.8387316394363378,
+          "relative_error": 0.0024940932934344818
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "evidence_id": "GATE-P1-CHIRALITY-ANALYTIC-V3-2026-03",
+  "script_version": "v3-corrected-rigorous",
+  "date": "2026-03-02",
+  "critical_correction_from_v2": "SU(2)_L generators use Witt creation/annihilation operators (grade-4 elements a\u2020_i a_j), NOT pure grade-2 bivectors. v2 was silently computing eigenvalues of anti-Hermitian matrices.",
+  "factual_basis": {
+    "Witt_basis": "a\u1d62 = (\u03b3_{2i-1} - i\u00b7\u03b3_{2i})/2 algebraically determined by complex structure J",
+    "T3_derivation": "T\u2083 = (a\u2081\u2020a\u2081 - a\u2082\u2020a\u2082)/2 from Witt number operators",
+    "Tpm_derivation": "T\u208a = a\u2081\u2020a\u2082, T\u208b = a\u2082\u2020a\u2081 from Witt ladder operators",
+    "reference": "Furey (2018) arXiv:1910.08395; G\u00fcnaydin-G\u00fcrsey (1973)"
+  },
+  "claims": {
+    "A_Clifford": true,
+    "B_omega_squared_I": true,
+    "C_bivectors_commute_omega": true,
+    "D_su2_from_Witt": true,
+    "E_su2_commutes_color": true,
+    "F_C2_L_3_4_C2_R_0": false,
+    "G_32dim_real_form": false
+  },
+  "C2_L_eigenvalues": [
+    0.75,
+    0.75,
+    0.75,
+    0.75
+  ],
+  "C2_R_eigenvalues": [
+    0.75,
+    0.75,
+    0.75,
+    0.75
+  ],
+  "status": "PARTIALLY VERIFIED"
+}

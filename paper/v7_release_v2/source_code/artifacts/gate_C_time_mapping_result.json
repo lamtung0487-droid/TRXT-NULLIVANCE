@@ -1,0 +1,14 @@
+{
+  "evidence_id": "GATE-C-TIME-MAPPING-2026-03",
+  "date": "2026-03-02",
+  "M_cond_GeV": 9.6e+16,
+  "hbar_GeV_s": 6.582119569e-25,
+  "t_star_seconds": 6.856374551041667e-42,
+  "t_EW_seconds": 1e-12,
+  "t_cond_lt_t_EW": true,
+  "t_alg_star_GeV_inv": 1.0416666666666666e-17,
+  "ordering_pass": true,
+  "all_pass": true,
+  "status": "PASS",
+  "runtime_s": 0.0
+}

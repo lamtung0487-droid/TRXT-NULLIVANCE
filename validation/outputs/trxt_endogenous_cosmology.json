@@ -1,0 +1,30 @@
+{
+  "galaxy_eft": {
+    "scale": "galaxy",
+    "rho0_GeV": 365.24,
+    "c2": 63763.95951781263,
+    "c4": 0.44492063800252574,
+    "c2_over_c4": 143315.35575441355,
+    "X_typical": 1e-10,
+    "c_s": 0.9999999999999986,
+    "c_s_squared": 0.9999999999999971
+  },
+  "cosmology_eft": {
+    "scale": "cosmology",
+    "rho0_GeV": 2.253491997418878e-12,
+    "c2": 5.406299745580072e-25,
+    "c4": 0.022667632185053136,
+    "c2_over_c4": 2.3850306469790634e-23,
+    "X_typical": 2.578838115992697e-47,
+    "c_s": 1.0,
+    "c_s_squared": 1.0
+  },
+  "r_s_trxt_cosmo_Mpc": 149.85585696664066,
+  "r_s_planck_Mpc": 147.09,
+  "H0_trxt": 68.66737888062804,
+  "H0_planck": 67.4,
+  "H0_shoes": 73.04,
+  "tension_vs_planck_sigma": 2.53475776125606,
+  "tension_vs_shoes_sigma": 4.20444338401151,
+  "methodology": "Endogenous NJL loop integrals, NO hardcoding"
+}

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+venv/
+.pytest_cache/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Compiled manuscripts (sources are versioned; PDFs in docs/ are kept)
+paper/**/*.pdf
+
+# Third-party code (re-downloadable)
+external/
+
+# Large data (see data/README.md for fetch instructions)
+data/COM_PowerSpect_CMB-EE-binned/
+data/raw/
+validation/data/
+*.fits
+*.zip
+
+# Temp
+*.tmp
+*.bak
+.tmp/

@@ -1,0 +1,36 @@
+{
+  "r_s_lcdm_Mpc": 150.85488121179668,
+  "r_s_trxt_Mpc": 150.85488121179668,
+  "r_s_planck_Mpc": 147.09,
+  "deviation_pct": 2.559576593783858,
+  "tolerance_pct": 5.0,
+  "within_tolerance": true,
+  "X_parameter_used": 1e-10,
+  "scan_results": [
+    {
+      "X": 0,
+      "r_s_Mpc": 150.85488121179668,
+      "deviation_pct": 2.559576593783858
+    },
+    {
+      "X": 1e-15,
+      "r_s_Mpc": 150.85488121179668,
+      "deviation_pct": 2.559576593783858
+    },
+    {
+      "X": 1e-10,
+      "r_s_Mpc": 150.85488121179668,
+      "deviation_pct": 2.559576593783858
+    },
+    {
+      "X": 1e-05,
+      "r_s_Mpc": 150.85488121179668,
+      "deviation_pct": 2.559576593783858
+    },
+    {
+      "X": 0.001,
+      "r_s_Mpc": 150.85488121179668,
+      "deviation_pct": 2.559576593783858
+    }
+  ]
+}

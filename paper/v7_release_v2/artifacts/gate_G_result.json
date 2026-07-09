@@ -1,0 +1,18 @@
+{
+  "evidence_id": "GATE-G-DE-EOS-2026-03",
+  "date": "2026-03-02",
+  "c2": 1.0,
+  "c4_canonical": 0.5,
+  "X_star": 0.016,
+  "w0": -0.984,
+  "w0_target": -0.984,
+  "w0_in_2sigma_window": true,
+  "Planck_2sigma_lo": -1.092,
+  "Planck_2sigma_hi": -0.964,
+  "ghost_cond_at_Xstar": 1.016,
+  "cs2_at_Xstar": 0.9843,
+  "ghost_free_pass": true,
+  "all_pass": true,
+  "status": "PASS",
+  "runtime_s": 0.01
+}

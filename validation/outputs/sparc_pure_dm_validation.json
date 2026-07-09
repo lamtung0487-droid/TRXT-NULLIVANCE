@@ -1,0 +1,13 @@
+{
+  "test_type": "PURE_DM_ONLY",
+  "n_galaxies": 175,
+  "n_fitted": 175,
+  "n_pass": 105,
+  "n_fail": 70,
+  "pass_rate_pct": 60.0,
+  "median_chi2_red": 3.1805569685451514,
+  "mean_chi2_red": 12.179084757610736,
+  "polytropic_n": 1.37,
+  "v4_manuscript_pass_rate": 38.0,
+  "v4_manuscript_median_chi2": 11.77
+}

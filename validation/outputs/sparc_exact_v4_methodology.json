@@ -1,0 +1,14 @@
+{
+  "test_type": "EXACT_V4_METHODOLOGY",
+  "n_galaxies": 175,
+  "n_fitted": 175,
+  "n_pass": 67,
+  "n_fail": 108,
+  "pass_rate_pct": 38.285714285714285,
+  "median_chi2_red": 11.770502948729224,
+  "mean_chi2_red": 172.82488000377447,
+  "polytropic_n": 1.37,
+  "v4_claim_pass_rate": 38.0,
+  "v4_claim_median_chi2": 11.77,
+  "match_status": "MATCH \u2713"
+}

@@ -1,0 +1,1410 @@
+{
+  "n": 1.37,
+  "n_galaxies": 175,
+  "n_pass": 67,
+  "median_chi2_red": 11.770502948729224,
+  "mean_chi2_red": 172.82488000377447,
+  "verdict": "NEEDS_REVIEW",
+  "galaxies": [
+    {
+      "galaxy": "CamB",
+      "n_points": 9,
+      "chi2_red": 4.339023481378616,
+      "M_total": 100001432.13064265,
+      "v_max": 20.1,
+      "pass": true
+    },
+    {
+      "galaxy": "D512-2",
+      "n_points": 4,
+      "chi2_red": 0.4995667473908383,
+      "M_total": 1208185592.0322268,
+      "v_max": 37.2,
+      "pass": true
+    },
+    {
+      "galaxy": "D564-8",
+      "n_points": 6,
+      "chi2_red": 0.5148007654275691,
+      "M_total": 355826703.07186544,
+      "v_max": 25.0,
+      "pass": true
+    },
+    {
+      "galaxy": "D631-7",
+      "n_points": 16,
+      "chi2_red": 1.169501783161544,
+      "M_total": 4501989437.18027,
+      "v_max": 58.5,
+      "pass": true
+    },
+    {
+      "galaxy": "DDO064",
+      "n_points": 14,
+      "chi2_red": 0.3717613652294979,
+      "M_total": 1276184086.290877,
+      "v_max": 46.9,
+      "pass": true
+    },
+    {
+      "galaxy": "DDO154",
+      "n_points": 12,
+      "chi2_red": 5.650975539370138,
+      "M_total": 2906984220.3674006,
+      "v_max": 48.2,
+      "pass": false
+    },
+    {
+      "galaxy": "DDO161",
+      "n_points": 31,
+      "chi2_red": 4.124603300969498,
+      "M_total": 12412726933.707197,
+      "v_max": 67.5,
+      "pass": true
+    },
+    {
+      "galaxy": "DDO168",
+      "n_points": 10,
+      "chi2_red": 2.3823054781321127,
+      "M_total": 2336812128.167852,
+      "v_max": 55.0,
+      "pass": true
+    },
+    {
+      "galaxy": "DDO170",
+      "n_points": 8,
+      "chi2_red": 13.642247334176053,
+      "M_total": 10283406232.38786,
+      "v_max": 62.2,
+      "pass": false
+    },
+    {
+      "galaxy": "ESO079-G014",
+      "n_points": 15,
+      "chi2_red": 4.273627741790265,
+      "M_total": 109632610261.35336,
+      "v_max": 178.0,
+      "pass": true
+    },
+    {
+      "galaxy": "ESO116-G012",
+      "n_points": 15,
+      "chi2_red": 15.692620919764403,
+      "M_total": 27051390369.777252,
+      "v_max": 112.0,
+      "pass": false
+    },
+    {
+      "galaxy": "ESO444-G084",
+      "n_points": 7,
+      "chi2_red": 9.881714107340574,
+      "M_total": 4049073942.2970023,
+      "v_max": 63.1,
+      "pass": false
+    },
+    {
+      "galaxy": "ESO563-G021",
+      "n_points": 30,
+      "chi2_red": 186.45458958267537,
+      "M_total": 1590878932581.9001,
+      "v_max": 321.0,
+      "pass": false
+    },
+    {
+      "galaxy": "F561-1",
+      "n_points": 6,
+      "chi2_red": 0.46587815671224486,
+      "M_total": 5528698698.793628,
+      "v_max": 50.4,
+      "pass": true
+    },
+    {
+      "galaxy": "F563-1",
+      "n_points": 17,
+      "chi2_red": 4.302603732043766,
+      "M_total": 61553012369.23823,
+      "v_max": 112.5,
+      "pass": true
+    },
+    {
+      "galaxy": "F563-V1",
+      "n_points": 6,
+      "chi2_red": 0.12528216736631542,
+      "M_total": 1502947009.3718078,
+      "v_max": 29.5,
+      "pass": true
+    },
+    {
+      "galaxy": "F563-V2",
+      "n_points": 10,
+      "chi2_red": 2.1537129242479427,
+      "M_total": 37570680084.21241,
+      "v_max": 118.0,
+      "pass": true
+    },
+    {
+      "galaxy": "F565-V2",
+      "n_points": 7,
+      "chi2_red": 0.6414158978312302,
+      "M_total": 11098666733.374937,
+      "v_max": 83.1,
+      "pass": true
+    },
+    {
+      "galaxy": "F567-2",
+      "n_points": 5,
+      "chi2_red": 0.7750569323834525,
+      "M_total": 5753496742.465083,
+      "v_max": 52.2,
+      "pass": true
+    },
+    {
+      "galaxy": "F568-1",
+      "n_points": 12,
+      "chi2_red": 1.9315635695560132,
+      "M_total": 54055447593.045586,
+      "v_max": 142.0,
+      "pass": true
+    },
+    {
+      "galaxy": "F568-3",
+      "n_points": 18,
+      "chi2_red": 3.4300017791765236,
+      "M_total": 62512339603.79231,
+      "v_max": 120.0,
+      "pass": true
+    },
+    {
+      "galaxy": "F568-V1",
+      "n_points": 15,
+      "chi2_red": 6.187744331739311,
+      "M_total": 101719239162.77962,
+      "v_max": 118.0,
+      "pass": false
+    },
+    {
+      "galaxy": "F571-8",
+      "n_points": 13,
+      "chi2_red": 11.781889679237786,
+      "M_total": 75862287706.6311,
+      "v_max": 144.0,
+      "pass": false
+    },
+    {
+      "galaxy": "F571-V1",
+      "n_points": 7,
+      "chi2_red": 0.3575806999489955,
+      "M_total": 20647393928.61395,
+      "v_max": 84.3,
+      "pass": true
+    },
+    {
+      "galaxy": "F574-1",
+      "n_points": 14,
+      "chi2_red": 5.80849671982599,
+      "M_total": 28504962572.356815,
+      "v_max": 99.7,
+      "pass": false
+    },
+    {
+      "galaxy": "F574-2",
+      "n_points": 5,
+      "chi2_red": 0.26549424913417563,
+      "M_total": 2848460293.5592756,
+      "v_max": 40.0,
+      "pass": true
+    },
+    {
+      "galaxy": "F579-V1",
+      "n_points": 14,
+      "chi2_red": 9.707911277950974,
+      "M_total": 57385932131.63307,
+      "v_max": 114.0,
+      "pass": false
+    },
+    {
+      "galaxy": "F583-1",
+      "n_points": 25,
+      "chi2_red": 2.649481120096127,
+      "M_total": 38956232572.72023,
+      "v_max": 86.9,
+      "pass": true
+    },
+    {
+      "galaxy": "F583-4",
+      "n_points": 12,
+      "chi2_red": 2.0933221378874833,
+      "M_total": 6336888784.768984,
+      "v_max": 69.9,
+      "pass": true
+    },
+    {
+      "galaxy": "IC2574",
+      "n_points": 34,
+      "chi2_red": 7.635857780490083,
+      "M_total": 5924068982.642459,
+      "v_max": 67.5,
+      "pass": false
+    },
+    {
+      "galaxy": "IC4202",
+      "n_points": 32,
+      "chi2_red": 153.3610818604596,
+      "M_total": 538907803062.62384,
+      "v_max": 250.0,
+      "pass": false
+    },
+    {
+      "galaxy": "KK98-251",
+      "n_points": 15,
+      "chi2_red": 2.0403289099500195,
+      "M_total": 615147896.9456257,
+      "v_max": 34.6,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC0024",
+      "n_points": 29,
+      "chi2_red": 36.24164667408404,
+      "M_total": 34743479364.71202,
+      "v_max": 110.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC0055",
+      "n_points": 21,
+      "chi2_red": 4.809241581496342,
+      "M_total": 24643303814.195393,
+      "v_max": 87.4,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC0100",
+      "n_points": 21,
+      "chi2_red": 2.1273820238243775,
+      "M_total": 16719870934.96731,
+      "v_max": 91.2,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC0247",
+      "n_points": 26,
+      "chi2_red": 51.23397397171341,
+      "M_total": 41322286949.02057,
+      "v_max": 108.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC0289",
+      "n_points": 28,
+      "chi2_red": 91.92898816188173,
+      "M_total": 674567533208.2234,
+      "v_max": 194.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC0300",
+      "n_points": 25,
+      "chi2_red": 12.579847168943594,
+      "M_total": 25163897587.182045,
+      "v_max": 97.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC0801",
+      "n_points": 13,
+      "chi2_red": 444.1512508075943,
+      "M_total": 754121985437.296,
+      "v_max": 238.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC0891",
+      "n_points": 18,
+      "chi2_red": 149.20250783136817,
+      "M_total": 203130049457.41525,
+      "v_max": 234.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC1003",
+      "n_points": 36,
+      "chi2_red": 61.73677076112674,
+      "M_total": 93305439339.94785,
+      "v_max": 115.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC1090",
+      "n_points": 24,
+      "chi2_red": 77.18817225076329,
+      "M_total": 189630887588.74988,
+      "v_max": 176.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC1705",
+      "n_points": 14,
+      "chi2_red": 19.204547072918874,
+      "M_total": 9961875215.388037,
+      "v_max": 73.2,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2366",
+      "n_points": 26,
+      "chi2_red": 2.7199853290415446,
+      "M_total": 3805182672.734587,
+      "v_max": 53.7,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC2403",
+      "n_points": 73,
+      "chi2_red": 773.8556540396054,
+      "M_total": 124238969105.65614,
+      "v_max": 136.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2683",
+      "n_points": 11,
+      "chi2_red": 148.97149243632467,
+      "M_total": 459573506646.41693,
+      "v_max": 212.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2841",
+      "n_points": 50,
+      "chi2_red": 469.67984160978915,
+      "M_total": 1392878597387.6475,
+      "v_max": 323.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2903",
+      "n_points": 34,
+      "chi2_red": 697.6030856323248,
+      "M_total": 344897198587.5723,
+      "v_max": 216.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2915",
+      "n_points": 30,
+      "chi2_red": 3.6226281993012592,
+      "M_total": 16769412960.633703,
+      "v_max": 86.5,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC2955",
+      "n_points": 24,
+      "chi2_red": 403.3895084523676,
+      "M_total": 1718745400106.405,
+      "v_max": 276.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC2976",
+      "n_points": 27,
+      "chi2_red": 4.400633850930469,
+      "M_total": 2329519362.6976857,
+      "v_max": 88.7,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC2998",
+      "n_points": 13,
+      "chi2_red": 76.01102598870703,
+      "M_total": 439689508581.65405,
+      "v_max": 214.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3109",
+      "n_points": 25,
+      "chi2_red": 1.5072255989690284,
+      "M_total": 5004805085.474633,
+      "v_max": 67.3,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC3198",
+      "n_points": 43,
+      "chi2_red": 784.6795788374683,
+      "M_total": 363988393885.80133,
+      "v_max": 157.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3521",
+      "n_points": 41,
+      "chi2_red": 124.62635644829211,
+      "M_total": 399127022084.11053,
+      "v_max": 220.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3726",
+      "n_points": 12,
+      "chi2_red": 58.98891553307042,
+      "M_total": 297713226024.2295,
+      "v_max": 169.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3741",
+      "n_points": 21,
+      "chi2_red": 6.89383951534587,
+      "M_total": 3848287540.2011003,
+      "v_max": 51.6,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3769",
+      "n_points": 12,
+      "chi2_red": 51.775007465508004,
+      "M_total": 287258034318.27954,
+      "v_max": 126.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3877",
+      "n_points": 13,
+      "chi2_red": 6.190599163839661,
+      "M_total": 75391296977.03082,
+      "v_max": 171.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3893",
+      "n_points": 10,
+      "chi2_red": 66.15687294501298,
+      "M_total": 218741379816.66962,
+      "v_max": 194.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3917",
+      "n_points": 17,
+      "chi2_red": 10.791396325790267,
+      "M_total": 66909359549.03408,
+      "v_max": 138.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3949",
+      "n_points": 7,
+      "chi2_red": 9.742710074447166,
+      "M_total": 48232951597.96241,
+      "v_max": 169.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3953",
+      "n_points": 8,
+      "chi2_red": 24.783106134218027,
+      "M_total": 192316995942.41696,
+      "v_max": 224.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC3972",
+      "n_points": 10,
+      "chi2_red": 3.9088289775204026,
+      "M_total": 31027565412.649757,
+      "v_max": 134.0,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC3992",
+      "n_points": 9,
+      "chi2_red": 102.75231434287565,
+      "M_total": 785711254593.0491,
+      "v_max": 272.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4010",
+      "n_points": 12,
+      "chi2_red": 1.1664421024178637,
+      "M_total": 34975684549.099174,
+      "v_max": 129.0,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC4013",
+      "n_points": 36,
+      "chi2_red": 126.55575330965405,
+      "M_total": 277320919234.3601,
+      "v_max": 198.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4051",
+      "n_points": 7,
+      "chi2_red": 5.91282412335307,
+      "M_total": 70379226199.25653,
+      "v_max": 161.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4068",
+      "n_points": 6,
+      "chi2_red": 2.8866641091756486,
+      "M_total": 523155208.7490089,
+      "v_max": 41.9,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC4085",
+      "n_points": 7,
+      "chi2_red": 0.5889782125755986,
+      "M_total": 23439320333.011967,
+      "v_max": 136.0,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC4088",
+      "n_points": 12,
+      "chi2_red": 27.91817256479975,
+      "M_total": 167026142242.8809,
+      "v_max": 182.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4100",
+      "n_points": 24,
+      "chi2_red": 62.60448588848138,
+      "M_total": 213147474139.40253,
+      "v_max": 195.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4138",
+      "n_points": 7,
+      "chi2_red": 42.82783516983779,
+      "M_total": 176960972343.8993,
+      "v_max": 195.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4157",
+      "n_points": 17,
+      "chi2_red": 48.69258428241678,
+      "M_total": 291580360558.52423,
+      "v_max": 201.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4183",
+      "n_points": 23,
+      "chi2_red": 20.34719995769348,
+      "M_total": 68680259560.50762,
+      "v_max": 115.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4214",
+      "n_points": 14,
+      "chi2_red": 13.28253785603964,
+      "M_total": 10468150188.866385,
+      "v_max": 80.6,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4217",
+      "n_points": 19,
+      "chi2_red": 33.00372034786552,
+      "M_total": 155057182626.70966,
+      "v_max": 191.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC4389",
+      "n_points": 6,
+      "chi2_red": 3.092763933901703,
+      "M_total": 9165423252.937687,
+      "v_max": 110.0,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC4559",
+      "n_points": 32,
+      "chi2_red": 18.44451437072891,
+      "M_total": 78920016016.75168,
+      "v_max": 124.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5005",
+      "n_points": 18,
+      "chi2_red": 31.557334424244882,
+      "M_total": 308895420791.4779,
+      "v_max": 265.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5033",
+      "n_points": 22,
+      "chi2_red": 375.1617996806546,
+      "M_total": 577550824514.1494,
+      "v_max": 225.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5055",
+      "n_points": 28,
+      "chi2_red": 5524.6686585336065,
+      "M_total": 940078808152.6096,
+      "v_max": 206.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5371",
+      "n_points": 19,
+      "chi2_red": 522.0168674656768,
+      "M_total": 686061428995.0144,
+      "v_max": 242.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5585",
+      "n_points": 24,
+      "chi2_red": 105.40763527567687,
+      "M_total": 23340720334.759068,
+      "v_max": 92.3,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5907",
+      "n_points": 19,
+      "chi2_red": 430.96020021213474,
+      "M_total": 629284133706.9441,
+      "v_max": 235.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC5985",
+      "n_points": 33,
+      "chi2_red": 176.59846367126593,
+      "M_total": 767259710360.8362,
+      "v_max": 305.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC6015",
+      "n_points": 44,
+      "chi2_red": 790.6265968925835,
+      "M_total": 366230536025.4484,
+      "v_max": 166.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC6195",
+      "n_points": 23,
+      "chi2_red": 464.23486145444986,
+      "M_total": 944726461026.5558,
+      "v_max": 258.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC6503",
+      "n_points": 31,
+      "chi2_red": 351.6660637266942,
+      "M_total": 87036965354.60161,
+      "v_max": 121.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC6674",
+      "n_points": 15,
+      "chi2_red": 361.62688184126137,
+      "M_total": 1053805444520.6644,
+      "v_max": 291.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC6789",
+      "n_points": 4,
+      "chi2_red": 1.8648720537051222,
+      "M_total": 301391175.9519575,
+      "v_max": 60.4,
+      "pass": true
+    },
+    {
+      "galaxy": "NGC6946",
+      "n_points": 58,
+      "chi2_red": 306.63020575168827,
+      "M_total": 223024708376.94748,
+      "v_max": 181.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC7331",
+      "n_points": 36,
+      "chi2_red": 289.93065707351656,
+      "M_total": 533777223933.59204,
+      "v_max": 257.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC7793",
+      "n_points": 46,
+      "chi2_red": 15.035229240303956,
+      "M_total": 29716795223.08516,
+      "v_max": 116.0,
+      "pass": false
+    },
+    {
+      "galaxy": "NGC7814",
+      "n_points": 18,
+      "chi2_red": 147.8292694207642,
+      "M_total": 228306490772.53943,
+      "v_max": 265.0,
+      "pass": false
+    },
+    {
+      "galaxy": "PGC51017",
+      "n_points": 6,
+      "chi2_red": 8.36151486239869,
+      "M_total": 344929001.36880845,
+      "v_max": 20.5,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC00128",
+      "n_points": 22,
+      "chi2_red": 444.30855730800084,
+      "M_total": 264902455707.6815,
+      "v_max": 134.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC00191",
+      "n_points": 9,
+      "chi2_red": 89.50581165034747,
+      "M_total": 16014139160.784052,
+      "v_max": 83.85,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC00634",
+      "n_points": 4,
+      "chi2_red": 7.053570056706836,
+      "M_total": 44561091583.80756,
+      "v_max": 108.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC00731",
+      "n_points": 12,
+      "chi2_red": 11.770502948729224,
+      "M_total": 13369405635.48722,
+      "v_max": 74.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC00891",
+      "n_points": 5,
+      "chi2_red": 14.771654798729681,
+      "M_total": 5678480579.748794,
+      "v_max": 63.75,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC01230",
+      "n_points": 11,
+      "chi2_red": 13.744563355846825,
+      "M_total": 134702224277.80936,
+      "v_max": 113.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC01281",
+      "n_points": 25,
+      "chi2_red": 0.24561157184047736,
+      "M_total": 3028837662.1699805,
+      "v_max": 56.9,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC02023",
+      "n_points": 5,
+      "chi2_red": 1.105024545805668,
+      "M_total": 1729580473.8237562,
+      "v_max": 58.8,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC02259",
+      "n_points": 8,
+      "chi2_red": 40.6159265318862,
+      "M_total": 14698617655.472807,
+      "v_max": 90.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC02455",
+      "n_points": 8,
+      "chi2_red": 5.173700835876003,
+      "M_total": 1885937409.2585452,
+      "v_max": 61.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC02487",
+      "n_points": 17,
+      "chi2_red": 447.670514845505,
+      "M_total": 2193632349183.392,
+      "v_max": 383.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC02885",
+      "n_points": 19,
+      "chi2_red": 121.99296382728237,
+      "M_total": 1689814304234.15,
+      "v_max": 305.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC02916",
+      "n_points": 43,
+      "chi2_red": 1120.3454896883395,
+      "M_total": 2075526318350.5217,
+      "v_max": 218.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC02953",
+      "n_points": 115,
+      "chi2_red": 3189.288816809261,
+      "M_total": 2134337055548.2507,
+      "v_max": 319.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC03205",
+      "n_points": 48,
+      "chi2_red": 324.8263276714056,
+      "M_total": 512021496293.73944,
+      "v_max": 237.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC03546",
+      "n_points": 30,
+      "chi2_red": 201.97800408099758,
+      "M_total": 338587810897.0652,
+      "v_max": 262.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC03580",
+      "n_points": 47,
+      "chi2_red": 264.8305860001865,
+      "M_total": 123439615076.53044,
+      "v_max": 131.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC04278",
+      "n_points": 25,
+      "chi2_red": 3.7551217445988136,
+      "M_total": 7700648284.865281,
+      "v_max": 92.8,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC04305",
+      "n_points": 22,
+      "chi2_red": 2.9523930581385325,
+      "M_total": 1562602140.1976826,
+      "v_max": 37.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC04325",
+      "n_points": 8,
+      "chi2_red": 13.172658938341966,
+      "M_total": 11506342265.727753,
+      "v_max": 92.7,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC04483",
+      "n_points": 8,
+      "chi2_red": 0.7963383620553682,
+      "M_total": 149057518.9673368,
+      "v_max": 24.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC04499",
+      "n_points": 9,
+      "chi2_red": 3.5656992046023186,
+      "M_total": 9741147387.556034,
+      "v_max": 74.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05005",
+      "n_points": 11,
+      "chi2_red": 1.411384000299512,
+      "M_total": 70234928506.40384,
+      "v_max": 100.0,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05253",
+      "n_points": 73,
+      "chi2_red": 2611.1249049947555,
+      "M_total": 2301518642274.2935,
+      "v_max": 248.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC05414",
+      "n_points": 6,
+      "chi2_red": 3.2146440211690352,
+      "M_total": 2718741594.5271378,
+      "v_max": 61.4,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05716",
+      "n_points": 12,
+      "chi2_red": 55.78454533522998,
+      "M_total": 15649093179.486479,
+      "v_max": 74.7,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC05721",
+      "n_points": 23,
+      "chi2_red": 26.310171519658272,
+      "M_total": 13084154960.077621,
+      "v_max": 82.6,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC05750",
+      "n_points": 11,
+      "chi2_red": 0.7073172724194401,
+      "M_total": 50373545092.35087,
+      "v_max": 78.9,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05764",
+      "n_points": 10,
+      "chi2_red": 14.417242523682871,
+      "M_total": 2517599416.957538,
+      "v_max": 55.8,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC05829",
+      "n_points": 11,
+      "chi2_red": 1.4232414787152243,
+      "M_total": 5113227914.655582,
+      "v_max": 68.6,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05918",
+      "n_points": 8,
+      "chi2_red": 0.8074578375660055,
+      "M_total": 1783098089.2463317,
+      "v_max": 44.5,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC05986",
+      "n_points": 15,
+      "chi2_red": 18.758716615663964,
+      "M_total": 30336528463.07752,
+      "v_max": 116.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC05999",
+      "n_points": 5,
+      "chi2_red": 0.8573482396905829,
+      "M_total": 33503537349.192417,
+      "v_max": 100.0,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06399",
+      "n_points": 9,
+      "chi2_red": 0.6158324484498287,
+      "M_total": 12176291869.892506,
+      "v_max": 87.6,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06446",
+      "n_points": 17,
+      "chi2_red": 9.75037437735368,
+      "M_total": 18140811653.15941,
+      "v_max": 84.9,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06614",
+      "n_points": 13,
+      "chi2_red": 45.677604174848916,
+      "M_total": 1091535627636.5948,
+      "v_max": 205.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06628",
+      "n_points": 7,
+      "chi2_red": 0.8479628006465673,
+      "M_total": 3495097229.2028227,
+      "v_max": 42.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06667",
+      "n_points": 9,
+      "chi2_red": 1.3617844353807997,
+      "M_total": 12067223677.796629,
+      "v_max": 85.7,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06786",
+      "n_points": 45,
+      "chi2_red": 769.4186477018175,
+      "M_total": 540762117756.0898,
+      "v_max": 229.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06787",
+      "n_points": 71,
+      "chi2_red": 1340.2104557636253,
+      "M_total": 883394914557.6396,
+      "v_max": 276.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06818",
+      "n_points": 8,
+      "chi2_red": 2.5835301975729363,
+      "M_total": 5934800620.470278,
+      "v_max": 74.4,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06917",
+      "n_points": 11,
+      "chi2_red": 7.3936416262061355,
+      "M_total": 26746342685.4541,
+      "v_max": 111.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06923",
+      "n_points": 6,
+      "chi2_red": 0.7490911496849684,
+      "M_total": 6878414962.988214,
+      "v_max": 81.1,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC06930",
+      "n_points": 10,
+      "chi2_red": 6.213981687523358,
+      "M_total": 47286199231.04729,
+      "v_max": 109.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06973",
+      "n_points": 9,
+      "chi2_red": 59.88790502804511,
+      "M_total": 64544771085.377106,
+      "v_max": 180.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC06983",
+      "n_points": 17,
+      "chi2_red": 13.38702570537201,
+      "M_total": 49854739186.2554,
+      "v_max": 113.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC07089",
+      "n_points": 12,
+      "chi2_red": 1.0316482138357552,
+      "M_total": 10100342657.326515,
+      "v_max": 79.1,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07125",
+      "n_points": 13,
+      "chi2_red": 11.508767831900487,
+      "M_total": 19304902989.935062,
+      "v_max": 65.6,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC07151",
+      "n_points": 11,
+      "chi2_red": 12.712338698352251,
+      "M_total": 7107973624.593973,
+      "v_max": 76.2,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC07232",
+      "n_points": 4,
+      "chi2_red": 4.005178533959725,
+      "M_total": 231546162.3910734,
+      "v_max": 44.0,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07261",
+      "n_points": 7,
+      "chi2_red": 4.790149294156212,
+      "M_total": 9010366434.445425,
+      "v_max": 76.1,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07323",
+      "n_points": 10,
+      "chi2_red": 3.4130490620684935,
+      "M_total": 7183271108.668872,
+      "v_max": 85.6,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07399",
+      "n_points": 10,
+      "chi2_red": 25.000865706374054,
+      "M_total": 15685460785.081974,
+      "v_max": 106.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC07524",
+      "n_points": 31,
+      "chi2_red": 3.4822584700859696,
+      "M_total": 14766749226.89285,
+      "v_max": 83.8,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07559",
+      "n_points": 7,
+      "chi2_red": 0.4133637108042569,
+      "M_total": 473311951.50104433,
+      "v_max": 32.1,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07577",
+      "n_points": 9,
+      "chi2_red": 1.2245259711560401,
+      "M_total": 100001574.09357512,
+      "v_max": 17.8,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07603",
+      "n_points": 12,
+      "chi2_red": 4.41780485700586,
+      "M_total": 3779397502.0282764,
+      "v_max": 64.0,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07608",
+      "n_points": 8,
+      "chi2_red": 0.5187409379909321,
+      "M_total": 3949271602.235588,
+      "v_max": 69.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC07690",
+      "n_points": 7,
+      "chi2_red": 12.525325296950427,
+      "M_total": 3756531606.1828117,
+      "v_max": 60.7,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC07866",
+      "n_points": 7,
+      "chi2_red": 0.43423800430815684,
+      "M_total": 455538529.1442673,
+      "v_max": 33.1,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC08286",
+      "n_points": 17,
+      "chi2_red": 31.59595551800673,
+      "M_total": 13557343217.319698,
+      "v_max": 84.3,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC08490",
+      "n_points": 30,
+      "chi2_red": 34.800908760666346,
+      "M_total": 17361899626.742165,
+      "v_max": 80.1,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC08550",
+      "n_points": 11,
+      "chi2_red": 17.266799436591647,
+      "M_total": 4070640192.0726404,
+      "v_max": 57.8,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC08699",
+      "n_points": 41,
+      "chi2_red": 519.4215232780829,
+      "M_total": 423850919602.51495,
+      "v_max": 202.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC08837",
+      "n_points": 8,
+      "chi2_red": 6.847277963162269,
+      "M_total": 1221484259.133825,
+      "v_max": 48.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC09037",
+      "n_points": 22,
+      "chi2_red": 21.9151500211072,
+      "M_total": 184097489028.9942,
+      "v_max": 160.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC09133",
+      "n_points": 68,
+      "chi2_red": 2005.1853925715855,
+      "M_total": 1667930020030.3433,
+      "v_max": 289.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC09992",
+      "n_points": 5,
+      "chi2_red": 1.51054773461593,
+      "M_total": 1125368708.9499717,
+      "v_max": 34.3,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC10310",
+      "n_points": 7,
+      "chi2_red": 1.9619108990410046,
+      "M_total": 9527769635.389343,
+      "v_max": 73.2,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC11455",
+      "n_points": 36,
+      "chi2_red": 117.37897933925194,
+      "M_total": 1001800143099.0905,
+      "v_max": 291.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC11557",
+      "n_points": 12,
+      "chi2_red": 0.2428163216789181,
+      "M_total": 16100724878.103302,
+      "v_max": 85.0,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC11820",
+      "n_points": 10,
+      "chi2_red": 22.460456794990098,
+      "M_total": 22389986559.4268,
+      "v_max": 84.45,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC11914",
+      "n_points": 65,
+      "chi2_red": 456.76113618636305,
+      "M_total": 213466477828.0621,
+      "v_max": 305.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC12506",
+      "n_points": 31,
+      "chi2_red": 26.052960959639677,
+      "M_total": 836942551492.9957,
+      "v_max": 255.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGC12632",
+      "n_points": 15,
+      "chi2_red": 4.92534646178404,
+      "M_total": 12614569266.121578,
+      "v_max": 73.2,
+      "pass": true
+    },
+    {
+      "galaxy": "UGC12732",
+      "n_points": 16,
+      "chi2_red": 11.042110317187046,
+      "M_total": 28356189605.034622,
+      "v_max": 98.0,
+      "pass": false
+    },
+    {
+      "galaxy": "UGCA281",
+      "n_points": 7,
+      "chi2_red": 0.5353038477804909,
+      "M_total": 190225965.2685077,
+      "v_max": 29.5,
+      "pass": true
+    },
+    {
+      "galaxy": "UGCA442",
+      "n_points": 8,
+      "chi2_red": 2.5261522809538337,
+      "M_total": 4677263836.667318,
+      "v_max": 57.8,
+      "pass": true
+    },
+    {
+      "galaxy": "UGCA444",
+      "n_points": 36,
+      "chi2_red": 0.39180352036296573,
+      "M_total": 618616768.4373796,
+      "v_max": 38.3,
+      "pass": true
+    }
+  ]
+}

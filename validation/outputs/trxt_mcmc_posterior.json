@@ -1,0 +1,26 @@
+{
+  "planck_prior": {
+    "H0_bestfit": 67.75,
+    "H0_lo": 67.5,
+    "H0_hi": 68.0,
+    "r_s_predicted": 151.97813943303015
+  },
+  "shoes_prior": {
+    "H0_bestfit": 72.0,
+    "H0_lo": 71.25,
+    "H0_hi": 72.0,
+    "r_s_predicted": 143.00720759149712
+  },
+  "observational_constraints": {
+    "planck_H0": 67.4,
+    "planck_H0_err": 0.5,
+    "shoes_H0": 73.04,
+    "shoes_H0_err": 1.04,
+    "planck_r_s": 147.09,
+    "planck_r_s_err": 0.26
+  },
+  "grid_size": {
+    "H0": 49,
+    "Omega_m": 33
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "c2": 63763.95951781263,
+  "c2_prime": 344.53600021214993,
+  "m_rho_GeV": 730.48,
+  "c4": 0.11123015950063143,
+  "c4_positive": true,
+  "Lambda_eff_GeV": 525.8687293907557,
+  "Lambda_eff_eV": 525868729390.7557,
+  "r_V_AU": 1.0718954915433829e-23,
+  "epsilon_fifth_1AU": 2.8495175336191275e+34,
+  "cassini_limit": 2.3e-05,
+  "cassini_pass": false,
+  "overall_status": "FAIL"
+}

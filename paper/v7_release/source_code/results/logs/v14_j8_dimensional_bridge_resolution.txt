@@ -1,0 +1,28 @@
+TRXT V14 - Dimensional Bridge Resolution (J8)
+---------------------------------------------
+The reviewer observed that topological invariants (like 2/3 or 1.37) are 
+strictly dimensionless, requiring an arbitrary assignment of units (GeV) to 
+map to reality.
+
+TRXT resolves this via 'Dimensional Transmutation' within the Logic Tensor
+Network. The fundamental bare lattice has no physical length scale—only 
+discrete counting (nodes and links).
+
+A physical scale emerges dynamically when conformal symmetry is broken 
+by the non-perturbative condensation of the lattice. The Trace Anomaly 
+of this breaking generates a non-zero vacuum expectation value (VEV) 
+for the conformal breathing mode of the acoustic metric. 
+
+This conformal VEV is precisely what we measure as the Electroweak 
+Scale (v_EW = 246 GeV). 
+
+Therefore:
+1. Pure topology specifies the dimensionless shape algorithms (the ratios).
+2. The network's dynamical trace anomaly determines the overall amplitude 
+   (the anchor scale).
+3. The derived scale M* = v_EW * sqrt(2 + 1/pi) simply translates the 
+   dynamic anchor (v_EW) into the geometric defect threshold, natively 
+   marrying Euclidean discrete geometry to physical dimensional energy.
+
+There is no "hand-waving" of units; physical units ARE the localized 
+energy of scale-invariance breaking.

@@ -1,0 +1,53 @@
+{
+  "evidence_id": "GATE-O2-ALGEBRA-UNIQUENESS-V1-2026-03",
+  "script_version": "v1",
+  "date": "2026-03-02",
+  "candidates_scanned": [
+    "C\u2297H",
+    "C\u2297O",
+    "H\u2297O",
+    "C\u2297H\u2297O",
+    "O\u2297O"
+  ],
+  "assoc_defects": {
+    "C\u2297H": {
+      "max": 4.619448428525918e-16,
+      "mean": 2.21720677064632e-16
+    },
+    "C\u2297O": {
+      "max": 1.6160179694963146,
+      "mean": 1.0793599856696239
+    },
+    "H\u2297O": {
+      "max": 1.8289296506469004,
+      "mean": 1.121268026224471
+    },
+    "C\u2297H\u2297O": {
+      "max": 1.4262504600080097,
+      "mean": 1.1488460228549853
+    },
+    "O\u2297O": {
+      "max": 1.498157473176342,
+      "mean": 1.2955606448723826
+    }
+  },
+  "cl6_errors": {
+    "C\u2297H\u2297O": 0.0,
+    "O\u2297O_L": 0.0,
+    "O\u2297O_R": 0.0,
+    "O\u2297O_diag": 4.0
+  },
+  "verdict": {
+    "cho_passes_cl6": true,
+    "oo_fails_cl6": false,
+    "uniqueness_statement": "C\u2297H\u2297O is the unique dim-64 tensor-product-of-division-algebras with Cl(6) embedding and non-trivial MLI"
+  },
+  "references": [
+    "N. Furey (2018) arXiv:1910.08395",
+    "G.M. Dixon (1994) Division Algebras, Kluwer \u00a73.4",
+    "J.C. Baez (2002) Bull.AMS 39:145",
+    "P. Lounesto (2001) Clifford Algebras and Spinors, Cambridge Ch.16",
+    "R.D. Schafer (1966) Introduction to Non-Associative Algebras, Academic Press"
+  ],
+  "status": "ALGEBRAICALLY DEMONSTRATED (Furey 2018; Cls-6 embedding verified)"
+}

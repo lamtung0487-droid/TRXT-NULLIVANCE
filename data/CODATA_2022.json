@@ -1,0 +1,92 @@
+{
+    "_metadata": {
+        "source": "CODATA 2022 (NIST)",
+        "url": "https://physics.nist.gov/cuu/Constants/",
+        "access_date": "2026-01-05",
+        "note": "Fundamental Physical Constants - Complete Listing"
+    },
+    "speed_of_light": {
+        "symbol": "c",
+        "value": 299792458,
+        "unit": "m/s",
+        "uncertainty": 0,
+        "note": "Exact by definition (SI)"
+    },
+    "planck_constant": {
+        "symbol": "h",
+        "value": 6.62607015e-34,
+        "unit": "J·s",
+        "uncertainty": 0,
+        "note": "Exact by definition (SI)"
+    },
+    "reduced_planck_constant": {
+        "symbol": "hbar",
+        "value": 1.054571817e-34,
+        "unit": "J·s",
+        "uncertainty": 0
+    },
+    "gravitational_constant": {
+        "symbol": "G",
+        "value": 6.67430e-11,
+        "unit": "m³/(kg·s²)",
+        "uncertainty": 1.5e-15
+    },
+    "fine_structure_constant": {
+        "symbol": "alpha",
+        "value": 0.0072973525693,
+        "uncertainty": 1.1e-12,
+        "note": "Dimensionless"
+    },
+    "elementary_charge": {
+        "symbol": "e",
+        "value": 1.602176634e-19,
+        "unit": "C",
+        "uncertainty": 0,
+        "note": "Exact by definition (SI)"
+    },
+    "electron_mass": {
+        "symbol": "m_e",
+        "value": 9.1093837015e-31,
+        "unit": "kg",
+        "value_MeV": 0.51099895000,
+        "uncertainty_MeV": 1.5e-10
+    },
+    "proton_mass": {
+        "symbol": "m_p",
+        "value": 1.67262192369e-27,
+        "unit": "kg",
+        "value_MeV": 938.27208816,
+        "uncertainty_MeV": 2.9e-7
+    },
+    "neutron_mass": {
+        "symbol": "m_n",
+        "value": 1.67492749804e-27,
+        "unit": "kg",
+        "value_MeV": 939.56542052,
+        "uncertainty_MeV": 5.4e-7
+    },
+    "boltzmann_constant": {
+        "symbol": "k_B",
+        "value": 1.380649e-23,
+        "unit": "J/K",
+        "uncertainty": 0,
+        "note": "Exact by definition (SI)"
+    },
+    "planck_mass": {
+        "symbol": "M_Pl",
+        "value": 2.176434e-8,
+        "unit": "kg",
+        "value_GeV": 1.220890e19,
+        "note": "Derived from sqrt(hbar*c/G)"
+    },
+    "planck_length": {
+        "symbol": "l_Pl",
+        "value": 1.616255e-35,
+        "unit": "m"
+    },
+    "planck_time": {
+        "symbol": "t_Pl",
+        "value": 5.391247e-44,
+        "unit": "s"
+    }
+}

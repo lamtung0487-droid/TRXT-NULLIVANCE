@@ -1,0 +1,4 @@
+# TRXT V8 Relic Abundance Results
+# DT-1 mass: 5.7782 GeV (DERIVED from E(p,q) formula)
+# Target: Omega h^2 = 0.12
+# m_phi, alpha_dm, sigma_v_cm3s, omega_h2

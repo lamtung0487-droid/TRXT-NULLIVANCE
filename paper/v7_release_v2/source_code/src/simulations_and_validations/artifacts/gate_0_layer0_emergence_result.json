@@ -1,0 +1,17 @@
+{
+  "evidence_id": "GATE-0-LAYER0-EMERGENCE",
+  "date": "2026-03-02",
+  "lattice_N": 64,
+  "cooling_steps": 200,
+  "equil_steps": 300,
+  "T_equil": 0.05,
+  "energy_initial": 0.007955601165157101,
+  "energy_final": -0.4858203809669672,
+  "max_energy_increase": -0.03948466409781737,
+  "cooling_monotonic": true,
+  "rho_foam_mean": 0.020517678583038605,
+  "foam_nonzero": true,
+  "all_pass": true,
+  "status": "PASS",
+  "runtime_s": 0.23
+}

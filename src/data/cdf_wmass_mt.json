@@ -1,0 +1,42 @@
+{
+  "source": "Digitized from Science 376, 170 (2022), Fig 1",
+  "warning": "PLACEHOLDER - Download from HepData for publication quality",
+  "hepdata_doi": "10.17182/hepdata.114352",
+  "mt_bins_gev": [
+    60,
+    62,
+    64,
+    66,
+    68,
+    70,
+    72,
+    74,
+    76,
+    78,
+    80,
+    82,
+    84,
+    86,
+    88,
+    90
+  ],
+  "events": [
+    200,
+    250,
+    320,
+    450,
+    800,
+    1500,
+    3000,
+    6000,
+    12000,
+    25000,
+    45000,
+    20000,
+    3000,
+    500,
+    100,
+    20
+  ],
+  "stat_errors": "sqrt(N)"
+}

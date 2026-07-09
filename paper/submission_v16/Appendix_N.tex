@@ -1,0 +1,52 @@
+\section{Appendix N: Endogenous Derivation of Vacuum Sequestering (Resolving A7)}
+
+This appendix provides a rigorous physical derivation of Assumption A7 (Vacuum Shift Invariance), elevating it from an external "sequestering constraint" to an endogenous consequence of the theory's conserved Noether charges.
+
+\subsection{Problem Statement}
+In standard EFT, the loop-induced vacuum energy $L_0 \sim M_{Pl}^4$ gravitates, leading to the Cosmological Constant Problem. The TRXT framework requires $L_0$ to be "sequestered" (invisible to gravity). Here we show this sequestering emerges naturally when the effective action is defined in the \textbf{Fixed-Charge (Microcanonical) Ensemble} of the underlying condensate.
+
+\subsection{Definitions and Lemmas}
+
+\subsubsection{Definition 1: Conserved Noether Charge}
+The superfluid phase $\theta$ admits a global $U(1)$ shift symmetry $\theta \to \theta + \alpha$. By Noether's theorem, this implies a conserved current (see derivation in Section 4):
+\begin{equation}
+    J^\mu = 2c_2 \rho^2 \partial^\mu \theta, \quad \partial_\mu J^\mu = 0
+\end{equation}
+The total conserved charge is $Q = \int d^3x J^0$. This charge represents the total particle number of the condensate.
+
+\subsubsection{Definition 2: The Constrained Action}
+We define the effective action not in the canonical ensemble (fixed $\mu$), but in the microcanonical ensemble (fixed $Q$), which matches the physical reality of an isolated universe with fixed particle content. The chemical potential $\mu$ enters not as a fundamental parameter, but as a \textbf{Lagrange multiplier} enforcing the charge constraint:
+\begin{equation}
+    S_{eff}[g, \Phi, \mu] = S_{dyn}[g, \Phi] + \mu(Q[\Phi] - Q_0)
+\end{equation}
+Here, $\mu$ is a global dynamical variable.
+
+\subsubsection{Lemma 1: Equilibrium Vacuum Pressure}
+For a homogeneous ground state (vacuum) with energy density $\epsilon$ and number density $n$, the Gibbs-Duhem relation at $T=0$ gives the pressure:
+\begin{equation}
+    P_{vac} = -\epsilon + \mu n
+\end{equation}
+The equilibrium condition for a superfluid droplet in vacuum is $P_{vac} = 0$. This fixes the equilibrium chemical potential $\mu_{eq} = \epsilon/n$.
+
+\subsection{Theorem: Vacuum Shift Invariance}
+
+\textbf{Proposition:} The loop-induced vacuum energy $L_0$ does not gravitate.
+
+\textbf{Proof:}
+1.  Consider a shift in the bare vacuum energy density due to radiative corrections (e.g., the Heat Kernel $L_0$ term):
+    \begin{equation}
+        \mathcal{E} \to \mathcal{E}' = \mathcal{E} + C \quad (where \ C \sim L_0)
+    \end{equation}
+2.  In the standard GR action, this $C$ would act as a cosmological constant $\Lambda = C$.
+3.  However, in our constrained action $S_{eff}$, the system must maintain the fixed charge $Q_0$ (fixed density $n$). To satisfy the Euler-Lagrange equations for $\mu$ (which enforce $P_{vac}=0$ for stability), the chemical potential \textbf{self-adjusts}:
+    \begin{equation}
+        \mu \to \mu' = \mu + \frac{C}{n}
+    \end{equation}
+4.  The observationally relevant quantity is the Grand Potential density $\omega = \epsilon - \mu n$ (which corresponds to $-P_{vac}$).
+    \begin{equation}
+        \omega' = (\epsilon + C) - \left(\mu + \frac{C}{n}\right)n = \epsilon - \mu n = \omega
+    \end{equation}
+5.  Since the induced gravity in TRXT couples to deviations from equilibrium (phonons) via the acoustic metric, and the equilibrium pressure $P_{vac}$ remains zero, the constant shift $C$ is \textbf{physically unobservable}.
+
+\subsection{Conclusion}
+Assumption A7 is derived as a consequence of the $U(1)$ Noether symmetry of the condensate. The loop contribution $L_0$ does not gravitate because it is absorbed into the renormalization of the background chemical potential $\mu$, leaving the effective cosmological constant $\Lambda_{eff} \approx 0$ (modulo trace drift).

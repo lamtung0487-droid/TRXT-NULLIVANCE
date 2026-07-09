@@ -1,0 +1,2 @@
+Gravity Sign Verification: PASS (G > 0)
+Reason: Fermion loop (-) cancels Heat Kernel (-) coefficient.

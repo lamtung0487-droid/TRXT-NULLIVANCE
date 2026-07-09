@@ -1,0 +1,25 @@
+{
+  "evidence_id": "GATE-P3-CMB-EXTENDED-2026-03",
+  "date": "2026-03-02",
+  "camb_available": true,
+  "spectra_computed": true,
+  "ell_range": [
+    30,
+    2500
+  ],
+  "n_multipoles": 2471,
+  "trxt_w": -0.984,
+  "delta_w": 0.016000000000000014,
+  "planck_sigma_w": 0.033,
+  "w_tension_sigma": 0.48484848484848525,
+  "trxt_delta_Neff": 0.0,
+  "chi2_total": 179.04215680343924,
+  "dof": 7412,
+  "chi2_reduced": 0.024155714625396552,
+  "p_value": 1.0,
+  "previous_gate6_chi2": 81.7,
+  "previous_gate6_n_points": 83,
+  "verdict": "CONSISTENT with Planck 2018",
+  "pass": true,
+  "status": "GATE P3 PASS"
+}

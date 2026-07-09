@@ -1,0 +1,41 @@
+{
+  "evidence_id": "GATE-G1-SL-DOUBLET-PROOF-V1-2026-03",
+  "script_version": "v1",
+  "date": "2026-03-02",
+  "computational_results": {
+    "cl6_anticommutator_max_err": 0.0,
+    "dim_SL_real": 32,
+    "C2_eigenvalues_all_minus_3_4": true,
+    "max_deviation_from_minus_3_4": 2.1649348980190553e-14,
+    "n_doublets": 4,
+    "dim_commutant": 256,
+    "expected_commutant_range": [
+      32,
+      512
+    ]
+  },
+  "claims": {
+    "A_Cl6_algebra": true,
+    "B_dim_S_32_all_doublets": true,
+    "C_only_doublets": true,
+    "D_j32_excluded": true,
+    "E_4_doublets_SM_content": true,
+    "F_schur_commutant": true,
+    "overall": true
+  },
+  "physical_interpretation": {
+    "S_L_decomposition": "4 \u00d7 (j=1/2) under SU(2)_L",
+    "excluded_reps": [
+      "j=0",
+      "j=1",
+      "j>=3/2"
+    ],
+    "SM_content": "3 quark doublets + 1 lepton doublet per generation"
+  },
+  "references": [
+    "C. Furey (2018) arXiv:1805.01540 \u00a73-4",
+    "J.C. Baez (2002) Bull.Amer.Math.Soc. 39:145",
+    "W. Baylis (1996) Clifford Algebras Ch.4"
+  ],
+  "status": "PASS"
+}

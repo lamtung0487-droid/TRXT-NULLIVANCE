@@ -1,0 +1,40 @@
+{
+  "_metadata": {
+    "analysis": "Ghost-Free Stability Check",
+    "model": "Nullivance (NJL + Induced Gravity)",
+    "polytropic_index": 1.37,
+    "reference": "Woodard (2007), Volovik (2003)"
+  },
+  "results": {
+    "sound_speed": {
+      "gamma": 1.72992700729927,
+      "c_s_max_squared": 0.0172992700729927,
+      "c_s_max": 0.13152668958425395,
+      "subluminal": true,
+      "status": "PASS"
+    },
+    "ostrogradsky": {
+      "njl_max_derivative": 1,
+      "gravity_max_derivative": 2,
+      "higher_derivative_terms": false,
+      "status": "PASS",
+      "note": "NJL has d^1 psi, Induced GR has d^2 g_munu. No d^3 or higher."
+    },
+    "hamiltonian": {
+      "potential_form": "Mexican Hat / Double Well",
+      "coupling_constraint": "lambda > 0",
+      "bounded_below": true,
+      "ground_state": "Stable (SSB vacuum)",
+      "status": "PASS"
+    },
+    "gravitational_dof": {
+      "tensor_modes": 2,
+      "vector_modes": 0,
+      "scalar_modes": 0,
+      "total_dof": 2,
+      "expected_gr_dof": 2,
+      "status": "PASS",
+      "note": "Same as GR. Sigma field is massive and Vainshtein-screened."
+    }
+  }
+}

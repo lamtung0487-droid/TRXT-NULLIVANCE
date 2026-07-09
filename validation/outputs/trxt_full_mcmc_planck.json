@@ -1,0 +1,18 @@
+{
+  "H0_bestfit": 64.0,
+  "H0_lo": 64.0,
+  "H0_hi": 64.0,
+  "sigma8": 0.711942557872829,
+  "S8": 0.7104636018570964,
+  "r_s": 166.8017121505187,
+  "Omega_m": 0.2987548828125,
+  "planck_H0": 67.4,
+  "shoes_H0": 73.04,
+  "planck_sigma8": 0.811,
+  "wl_sigma8": 0.76,
+  "H0_tension_vs_shoes": 9.0,
+  "sigma8_tension_vs_wl": 2.40287210635855,
+  "data_source": "Planck 2018 Legacy Archive (ESA)",
+  "methodology": "Grid-based Bayesian MCMC",
+  "n_grid_points": 861
+}

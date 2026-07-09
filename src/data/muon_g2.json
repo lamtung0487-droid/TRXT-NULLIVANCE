@@ -1,0 +1,9 @@
+{
+  "WARNING": "PLACEHOLDER - Replace with real values from publications",
+  "a_mu_exp": 0.00116592059,
+  "a_mu_exp_err": 2.2e-10,
+  "a_mu_sm_data_driven": 0.0011659181,
+  "a_mu_sm_err": 4.3e-10,
+  "a_mu_sm_lattice": 0.00116591954,
+  "source": "Fermilab PRL 131 (2023) + Theory WP Phys.Rept. 887 (2020)"
+}

@@ -1,0 +1,92 @@
+{
+    "metadata": {
+        "description": "Golden output for SIDM cross-section calculation",
+        "created": "2026-01-13",
+        "model": "Yukawa potential with Numerov solver",
+        "parameters": {
+            "m_chi": 5.70,
+            "alpha_chi": 0.01,
+            "m_phi": 30,
+            "l_max": 50
+        }
+    },
+    "velocity_scan": {
+        "description": "σ/m vs velocity for different astrophysical scales",
+        "velocities_km_s": [
+            10,
+            30,
+            50,
+            100,
+            200,
+            500,
+            1000
+        ],
+        "sigma_over_m_cm2_g": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "notes": "Values to be filled after running validated simulation"
+    },
+    "table_5_4_reproduction": {
+        "description": "Reproduction of Table 5.4 in manuscript",
+        "columns": [
+            "Scale",
+            "v_km_s",
+            "sigma_m_expected",
+            "sigma_m_computed",
+            "status"
+        ],
+        "rows": [
+            [
+                "Dwarf",
+                30,
+                "1-100",
+                null,
+                "pending"
+            ],
+            [
+                "MW",
+                200,
+                "0.1-10",
+                null,
+                "pending"
+            ],
+            [
+                "Cluster",
+                1000,
+                "<1",
+                null,
+                "pending"
+            ]
+        ]
+    },
+    "phase_shifts": {
+        "description": "Phase shifts for first few partial waves at v=30 km/s",
+        "l_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "delta_rad": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "notes": "Values to be computed from validated Numerov solver"
+    },
+    "tolerances": {
+        "sigma_m_rtol": 0.5,
+        "notes": "50% tolerance due to resonance sensitivity"
+    }
+}

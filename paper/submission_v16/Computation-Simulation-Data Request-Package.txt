@@ -1,0 +1,256 @@
+## 0) Trạng thái hiện tại trong V4: cái gì đã “đóng”, cái gì còn “mở”
+
+### Đã có khung/đã tính được (nhưng cần tái lập độc lập)
+
+* **Screening k‑mouflage từ P(X)=c2X+c4X²**: V4 ghi rõ c2,c4>0, định nghĩa Λ_eff và tính ra r_V(Sun) cực lớn + suppression tại 1 AU vượt Cassini rất xa.
+* **SIDM σ_T/m theo vận tốc**: V4 nói đã giải **Schrödinger partial‑wave bằng Numerov**, cho bảng σ_T/m theo v (dwarf → cluster) và plot cộng hưởng. 
+
+### Còn “anchored/proposed” và bắt buộc phải chạy code + data để đóng
+
+* **BAO / r_s**: V4 tự nhận BAO hiện là **V2 (anchored)**; muốn lên **V3 (predictive)** phải **tự tính r_s** từ lịch sử nhiệt/giãn nở + c_s(a) rồi chạy Boltzmann+MCMC (Patch F).
+* **Cosmological Constant**: phụ thuộc mô‑đun **A7 (Sequestering / Vacuum Shift Invariance)**; V4 cũng nói đây là dependency “critical” và là **theory completion task** nếu đòi hỏi phải chứng minh tương thích microscopic condensate.
+* **Direct detection**: V4 nói cần chuyển “derivative suppression” thành **phổ recoil + dự báo cross‑section** và đối chiếu limit hiện đại; hiện mới nêu scaling + rate formula.
+
+---
+
+## 1) Gói yêu cầu chạy cho 3 “hard blockers” (Track I)
+
+### (HB‑1) CC trong FRW: A7/Volovik → cần “dynamical closure” trong nền giãn nở
+
+**Vấn đề cần đóng:** V4 nói CC “cần A7” và nếu không có A7 thì vacuum energy L0 sẽ gravitate và phá hỏng cosmology; đồng thời cũng tự coi việc “derive/replace A7” là task ưu tiên.
+
+**Cái này cần chạy gì?**
+
+* Nếu đội muốn “đóng” theo hướng **q‑variable / relaxation trong FRW** (như bạn mô tả ở hard blocker), phần compute tối thiểu là:
+
+  1. **Chọn biến q(t)** (ứng viên tự nhiên trong V4 là **Noether charge/density** của U(1) phase; V4 có phần Noether current & conservation). 
+  2. Viết hệ ODE FRW cho {a(t), H(t), q(t)} với một **relaxation/dissipation kernel Γ(H)** (đây là “missing module”; V4 chưa đưa công thức cụ thể).
+  3. Tích phân ODE từ early‑time → late‑time, kiểm tra:
+
+     * ρ_vac(t) không runaway về M_Pl^4
+     * có attractor về residual DE cỡ quan sát (trong V4: Λ self‑tuned ~10^-52 m^-2 trong parameter dictionary) 
+
+**Deliverables (đưa cho team):**
+
+* Plot: ρ_vac(t), H(t), w_eff(t) và kiểm tra ổn định (không ghost/tachyon trong sector q).
+* Scan nhạy theo lựa chọn Γ(H) và potential ε(q) (vì đây là phần “có thể làm hỏng tất cả”).
+
+**Data/likelihood có cần ngay không?**
+
+* Giai đoạn 1: chưa cần full Planck; chỉ cần chứng minh **không sinh remnant Λ khổng lồ** và có attractor.
+* Giai đoạn 2: khi ghép vào cosmology, dùng cùng pipeline Patch F (mục BAO bên dưới). 
+
+> Nói ngắn gọn: **HB‑1 không phải bài toán “chạy nặng”**, mà là bài toán “thiếu phương trình động/vi mô cho A7 hoặc q‑relaxation”. Tính số chỉ là bước chứng minh hệ có attractor khi đã chọn mô‑đun.
+
+---
+
+### (HB‑2) Endogenous Screening: chứng minh/kiểm tra **c₄>0** từ microscopic + đủ lớn
+
+V4 hiện đang “đóng dấu” c₄>0 bằng derivation EFT:
+
+* c2(ρ) có integral **dương xác định** (NJL determinant / polarization tensor).
+* c4 = (c2′(ρ0))² / (2 m_ρ²) > 0 nếu m_ρ²>0 (vacuum ổn định). 
+
+**Nhưng để trả lời đúng hard‑blocker của bạn** (“đừng chỉ postulate; phải compute loop/box amplitude và kiểm tra dấu”), đội chạy cần 2 lớp:
+
+#### Lớp A — “Recompute numeric” từ công thức V4 (nhanh, định lượng magnitude)
+
+**Chạy tích phân/đạo hàm:**
+
+1. Evaluate **c2(ρ)** từ integral (56) với cutoff Λ và N_f như V4 đặt.
+2. Lấy đạo hàm số/analytic để có **c2′(ρ0)**.
+3. Tính **m_ρ²** từ curvature của V_eff(ρ) quanh ρ0 (V4 dùng amplitude mode δρ). 
+4. Suy ra **c4** từ (57). 
+5. Map qua **Λ_eff^4 = c2 ρ0² / c4** và check Λ_eff ~ 0.1 eV như V4 claim. 
+
+**Chạy kiểm tra Solar System (tái lập số):**
+
+* Từ Λ_eff suy ra **r_V = ( M / (16π M_Pl² Λ_eff²) )^{1/3}** và suppression ε_fifth ~ (r/r_V)^{3/2}, đối chiếu Cassini. 
+
+**Deliverables:**
+
+* File notebook + bảng (c2, c2′, m_ρ, c4, Λ_eff, rV) + sensitivity khi thay cutoff/regularization.
+
+#### Lớp B — “Box diagram / dispersion positivity” (đúng yêu cầu “hard proof”)
+
+Nếu đội làm nghiêm chỉnh theo đúng yêu cầu của bạn:
+
+* Viết 4‑point amplitude của Goldstone (θ) trong UV completion (NJL fermions/phonons).
+* Tính **1‑loop box** (hoặc chứng minh tương đương bằng việc integrate‑out δρ như V4) và đối chiếu sign của operator (∂θ)^4.
+* Nếu muốn proof kiểu S‑matrix: kiểm tra điều kiện **unitarity/analyticity/causality** ⇒ coefficient của operator dạng X² phải ≥0.
+
+**Compute yêu cầu:**
+
+* Symbolic algebra (FeynCalc/Package‑X) hoặc code tự viết để lấy expansion low‑energy limit (s²+t²+u²) coefficient.
+* Cross‑check: coefficient đúng phải khớp với c4 bạn tính ở “Lớp A”.
+
+---
+
+### (HB‑3) Predictive BAO / Sound Horizon: bỏ “anchoring r_s” và tự dự đoán
+
+V4 đã ghi rõ:
+
+* BAO hiện chỉ là **Anchored check (V2)** dưới điều kiện **r_s fixed** (V4 có chỗ nêu rs = 147.09 Mpc).
+* Muốn lên **V3** phải chạy **Boltzmann solver (CLASS/CAMB)** và inference theo **Patch F**.
+
+#### Yêu cầu chạy (theo đúng Patch F trong V4)
+
+1. **Sửa CLASS/CAMB**
+
+   * Implement “TRXT fluid” có:
+
+     * **w(a)** (equation of state theo trajectory của model)
+     * **c_s(a)** (sound speed) — V4 có công thức c_s² = (c2+2c4X)/(c2+6c4X) và chứng minh causality khi c2,c4>0. 
+   * Mục tiêu: **r_s không nhập tay**, mà tự ra từ background + perturbations.
+
+2. **Chạy MCMC / likelihood**
+
+   * V4 yêu cầu Cobaya/MontePython, likelihood gồm:
+
+     * **Planck 2018 TT,TE,EE + lensing**
+     * **BOSS DR12 BAO + RSD**
+     * **Pantheon+**
+
+3. **Tiêu chí pass/fail**
+
+   * V4 nêu “success criteria”: posterior H0 overlap SH0ES (73±1) trong khi χ²_CMB vẫn trong 2σ của ΛCDM baseline. 
+   * V4 còn nói cần test {n_s, H0, σ8} với full likelihood, đặc biệt signatures ISW và lensing. 
+
+#### Deliverables bắt buộc (để gọi là “predictive r_s”)
+
+* r_s posterior (không anchor), cùng BAO phase + CMB acoustic peaks fit.
+* Δχ² so với ΛCDM, và phân rã contribution (CMB vs BAO vs SN).
+* Sensitivity scan theo θ_model = {M*, α(0)} (Patch F nói θ_model fixed từ derivation, không được thả float tuỳ tiện). 
+
+---
+
+## 2) Các “must‑deliver” khác trong V4 cũng cần chạy (để framework đứng vững)
+
+V4 tự liệt kê các hạng mục bắt buộc: direct detection spectra, SIDM mapping, dark tower channel, v.v. 
+Dưới đây là yêu cầu chạy chi tiết:
+
+### (REQ‑DD) Direct detection: từ scaling → **phổ recoil thật + so với limit**
+
+V4 đã có:
+
+* scaling cho σ_SI bị suppress mạnh (∝ v^4/c_s^4) và estimate σ~10^-52 cm², cùng công thức rate. 
+
+**Team cần chạy:**
+
+1. Xây mô hình dσ/dE_R(q²,v²) cho mediator phonon/Goldstone đúng normalization EFT cutoff Λ_χ.
+2. Tích phân rate:
+   [
+   \frac{dR}{dE_R} = \frac{\rho_\chi}{m_\chi m_T}\int_{v>v_\text{min}} d^3v, f(v),v, \frac{d\sigma_T}{dE_R}
+   ]
+   (V4 đã ghi). 
+3. Fold detector effects: threshold, efficiency, form factor, resolution.
+4. Produce overlay với LZ/XENONnT/SuperCDMS/CRESST (V4 có nhắc các kênh này trong chiến lược kiểm chứng).
+
+**Deliverables:** spectra plots + exclusion/forecast curves “không schematic”.
+
+---
+
+### (REQ‑SIDM) SIDM Numerov: tái lập Table 5 + quét tham số
+
+V4 nói SIDM đã “CLOSED” bằng Numerov, cho Table 5 và Figure 14. 
+
+**Team cần chạy:**
+
+1. Implement partial‑wave Schrödinger + Numerov, lấy σ_T(v) cho Yukawa/screened phonon exchange.
+2. Reproduce Table 5 (⟨σ_T/m⟩ tại v=20,200,1000,3000 km/s) cho benchmark (mχ=10 GeV, mϕ=30 MeV). 
+3. Scan (mχ, mϕ, αχ) để xem vùng nào thỏa simultaneously:
+
+   * dwarfs ~ 10–100 cm²/g
+   * clusters ≲ 1 cm²/g
+   * bullet ≲ 0.5 cm²/g (V4 dùng các ngưỡng đó trong bảng). 
+
+---
+
+### (REQ‑BBN/SN/CMB) Dark phonon constraint map: ΔN_eff, SN1987A, mixing
+
+V4 yêu cầu:
+
+* ΔN_eff < 0.3 và decouple trước QCD (T_dec>200 MeV) để Tϕ/Tγ<0.5
+* SN1987A bound g_{ϕNN} ≲ 10^-10
+* mixing ε < 10^-9 (mϕ<1 MeV) 
+
+**Team cần chạy:**
+
+* Thermal history: compute decoupling temperature từ rate Γ_int(T) vs H(T), suy ra ΔN_eff.
+* Supernova energy loss: compute emissivity với derivative coupling (quan trọng vì V4 nhấn “derivatively coupled” để suppress). 
+
+---
+
+## 3) Các mô phỏng/dữ liệu thiên văn trong V4 (đang có nhưng cần tái lập)
+
+### (REQ‑SPARC) Rotation curves: tái lập pipeline Appendix D
+
+V4 mô tả rõ mô hình fit SPARC:
+
+* V_tot² = V_bar² + V_DM²
+* V_DM từ Lane‑Emden profile với polytropic index n=1.37
+* Per‑galaxy parameters: Υ* ∈ [0.3,0.8], r0
+* Likelihood có systematic floor σ_sys=5 km/s
+
+V4 cũng có “Validation results” (pass rate 38%, median χ²_red 11.77) cho null model “pure Lane‑Emden”. 
+
+**Team cần chạy:**
+
+* Download SPARC (175 galaxies), parse curves + photometry.
+* Solve Lane‑Emden ODE (kèm convergence check; V4 có Appendix K về hội tụ bậc ~2).
+* Fit toàn bộ sample, xuất:
+
+  * distribution χ²_red
+  * list “pass/fail galaxies”
+  * sensitivity theo σ_sys, Υ* prior
+
+> Lưu ý: trong thân bài V4 có câu “median χ²_red ≈ 0.15” nhưng Appendix D/Table 9 lại cho median 11.77; team nên xem đây là **inconsistency cần làm rõ bằng tái lập**.
+
+### (REQ‑BULLET) Bullet Cluster simulation (Appendix E)
+
+V4 nói đã mô phỏng 1E0657‑56 và thấy separation ~8.2–8.5 kpc, kết luận reproduce lensing offset.
+
+**Team cần chạy:**
+
+* Reproduce hydro+superfluid DM collision (code/ICs cần rõ).
+* Output: centroid offsets DM vs gas; compare to observed.
+
+---
+
+## 4) “Reproducibility pack” – những script V4 nói đã có
+
+V4 có ghi:
+
+* Code fitting + verification tools trên GitHub. 
+* Script tái lập mode scan và null hypothesis: `reproduce_mode_scan.py`. 
+
+Bạn có thể gửi cho team link trong dạng code (để khỏi bị format chặn URL):
+
+```text
+https://github.com/lamtung0487-droid/TRXT-NULLIVANCE
+(reproduce_mode_scan.py được nói là nằm trong supplementary material)
+```
+
+---
+
+## 5) “Parameter Pack” baseline để đội chạy thống nhất
+
+V4 có parameter dictionary/unified dictionary, tối thiểu team nên cố định:
+
+* M* ≈ 365.24 GeV (calibrated từ mτ và α; có error budget)
+* mϕ ≈ 30 MeV, αχ ≈ 0.01 (benchmark SIDM)
+* nd ≈ 1880 GeV³ (neutrino overlap estimate)
+* c2>0, c4>0 (điều kiện stability/causality; V4 có chứng minh c_s²<1 khi c2,c4>0)
+
+Trong Patch F, V4 còn nhấn mạnh θ_model = {M*, α(0)} là **fixed bởi derivation, không float**. 
+
+---
+
+# Đề xuất “thứ tự chạy” tối ưu để đóng 3 hard blockers nhanh nhất
+
+ưu tiên đúng 3 nút thắt bạn nêu ban đầu, thứ tự chạy hợp lý là:
+
+1. **BAO predictive (HB‑3)**: vì đây là thứ V4 tự nhận “falsify nhanh” nếu fail rs tự sinh.
+2. **Screening microscopic sign/magnitude (HB‑2)**: vì c4 phải vừa **>0** vừa **đủ lớn** để Cassini + không ghost; V4 có công thức để team tính ngay.
+3. **CC/A7 FRW closure (HB‑1)**: vì phần này hiện là “module dependency”; cần chốt mô hình động (q‑relaxation hay sequestering/4‑form).
+

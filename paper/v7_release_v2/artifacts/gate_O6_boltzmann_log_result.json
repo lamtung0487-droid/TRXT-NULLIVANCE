@@ -1,0 +1,36 @@
+{
+  "evidence_id": "GATE-O6-BOLTZMANN-LOG-STABILITY-V1-2026-03",
+  "script_version": "v1",
+  "date": "2026-03-02",
+  "physical_params": {
+    "m_chi_GeV": 5.71,
+    "g_star": 106.75,
+    "sigma_v_GeV2": 4e-09
+  },
+  "numerical_results": {
+    "x_freeze": 19.614858085794314,
+    "T_freeze_GeV": 0.29110585327840627,
+    "Y_infinity": 2.3350926713372962e-11,
+    "omega_h2": 0.03673345956744057,
+    "omega_h2_target": 0.12,
+    "ratio_vs_target": 0.3061121630620048
+  },
+  "stability": {
+    "naive_Y_space_overflow": true,
+    "log_space_success": true,
+    "cross_check_reldiff": 0.03989073713643476,
+    "log_solver_finite": true
+  },
+  "claims": {
+    "A_no_overflow": true,
+    "B_agrees_naive_x10": true,
+    "C_physical_convergence": true,
+    "overall": true
+  },
+  "references": [
+    "E. Kolb & M. Turner (1990) The Early Universe, Ch.5.2",
+    "G. Gondolo & G. Gelmini (1991) Nucl.Phys.B 360:145",
+    "G. Steigman, B. Dasgupta & J. Beacom (2012) PRD 86:023506"
+  ],
+  "status": "NUMERICALLY STABLE"
+}

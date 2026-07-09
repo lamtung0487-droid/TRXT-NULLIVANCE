@@ -1,0 +1,23 @@
+{
+  "evidence_id": "GATE-G-DE-EOS-2026-03-v2",
+  "date": "2026-03-02",
+  "version": "v2_corrected",
+  "model": "NJL_condensate_quintessence",
+  "note": "v1 was CIRCULAR: w0=-0.984 was input=output. v2 derives w0 from NJL effective potential.",
+  "M_star_GeV": 365.24,
+  "m_sigma_GeV": 2031.3623435781594,
+  "V_0_GeV4": 1.2588521644659378e+41,
+  "phi_0_over_M_Pl": 0.10144157892186206,
+  "eps_V": 9.766707566663342e-89,
+  "w0_derived": -1.0,
+  "w0_previous_circular": -0.984,
+  "Planck_w0_central": -1.028,
+  "Planck_w0_1sigma": 0.032,
+  "tension_sigma": 0.8750000000000008,
+  "in_1sigma": true,
+  "in_2sigma": true,
+  "ghost_free": true,
+  "status": "PASS \u2014 w0 consistent with Planck (CC-like)",
+  "circularity_fixed": true,
+  "runtime_s": 0.0
+}

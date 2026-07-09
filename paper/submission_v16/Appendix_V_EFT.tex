@@ -1,0 +1,55 @@
+\section{Appendix V: Effective Field Theory Interpretation}
+
+This appendix clarifies the domain of validity of the TRXT framework, addressing critiques regarding non-renormalizability of the NJL model at the Planck scale.
+
+\subsection{Statement of EFT Validity}
+
+The Nambu-Jona-Lasinio (NJL) Lagrangian employed in this work is understood as an \textbf{effective field theory (EFT)} valid below a UV cutoff $\Lambda_{UV}$. We explicitly state:
+
+\begin{mdframed}[backgroundcolor=yellow!10]
+\textbf{EFT Validity Statement:} The TRXT framework is defined as an effective theory valid for energies $E < \Lambda_{UV}$, where:
+\begin{equation}
+    \Lambda_{UV} \sim 0.1 \, M_{Pl} \approx 10^{18} \text{ GeV}
+\end{equation}
+Above this scale, the theory requires UV completion (e.g., via Asymptotic Safety, String Theory, or Loop Quantum Gravity).
+\end{mdframed}
+
+\subsection{Power Counting and Operator Classification}
+
+The NJL action with contact four-fermion interaction:
+\begin{equation}
+    S_{NJL} = \int d^4x \left[ \bar{\psi} i \slashed{\partial} \psi + \frac{G}{2} (\bar{\psi}\psi)^2 \right]
+\end{equation}
+has coupling dimension $[G] = -2$ (mass dimension), making it \textbf{power-counting non-renormalizable}. However, within EFT logic:
+
+\begin{enumerate}
+    \item \textbf{Relevant Operators ($[\mathcal{O}] < 4$):} Mass terms $m\bar{\psi}\psi$ — generated dynamically via chiral symmetry breaking.
+    \item \textbf{Marginal Operators ($[\mathcal{O}] = 4$):} Kinetic term $\bar{\psi} i \slashed{\partial} \psi$ — renormalizable.
+    \item \textbf{Irrelevant Operators ($[\mathcal{O}] > 4$):} Four-fermion $G(\bar{\psi}\psi)^2$ — suppressed by $E^2/\Lambda_{UV}^2$ at low energies.
+\end{enumerate}
+
+At energies $E \ll \Lambda_{UV}$, irrelevant operators contribute corrections of order $(E/\Lambda_{UV})^{n-4}$, which are negligible for $n > 4$.
+
+\subsection{Asymptotic Safety Perspective}
+
+An alternative UV completion, consistent with TRXT philosophy, is Weinberg's Asymptotic Safety program \cite{weinberg_as}:
+
+\textbf{Hypothesis:} There exists a non-trivial UV fixed point where:
+\begin{equation}
+    G(\mu) \to G^* \quad \text{as} \quad \mu \to \infty
+\end{equation}
+At the fixed point, the theory is scale-invariant and well-defined to arbitrary energies.
+
+Evidence from functional renormalization group (FRG) studies suggests that gravity + matter systems can exhibit such fixed points \cite{reuter}.
+
+\subsection{Implications for TRXT Predictions}
+
+\begin{enumerate}
+    \item \textbf{Low-Energy Predictions (Valid):} Galaxy rotation curves, SIDM cross-sections, neutrino phenomenology — all lie within EFT regime and are robust.
+    \item \textbf{Planck-Scale Physics (Speculative):} Big Condensation scenario, exact vacuum energy calculation — require UV completion or Asymptotic Safety.
+    \item \textbf{Error Estimate:} For observables at $E \sim 1$ GeV, EFT corrections are $\sim (1/10^{18})^2 \approx 10^{-36}$ — utterly negligible.
+\end{enumerate}
+
+\subsection{Conclusion}
+
+The TRXT framework is self-consistent as an EFT below $\Lambda_{UV} \sim 0.1 M_{Pl}$. Claims about Planck-scale physics (Layers 0–2 in Section 2) are understood as \textit{theoretical motivation}, not rigorous predictions. All falsifiable predictions (SPARC, SIDM, MaVaN) lie well within the EFT validity regime.

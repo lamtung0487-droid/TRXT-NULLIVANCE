@@ -1,0 +1,128 @@
+{
+  "evidence_id": "GATE-O2-FULL-UNIQUENESS-SCAN-V2-2026-03",
+  "script_version": "v2",
+  "date": "2026-03-02",
+  "candidates_tested": 8,
+  "results": {
+    "C\u2297H\u2297O": {
+      "dim": 64,
+      "Cl6_primary_err": 0.0,
+      "Cl6_primary_pass": true,
+      "MLI_found": true,
+      "MLI_rank": 32,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 1,
+      "ghost_err_secondary": 4.0,
+      "no_ghost": true,
+      "score": 5,
+      "verdict": "PASS \u2713 UNIQUE"
+    },
+    "O\u2297O": {
+      "dim": 64,
+      "Cl6_primary_err": 4.0,
+      "Cl6_primary_pass": false,
+      "MLI_found": false,
+      "MLI_rank": 0,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 0,
+      "ghost_err_secondary": 4.0,
+      "no_ghost": true,
+      "score": 3,
+      "verdict": "No Cl(6)"
+    },
+    "H\u2297H\u2297H": {
+      "dim": 64,
+      "Cl6_primary_err": 4.0,
+      "Cl6_primary_pass": false,
+      "MLI_found": true,
+      "MLI_rank": 64,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 0,
+      "ghost_err_secondary": 4.0,
+      "no_ghost": true,
+      "score": 4,
+      "verdict": "No Cl(6)"
+    },
+    "H\u2297O": {
+      "dim": 32,
+      "Cl6_primary_err": 0.0,
+      "Cl6_primary_pass": true,
+      "MLI_found": true,
+      "MLI_rank": 16,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 2,
+      "ghost_err_secondary": 0.0,
+      "no_ghost": false,
+      "score": 3,
+      "verdict": "PARTIAL (dim=32)"
+    },
+    "C\u2297C\u2297O": {
+      "dim": 32,
+      "Cl6_primary_err": 0.0,
+      "Cl6_primary_pass": true,
+      "MLI_found": true,
+      "MLI_rank": 16,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 2,
+      "ghost_err_secondary": 0.0,
+      "no_ghost": false,
+      "score": 3,
+      "verdict": "PARTIAL (dim=32)"
+    },
+    "C\u2297H\u2297H": {
+      "dim": 32,
+      "Cl6_primary_err": 2.0,
+      "Cl6_primary_pass": false,
+      "MLI_found": true,
+      "MLI_rank": 0,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 0,
+      "ghost_err_secondary": 4.0,
+      "no_ghost": true,
+      "score": 3,
+      "verdict": "No Cl(6)"
+    },
+    "C\u2297O": {
+      "dim": 16,
+      "Cl6_primary_err": 0.0,
+      "Cl6_primary_pass": true,
+      "MLI_found": true,
+      "MLI_rank": 8,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 1,
+      "ghost_err_secondary": 4.0,
+      "no_ghost": true,
+      "score": 4,
+      "verdict": "PARTIAL (dim=16)"
+    },
+    "C\u2297H": {
+      "dim": 8,
+      "Cl6_primary_err": 4.0,
+      "Cl6_primary_pass": false,
+      "MLI_found": true,
+      "MLI_rank": 8,
+      "gram_ok": true,
+      "n_valid_Cl6_embeddings": 0,
+      "ghost_err_secondary": null,
+      "no_ghost": true,
+      "score": 3,
+      "verdict": "No Cl(6)"
+    }
+  },
+  "associativity": {
+    "octonion_assoc_norm": 0.0,
+    "quaternion_assoc_norm": 0.0
+  },
+  "conclusion": {
+    "unique_SM_algebra": "C\u2297H\u2297O",
+    "n_perfect_5_5": 1,
+    "C_H_O_score": 5,
+    "uniqueness_proven": true
+  },
+  "references": [
+    "J.C. Baez (2002) Bull.Amer.Math.Soc. 39:145",
+    "C. Furey (2018) arXiv:1805.01540",
+    "R.D. Schafer (1966) Nonassociative Algebras, Theorem 7.3"
+  ],
+  "status": "UNIQUE PASS"
+}

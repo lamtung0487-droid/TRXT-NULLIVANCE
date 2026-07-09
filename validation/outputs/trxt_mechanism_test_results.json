@@ -1,0 +1,99 @@
+[
+  {
+    "mechanism": "1. Temperature EFT",
+    "c_s_at_recomb": 0.5773502691896258,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Temperature EFT",
+      "z": 1000.0,
+      "T_GeV": 2.3504806325e-10,
+      "T_c_GeV": 207.52272727272728,
+      "T_over_Tc": 1.1326376938999014e-12,
+      "condensate_fraction": 1.0,
+      "c_s_sq": 0.33333333333333337,
+      "c_s": 0.5773502691896258
+    }
+  },
+  {
+    "mechanism": "2. Higher-order P(X)",
+    "c_s_at_recomb": 0.9999999999999997,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Higher-order P(X)",
+      "z": 1000.0,
+      "X": 1e-10,
+      "c6": 8.320823512412767e-07,
+      "c_s_sq": 0.9999999999999993,
+      "c_s": 0.9999999999999997
+    }
+  },
+  {
+    "mechanism": "3. Non-minimal coupling",
+    "c_s_at_recomb": 1.0,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Non-minimal coupling",
+      "z": 1000.0,
+      "xi": 0.16666666666666666,
+      "rho0_GeV": 2.253491997418878e-12,
+      "correction_factor": 1.0,
+      "c_s_sq": 1.0,
+      "c_s": 1.0
+    }
+  },
+  {
+    "mechanism": "4. Amplitude mode",
+    "c_s_at_recomb": 1.0,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Amplitude mode",
+      "z": 1000.0,
+      "T_GeV": 2.3504806325e-10,
+      "m_rho_GeV": 365.23999999976496,
+      "delta_cs_sq": -1.1339093900265173e-27,
+      "c_s_sq": 1.0,
+      "c_s": 1.0
+    }
+  },
+  {
+    "mechanism": "5. Vortex contribution",
+    "c_s_at_recomb": 1.0,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Vortex contribution",
+      "z": 1000.0,
+      "H_z_GeV": 2.8846275251176264e-38,
+      "n_v": 2.2782488113750526e-78,
+      "n_critical": 3.2938765466093986e-34,
+      "vortex_ratio": 6.916618698779717e-45,
+      "c_s_sq": 1.0,
+      "c_s": 1.0
+    }
+  },
+  {
+    "mechanism": "6. Running coupling",
+    "c_s_at_recomb": 1.0,
+    "r_s_Mpc": 149.85585696664066,
+    "H0_inferred": 68.66737888062804,
+    "tension_shoes_sigma": 4.20444338401151,
+    "details": {
+      "mechanism": "Running coupling (RG)",
+      "z": 1000.0,
+      "mu_GeV": 2.3504806325e-10,
+      "c2_running": 63521.483421384204,
+      "gamma": 0.1,
+      "c_s_sq": 1.0,
+      "c_s": 1.0
+    }
+  }
+]

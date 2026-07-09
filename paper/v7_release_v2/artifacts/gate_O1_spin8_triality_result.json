@@ -1,0 +1,33 @@
+{
+  "evidence_id": "GATE-O1-SPIN8-TRIALITY-NGEN3-V1-2026-03",
+  "script_version": "v1",
+  "date": "2026-03-02",
+  "mathematical_framework": {
+    "key_group": "Spin(8) with D4 Dynkin diagram",
+    "triality": "Z3 outer automorphism: 8_v <-> 8_s <-> 8_c (cyclic)",
+    "uniqueness": "Only D4 among all D_n has THREE equal-dim fundamental reps",
+    "consequence": "N_gen=3 algebraically forced, not tunable"
+  },
+  "claims": {
+    "A_octonion_Clifford": true,
+    "B_so8_algebra": true,
+    "C_8v_neq_8s": true,
+    "D_8s_neq_8c": true,
+    "E_only_3_eight_dim": true,
+    "overall": true
+  },
+  "roadmap_assessment": {
+    "O1_direction": "VALID (Spin(8) triality argument is correct)",
+    "O1_correction": "Bott periodicity via pi_k(S^3) is incorrect; correct path is D4 Weyl group",
+    "O1_status": "ALGEBRAICALLY DEMONSTRATED",
+    "remaining_gap": "Link between TRXT vacuum and Spin(8) symmetry selection"
+  },
+  "references": [
+    "E. Cartan (1925) Bull.Sci.Math. 49:361 [triality origin]",
+    "J.F. Adams (1996) Lectures on Exceptional Lie Groups, Ch.3",
+    "J.C. Baez (2002) Bull.AMS 39:145 [octonions and Spin(8)]",
+    "N. Furey (2018) arXiv:1910.08395",
+    "G.M. Dixon (1994) Division Algebras, Kluwer"
+  ],
+  "status": "ALGEBRAICALLY DEMONSTRATED"
+}

@@ -1,0 +1,10 @@
+{
+  "rho_vac_final_GeV4": 17795628727.735096,
+  "rho_vac_max_GeV4": 17795628727.74636,
+  "q_final": 0.00563208857745553,
+  "q_eq": 17795628727.74636,
+  "no_runaway": "True",
+  "attractor_reached": "False",
+  "cosmological_ok": "False",
+  "overall_pass": "False"
+}

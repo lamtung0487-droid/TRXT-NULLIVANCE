@@ -1,0 +1,81 @@
+\section{Appendix W: TRXT Nullivance Parameter Dictionary (Audit V5.4)}
+\label{app:dictionary}
+
+The model is governed by the following strict set of parameters.  We distinguish clearly between \textbf{inputs} (experimentally measured constants), \textbf{derived} quantities (determined by the theoretical chain with no free tuning), and \textbf{fit} parameters (adjusted to match observations).
+
+\subsection{Parameter Classification and Derivation Status}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llccl}
+\toprule
+\textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Value} & \textbf{Status} & \textbf{Derivation Source} \\
+\midrule
+\multicolumn{5}{l}{\textit{Tier 0: Fundamental inputs (measured, not derived)}} \\
+$G$ & Newton Constant & $6.674 \times 10^{-11}$ & Input & Cavendish experiment \\
+$\alpha$ & Fine Structure Constant & $1/137.036$ & Input & QED measurement \\
+$m_\tau$ & Tau Lepton Mass & $1776.86$ MeV & Input* & PDG 2024 \\
+\midrule
+\multicolumn{5}{l}{\textit{Tier 1: Derived from Tier 0 (no free parameters)}} \\
+$M_{\mathrm{Pl}}$ & Planck Mass & $1.22 \times 10^{19}$ GeV & Derived & $\sqrt{\hbar c / G}$ \\
+$M^*$ & Condensate Scale & $365.24 \pm 0.02$ GeV & \textbf{Derived} & $m_\tau \times 3/(2\alpha)$ \\
+$\xi$ & Non-minimal Coupling & $\approx 1/6$ & Derived & Conformal invariance \\
+\midrule
+\multicolumn{5}{l}{\textit{Tier 2: Fit or constrained parameters}} \\
+$n$ & Polytropic Index & $1.37 \pm 0.1$ & Best Fit & DM halo profile matching \\
+$\Lambda$ & Cosmological Constant & $10^{-52} \text{ m}^{-2}$ & Constrained & NJL condensate (see C4) \\
+$c_s$ & Sound Speed (Core) & $< 10^{-3}$ & Constraint & EOS stability \\
+$\omega^2$ & Stability Eigenvalue & $\ge 0$ & Verified & Ghost-free check \\
+\bottomrule
+\end{tabular}
+\caption{Unified Parameter Dictionary V5.4.  *See Section~W.2 for the circularity analysis of $m_\tau$ vs $M^*$.}
+\label{tab:params}
+\end{table}
+
+\subsection{W.1: Error Budget Analysis}
+\label{sec:error_budget}
+We propagate the experimental uncertainties of input parameters to derive the precision of $M^*$.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l c c}
+\toprule
+\textbf{Input Parameter} & \textbf{Value (PDG 2024)} & \textbf{Relative Error} \\
+\midrule
+$\alpha^{-1}$ & $137.035999084(21)$ & $1.5 \times 10^{-10}$ \\
+$m_\tau$ & $1776.86 \pm 0.12$ MeV & $6.7 \times 10^{-5}$ \\
+\midrule
+\textbf{Derived Quantity} & \textbf{Result} & \textbf{Propagated Error} \\
+\midrule
+$M^*$ & $365.24$ GeV & $\pm 25$ MeV \\
+\bottomrule
+\end{tabular}
+\caption{Error Budget. The precision is dominated by the tau mass measurement.}
+\end{table}
+
+\subsection{W.2: Circularity Analysis --- $M^*$ vs $m_\tau$}
+\label{sec:circularity}
+
+\textbf{Honest assessment of the input/output chain:}
+
+The relation $M^* = m_\tau \times 3/(2\alpha)$ uses the measured tau mass as input.  The paper's BCS gap equation chain:
+\begin{equation}
+    \alpha \;\to\; X = \frac{3}{2\alpha} \;\to\; q = 6 \text{ (Abrikosov)} \;\to\; k_F = \frac{5}{6} \;\to\; \eta \;\to\; t \;\to\; C = 5.339 \;\to\; M^*
+\end{equation}
+requires the Fermi velocity $v_F$ to close; the value $v_F = 1/5$ reproduces $M^* = 365.24$~GeV but is not yet derived from first principles.
+
+\textbf{What IS derivable:}
+\begin{itemize}
+    \item $k_F = 5/6$ from Abrikosov vortex lattice energy minimization ($C_6$ symmetry, $q=6$). \textbf{Not a fit.}
+    \item $g = 4$ from Dirac band structure degeneracy (spin $\times$ valley). \textbf{Not a fit.}
+    \item $N_f = 16$ from $\mathrm{Cl}(6)$ minimal left ideal dimension. \textbf{Not a fit.}
+    \item $\Lambda_{\mathrm{UV}}$ from induced gravity heat kernel. \textbf{Not a fit.}
+\end{itemize}
+
+\textbf{What is NOT yet derivable:}
+\begin{itemize}
+    \item $v_F = 1/5$: the Fermi velocity in the tight-binding model.  The BCS self-consistency equation determines $v_F$ \emph{given} $M^*$, but the reverse direction (predicting $M^*$ from $v_F$) requires a microscopic lattice computation not yet performed.
+\end{itemize}
+
+\textbf{Current honest status:} The TRXT framework is a \textbf{one-parameter theory} with input $m_\tau$ (equivalently $M^*$). Given this single input, it predicts the W, Z, and Higgs masses to $< 0.2\%$ accuracy.  The BCS chain provides a plausible \emph{route} to eliminating this last input, contingent on deriving $v_F$ from the underlying lattice model.  Until $v_F$ is independently derived, $m_\tau$ should be classified as an \textbf{input}, not ``Derived (V1)''.

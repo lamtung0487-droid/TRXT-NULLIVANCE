@@ -1,0 +1,105 @@
+# PRE-REGISTERED ANALYSIS PROTOCOL
+# ================================
+# This file is committed BEFORE running validation.
+# Any deviation from this protocol must be documented as "exploratory".
+# DO NOT MODIFY after initial commit unless creating a new version.
+
+version: "1.0"
+date_registered: "2026-01-13"
+commit_hash_at_registration: "<TO_BE_FILLED_AT_COMMIT>"
+
+# =============================================================================
+# HYPOTHESIS
+# =============================================================================
+hypothesis:
+  primary: "Lane-Emden profile with n ≈ 1.37 fits SPARC rotation curves better than NFW"
+  null: "NFW profile (ΛCDM standard)"
+  alternative: "Any other dark matter profile"
+
+# =============================================================================
+# DATA SPLIT (STRICT 60/20/20)
+# =============================================================================
+data_split:
+  method: "stratified_random"
+  seed: 42
+  train: 0.60      # 105 galaxies - used for fitting n parameter
+  validation: 0.20 # 35 galaxies - used for hyperparameter tuning (if any)
+  test: 0.20       # 35 galaxies - BLINDED until final analysis
+  
+  stratify_by: "morphology"  # Ensure balanced distribution of galaxy types
+  
+  # Test set is SEALED - cannot be accessed until final publication
+  test_sealed: true
+  seal_mechanism: "hash-based random selection with fixed seed"
+
+# =============================================================================
+# CROSS-VALIDATION
+# =============================================================================
+cross_validation:
+  method: "k-fold"
+  k: 5
+  stratify_by: "morphology"
+  shuffle: true
+  shuffle_seed: 42
+
+# =============================================================================
+# SUCCESS CRITERIA (defined BEFORE seeing data)
+# =============================================================================
+success_criteria:
+  # Primary metric: reduced chi-squared
+  chi2_threshold: 5.0  # Must be below this for "good fit"
+  
+  # Model comparison: must beat null model
+  min_improvement_over_null: 0.10  # 10% better χ² than NFW
+  
+  # Generalization: holdout should not degrade too much
+  holdout_degradation_max: 0.20  # Test χ² can be at most 20% worse than CV mean
+  
+  # Parameter uncertainty: n must be well-determined
+  max_n_uncertainty: 0.15  # Bootstrap std of n must be < 0.15
+
+# =============================================================================
+# STOPPING RULES (pre-specified conditions to HALT analysis)
+# =============================================================================
+stopping_rules:
+  - condition: "CV χ² > 10"
+    action: "STOP and report NEGATIVE result"
+    
+  - condition: "Bootstrap n uncertainty > 0.3"
+    action: "STOP and report INCONCLUSIVE"
+    
+  - condition: "More than 20% of galaxies fail to converge"
+    action: "STOP and investigate solver issues"
+
+# =============================================================================
+# SENSITIVITY ANALYSES (mandatory robustness checks)
+# =============================================================================
+sensitivity_analyses:
+  - name: "seed_variation"
+    description: "Run with 5 different random seeds and report variance"
+    
+  - name: "distance_uncertainty"
+    description: "Propagate SPARC distance errors through fit"
+    
+  - name: "inclination_variation"
+    description: "Test sensitivity to galaxy inclination assumptions"
+
+# =============================================================================
+# EXPLORATORY ANALYSES
+# =============================================================================
+exploratory_analyses:
+  allowed_after_primary: true
+  must_label_as_exploratory: true
+  examples:
+    - "Fit per-galaxy n values instead of global n"
+    - "Test alternative profile shapes"
+    - "Investigate outlier galaxies"
+
+# =============================================================================
+# REPORTING REQUIREMENTS
+# =============================================================================
+reporting:
+  must_report_negative_results: true
+  must_report_all_stopping_conditions_triggered: true
+  must_include_full_parameter_distributions: true
+  must_publish_code_and_data_manifest: true

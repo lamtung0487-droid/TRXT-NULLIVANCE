@@ -1,0 +1,81 @@
+{
+  "source": "Lelli, McGaugh, Schombert (2016), AJ 152, 157",
+  "doi": "10.3847/0004-6256/152/6/157",
+  "n_galaxies": 175,
+  "properties": {
+    "V_flat_range": [
+      20,
+      300
+    ],
+    "L_3.6_range": [
+      10000000.0,
+      1000000000000.0
+    ],
+    "R_eff_range": [
+      0.5,
+      30
+    ]
+  },
+  "sample_galaxies": [
+    {
+      "name": "NGC2403",
+      "D_Mpc": 3.2,
+      "V_flat": 134,
+      "R_last": 21.8
+    },
+    {
+      "name": "NGC3198",
+      "D_Mpc": 13.8,
+      "V_flat": 150,
+      "R_last": 38.6
+    },
+    {
+      "name": "NGC6946",
+      "D_Mpc": 5.9,
+      "V_flat": 186,
+      "R_last": 22.4
+    },
+    {
+      "name": "DDO154",
+      "D_Mpc": 3.7,
+      "V_flat": 47,
+      "R_last": 8.1
+    },
+    {
+      "name": "NGC2976",
+      "D_Mpc": 3.6,
+      "V_flat": 85,
+      "R_last": 2.5
+    },
+    {
+      "name": "NGC925",
+      "D_Mpc": 9.2,
+      "V_flat": 117,
+      "R_last": 12.2
+    },
+    {
+      "name": "NGC7793",
+      "D_Mpc": 3.9,
+      "V_flat": 118,
+      "R_last": 9.5
+    },
+    {
+      "name": "NGC5055",
+      "D_Mpc": 10.1,
+      "V_flat": 192,
+      "R_last": 47.1
+    },
+    {
+      "name": "UGC128",
+      "D_Mpc": 64.5,
+      "V_flat": 131,
+      "R_last": 54.3
+    },
+    {
+      "name": "F563-1",
+      "D_Mpc": 46.8,
+      "V_flat": 113,
+      "R_last": 16.8
+    }
+  ]
+}

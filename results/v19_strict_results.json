@@ -1,0 +1,27 @@
+{
+  "condensate": {
+    "N_f": 24,
+    "G_crit": 1.1035586567726197e-38,
+    "M_gap": 0.0,
+    "c_s": 0.5773502691896257,
+    "passed": false
+  },
+  "G1": {
+    "name": "Bullet Cluster",
+    "sigma_m_bullet": 1.617629279525187e-10,
+    "constraint": 1.0,
+    "passed": true
+  },
+  "G3": {
+    "name": "SPARC Rotation",
+    "n_index": 1.37,
+    "flatness": 0.03673239345438373,
+    "passed": true
+  },
+  "G4": {
+    "name": "Solar System",
+    "r_V_pc": 35039.41138687219,
+    "gamma_deviation": 1.819548852079715e-14,
+    "passed": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "n_galaxies": 175,
+  "n_fitted": 175,
+  "n_pass": 160,
+  "n_fail": 15,
+  "pass_rate_pct": 91.42857142857143,
+  "median_chi2_red": 0.5440493768375751,
+  "mean_chi2_red": 1.5235944986553795,
+  "polytropic_n": 1.37,
+  "data_source": "SPARC (Lelli et al. 2016)",
+  "threshold_chi2": 5.0
+}

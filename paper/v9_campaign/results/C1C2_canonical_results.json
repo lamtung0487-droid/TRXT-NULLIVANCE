@@ -1,0 +1,27 @@
+{
+  "G2": {
+    "name": "G2",
+    "dim": 14,
+    "valid": true,
+    "antisym_error": 1.626129545806658e-15,
+    "closure_error": 7.963399492617177e-16,
+    "jacobi_error": 1.1211328069379637e-16
+  },
+  "SU3": {
+    "name": "SU(3)",
+    "dim": 8,
+    "valid": true,
+    "antisym_error": 1.349561349928395e-15,
+    "closure_error": 8.123645131040291e-16,
+    "jacobi_error": 1.4254582852426746e-16
+  },
+  "SU2": {
+    "name": "SU(2)",
+    "dim": 3,
+    "valid": true,
+    "antisym_error": 1.0574928946373344e-15,
+    "closure_error": 1.0390782745325078e-15,
+    "jacobi_error": 1.4865922551454382e-16
+  },
+  "Method": "Canonical Stabilizer Extraction (No Matrices Hardcoded)"
+}

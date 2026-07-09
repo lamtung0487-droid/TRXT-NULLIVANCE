@@ -1,0 +1,21 @@
+{
+  "source": "Clowe et al. (2006), ApJ 648, L109",
+  "additional": "Markevitch et al. (2004), ApJ 606, 819",
+  "observations": {
+    "redshift": 0.296,
+    "velocity_km_s": 4700,
+    "velocity_error": 900,
+    "mass_ratio": 0.15,
+    "separation_arcsec": 150,
+    "separation_kpc": 720,
+    "sigma_m_constraint": {
+      "value": 1.0,
+      "confidence": 0.68
+    },
+    "lensing_offset": {
+      "description": "Mass centroid offset from X-ray peak",
+      "main_cluster_arcsec": 25,
+      "subcluster_arcsec": 35
+    }
+  }
+}

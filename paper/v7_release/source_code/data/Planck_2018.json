@@ -1,0 +1,96 @@
+{
+    "_metadata": {
+        "source": "Planck Collaboration (2020)",
+        "paper": "Planck 2018 results. VI. Cosmological parameters",
+        "arxiv": "1807.06209",
+        "journal": "Astronomy & Astrophysics, 641, A6",
+        "doi": "10.1051/0004-6361/201833910",
+        "access_date": "2026-01-05"
+    },
+    "cosmological_parameters": {
+        "TT_TE_EE_lowE_lensing": {
+            "note": "Best-fit parameters from TT,TE,EE+lowE+lensing",
+            "H0": {
+                "value": 67.36,
+                "error": 0.54,
+                "unit": "km/s/Mpc"
+            },
+            "Omega_b_h2": {
+                "value": 0.02237,
+                "error": 0.00015,
+                "note": "Baryon density"
+            },
+            "Omega_c_h2": {
+                "value": 0.1200,
+                "error": 0.0012,
+                "note": "Cold dark matter density"
+            },
+            "Omega_m": {
+                "value": 0.3153,
+                "error": 0.0073,
+                "note": "Total matter density"
+            },
+            "Omega_Lambda": {
+                "value": 0.6847,
+                "error": 0.0073,
+                "note": "Dark energy density"
+            },
+            "sigma_8": {
+                "value": 0.8111,
+                "error": 0.0060,
+                "note": "RMS matter fluctuations in 8 Mpc/h spheres"
+            },
+            "S_8": {
+                "value": 0.832,
+                "error": 0.013,
+                "note": "sigma_8 * sqrt(Omega_m/0.3)"
+            },
+            "n_s": {
+                "value": 0.9649,
+                "error": 0.0042,
+                "note": "Scalar spectral index"
+            },
+            "tau": {
+                "value": 0.0544,
+                "error": 0.0073,
+                "note": "Optical depth to reionization"
+            },
+            "z_reion": {
+                "value": 7.67,
+                "error": 0.73,
+                "note": "Redshift of reionization"
+            },
+            "Age_Gyr": {
+                "value": 13.797,
+                "error": 0.023,
+                "unit": "Gyr",
+                "note": "Age of the Universe"
+            },
+            "r_drag": {
+                "value": 147.09,
+                "error": 0.26,
+                "unit": "Mpc",
+                "note": "Sound horizon at drag epoch"
+            }
+        }
+    },
+    "tensions": {
+        "H0_tension": {
+            "Planck_value": 67.36,
+            "Planck_error": 0.54,
+            "SH0ES_value": 73.04,
+            "SH0ES_error": 1.04,
+            "SH0ES_source": "Riess et al. (2022), ApJL 934, L7",
+            "tension_sigma": 4.9,
+            "note": "The Hubble Tension remains unresolved"
+        },
+        "S8_tension": {
+            "Planck_value": 0.832,
+            "Planck_error": 0.013,
+            "DES_Y3_value": 0.776,
+            "DES_Y3_error": 0.017,
+            "tension_sigma": 2.5,
+            "note": "Mild tension with weak lensing surveys"
+        }
+    }
+}

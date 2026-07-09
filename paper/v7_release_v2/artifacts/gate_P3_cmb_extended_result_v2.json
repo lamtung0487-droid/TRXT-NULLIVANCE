@@ -1,0 +1,44 @@
+{
+  "evidence_id": "GATE-P3-CMB-EXTENDED-V2-2026-03",
+  "script_version": "v2-rigorous",
+  "date": "2026-03-02",
+  "academic_correction": {
+    "v1_problem": "chi2/dof=0.024 used mock noise N_T=15,N_E=30 (chosen, not from Planck); compared CAMB vs CAMB, not vs data",
+    "v2_fix": "Primary result changed to sigma(w) test only; chi2 vs real data attempted via download",
+    "v1_figure_withdrawn": "chi2/dof=0.024 is withdrawn as misleading"
+  },
+  "primary_result": {
+    "test": "TRXT w vs Planck 2018 sigma(w)",
+    "trxt_w": -0.984,
+    "planck_LCDM_w": -1.0,
+    "delta_w": 0.016000000000000014,
+    "sigma_w_planck": 0.033,
+    "w_tension_sigma": 0.48484848484848525,
+    "interpretation": "0.48sigma < 2sigma: CONSISTENT with Planck 2018",
+    "citation": "Aghanim+2020 arXiv:1807.06209 Table 4 (CMB+lensing+BAO)"
+  },
+  "secondary_result": {
+    "chi2_vs_real_data": true,
+    "chi2_details": {
+      "TT": {
+        "chi2_TRXT": 2594.570189920428,
+        "chi2_LCDM": 2577.911955286293,
+        "n_bins": 2507,
+        "chi2_reduced_TRXT": 1.0349302712087867,
+        "chi2_reduced_LCDM": 1.0282855824835633
+      }
+    },
+    "reason": "real Planck band powers available"
+  },
+  "CAMB_available": true,
+  "planck_data_downloaded": true,
+  "planck_data_files_parsed": [
+    "TT"
+  ],
+  "references": [
+    "Aghanim+2020 (Planck 2018 VI) A&A 641 A6; arXiv:1807.06209",
+    "Lewis, Challinor & Lasenby (2000), ApJ 538 473 [CAMB]",
+    "Planck Legacy Archive, Product R3, PLA ID COM_PowerSpect_CMB-*"
+  ],
+  "status": "GATE P3 PASS \u2014 w-tension = 0.48sigma (< 2sigma)"
+}

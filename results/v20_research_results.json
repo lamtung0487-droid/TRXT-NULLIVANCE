@@ -1,0 +1,21 @@
+{
+  "njl": {
+    "M_gap": 9.508300880440476e+18,
+    "M_Pl": 6.888134206576202e+18,
+    "passed": true
+  },
+  "pk": {
+    "sigma8_ratio": 0.9998540339743471,
+    "S8_sf": 0.8318785562666567,
+    "helps_tension": true
+  },
+  "sparc": {
+    "n_index": 1.37,
+    "mean_chi2": 0.9497607278287499,
+    "passed": true
+  },
+  "experiments": {
+    "total_pairs": 9,
+    "discoverable": 1
+  }
+}

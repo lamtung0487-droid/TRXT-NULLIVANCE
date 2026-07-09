@@ -1,0 +1,32 @@
+{
+  "I3_eigenvalues": "[-0.5i, 0.5i] repeated",
+  "Color_structure": "1 (Singlet) + 3 (Triplet)",
+  "Combos": [
+    {
+      "type": "Lepton Doublet",
+      "count": 2,
+      "color": 1,
+      "I3": "+/- 0.5"
+    },
+    {
+      "type": "Quark Doublet",
+      "count": 6,
+      "color": 3,
+      "I3": "+/- 0.5"
+    },
+    {
+      "type": "Lepton Singlet",
+      "count": 2,
+      "color": 1,
+      "I3": "0"
+    },
+    {
+      "type": "Quark Singlet",
+      "count": 6,
+      "color": 3,
+      "I3": "0"
+    }
+  ],
+  "Total_States": 16,
+  "Derivation_Method": "Tensor product of representations: 2_H (x) (1_O + 3_O)"
+}

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-02-25 09:55:15",
+  "phase": "R5: Quantitative Baryogenesis",
+  "parameters": {
+    "v0": 246.0,
+    "lambda": 0.12961499851279001,
+    "M_Higgs": 125.25,
+    "M_top": 172.69
+  },
+  "planck_eta": 6.14e-10,
+  "benchmark": null,
+  "sakharov_conditions": {
+    "B_violation": "Sphalerons (confirmed)",
+    "CP_violation": "NJL condensate phase \u03b4_CP (free parameter)",
+    "departure_equilibrium": "1st-order PT (requires non-SM or TRXT condensation)"
+  },
+  "protocol": "Master Protocol V2.0",
+  "references": [
+    "Morrissey & Ramsey-Musolf (2012) Rev.Mod.Phys. 84, 65",
+    "Planck 2018: arXiv:1807.06209",
+    "Rubakov & Shaposhnikov (1996) Phys.Usp. 39, 461",
+    "Anderson & Hall (1992) PRD 45, 2685",
+    "Kajantie et al. (1996) PRL 77, 2887"
+  ]
+}

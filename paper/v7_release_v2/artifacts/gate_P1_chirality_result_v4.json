@@ -1,0 +1,31 @@
+{
+  "evidence_id": "GATE-P1-CHIRALITY-ANALYTIC-V4-2026-03",
+  "script_version": "v4-final-rigorous",
+  "date": "2026-03-02",
+  "academic_resolution": {
+    "v1_bug": "T3_L4=diag[+\u00bd,-\u00bd,+\u00bd,-\u00bd] was hardcoded",
+    "v4_fix": "T_k derived from Witt basis a_i\u2020a_j; J_k=P_L\u00b7T_k\u00b7P_L from T_k+omega",
+    "key_insight": "Full T3=(N1-N2)/2 is NOT zero on S_R; PROJECTION J_k=P_L\u00b7T_k\u00b7P_L is the physical SU(2)_L",
+    "non_trivial_result": "C2_L=3/4 proves S_L carries j=1/2 doublets (not j=3/2 or singlets)"
+  },
+  "claims": {
+    "A_Clifford": true,
+    "B_omega_sign": true,
+    "C_grade_thm": true,
+    "D_SU2_Witt": true,
+    "E_chiral_proj": true,
+    "F_color_perp": true,
+    "G_C2_complex": true,
+    "H_C2_real32": true,
+    "overall": true
+  },
+  "C2_L_value": 0.75,
+  "C2_R_value": 0.0,
+  "references": [
+    "Furey (2018) arXiv:1910.08395",
+    "G\u00fcnaydin & G\u00fcrsey (1973) J.Math.Phys.14:1651",
+    "Lounesto (2001) Clifford Algebras and Spinors",
+    "Atiyah-Bott-Shapiro (1964) Topology 3:3-38"
+  ],
+  "status": "ANALYTICALLY VERIFIED"
+}
