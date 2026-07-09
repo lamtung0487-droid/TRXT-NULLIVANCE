@@ -28,3 +28,14 @@ Object: `theory/derivation_ecore_tension_20260709.md`
 The incompatibility theorem (Eq. 6) is mathematically sound and may be cited in manuscripts, subject to the standing conditions of the 2026-07-09 audits (the mass law itself remains hypothesis-grade; this note shows it is now *internally inconsistent* with the framework's stability and dark-energy claims absent GAP-1/GAP-2 closure).
 
 Per RESEARCH_WORKFLOW, the theorist now owes the PI a decision memo: which two of the three pillars to keep.
+
+## Addendum (same day) — re-audit after PI correction on dark energy
+
+The PI correctly pointed out that dark energy in the framework is **not** the condensate tension but the relaxation/potential energy of the condensate at its NJL minimum (report §7.3: m_σ ≫ H₀ ⟹ w₀ = −1; Λ value via Kaloper–Padilla). Verified against the report text: §7.3 confirms; the abstract's "condensate tension" wording is the report's own loose phrasing.
+
+Re-audit of the corrected note:
+- **Corollary (b) retraction: CORRECT.** The dark-energy sector places no constraint on the phase stiffness K; the original corollary is withdrawn cleanly and the erratum is transparent.
+- **Main theorem (Eq. 6): UNAFFECTED.** It never used the dark-energy sector; the scan over σ₀ was exhaustive. The dilemma sharpens from ternary to **binary**: pure inverse mass law XOR stable vacuum.
+- **New corollary (b′): SOUND as a qualitative argument, GAP-4 correctly assigned.** That the acoustic metric requires finite phase stiffness is standard (Unruh/Volovik); the quantitative induced-G ↔ K relation remains open and is properly labelled.
+
+**Verdict after addendum: SIGNED-OFF (unchanged).** The correction improves the note's fidelity to the framework without weakening the result.

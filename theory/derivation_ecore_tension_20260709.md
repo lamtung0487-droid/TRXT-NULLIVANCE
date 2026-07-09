@@ -69,7 +69,8 @@ Numerical minimization over k (verified this session, `results/logs/` session re
 
 Corollaries:
 - **(a)** The framework's *natural* stiffness K ~ M\* gives σ₀ = 4π²M\* ≈ 14.4 TeV: vacuum stable, spectrum destroyed by 9 orders (W core term ≈ 3.6 TeV).
-- **(b)** The framework's *dark-energy identification* ("dark energy = condensate tension") ties the tension to the observed Λ scale — i.e. σ₀ astronomically small → **the framework's own dark-energy story selects the unstable branch.** One cannot simultaneously claim "dark energy is the (tiny) condensate tension" and "solitons of that condensate have negligible core energy yet a stable vacuum."
+- **(b) [CORRECTED 2026-07-09, PI correction]** ~~Original corollary tied σ₀ to the observed Λ via "dark energy = condensate tension" (abstract wording).~~ **Retracted:** per report §7.3, dark energy is the *potential energy of the condensate field settled at the minimum of V_NJL* (m_σ ≫ H₀ ⟹ w₀ = −1), with the Λ *value* set by Kaloper–Padilla sequestering (§9.12 item 1) — it does **not** constrain the phase stiffness K. The abstract's "condensate tension" phrasing is loose terminology within the report itself. Consequently σ₀ is a free scale of the framework and the theorem sharpens from "choose 2 of 3" to a **binary dilemma** (see below).
+- **(b′) NEW — emergent gravity pins K away from zero.** The stiffness K cannot be dialed small to satisfy Requirement F: the same Ξ|∇θ|² sector *is* the acoustic-metric substrate (report §3.1.2: the metric is "woven" from Ξ and ∇θ; induced gravity requires finite phase stiffness). A framework with σ₀ < 10⁻⁵ GeV has a condensate too floppy to carry the emergent geometry it claims. Quantifying the induced-G ↔ K relation is GAP-4 (assigned to the standing induced-gravity gap of the 2026-07-09 framework audit, Item 1).
 - **(c)** ERROR-1 of `derivation_pq_selection_20260709.md` is therefore not an artifact of ignoring tension — including the framework's own tension sector *quantifies* it and shows no parameter value resolves it.
 
 ### 3.4 Enumerated escape routes (all currently GAPs, none in the report)
@@ -103,4 +104,4 @@ Corollaries:
 
 ## Verdict requested
 
-Submitted to the **mathematician** for audit. Honest headline for the PI: **the mass law m = M\*(1/p+1/q), the vacuum's stability, and the dark-energy-as-tension identification cannot all hold simultaneously — pick at most two.** The framework as written picks all three; that is now a theorem-level inconsistency, not a numerical tension.
+Submitted to the **mathematician** for audit. Honest headline for the PI (post-correction): **the dilemma is binary — the pure mass law m = M\*(1/p+1/q) and a stable vacuum cannot coexist for any value of the condensate stiffness** (Eq. 6). Dark energy is not implicated (corollary b retracted; the relaxation mechanism of §7.3 is untouched by this note). Emergent gravity, if anything, pushes σ₀ large (corollary b′), i.e. toward the branch where the current mass table dies and assignments must be re-derived from M(p,q) = σ₀·pq + M\*(1/p + 1/q).
