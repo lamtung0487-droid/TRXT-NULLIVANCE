@@ -8,6 +8,7 @@ This repository is operated as a virtual research laboratory. All work — human
 
 | Path | Contents |
 |---|---|
+| `theory/RESEARCH_ATLAS.md` | **Master knowledge base** — full map of the 191-page report (mechanisms, equations, page index, inconsistency registry). **Consult this FIRST before re-reading the report or specs** |
 | `theory/specs/` | Model specifications, system of equations, whitepaper, version notes (latest spec: `theory/specs/v17/TRXT_V17_Master_Spec.md`) |
 | `theory/protocols/` | Research laws, derivation checklist, workflow (`RESEARCH_WORKFLOW.md`) |
 | `theory/reviews/` | Peer-review and audit reports |
