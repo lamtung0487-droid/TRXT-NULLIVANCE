@@ -66,7 +66,7 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 
 **Phase-1 closure (2026-08-13):** ~~GAP-N3~~ **CLOSED** (, SIGNED-OFF): Sutcliffe normalization extracted at source (arXiv:0705.1468 Eq. 2.1); c-hat = 1.21 +/- 0.05; exact unit conversion gives **M(p,q) = 3.95 N_f M_stage sqrt(ln) (pq)^(3/4)** — sanity: soliton mass ~ N_f x constituent mass (Skyrme-baryon pattern, unfitted). ~~F2 residual~~ **CLOSED**: tau_c invariant under dt/L (four identical columns); ln tau_c = 1.14 rho. Layer-0 principle: all referee conditions discharged.
 
-**GAP-N4 + the assignment question, DECIDED (2026-08-13,** **, SIGNED-OFF):**
+**GAP-N4 + the assignment question, DECIDED (2026-08-13, `derivation_stage_gaps_20260813.md`, SIGNED-OFF):**
 - S2-stage anchored on the framework's own M* = 365.24 GeV (condition chain inherited, GAP-N4c) => **absolute tower M(pq) = (184-201 TeV)(pq)^(3/4)**
 - **Pre-registered structural exclusion: the SM bosons are NOT tower states** — completeness rule (every integer pq' < a is an occupied stable level) forces either >= 6-700 sigma ratio failures or 30-180 unobserved stable states below m_W; the 0.2-sigma pocket at a=180 displayed and rejected as the look-elsewhere exhibit
 - Reframe: **SM masses = dynamical sector** (amplitude mode + Seifert-exponential — where the framework's real numerics live); **topological tower = new-physics prediction at ~200 TeV** (stable, surviving-U(1)-charged, unitarity-regime; the report's own Great-Condensation production story transfers naturally)
