@@ -545,10 +545,10 @@ We explicitly distinguish two levels of validation:
         \begin{equation}
             c_s^2 = \frac{1}{2n-1} = \frac{1}{2(2.53)-1} \approx 0.246
         \end{equation}
-        Assuming this modifies the early expansion, it yields a reduced sound horizon $r_s \approx 140.5$ Mpc. This infers $H_0 \approx 70.6$ km/s/Mpc, which bridges the gap between Planck ($67.4$) and SH0ES ($73.04$).
+        Assuming this modifies the early expansion, it yields a reduced sound horizon $r_s \approx 141$ Mpc. Propagated self-consistently through the angular-scale inference of the next subsection, this gives $H_0 \approx 68.7$ km/s/Mpc, moving from Planck ($67.4$) toward SH0ES ($73.04$). (Earlier drafts quoted $70.6$; see the 2026 audit note below.)
         \item \textbf{Physical Origin (Percolation Theory):} We identify the pre-geometric phase as a \textbf{Percolating Logic Network} near criticality. Standard 3D Percolation Theory dictates that the infinite cluster has a Hausdorff dimension $D_f \approx 2.53$ (Kapitulnik et al., 1983). This provides a \textbf{first-principles derivation} for the $X^{2.5}$ term, eliminating the need for ad-hoc parameter tuning.
     \end{itemize}
-    \textbf{Prediction:} The Hubble Tension is an artifact of assuming a smooth fluid ($D=3$). The vacuum is a critical percolation cluster ($D \approx 2.53$), which \textit{reduces} the tension from $4\sigma$ to $\sim 1.5\sigma$.
+    \textbf{Prediction:} The Hubble Tension is an artifact of assuming a smooth fluid ($D=3$). The vacuum is a critical percolation cluster ($D \approx 2.53$), which \textit{reduces} the tension from ${\sim}4\sigma$ to ${\sim}3\sigma$ (2026 recomputation; audit note below).
 
     \textbf{Regime Clarification:} The formula $c_s^2 = 1/(2n-1)$ applies to the \textbf{pure power-law} regime $P(X) \propto X^n$ valid in the early universe (high-density, pre-geometric fractal phase). The late-universe EFT expansion $P(X) = c_2 X + c_4 X^2$ and its corresponding formula $c_s^2 = (c_2 + 2c_4 X)/(c_2 + 6c_4 X)$ (Section 6.4) describes the \textbf{low-density galactic/cosmological regime}. The two are connected: at high $X$ (early universe), higher-order terms dominate and the Lagrangian approaches a power-law; at low $X$ (late universe), only the leading terms $c_2 X + c_4 X^2$ survive.
 \end{enumerate}
@@ -556,7 +556,7 @@ We explicitly distinguish two levels of validation:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{figures/fig_3_1_fractal_sound_speed.png}
-    \caption{Derivation of the Fractal Sound Speed $c_s^2$. The intersection at $n=2.5$ yields $c_s^2=0.25$, precisely matching the value required to resolve the Hubble Tension ($H_0 \approx 73$).}
+    \caption{Derivation of the Fractal Sound Speed $c_s^2$. The intersection at $n=2.5$ yields $c_s^2=0.25$; the resulting shift of the inferred $H_0$ is quantified in the following subsection.}
     \label{fig:fractal_sound_speed}
 \end{figure}
 
@@ -565,7 +565,7 @@ This result offers a precise, falsifiable prediction: the effective equation of 
 
 Using the corrected sound horizon $r_s \approx 141$ Mpc derived from the Fractal Logic mechanism ($n=2.5$), we re-evaluate the inference from the Planck angular scale $\theta_*$.
 
-\begin{equation}
+\begin{equation}\label{eq:da_inference}
     D_A(z_*) = \frac{r_s}{\theta_*} \approx \frac{141 \text{ Mpc}}{0.01041} \approx 13544 \text{ Mpc}
 \end{equation}
 
@@ -573,7 +573,11 @@ Since the angular diameter distance $D_A \propto 1/H_0$, a decrease in required 
 
 \textbf{Result:}
 The critical percolation transition dictates a fractal Hausdorff dimension $D \approx 2.53$ for the initial logic network. This shifts the effective sound speed to $c_s^2 = 1/(2D-1) \approx 0.246$.
-Propagating this through the sound-horizon inference (Section 7.2) predicts $H_0 \approx 70.6$ km/s/Mpc. While this does not yet reach the local SH0ES value ($73.04$), it \textbf{significantly reduces the tension} (by $> 60\%$) without introducing arbitrary new degrees of freedom. This honest mathematical inference provides the most robust baseline for the model.
+Propagating this through Eq.~\ref{eq:da_inference} predicts $H_0 = 67.4 \times (13800/13544) \approx 68.7$ km/s/Mpc. This does not reach the local SH0ES value ($73.04$): it reduces the Planck--SH0ES gap by ${\approx}23\%$ without introducing arbitrary new degrees of freedom.
+
+\begin{mdframed}[backgroundcolor=yellow!8, frametitle={2026 numerical audit ($H_0$ inference)}]
+Earlier versions of this section quoted $H_0 \approx 70.6$ km/s/Mpc and a tension reduction ``$>60\%$''. Independent recomputation (\texttt{experiments/verification/formula\_audit.py}, log \texttt{formula\_audit\_20260813}) traced the $70.6$ to two inconsistent anchors: the scaling used the drag-epoch horizon $r_{\rm drag}=147.09$ Mpc, while the distance baseline $D_A \approx 13800$ Mpc corresponds to the recombination horizon $r_*=144.43$ Mpc. Using this section's own numbers self-consistently ($r_s \approx 141$ Mpc, $\theta_* = 0.01041$) gives $H_0 \approx 68.7$ km/s/Mpc --- a ${\approx}23\%$ reduction of the $5.6$ km/s/Mpc Planck--SH0ES gap (roughly $4\sigma \to 3\sigma$), a partial mitigation rather than a near-resolution. All downstream statements in this report are aligned with the audited value.
+\end{mdframed}
 
 \subsection{Origin of the CMB: Condensation Radiation}
 
@@ -764,8 +768,8 @@ While bosons follow the additive geometric law $E \propto 1/p$, fermions acquire
 \end{equation}
 where $M^* = 365.24$ GeV is the master scale and $X = 3/(2\alpha) \approx 205.55$ is the $\alpha$-quenching factor.
 
-\textbf{Quantitative Resolution of "Problem C":}
-By substituting the Seifert parameters into the gap equation, we derive the relative mass ratios without arbitrary Yukawa couplings. The predicted ratio $m_{\tau}/m_{\mu} \approx 16.8$ matches the observed \textbf{16.81} ($<1\%$ deviation).
+\textbf{Partial Resolution of ``Problem C'' (2026 audited):}
+Substituting the Seifert parameters into the gap equation yields mass ratios without arbitrary Yukawa couplings, but only at the qualitative level. Independent recomputation with the stated $X=3/(2\alpha)$ gives $m_{\tau}/m_{\mu} = e^{4X(1/32-1/36)} = 17.4$ versus the observed $16.82$ ($3.3\%$ deviation --- not the ``$<1\%$'' quoted in earlier drafts), while the same exponents give $m_{\mu}/m_{e} = e^{4X(1/27-1/32)} = 117$ versus the observed $206.8$ ($44\%$ deviation). The Seifert-exponential mechanism therefore reproduces the \emph{ordering and rough magnitude} of the charged-lepton hierarchy but is not a quantitative mass formula; it is retained as a candidate organizing principle (audit note in Appendix~Z).
 
 \begin{figure}[H]
     \centering
@@ -1208,6 +1212,21 @@ The same EFT parameters $(c_2, c_4, \rho_0)$ that produce screening at 1 AU also
     \caption{Extreme environment tests.}
 \end{figure}
 
+% Real-survey data figure; generated by experiments/bullet_cluster/plot_bullet_realdata.py
+% (log: results/logs/bullet_realdata_20260813.log)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\textwidth]{figures/fig_bullet_realdata.png}
+    \caption{Real survey data for 1E 0657$-$56 (2026 standardization campaign): Digitized
+    Sky Survey optical image with ROSAT All-Sky Survey broad-band X-ray contours
+    (Gaussian-smoothed, $\sigma=18''$), fetched 2026-08-13 via \texttt{astroquery}. The
+    flux-weighted X-ray centroid (RA $=104.62^\circ$, Dec $=-55.95^\circ$) coincides with
+    the cluster position. At RASS depth this figure documents the emission \emph{location}
+    only; the merger substructure (gas bullet vs.\ lensing centroids) underlying Gate~1
+    requires Chandra imaging \cite{clowe2006}.}
+    \label{fig:bullet_realdata}
+\end{figure}
+
 \subsection{Emergent Lorentz Invariance (V9 Proof)}
 
 \subsubsection{Sound Speed from the k-essence Lagrangian}
@@ -1333,7 +1352,7 @@ One of the most persistent anomalies in modern cosmology is the Hubble Tension (
 
 As derived in \textbf{Appendix R}, the pre-geometric percolation transition dictates a fractal Hausdorff dimension $D \approx 2.53$ for the initial logic network. This shifts the effective sound speed to $c_s^2 = 1/(2D-1) \approx 0.246$.
 \begin{itemize}
-    \item \textbf{Inferred $H_0$:} $\approx 70.6$ km/s/Mpc, significantly reducing the gap with SH0ES local measurements without introducing new arbitrary parameters.
+    \item \textbf{Inferred $H_0$:} $\approx 68.7$ km/s/Mpc (2026 audited value; the earlier $70.6$ mixed two sound-horizon anchors), reducing the gap with SH0ES local measurements by about a quarter without introducing new arbitrary parameters.
     \item \textbf{Verification}: This result is a purely geometric consequence of the 3D percolation universality class, removing the need for ad-hoc Early Dark Energy models.
 \end{itemize}
 

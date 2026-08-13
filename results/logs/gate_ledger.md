@@ -121,3 +121,13 @@ Code state: e11a3b6 NJL quartic theorem: H-c4 proven at one loop (GAP-L2 resolve
 | G5f Fermion emergence (Pontryagin/statistics) | **PASS** | statistical phase -1 from defect exchange | results\logs\G5f_20260813.log |
 
 ### Verdict: **LADDER CLEAR**
+
+## GATE REPORT 2026-08-13 23:39 (scripts/run_gates.py)
+
+Code state: 3f6a830 Standardization campaign: verified data, real-data figures, clean citation audit - 174 pages, zero warnings of record  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G3 SPARC rotation curves (held-out) | **PASS** | a0 fitted on train half only; held-out test chi2_red < 5.0 | results\logs\G3_20260813.log |
+
+### Verdict: **LADDER CLEAR**

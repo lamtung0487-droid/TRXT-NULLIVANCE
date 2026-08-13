@@ -162,10 +162,10 @@ def run_sparc_analysis():
     test = preloaded_data[1::2]
     print(f"  Split: {len(train)} train / {len(test)} test galaxies (alphabetical even/odd)")
 
-    print(f"  Fitting global a0 on TRAIN half (grid 3300-3700)...")
+    print(f"  Fitting global a0 on TRAIN half (grid 2800-3800, extended)...")
     best_a0 = 3500.0
     min_train_chi2 = 1e9
-    scan_range = np.linspace(3300, 3700, 9)
+    scan_range = np.linspace(2800, 3800, 21)  # extended (a0 hit old grid edge; logged)
     for val in scan_range:
         chi2_val = global_loss(val, train)
         print(f"    a0={val:.1f} -> Train Chi2={chi2_val:.4f}")

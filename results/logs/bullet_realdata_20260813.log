@@ -1,0 +1,13 @@
+Bullet Cluster real-data figure log (2026-08-13)
+============================================================
+Optical: DSS via astroquery SkyView, 300x300, CDELT 6"/px
+X-ray:   RASS-Cnt Broad (photon counts) via astroquery SkyView
+         NOTE: first fetch used 'RASS Background 1' (a modeled
+         background map) -- caught in audit and re-fetched as counts.
+X-ray raw counts: max=10, total=39125 (shallow survey; smoothed sigma=3px for contours)
+Flux-weighted X-ray centroid (>50% contour): RA=104.6221 deg, Dec=-55.9533 deg
+Field center requested: 06h58m20s -55d56m00s = (104.583, -55.933)
+Centroid offset from field center: dRA=1.31', dDec=-1.20'
+Honest scope: figure documents real-data acquisition + emission
+location; it does NOT resolve the merger substructure (Chandra needed).
+Outputs: results/figures/fig_bullet_realdata.png; copied to paper/v7_release_v2/figures/fig_bullet_realdata.png

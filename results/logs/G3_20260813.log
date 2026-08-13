@@ -1,0 +1,34 @@
+--- GATE 3: THE ROTATION VALID (SPARC, held-out protocol) ---
+  Preloading data for optimization...
+  Split: 88 train / 87 test galaxies (alphabetical even/odd)
+  Fitting global a0 on TRAIN half (grid 2800-3800, extended)...
+    a0=2800.0 -> Train Chi2=5.7240
+    a0=2850.0 -> Train Chi2=5.6577
+    a0=2900.0 -> Train Chi2=5.5861
+    a0=2950.0 -> Train Chi2=5.5292
+    a0=3000.0 -> Train Chi2=5.4806
+    a0=3050.0 -> Train Chi2=5.4405
+    a0=3100.0 -> Train Chi2=5.4039
+    a0=3150.0 -> Train Chi2=5.3769
+    a0=3200.0 -> Train Chi2=5.3889
+    a0=3250.0 -> Train Chi2=5.3424
+    a0=3300.0 -> Train Chi2=5.3464
+    a0=3350.0 -> Train Chi2=5.3314
+    a0=3400.0 -> Train Chi2=5.7728
+    a0=3450.0 -> Train Chi2=5.7603
+    a0=3500.0 -> Train Chi2=5.3632
+    a0=3550.0 -> Train Chi2=5.3835
+    a0=3600.0 -> Train Chi2=5.4084
+    a0=3650.0 -> Train Chi2=5.4375
+    a0=3700.0 -> Train Chi2=5.4681
+    a0=3750.0 -> Train Chi2=5.5000
+    a0=3800.0 -> Train Chi2=5.5474
+  Best a0 (train): 3350.0 with Train Chi2=5.3314
+
+[Gate 3 Results - Held-Out Validation]
+  a0 (fitted on train): 3350.0
+  Train Reduced Chi2:   5.3314
+  TEST  Reduced Chi2:   4.7458   <- gate metric
+
+>>> GATE 3 STATUS: PASS (held-out chi2_red < 5.0) <<<
+

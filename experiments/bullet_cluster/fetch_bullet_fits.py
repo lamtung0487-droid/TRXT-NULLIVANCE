@@ -15,7 +15,7 @@ def fetch_real_data():
     
     # We query DSS (Optical) and RASS (X-ray)
     try:
-        paths = SkyView.get_images(position=position, survey=['DSS', 'RASS Background 1'], radius=15*u.arcmin)
+        paths = SkyView.get_images(position=position, survey=['DSS', 'RASS-Cnt Broad'], radius=15*u.arcmin)
         
         opt_fits = paths[0][0]
         xray_fits = paths[1][0]

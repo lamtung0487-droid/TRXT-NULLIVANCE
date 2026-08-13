@@ -1,0 +1,25 @@
+V    check                                           where                             claimed     computed      dev
+----------------------------------------------------------------------------------------------------------------------
+PASS M* from BCS chain (2*Lambda*e^{-1/g}, g=C/X)    App VF/J                           365.26      363.253    0.55%
+PASS M* = 3 m_tau/(2 alpha)                          p.47 Eq.61                         365.26      365.255    0.00%
+PASS g_eff = C/X                                     App A/J                            0.0258    0.0258091    0.04%
+PASS r0 = hbar c / M* [fm]                           App Q Q.1                         0.00054  0.000540244    0.05%
+PASS c_s^2 at r=0.01                                 Table 9                             0.962     0.962264    0.03%
+PASS c_s^2 at r=1.0                                  Table 9                             0.429     0.428571    0.10%
+PASS c_s^2 at r=10                                   Table 9                             0.344     0.344262    0.08%
+PASS c_s^2 at r=100                                  Table 9                             0.336     0.334443    0.46%
+PASS c_s^2 at r=1000                                 Table 9                             0.334     0.333444    0.17%
+PASS c_s^2 = 1/(2D-1), D=2.53                        Sec 8.1                             0.246     0.246305    0.12%
+PASS D_A = r_s/theta* [Mpc]                          Eq.53                               13544      13543.4    0.00%
+NOTE H0 inferred [km/s/Mpc]                          Sec 8.2                              70.6      68.6772    2.72%
+NOTE m_tau/m_mu from Seifert exponential             p.50 'predicted 16.8 vs 16.81'         16.8       17.373    3.41%
+PASS m_tau/m_mu observed                             PDG                               16.8177       16.817    0.00%
+FAIL m_mu/m_e from Seifert exponential vs observed 206.77 AK.4 implication                  206.768      116.535   43.64%
+PASS M_cond = M_Pl exp(-4pi/2) [GeV]                 p.181                             2.3e+16  2.27828e+16    0.94%
+PASS eps_fifth at 1 AU                               Eq.84                             8.6e-12  8.61261e-12    0.15%
+PASS tower M(1,1), Lambda=Planck [GeV]               Genesis 3.1                        201400       201368    0.02%
+PASS tower M(1,1), Lambda=M_cond [GeV]               Genesis 3.1                        184000       184019    0.01%
+PASS Z(8,8) prediction M*/4 [GeV]                    Sec 8.4 table                       91.31      91.3138    0.00%
+PASS 2 cos(pi/5) = phi                               Genesis Eq.6                      1.61803      1.61803    0.00%
+----------------------------------------------------------------------------------------------------------------------
+total: 21 checks, 1 FAIL, 2 NOTE

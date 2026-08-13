@@ -103,3 +103,39 @@ CITATION AUDIT (from compile-log census):
 
 FINAL STATE: 0 errors, 0 undefined citations, 0 undefined references,
 0 multiply-defined labels, 174 pages.
+
+## 2026-08-13 (later): Formula audit — two claims corrected; real Bullet data
+
+AUDIT (experiments/verification/formula_audit.py; log results/logs/formula_audit_20260813.log;
+21 independent recomputations: 18 PASS / 2 NOTE / 1 FAIL):
+
+- Seifert lepton hierarchy (Sec 8.4.4 "Problem C" + Appendix Z + Genesis):
+  recomputed m_tau/m_mu = 17.37 vs 16.82 observed (3.3%, NOT the "<1%"
+  claimed); same exponents give m_mu/m_e = 116.5 vs 206.77 (44% FAIL).
+  Claim downgraded from "quantitative resolution" to "candidate organizing
+  principle"; audit boxes added in Sec 8.4.4 and Appendix Z; Genesis
+  cross-reference updated. Absolute form m_i = M* e^{-4XS_i} flagged
+  ratio-only.
+- H0 inference (Sec 7.2/7.4 + Conclusions): the quoted 70.6 km/s/Mpc mixed
+  two sound-horizon anchors (r_drag = 147.09 vs r_* = 144.43 behind the
+  D_A ~ 13800 baseline). Self-consistent value from the report's own
+  Eq. (eq:da_inference): H0 = 67.4 x 13800/13544 = 68.7; tension reduction
+  ~23% (4sigma -> ~3sigma), not ">60%". All four occurrences corrected +
+  audit box; fractal-figure caption overclaim ("H0 ~ 73") reworded.
+
+GATE 3 (grid-edge issue closed): a0 grid extended 3300-3700/9pts ->
+2800-3800/21pts; best a0 = 3350 now interior; held-out test chi2_red =
+4.746 PASS (log results/logs/G3_20260813.log). Criterion unchanged.
+
+REAL DATA (Bullet Cluster, first real-survey data in repo):
+- data/raw/bullet_optical.fits (DSS) + bullet_xray.fits fetched via
+  astroquery SkyView. First fetch used 'RASS Background 1' (a modeled
+  background map) — caught in audit, re-fetched as 'RASS-Cnt Broad'
+  photon counts; fetch script corrected.
+- New figure fig_bullet_realdata.png (generator
+  experiments/bullet_cluster/plot_bullet_realdata.py, log
+  results/logs/bullet_realdata_20260813.log): DSS + smoothed RASS contours;
+  X-ray centroid RA 104.62, Dec -55.95 coincides with cluster position.
+  Honest scope in caption: location only, substructure needs Chandra.
+  Inserted after the extreme-environment figure (label fig:bullet_realdata).
+- data/README.md raw/ row corrected (was mislabeled "Chandra + weak-lensing").
