@@ -52,8 +52,9 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 - Gate-3 "χ²=4.9986 PASS" → replaced by held-out protocol.
 - Gate-5 "PASS (By Design)" → replaced by real computation.
 
-**Open problems, ranked (the research programme):**
-1. **F1 + GAP-1 (merged): the substrate/bridge question** — declare Layer 0 target (S² vs S⁶ = G₂/SU(3), or S⁶-fibration → S²) and determine which energy–charge law (linear vs Q^{3/4}) the L0→L1 lift transports. Everything hangs here.
+**Open problems, ranked (the research programme):** *(updated after the referee-response campaign, same day)*
+0. ~~F1 substrate ambiguity~~ **RESOLVED** (homotopy chain theorem, ); ~~F3~~ **RESOLVED** (Q=1 saturation 0.995-0.999); F2 **QUANTIFIED** (t_c(rho): 10->15,465 for rho 5->12); referee verdict upgraded to **MINOR REVISION** (conditional on F4 literature check + F2 exponent refinement)
+1. **GAP-B (was GAP-1, now reduced): the dimensional lift** — declare Layer 0 target (S² vs S⁶ = G₂/SU(3), or S⁶-fibration → S²) and determine which energy–charge law (linear vs Q^{3/4}) the L0→L1 lift transports. Everything hangs here.
 2. **F2/GAP-5:** quantify lattice charge-violation rate vs stiffness K (controlled simulation; matters for proton stability claims).
 3. **G0b:** cure the X < 0 branch of P(X) (candidate: DBI completion) — unblocks the ladder.
 4. **F4:** literature confirmation of odd-N O(7) GN spectrum (blocked by environment; retry when WebSearch works).

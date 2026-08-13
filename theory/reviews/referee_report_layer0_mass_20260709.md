@@ -41,3 +41,17 @@ The Bogomolny linearity, the 4π quantization trend, and the transmutation scale
 **Editor's sentence:** a genuinely beautiful and largely verified organizing principle, currently attached to an ambiguously specified substrate — fix the foundation it stands on before engraving the equation.
 
 Per RESEARCH_WORKFLOW: MAJOR findings reopen `/derive` (F1, F2), not merely the wording.
+
+---
+
+## Status addendum (same day, after the response campaign)
+
+The lab responded (`derivation_substrate_resolution_20260709.md` + `experiments/layer0/referee_response_tests.py`, audited and SIGNED-OFF):
+
+- **F1 — RESOLVED (theorem-level).** π₂(G/H) ≅ π₁(H): the S⁶ = G₂/SU(3) stage is *matterless by exact homotopy* (π₂ = 0) and hosts only condensation/spectrum physics, while S² is the unique final lump-carrying coset of the framework's own declared chain. The two bodies of evidence belong to sequential stages of one theory, each doing the only job homotopy permits. Bonus falsifiers extracted (S-P1..S-P3, incl. "no neutral-and-stable lump at coset level").
+- **F2 — QUANTIFIED.** Charge-violation time on the lattice: t_c(ρ) = 10 → 15,465 for ρ = 5 → 12 (super-power-law, ln t_c ≈ 1.1ρ mid-range). Protection is approximate but astronomically strong for defects many lattice spacings wide; GAP-5 now carries a measured law. Follow-up: dt/L-refinement of the exponent.
+- **F3 — RESOLVED.** Correct disk protocol (interior-link energy, BP-tail boundary): Q = 1 saturation E/(4π|Q|) = 0.9952–0.9986, bracketed by the analytic disk fraction and 1.
+- **F4 — still OPEN** (environment tooling blocks literature verification of the odd-N O(7) GN spectrum). The φ claim remains PLAUSIBLE, not CONFIRMED.
+- **F5 — addressed** (wording scoped in the derivation note).
+
+### Revised verdict: **MINOR REVISION** — acceptance conditional solely on F4 (independent literature confirmation of the Gross–Neveu bound-state spectrum for N = 7) and on the F2 exponent refinement. The principle M = 4πK·|Q| may now be cited in internal documents as the lab's working mass principle, with the F4 condition stated wherever the φ ratio is quoted.
