@@ -76,3 +76,30 @@ different documents - historical audit artifacts).
   mass_spectrum/; loose results/*.png -> results/figures/, *.json ->
   results/data/.
 - Build: 0 errors, 172 pages. Remaining warning: pre-existing fig:h0_shift.
+
+## 2026-08-13 (standardization campaign) — Data verification, real-data figures, citation audit
+
+DATA (independently verified against pdgLive this session):
+- m_tau = 1776.93 +/- 0.09 MeV (repo carried old average 1776.86 - CORRECTED)
+- m_Z = 91.1879 +/- 0.0020 GeV (was 91.1876 - updated)
+- m_W = 80.3692 +/- 0.0133 GeV (confirmed)
+- data/PDG_2024.json updated with verification block (date, method, corrections)
+- Derived: M* 365.24 -> 365.26 GeV (+0.004%, inside all quoted precisions);
+  tower 184-201 TeV unchanged; Z(8,8) tension 58.4 -> 62.9 sigma
+- SPARC: 175/175 files verified, structure spot-checked (NGC3198)
+- VF appendix: M* updated + Data Provenance paragraph added
+
+FIGURES (all rebuilt from real computed data; generator committed):
+- experiments/figures/make_genesis_figures.py -> 4 publication figures
+  (Okabe-Ito CVD-safe, dataviz standard): quantization convergence +
+  saturation, Hopf charge algebra, protection law, tower spectrum
+- Inserted into the Genesis chapter with provenance-citing captions
+
+CITATION AUDIT (from compile-log census):
+- 5 missing bibitems added (Baez 2002 Octonions; Kaloper-Padilla PRL 112;
+  Clowe 2006 ApJL 648; Friedan PRL 45; Hull-Townsend NPB 274)
+- chap:division_algebras label added; fig:h0_shift dangler resolved by
+  rewording to the derivation (figure never existed)
+
+FINAL STATE: 0 errors, 0 undefined citations, 0 undefined references,
+0 multiply-defined labels, 174 pages.
