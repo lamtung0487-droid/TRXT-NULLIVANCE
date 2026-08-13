@@ -61,3 +61,33 @@ with quantified stakes.
 
 Manuscript action (done same day): VF.6 replaced with the audit-results subsection;
 Appendix AC register updated.
+
+---
+
+## Addendum (same day): the decisive lattice computation — executed
+
+`experiments/verification/lattice_C_computation.py` → `results/logs/lattice_C_computation_20260814.log`
+(v2 after an internal referee pass caught three bugs in v1: square-window contour
+leakage (+43% in the validation!), wrong K point, non-monotone bisection).
+
+**Method validation:** contour-integral machinery reproduces the known exact answer of the
+isotropic model to 1e-6 (single Γ circle, no spurious branches).
+
+**Results:**
+1. **5.339 struck.** For the isotropic/1D-channel model that the appendix identities
+   actually describe, the exact contour integral equals the linearized value identically —
+   there is NO 0.6%-level lattice correction. None of the tested artifact classes
+   (Lorentzian broadening, energy-bin histogram, coarse-grid histogram) cleanly reproduce
+   +0.64% (closest +0.76%). The number has no code and no explanation; struck from VF.4.
+   **The +28% threat to M* is retired.**
+2. **Van Hove obstruction (new).** On the true C6 triangular band, 5/6 edge-locking lands
+   ABOVE the van Hove energy in both natural directions (E_F = +0.493/+0.515 vs
+   E_vH = +0.400) → Fermi surface is K-pockets, isotropic linearization off by −29%/+75%.
+   C = 50/(3π) belongs to the idealized isotropic model only.
+3. **Unit mixing (new).** C = g·(L_F/4π²)(2/v_F) mixes fraction-units (L_F) with
+   radian-units (v_F). Consistent evaluations give 50/3 or 50/(3π²) → m_τ missed by >10
+   orders. Only the mixed evaluation lands on m_τ — a fourth load-bearing unfixed choice.
+
+**Updated GAP-N4c closure list:** honest 2D model compatible with Γ-circle locking;
+principled unit convention; prefactor/cutoff/g=4. The anchor survives 5.339 but its
+"derivation" status is further away, not closer, after honest scrutiny.

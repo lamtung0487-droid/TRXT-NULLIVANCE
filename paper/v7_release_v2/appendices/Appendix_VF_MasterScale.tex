@@ -39,8 +39,9 @@ C \;=\; g\,\frac{L_F}{4\pi^2}\,\frac{2}{v_F}
 \;=\; 4\cdot\frac{5\pi/3}{4\pi^2}\cdot 10 \;=\; \frac{50}{3\pi}\;\approx\;5.305,
 \end{equation}
 with $g=4$ (Kramers $\times$ particle--hole; Appendix~AB item AB.3) and $L_F=2\pi k_F=5\pi/3$.
-The lattice cross-check gives $C=5.339$ ($0.7\%$ finite-size effect); the analytic value is
-exact.
+An earlier draft additionally quoted a ``lattice cross-check $C=5.339$ ($0.7\%$ finite-size
+effect)''; the 2026 audit found no generating code for that number and no simple estimator
+artifact that cleanly reproduces it, and it is \textbf{struck} (VF.6, item 2026-08-14b).
 
 \subsection*{VF.5 The master scale}
 With $X=3/(2\alpha)\approx205.53$ and $g_{\rm eff}=C/X\approx0.0258$, dimensional
@@ -86,7 +87,35 @@ $g=4$ are load-bearing choices not fixed by any stated principle.
 \end{itemize}
 \textbf{Audit verdict:} the arithmetic is sound and the $0.012\%$ inversion agreement is
 striking, but with three unfixed discrete choices the chain retains enough freedom that the
-agreement cannot yet be claimed as a derivation (Anti-Hardcode Law). GAP-N4c remains open
-at the \emph{justification} level: what would close it is (i) a reproducible lattice/DOS
-computation distinguishing $50/(3\pi)$ from nearby values at the $0.1\%$ level, and
-(ii) first-principles fixing of the prefactor, the cutoff, and $g=4$.
+agreement cannot yet be claimed as a derivation (Anti-Hardcode Law).
+
+\paragraph{2026-08-14b: the decisive lattice computation (executed).}
+The reproducible lattice/DOS computation requested above now exists
+(\texttt{experiments/verification/lattice\_C\_computation.py}, log
+\texttt{lattice\_C\_computation\_20260814}; contour-integral method validated to
+$10^{-6}$ on a case with known exact answer). Results:
+\begin{itemize}
+\item \textbf{No lattice correction exists for the model actually evaluated.} For the
+isotropic/1D-channel continuum model underlying VF.2--VF.4, the exact Fermi-contour
+integral equals the linearized value \emph{identically}; $C=50/(3\pi)$ is exact for that
+model, and the quoted $5.339$ is not reproduced by Lorentzian-broadening, energy-bin, or
+coarse-grid artifact classes (closest: $+0.76\%$ vs the required $+0.64\%$). The value is
+struck from VF.4; the $+28\%$ threat to $M^*$ from that number is \textbf{retired}.
+\item \textbf{New finding (van Hove obstruction).} On the honest $C_6$ triangular band the
+$5/6$ edge-locking lands \emph{above} the van Hove energy in both natural directions
+($E_F = +0.493, +0.515$ vs $E_{\rm vH} = +0.400$): the Fermi surface is disconnected
+$K$-pockets, not a $\Gamma$-centered circle, and the isotropic linearization fails
+qualitatively there ($-29\%$ / $+75\%$). $C = 50/(3\pi)$ is therefore a property of the
+idealized isotropic model \emph{only}; a first-principles 2D realization in which the
+$\Gamma$-circle picture survives at $5/6$ locking is now an explicit open requirement.
+\item \textbf{New finding (unit mixing).} The formula $C = g\,(L_F/4\pi^2)(2/v_F)$
+evaluates $L_F$ with $k_F$ as a bare fraction ($5/6$) but $v_F$ as a radian derivative (at
+$k=5\pi/6$). The two unit-consistent evaluations give $C = 50/3$ or $50/(3\pi^2)$, which
+miss $m_\tau$ by more than ten orders of magnitude; \emph{only} the mixed evaluation lands
+on $m_\tau$. The unit convention is thus itself a load-bearing, currently unjustified
+choice.
+\end{itemize}
+GAP-N4c status after the computation: the anchor survives the $5.339$ threat, but the
+justification debt grows --- what would close the gap is (i) a first-principles 2D model
+compatible with $\Gamma$-circle locking, (ii) a principled fixing of the momentum-unit
+convention, and (iii) fixing of the BCS prefactor, the cutoff identification, and $g=4$.

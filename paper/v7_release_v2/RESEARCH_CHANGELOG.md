@@ -162,3 +162,19 @@ GATE 2 REAL-DATA UPGRADE (criteria pre-registered in gate_ledger.md BEFORE run):
   V9-status section; Gate-2 summary line updated (old "1.8 sigma" claim
   replaced); Unification table dark-energy cell aligned with the relaxation
   erratum (was still "kinetic tension").
+
+## 2026-08-14 (later): GAP-N4c decisive lattice computation
+
+- New committed computation experiments/verification/lattice_C_computation.py
+  (log lattice_C_computation_20260814; method validated to 1e-6 on known case;
+  v2 after internal referee pass caught square-window contour leakage, wrong
+  K point, non-monotone bisection in v1).
+- VF.4: unreproducible "lattice C = 5.339" STRUCK (no generating code; no
+  clean artifact reproduction; no lattice correction exists for the model
+  actually evaluated). +28% threat to M* retired.
+- VF.6: new subsection 2026-08-14b with two NEW findings: (1) van Hove
+  obstruction -- on the true C6 triangular band the 5/6 locking gives
+  K-pockets, not a Gamma circle (isotropic picture off -29%/+75%);
+  (2) unit mixing in C -- consistent evaluations give 50/3 or 50/(3pi^2),
+  missing m_tau by >10 orders; only the mixed 50/(3pi) works.
+- Appendix AC GAP-N4c entry updated with the 3-item closure list.

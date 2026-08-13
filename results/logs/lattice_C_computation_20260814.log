@@ -1,0 +1,83 @@
+============================================================================
+GAP-N4c DECISIVE COMPUTATION v2: lattice DOS constant C   (2026-08-14)
+============================================================================
+
+--- PART A: unit consistency of C = g*(L_F/4pi^2)*(2/v_F) ---
+  mixed-unit (appendix) : C = 5.305165  (= 50/(3pi))
+  radian-consistent     : C = 16.666667  (= 50/3)
+  fraction-consistent   : C = 1.688686  (= 50/(3pi^2))
+    mixed : M* =        363.5 GeV -> m_tau =         1769 MeV  (MATCHES PDG)
+    radian: M* =    1.075e+14 GeV -> m_tau =     5.23e+14 MeV  (off by 10^+11)
+    fract.: M* =    3.339e-34 GeV -> m_tau =    1.624e-33 MeV  (off by 10^-36)
+  [FINDING A] L_F uses k_F as a bare fraction (5/6) while v_F uses the
+  radian derivative at k = 5pi/6. Either consistent convention misses
+  m_tau by >10 orders. The unit mixing is load-bearing and unjustified.
+
+--- PART B: exact Fermi-contour integral, C6 triangular band ---
+  [B0 validation] n= 512: I/I_exact - 1 = +1.99e-05  (1 segment)
+  [B0 validation] n=1024: I/I_exact - 1 = +5.32e-06  (1 segment)
+  [B0 validation] n=2048: I/I_exact - 1 = +1.26e-06  (1 segment)
+  -> method validated: error << 0.1% at n >= 1024, single Gamma circle.
+  band: E(Gamma) = -1.2000 (min), E(M) = 0.4000 (saddle/van Hove), E(K) = 0.6000 (max)
+  [Gamma-M 5/6] n=1024: E_F = +0.4928 [ABOVE van Hove -> K-pockets], segs = 2, I = 53.02645, I/ref = 0.70796
+  [Gamma-M 5/6] n=2048: E_F = +0.4928 [ABOVE van Hove -> K-pockets], segs = 2, I = 53.02653, I/ref = 0.70796 (chg 1.4e-06)
+  [Gamma-M 5/6] n=3072: E_F = +0.4928 [ABOVE van Hove -> K-pockets], segs = 2, I = 53.02653, I/ref = 0.70796 (chg 3.0e-08)
+    -> exact-band vs isotropic linearization: -29.2%
+  [Gamma-K 5/6] n=1024: E_F = +0.5148 [ABOVE van Hove -> K-pockets], segs = 2, I = 49.86436, I/ref = 1.75369
+  [Gamma-K 5/6] n=2048: E_F = +0.5148 [ABOVE van Hove -> K-pockets], segs = 2, I = 49.86439, I/ref = 1.75369 (chg 4.4e-07)
+  [Gamma-K 5/6] n=3072: E_F = +0.5148 [ABOVE van Hove -> K-pockets], segs = 2, I = 49.86439, I/ref = 1.75369 (chg 6.5e-08)
+    -> exact-band vs isotropic linearization: +75.4%
+
+--- PART C: artifact hunt -- what numerics give +0.64% (C = 5.339)? ---
+  target excess: +0.638%  (isotropic model; exact value known)
+  (C1) Lorentzian broadening eta (grid 3000^2):
+      eta = 0.001: +0.082%
+      eta = 0.002: +0.134%
+      eta = 0.003: +0.156%
+      eta = 0.004: +0.148%
+      eta = 0.006: +0.045%
+      eta = 0.008: -0.174%
+      eta = 0.012: -0.939%
+      eta = 0.016: -2.100%
+  (C2) energy-bin histogram, width dE (states in window / dE):
+      dE = 0.002: +0.259%
+      dE = 0.004: -0.163%
+      dE = 0.008: +0.048%
+      dE = 0.012: +0.067%
+      dE = 0.016: +0.290%
+      dE = 0.024: +0.763%
+      dE = 0.032: +1.334%
+      dE = 0.048: +3.171%
+  (C3) coarse k-grid histogram (grid m^2, dE = 2% bandwidth):
+      m =   40: -5.325%
+      m =   60: -3.476%
+      m =   80: +1.693%
+      m =  120: +0.181%
+      m =  200: +2.085%
+      m =  400: +1.306%
+  closest artifact to +0.64%: dE = 0.024 -> +0.763%
+  artifact classes DO NOT cleanly reproduce 5.339 within 15% of the excess.
+
+============================================================================
+VERDICT (v2)
+============================================================================
+1. [MODEL] On the honest C6 triangular band, the 5/6 edge-locking lands
+   ABOVE the van Hove energy in both natural directions: the Fermi surface
+   is disconnected K-pockets, not a Gamma-centered circle. The isotropic
+   linearization behind C = 50/(3pi) fails QUALITATIVELY there (see the
+   I/ref numbers). C = 50/(3pi) is a property of the idealized 1D-channel/
+   isotropic continuum model only -- for THAT model it is exact (Part B0),
+   and no 0.6%-level 'lattice correction' to it exists.
+2. [5.339] Whether any simple estimator artifact reproduces +0.64% is
+   reported honestly in Part C above. Regardless of the outcome, the value
+   remains without generating code; it should be STRUCK from VF.4 rather
+   than explained.
+3. [UNITS] Part A adds a new load-bearing unfixed choice: the momentum-unit
+   convention (50/3 vs 50/(3pi) vs 50/(3pi^2)); only the mixed evaluation
+   reproduces m_tau.
+NET for GAP-N4c: the +28% 'lattice threat' to M* is retired (no such
+correction exists for the model actually being evaluated), but the
+justification debt GROWS: the chain now owes (i) a first-principles 2D
+model in which the Gamma-circle picture survives (the C6 band contradicts
+it at 5/6 locking), and (ii) the unit convention, in addition to the
+prefactor, cutoff, and g = 4.
