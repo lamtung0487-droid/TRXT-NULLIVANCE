@@ -64,7 +64,9 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 - **GATE LADDER: CLEAR** (2026-08-13) — first clean, fully earned clear.
 - ~~F4~~ **CONFIRMED with citations** (WebSearch restored): VK bound c = (3/16)^{3/8}, ¾ optimal (arXiv:1311.2403); FN minimizers ~Q^{3/4}, knotted ground states (PRD 62, 081701); GN sine spectrum, O(7) ⟹ m₂/m₁ = φ (Karowski–Thun; PRD 51, 4503). **Layer-0 mass principle final referee verdict: ACCEPT.**
 
-**Next milestone: the pre-registered particle-assignment campaign** (rules + null tests declared BEFORE any comparison with PDG), requiring GAP-N4 (per-stage gap M) and GAP-N3 (FN minimizer prefactor in declared units).
+**Phase-1 closure (2026-08-13):** ~~GAP-N3~~ **CLOSED** (, SIGNED-OFF): Sutcliffe normalization extracted at source (arXiv:0705.1468 Eq. 2.1); c-hat = 1.21 +/- 0.05; exact unit conversion gives **M(p,q) = 3.95 N_f M_stage sqrt(ln) (pq)^(3/4)** — sanity: soliton mass ~ N_f x constituent mass (Skyrme-baryon pattern, unfitted). ~~F2 residual~~ **CLOSED**: tau_c invariant under dt/L (four identical columns); ln tau_c = 1.14 rho. Layer-0 principle: all referee conditions discharged.
+
+**Next milestone: the pre-registered particle-assignment campaign** — single remaining unknown: **GAP-N4** (per-stage constituent gap M for CP^2 and S^2 stages from their gap equations + M_cond RG anchor).
 2. **G0b:** cure the X < 0 branch of P(X) (candidate: DBI completion) — unblocks the gate ladder.
 3. **F4:** literature confirmation of odd-N O(7) GN spectrum (blocked by environment; retry when WebSearch works).
 4. **F2 refinement:** dt- and L-dependence of the violation exponent; map ρ to physical healing length to bound proton-lifetime implications.
