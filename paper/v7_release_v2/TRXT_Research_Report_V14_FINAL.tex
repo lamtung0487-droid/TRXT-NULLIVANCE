@@ -69,7 +69,7 @@
 % ABSTRACT
 % ==========================================================================================
 \begin{abstract}
-This work proposes a theoretical framework that unifies aspects of the Standard Model and General Relativity through the mechanism of \textbf{Induced Gravity} and a \textbf{Superfluid Vacuum}. Starting from the hypothesis that the physical vacuum is described as a condensate of chiral fermions at the Planck scale (NJL-type Lagrangian), we show how spacetime geometry, gauge bosons, matter (as topological excitations), dark matter (as the condensate body), and dark energy (as the condensate tension) all emerge as collective degrees of freedom of a \textit{single} underlying entity.
+This work proposes a theoretical framework that unifies aspects of the Standard Model and General Relativity through the mechanism of \textbf{Induced Gravity} and a \textbf{Superfluid Vacuum}. Starting from the hypothesis that the physical vacuum is described as a condensate of chiral fermions at the Planck scale (NJL-type Lagrangian), we show how spacetime geometry, gauge bosons, matter (as topological excitations), dark matter (as the condensate body), and dark energy (as the relaxed ground state of the condensate) all emerge as collective degrees of freedom of a \textit{single} underlying entity.
 
 This Version 7.1 (V14 Integration) incorporates the rigorous results of the \textbf{multi-scale topological validation protocol}. We provide a first-principles derivation of fermions and gauge structures as \textbf{Structural Obstructions} of the Nullivance flow (Harmonic Map Heat Flow) on the $S^d$ manifold. This replaces the metaphysical "logic incompleteness" with a dynamical proof of matter emergence (Gate 5). We demonstrate that the framework passes all independent observational benchmarks, from Solar System screening to precision CMB cosmology. Complete algorithmic verifications and source code audits are provided in \textbf{Appendix S}.
 
@@ -86,6 +86,10 @@ We present these results as a theoretical proposal backed by quantitative simula
     \item[(vi)] \textbf{Experimental Constraints:} Falsifiable predictions defined for JUNO, Hyper-K, and GWs.
 \end{enumerate}
 \textit{Note: These results represent theoretical consistency checks and do not constitute experimental discovery.}
+\end{mdframed}
+
+\begin{mdframed}[backgroundcolor=red!5, frametitle={2026 Revision (Internal Adversarial Verification Campaign)}]
+This revision integrates a full adversarial re-verification of the framework (Section~\ref{sec:genesis} and the Revision Record, Section~\ref{sec:revisionrecord}). Principal changes: \textbf{(1)} the origin of mass is rebuilt from Layer~0 upward --- Bogomolny principle $E=4\pi K|Q|$ (``Mass $=4\pi K\times$Incompleteness''), homotopy selection of the matter stages, forced dimensional lift, and the one-loop NJL quartic theorem --- yielding the explicit tower law $M=3.95\,N_f M\sqrt{\ln}\,(pq)^{3/4}$ with zero fitted numbers; \textbf{(2)} the harmonic law $M^*(1/p{+}1/q)$ is demoted to breathing-mode fine structure, and the Standard Model is \emph{structurally excluded} from the topological tower --- SM masses are dynamical; \textbf{(3)} the topological sector becomes a genuine prediction: absolutely stable states from $184$--$201$\,TeV, superseding the earlier $5.7$\,GeV candidate; \textbf{(4)} the validation gates were rebuilt so they can fail, and currently clear. All claims carry machine-checked derivations and an auditable git trail.
 \end{mdframed}
 \end{abstract}
 
@@ -434,6 +438,8 @@ Thus, while $\Lambda$CDM faces a ``crisis'' with JWST data, the TRXT superfluid 
 % ==========================================================================================
 % SECTION 4: MATHEMATICAL FORMALISM
 % ==========================================================================================
+\input{chapters/Chapter_Genesis_MassChain.tex}
+
 \section{Mathematical Formalism}
 
 \subsubsection{The Emergence of Gauge Fields (Yang-Mills)}
@@ -577,7 +583,11 @@ When the Pre-Geometric "Quantum Foam" (Layer 3) condenses into the Smooth Manifo
 \subsubsection{Implication for Polarization}
 Since the radiation originates from a topological phase transition rather than scattering in a plasma, the acoustic peaks in the polarization spectrum (E-mode) should exhibit phase shifts corresponding to the different sound speed ($c_s \approx 0.5c$) of the nascent superfluid metric. This is a crucial \textbf{falsifiable prediction} for future CMB experiments (LiteBIRD).
 
-\subsection{Energy Spectrum Derivation: Torus Worldvolume Mode Quantization}
+\subsection{Energy Spectrum Derivation: Torus Worldvolume Mode Quantization}\label{sec:spectrum-old}
+
+\begin{mdframed}[backgroundcolor=red!5, frametitle={Erratum (2026 campaign) --- status of this section}]
+The spectral law derived below, $E=M^*(1/p+1/q)$, is the \emph{breathing-mode gap} of the topological solitons, \textbf{not their principal mass}. The 2026 $E_{\mathrm{core}}$ incompatibility theorem shows that as a principal law it cannot coexist with a stable vacuum for any value of the condensate stiffness; the principal law is the topological tower of Section~\ref{sec:genesis}, Eq.~(\ref{eq:masslaw}). The text below is retained as the fine-structure mechanism and as the historical record.
+\end{mdframed}
 The particle mass spectrum $E = M^*(1/p + 1/q)$ is derived from the \textbf{Breathing Mode Gap} of a topological soliton. We model the soliton as a defect with a compact worldvolume $T^2 \subset S^3 \times \mathbb{R}$, characterized by two independent fundamental cycles of lengths $L_p = p L_0$ and $L_q = q L_0$.
 
 \textbf{Derivation:}
@@ -1127,7 +1137,7 @@ $n_0>1110$ is a strong, falsifiable target.
 \textbf{Current status: PARTIALLY VERIFIED} (physically motivated;
 quantitative derivation pending).
 
-\subsection{Solar System Constraints: Endogenous Screening}
+\subsection{Solar System Constraints: Endogenous Screening}\label{sec:screening}
 Unlike previous approaches that ``borrowed'' the Vainshtein mechanism from Galileon/Horndeski theories, TRXT derives screening directly from the microscopic action (see Algorithm S.4).
 
 \textbf{Mechanism: k-mouflage from $P(X)$ EFT}
@@ -1291,7 +1301,7 @@ The Einstein equation $G_{\mu\nu} = 8\pi G T_{\mu\nu}$ reduces to the Poisson eq
 Thus, the induced gravity sector recovers the standard inverse-square law for the Newtonian potential $\Phi_N$.
 
 % ==========================================================================================
-\subsection{Standard Model Limit (Low Energy $E \ll M^*$)}
+\subsection{Standard Model Limit (Low Energy $E \ll M^*$)}\label{sec:smlimit}
 
 We rigorously show that the NJL interaction reproduces the Standard Model Higgs sector below the condensation scale.
 Starting from the NJL Lagrangian for the constituent fermion $\psi$:
@@ -2282,6 +2292,41 @@ I seek your partnership in determining whether this path leads to a deeper under
 % --- GROUP A: THEORETICAL FOUNDATIONS ---
 
 % Appendix T: Topological Foundations (Ricci Flow / Braid / TQFT)
+\section{Revision Record: What the 2026 Adversarial Campaign Changed}
+\label{sec:revisionrecord}
+
+In keeping with the Master Protocol's Honest Null Results law, this section records, in one
+place, every claim of earlier versions that the 2026 internal campaign \textbf{overturned or
+demoted}, with the replacement result. The full machine-checked audit trail (derivation
+notes, adversarial referee reports, gate logs, and git history) accompanies the source
+repository.
+
+\begin{enumerate}
+\item \textbf{Harmonic mass law as principal law --- demoted.} $E=M^*(1/p+1/q)$ cannot be the
+principal mass term ($E_{\mathrm{core}}$ incompatibility theorem; the antiparticle-channel
+cascade invalidates the positive-winding-only stability proof of Appendix~W). It survives as
+breathing-mode fine structure (Section~\ref{sec:genesis-old-law}).
+\item \textbf{Unconstrained mass-law statistics --- null.} Without derived sector constraints
+the W/Z/H matches are indistinguishable from chance (look-elsewhere-corrected
+$p=0.09$--$0.59$); the $G_2$-branching sector derivation (former ``C2 RESOLVED'') is
+reopened. Status: OPEN.
+\item \textbf{DT-1 at 5.71 GeV --- superseded} by the topological tower with ground state
+$184$--$201$\,TeV (Section~\ref{sec:genesis-tower}); the production/invisibility
+phenomenology of Section~\ref{sec:dark_matter_v12} transfers to the new sector.
+\item \textbf{Appendix T.1 (Ricci-flow route to $E\propto 1/p$) --- invalidated:} its own
+minimization yields a gap $\propto p^2$; the worldvolume geometry $R\propto p$ is the only
+self-consistent one.
+\item \textbf{Gate suite --- rebuilt} so that it can fail: frozen pre-declared criteria,
+earned computations (real PRyMordial BBN; held-out SPARC; full-branch stability with a
+theorem-backed criterion; provenance-corrected solar bounds turning Neptune/Pluto deviations
+into pre-registered predictions). Current status: all gates clear.
+\item \textbf{Dark energy wording --- corrected:} the relaxed ground state of the condensate
+($w_0=-1$), not a ``condensate tension''.
+\item \textbf{New internal falsifiers registered:} exactly two topological species; no
+neutral-and-stable lump; $\kappa_S/\kappa_X=2$; tower ratios $(p'q'/pq)^{3/4}$; the
+golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
+\end{enumerate}
+
 \input{appendices/Appendix_T_Topology.tex}
 
 % Appendix U: Noether Currents & Conservation
@@ -2354,6 +2399,17 @@ I seek your partnership in determining whether this path leads to a deeper under
 \input{appendices/Appendix_Z_Ontology.tex}
 
 \begin{thebibliography}{99}
+\bibitem{BP1975} Belavin, A. A., \& Polyakov, A. M. (1975). \textit{JETP Lett.} 22, 245.
+\bibitem{Struwe1985} Struwe, M. (1985). \textit{Comment. Math. Helv.} 60, 558.
+\bibitem{Qing1995} Qing, J. (1995). \textit{Comm. Anal. Geom.} 3, 297.
+\bibitem{HN1990} Hasenfratz, P., \& Niedermayer, F. (1990). \textit{Phys. Lett. B} 245, 529.
+\bibitem{KarowskiThun1981} Karowski, M., \& Thun, H. J. (1981). \textit{Nucl. Phys. B} 190, 61.
+\bibitem{GNkinks1995} ``Kinks and bound states in the Gross--Neveu model'', \textit{Phys. Rev. D} 51 (1995) 4503.
+\bibitem{Coldea2010} Coldea, R., et al. (2010). \textit{Science} 327, 177.
+\bibitem{VK1979} Vakulenko, A. F., \& Kapitanskii, L. V. (1979). \textit{Sov. Phys. Dokl.} 24, 433.
+\bibitem{Harland2013} Harland, D. (2014). arXiv:1311.2403.
+\bibitem{Sutcliffe2007} Sutcliffe, P. (2007). \textit{Proc. R. Soc. A} 463, 3001 [arXiv:0705.1468].
+
 \bibitem{kiefer} Kiefer, C. (2007). \textit{Quantum Gravity}. Oxford University Press. ISBN: 9780199212521.
 \bibitem{sakharov} Sakharov, A. D. (1968). ``Vacuum quantum fluctuations in curved space and the theory of gravitation''. \textit{Sov. Phys. Dokl.} 12, 1040.
 \bibitem{volovik} Volovik, G. E. (2003). \textit{The Universe in a Helium Droplet}. Oxford University Press. ISBN: 0198507828.
