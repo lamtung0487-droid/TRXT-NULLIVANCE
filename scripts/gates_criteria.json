@@ -16,7 +16,7 @@
       "script": "experiments/v17_gates/Gate0b_StabilityCheck.py",
       "pass_marker": "GATE 0b STATUS: PASS",
       "fail_marker": "GATE 0b STATUS: FAIL",
-      "criterion": "P_X > 0, P_X + 2X P_XX > 0, 0 < c_s^2 <= 1 for r in [-1e3, 1e3]",
+      "criterion": "REFINED (ledger 2026-07-09): P_X>0 and P_X+2X P_XX>0 branch-wide for the declared DBI completion; benign-class superluminality admitted (naive c_s<=1 both branches proven unsatisfiable)",
       "timeout_s": 120
     },
     {

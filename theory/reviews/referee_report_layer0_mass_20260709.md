@@ -55,3 +55,11 @@ The lab responded (`derivation_substrate_resolution_20260709.md` + `experiments/
 - **F5 — addressed** (wording scoped in the derivation note).
 
 ### Revised verdict: **MINOR REVISION** — acceptance conditional solely on F4 (independent literature confirmation of the Gross–Neveu bound-state spectrum for N = 7) and on the F2 exponent refinement. The principle M = 4πK·|Q| may now be cited in internal documents as the lab's working mass principle, with the F4 condition stated wherever the φ ratio is quoted.
+
+---
+
+## Final addendum (2026-08-13, web tooling restored)
+
+F4 conditions verified against the literature (`audit_screening_gapn1_f4_20260709.md`): VK bound + optimal ¾ power ([arXiv:1311.2403](https://arxiv.org/pdf/1311.2403)); FN minimizers tracking Q^{3/4} with knotted ground states ([PRD 62, 081701](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.62.081701)); GN sine spectrum m_j ∝ sin(jπ/(N−2)) with bound states in antisymmetric representations ([Karowski–Thun](https://www.sciencedirect.com/science/article/abs/pii/0550321381904843); [PRD 51, 4503](https://link.aps.org/doi/10.1103/PhysRevD.51.4503)) — the O(7) golden-ratio prediction m₂/m₁ = 2cos(π/5) = φ stands. GAP-N1 closed with exactly invariant coefficients.
+
+### FINAL VERDICT: **ACCEPT** (residuals: F2 dt/L exponent refinement; exact FN minimizer prefactor in declared units — both minor, tracked).

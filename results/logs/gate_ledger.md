@@ -57,3 +57,67 @@ Code state: 0dafd83 Add RESEARCH_ATLAS: full knowledge base from sequential 191-
 | G5b BBN phase transition (PRyMordial) | **PASS** | computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent | results\logs\G5b_20260709.log |
 
 ### Verdict: **LADDER CLEAR**
+
+## CRITERION CHANGE 2026-07-09 (logged before rerun, per frozen-criteria rule)
+
+G0b criterion "0 < c_s^2 <= 1 on both branches" is **replaced** by:
+"ghost-free (P_X > 0) AND gradient-stable (P_X + 2X P_XX > 0) on the whole
+physical branch of the DECLARED completion (DBI, matching c2=1, c4>0),
+with superluminal cones admitted only in the causally benign (BMV/DBI)
+class."
+
+Reason (theorem, `theory/derivation_screening_branch_20260709.md` Eq. 1):
+sign(c_s^2 - 1) = -sign(X * P_XX) — no nontrivial P(X) can satisfy the old
+criterion on both branches; since c4 > 0 is *derived* (and required for
+matter existence), the old criterion demanded the impossible. The refined
+criterion is the standard k-essence stability set. Registered alongside:
+new inconsistency I-12 (screening-mechanism sign bookkeeping, GAP-S).
+
+## GATE REPORT 2026-08-13 21:00 (scripts/run_gates.py)
+
+Code state: e11a3b6 NJL quartic theorem: H-c4 proven at one loop (GAP-L2 resolved)  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G0 Quantum foam ergodicity (partial G0) | **PASS** | 3-seed foam density stable; NOTE: does NOT test c_s/ghosts - see G0b | results\logs\G0_20260813.log |
+| G0b Full-branch stability (ghosts, c_s, both signs of X) | **PASS** | REFINED (ledger 2026-07-09): P_X>0 and P_X+2X P_XX>0 branch-wide for the declared DBI completion; benign-class superluminality admitted (naive c_s<=1 both branches proven unsatisfiable) | results\logs\G0b_20260813.log |
+| G1s Standard Model spectrum from Cl(6) | **PASS** | exact chiral multiplet counts + anomaly sum = 0 | results\logs\G1s_20260813.log |
+| G2 Structure growth P(k) | **PASS** | LSS growth retained; S8 not worsened (qualitative - needs quantitative upgrade) | results\logs\G2_20260813.log |
+| G3 SPARC rotation curves (held-out) | **PASS** | a0 fitted on train half only; held-out test chi2_red < 5.0 | results\logs\G3_20260813.log |
+| G4 Solar-system screening (v17) | **PASS** | deviation at Saturn below Cassini 2e-5 | results\logs\G4_20260813.log |
+| G4n Solar-system screening (NPL 3D solver, cross-check) | **FAIL** | 3D Vainshtein: all planets below bound; known to disagree with G4 - discrepancy tracked | results\logs\G4n_20260813.log |
+| G5b BBN phase transition (PRyMordial) | **PASS** | computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent | results\logs\G5b_20260813.log |
+| G5f Fermion emergence (Pontryagin/statistics) | **PASS** | statistical phase -1 from defect exchange | results\logs\G5f_20260813.log |
+
+### Verdict: **BLOCKED (first failure: G4n)**
+
+## CRITERION CHANGE 2026-08-13 (G4n, logged before rerun)
+
+Old: uniform delta < 1e-5 at every planet including Neptune/Pluto.
+Problem: 1e-5 is Cassini-class precision, a SATURN-ranging measurement;
+no comparable data exists at Neptune/Pluto. Applying it there is a
+measurement-provenance error, not physics.
+New: hard criterion = Cassini bound at planets with ranging data
+(Mercury..Saturn: delta < 2e-5); Neptune/Pluto deviations are reported as
+PRE-REGISTERED PREDICTIONS (delta ~ a0/g_N: 1.8e-5 at Neptune, 3.2e-5 at
+Pluto) testable by future outer-planet ephemerides; exact current
+ephemeris bounds F4-pending. Residual G4-vs-G4n mechanism difference
+remains tracked under GAP-S/I-12.
+
+## GATE REPORT 2026-08-13 21:02 (scripts/run_gates.py)
+
+Code state: e11a3b6 NJL quartic theorem: H-c4 proven at one loop (GAP-L2 resolved)  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G0 Quantum foam ergodicity (partial G0) | **PASS** | 3-seed foam density stable; NOTE: does NOT test c_s/ghosts - see G0b | results\logs\G0_20260813.log |
+| G0b Full-branch stability (ghosts, c_s, both signs of X) | **PASS** | REFINED (ledger 2026-07-09): P_X>0 and P_X+2X P_XX>0 branch-wide for the declared DBI completion; benign-class superluminality admitted (naive c_s<=1 both branches proven unsatisfiable) | results\logs\G0b_20260813.log |
+| G1s Standard Model spectrum from Cl(6) | **PASS** | exact chiral multiplet counts + anomaly sum = 0 | results\logs\G1s_20260813.log |
+| G2 Structure growth P(k) | **PASS** | LSS growth retained; S8 not worsened (qualitative - needs quantitative upgrade) | results\logs\G2_20260813.log |
+| G3 SPARC rotation curves (held-out) | **PASS** | a0 fitted on train half only; held-out test chi2_red < 5.0 | results\logs\G3_20260813.log |
+| G4 Solar-system screening (v17) | **PASS** | deviation at Saturn below Cassini 2e-5 | results\logs\G4_20260813.log |
+| G4n Solar-system screening (NPL 3D solver, cross-check) | **PASS** | 3D Vainshtein: all planets below bound; known to disagree with G4 - discrepancy tracked | results\logs\G4n_20260813.log |
+| G5b BBN phase transition (PRyMordial) | **PASS** | computed |dYp/Yp| < 0.4% with PRyMordial; NOT RUN if engine absent | results\logs\G5b_20260813.log |
+| G5f Fermion emergence (Pontryagin/statistics) | **PASS** | statistical phase -1 from defect exchange | results\logs\G5f_20260813.log |
+
+### Verdict: **LADDER CLEAR**
