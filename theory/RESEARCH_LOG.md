@@ -51,6 +51,8 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 - DT-1 = 5.707 GeV → conditional only (withdrawn as unconditional, P2′).
 - Gate-3 "χ²=4.9986 PASS" → replaced by held-out protocol.
 - Gate-5 "PASS (By Design)" → replaced by real computation.
+- Seifert-exponential lepton law "<1% resolution of Problem C" -> DOWNGRADED (2026-08-13 formula audit): recomputed tau/mu = 17.37 vs 16.82 (3.3%); same exponents give mu/e = 116.5 vs 206.77 (44% FAIL). Now "candidate organizing principle"; audit boxes in Sec 8.4.4 + App Z (log formula_audit_20260813.log).
+- H0 = 70.6 "reduces tension >60%" -> CORRECTED (same audit): 70.6 mixed r_drag(147.09)/r_*(144.43) anchors; self-consistent from the report's own D_A equation: H0 = 68.7, ~23% reduction (4sigma -> ~3sigma). Four occurrences + caption fixed.
 
 **Open problems, ranked (the research programme):** *(updated after the referee-response campaign, same day)*
 0. ~~F1 substrate ambiguity~~ **RESOLVED** (homotopy chain theorem `derivation_substrate_resolution_20260709.md`: π₂(G/H)=π₁(H); S⁶ matterless, S² = matter stage; new falsifiers S-P1..S-P3); ~~F3~~ **RESOLVED** (disk protocol, Q=1 saturation 0.9952–0.9986); F2 **QUANTIFIED** (t_c(ρ) = 10 → 15,465 for ρ = 5 → 12, ln t_c ≈ 1.1ρ); referee verdict upgraded **MAJOR → MINOR REVISION** (conditional on F4 + F2 exponent refinement)
