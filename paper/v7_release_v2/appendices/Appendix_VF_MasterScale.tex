@@ -1,0 +1,61 @@
+% ==========================================================================================
+% APPENDIX VF (2026 reconstruction): The Master-Scale Chain Cl(6) -> v_F -> C -> M*
+% The original VF source was never committed (PDF-only); reconstructed here from the
+% compiled report's content, with the 2026 condition note (GAP-N4c) attached.
+% ==========================================================================================
+\section{Appendix VF: The Master-Scale Chain $Cl(6)\to v_F\to C\to M^*$}
+\label{app:VF}
+
+\begin{mdframed}[backgroundcolor=yellow!8, frametitle={Status note (2026)}]
+This chain is the \emph{anchor} of the absolute scale used in Section~\ref{sec:genesis-tower}
+($M_{\rm stage}=M^*$). It is reconstructed from the February compilation (its source file was
+never committed) and is carried as an \textbf{inherited derivation with an open independent
+audit} (register item GAP-N4c, Appendix~AC). Nothing else in the Genesis chain depends on its
+details --- only the absolute normalization does; mass \emph{ratios} are anchor-independent.
+\end{mdframed}
+
+\subsection*{VF.1 Chirality Reduction ($D_e=5$)}
+In $Cl(6)$ the chirality operator $\Gamma_7=i\Gamma_1\cdots\Gamma_6$ satisfies
+$\Gamma_7^2=1$, and on the chiral subspace
+$\Gamma_6=(+i)\,\Gamma_5\Gamma_4\Gamma_3\Gamma_2\Gamma_1$ (verified numerically, error $=0$):
+only $D_e=5$ of the six generators are algebraically independent hopping channels.
+
+\subsection*{VF.2 Equipartition ($t=1/5$)}
+By $\mathrm{Spin}(6)$ isotropy (Schur) and bandwidth normalization, the tight-binding hopping
+is $t=1/D_e=1/5$.
+
+\subsection*{VF.3 Abrikosov locking ($q=6$, $k_F=5/6$)}
+The minimum-energy vortex configuration is the triangular lattice with $C_6$ symmetry
+(Abrikosov ratio $\beta_A=1.1596<1.1803$ of the square lattice): holonomy $\mathbb{Z}_6$,
+flux denominator $q=6$, edge-locking $k_F=1-1/q=5/6$.
+
+\subsection*{VF.4 The exact identity and the DOS constant}
+\begin{equation}
+v_F \;=\; \frac{2}{D_e}\,\sin\frac{\pi}{q} \;=\; \frac{2}{5}\cdot\frac{1}{2} \;=\; \frac{1}{5}
+\qquad(\text{numerically exact}),
+\end{equation}
+\begin{equation}
+C \;=\; g\,\frac{L_F}{4\pi^2}\,\frac{2}{v_F}
+\;=\; 4\cdot\frac{5\pi/3}{4\pi^2}\cdot 10 \;=\; \frac{50}{3\pi}\;\approx\;5.305,
+\end{equation}
+with $g=4$ (Kramers $\times$ particle--hole; Appendix~AB item AB.3) and $L_F=2\pi k_F=5\pi/3$.
+The lattice cross-check gives $C=5.339$ ($0.7\%$ finite-size effect); the analytic value is
+exact.
+
+\subsection*{VF.5 The master scale}
+With $X=3/(2\alpha)\approx205.53$ and $g_{\rm eff}=C/X\approx0.0258$, dimensional
+transmutation from the Planck cutoff gives
+\begin{equation}
+M^{*} \;=\; \Lambda_{\rm UV}\, e^{-1/g_{\rm eff}} \;\approx\; 365.24\ \text{GeV},
+\qquad
+m_\tau \;=\; \frac{2\alpha}{3}\,M^{*} \;=\; 1776.9\ \text{MeV}
+\end{equation}
+--- the last relation reproducing the tau mass as a consistency output rather than an input.
+The 17-order Planck--electroweak hierarchy is the RG exponential $e^{-1/0.0258}$, the same
+mechanism proven exactly at the Layer-0 level (Section~\ref{sec:genesis-condensation}).
+
+\subsection*{VF.6 What would upgrade this appendix}
+An independent re-derivation of VF.1--VF.4 (in particular the spin--orbit-locking
+justification of $q=\dim_{\rm vec}Cl(6)=6$ beyond the energy-minimization argument), and a
+scheme-dependence analysis of VF.5. Until then, absolute masses quoted from this anchor carry
+its condition chain explicitly.

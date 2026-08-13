@@ -56,3 +56,23 @@ Source fixes (content-preserving, all flagged):
 
 Build: pdflatex -interaction=nonstopmode TRXT_Research_Report_V14_FINAL.tex (x2)
 Output: TRXT_Research_Report_V14_FINAL.pdf — 165 pages, 4.7 MB, 0 errors.
+
+## 2026-08-13 (final) — Four rewritten appendices + repo hygiene
+
+Pre-write deep search confirmed: after the Chapter_{X,Y,Z} discovery, the
+AB/AC/AD/VF blocks are genuinely PDF-only (searched all paper trees, results/,
+archive; the C1C5_Resolution_Report and AUDIT_REPORT_V14_COMPREHENSIVE are
+different documents - historical audit artifacts).
+
+- NEW appendices (rewritten, not transcribed - several original claims were
+  overturned): Appendix_AB_Resolutions (status table AB.1-AB.10),
+  Appendix_AC_OpenProblems (honest register incl. reopened C1/C2),
+  Appendix_AD_Numerical (rebuilt gate system + Layer-0 suite + reproduction),
+  Appendix_VF_MasterScale (reconstructed chain with GAP-N4c condition note).
+- FIX: duplicate \input of Appendix_AA commented out (pre-existing double
+  inclusion; multiply-defined-labels warning eliminated).
+- Repo hygiene: results/FINAL_ACADEMIC_REPORT_V25 (misplaced early Vietnamese
+  draft) -> paper/early_drafts_v25; mc_null_test script -> experiments/
+  mass_spectrum/; loose results/*.png -> results/figures/, *.json ->
+  results/data/.
+- Build: 0 errors, 172 pages. Remaining warning: pre-existing fig:h0_shift.

@@ -8,7 +8,7 @@ Analyst: lab data-analyst role. Datasets: `data/PDG_2024.json`, `data/sparc/Rotm
 
 **Mode density.** The lattice yields 1,246 distinct modes in [50, 200] GeV; median gap between adjacent modes 0.030 GeV. The lab's own `robustness_report_real_data.txt` already concedes: "Chance of random match (0.1%): 144.93%".
 
-**Monte Carlo null test** (`results/mc_null_test_mass_law.py`, log `results/logs/mc_null_test_20260709.log`, 100,000 random masses uniform in [50,200] GeV):
+**Monte Carlo null test** (`experiments/mass_spectrum/mc_null_test_mass_law.py`, log `results/logs/mc_null_test_20260709.log`, 100,000 random masses uniform in [50,200] GeV):
 
 | Particle | Best match error | Look-elsewhere-corrected p-value |
 |---|---|---|

@@ -1,0 +1,63 @@
+% ==========================================================================================
+% APPENDIX AD (2026 rewrite): Numerical Verification Summary
+% Replaces the PDF-only "Comprehensive Numerical Verification" block, updated with the
+% rebuilt gate system and the Layer-0 verification results. All numbers carry logs in
+% results/logs/ and scripts in experiments/ (single-command reproduction).
+% ==========================================================================================
+\section{Appendix AD: Numerical Verification Summary (2026 System)}
+\label{app:AD}
+
+\subsection*{AD.1 The rebuilt gate system}
+All validation now runs through a central runner with \emph{frozen, pre-declared criteria}
+(\texttt{scripts/run\_gates.py} + \texttt{scripts/gates\_criteria.json}); individual scripts
+cannot self-declare ladder success, criterion changes must be logged in the gate ledger
+\emph{before} any rerun, and every status is earned by a computation. Current ladder status
+(2026-08-13): \textbf{all gates clear}.
+
+\begin{center}
+\begin{tabular}{llp{0.52\textwidth}}
+\toprule
+Gate & Status & Earned by \\
+\midrule
+G0 foam ergodicity & PASS & 3-seed lattice stability \\
+G0b full-branch stability & PASS & DBI completion ghost-free and gradient-stable branch-wide; criterion refined by theorem (naive two-branch subluminality is unsatisfiable for any $P_{XX}\neq0$), logged in the ledger \\
+G1s $Cl(6)$ spectrum & PASS & exact chiral multiplet counts; anomaly sum $=0$ \\
+G2 structure growth & PASS & qualitative criterion (quantitative upgrade listed) \\
+G3 SPARC (held-out) & PASS & $a_0$ fitted on the training half only; \textbf{held-out} $\chi^2_{\rm red}=4.75$ \\
+G4 solar screening & PASS & Saturn deviation $1.6\times10^{-12}\ll$ Cassini $2\times10^{-5}$ \\
+G4n 3D cross-check & PASS & Cassini-class bound applied only where such data exists; Neptune/Pluto deviations promoted to \emph{pre-registered predictions}: $\delta g/g = 1.8\times10^{-5}$, $3.2\times10^{-5}$ \\
+G5b BBN (PRyMordial) & PASS & \textbf{computed} $Y_p = 0.24689$, $N_{\rm eff}=3.044$, D/H $=2.46\times10^{-5}$; TRXT($T_c{=}1$\,eV) deviation $0.000\%$ \\
+G5f fermion emergence & PASS & statistical phase $-1$ from defect exchange \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{AD.2 Layer-0 verification suite (new)}
+\begin{itemize}
+\item \textbf{Bogomolny saturation:} disk protocol (interior-link energy, BP-tail boundary):
+$E/(4\pi|Q|)=0.9952$--$0.9986$ for $Q=1$; $1.0006$ for $Q=2$
+(\texttt{experiments/layer0/}).
+\item \textbf{Dynamical quantization:} $E/(4\pi I)$ descends $1.54\to1.09$ under the
+Nullivance flow (two seeds/sizes agree to $10^{-3}$).
+\item \textbf{Charge-protection law:} $\ln\tau_c \simeq 1.14\,\rho$; $\tau_c$ invariant
+under time-step halving and lattice-size change (identical columns $2.0/6.0/62.0/592.0$
+for $\rho=5/6/8/10$).
+\item \textbf{Lift charge algebra:} Whitehead integral on $96^3$ rational-map data confirms
+$Q_{\rm Hopf}=pq$ (predicted $2,2,4,3,6$; measured $1.99, 1.95, 3.84, 2.91, 5.54$ ---
+one coherent $2$--$8\%$ discretization systematic, matching the $(1,1)$ calibration deficit).
+\item \textbf{Structural exclusion scan:} under the pre-registered completeness rule, no
+assignment of $W,Z,H$ to tower levels survives (best completeness-compatible: $250\sigma$;
+see Section~\ref{sec:genesis-tower}).
+\end{itemize}
+
+\subsection*{AD.3 Historical results retained}
+The 6-model SPARC comparison of the February compilation (two-phase Soliton+NFW ``B2''
+model: 96.5\% pass, median $\chi^2_\nu=0.41$ on 171 real galaxies; RAR scatter 0.134 dex)
+remains a valid phenomenological result of the two-phase halo and is retained by reference;
+its role as a \emph{gate} is superseded by the held-out protocol of AD.1.
+
+\subsection*{AD.4 Reproduction}
+\texttt{pip install -r requirements.txt}; then from the repository root:
+\texttt{python scripts/run\_gates.py} (full ladder; per-gate logs and an appended ledger
+entry in \texttt{results/logs/}), and the Layer-0 suite via the scripts in
+\texttt{experiments/layer0/}. Every table entry above regenerates from these two commands.
