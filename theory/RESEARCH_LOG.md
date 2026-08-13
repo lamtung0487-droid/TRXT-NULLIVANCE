@@ -66,7 +66,13 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 
 **Phase-1 closure (2026-08-13):** ~~GAP-N3~~ **CLOSED** (, SIGNED-OFF): Sutcliffe normalization extracted at source (arXiv:0705.1468 Eq. 2.1); c-hat = 1.21 +/- 0.05; exact unit conversion gives **M(p,q) = 3.95 N_f M_stage sqrt(ln) (pq)^(3/4)** — sanity: soliton mass ~ N_f x constituent mass (Skyrme-baryon pattern, unfitted). ~~F2 residual~~ **CLOSED**: tau_c invariant under dt/L (four identical columns); ln tau_c = 1.14 rho. Layer-0 principle: all referee conditions discharged.
 
-**Next milestone: the pre-registered particle-assignment campaign** — single remaining unknown: **GAP-N4** (per-stage constituent gap M for CP^2 and S^2 stages from their gap equations + M_cond RG anchor).
+**GAP-N4 + the assignment question, DECIDED (2026-08-13,** **, SIGNED-OFF):**
+- S2-stage anchored on the framework's own M* = 365.24 GeV (condition chain inherited, GAP-N4c) => **absolute tower M(pq) = (184-201 TeV)(pq)^(3/4)**
+- **Pre-registered structural exclusion: the SM bosons are NOT tower states** — completeness rule (every integer pq' < a is an occupied stable level) forces either >= 6-700 sigma ratio failures or 30-180 unobserved stable states below m_W; the 0.2-sigma pocket at a=180 displayed and rejected as the look-elsewhere exhibit
+- Reframe: **SM masses = dynamical sector** (amplitude mode + Seifert-exponential — where the framework's real numerics live); **topological tower = new-physics prediction at ~200 TeV** (stable, surviving-U(1)-charged, unitarity-regime; the report's own Great-Condensation production story transfers naturally)
+- The numerology chapter is closed permanently: there is no assignment left to hunt for.
+
+**Remaining programme:** GAP-N4b (CP2 superheavy tower via cascade matching), GAP-N4c (independent audit of the v_F=1/5 -> M* chain), GAP-N4d (200 TeV sector phenomenology gate: relic production at the transition, charged-relic constraints per S-P3), GAP-S (screening re-derivation), GAP-N2/N3b (bookkeeping). Then: manuscript revision R1-R12 with all of the above.
 2. **G0b:** cure the X < 0 branch of P(X) (candidate: DBI completion) — unblocks the gate ladder.
 3. **F4:** literature confirmation of odd-N O(7) GN spectrum (blocked by environment; retry when WebSearch works).
 4. **F2 refinement:** dt- and L-dependence of the violation exponent; map ρ to physical healing length to bound proton-lifetime implications.
