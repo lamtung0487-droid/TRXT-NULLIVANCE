@@ -53,13 +53,12 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 - Gate-5 "PASS (By Design)" → replaced by real computation.
 
 **Open problems, ranked (the research programme):** *(updated after the referee-response campaign, same day)*
-0. ~~F1 substrate ambiguity~~ **RESOLVED** (homotopy chain theorem, ); ~~F3~~ **RESOLVED** (Q=1 saturation 0.995-0.999); F2 **QUANTIFIED** (t_c(rho): 10->15,465 for rho 5->12); referee verdict upgraded to **MINOR REVISION** (conditional on F4 literature check + F2 exponent refinement)
-1. **GAP-B (was GAP-1, now reduced): the dimensional lift** — declare Layer 0 target (S² vs S⁶ = G₂/SU(3), or S⁶-fibration → S²) and determine which energy–charge law (linear vs Q^{3/4}) the L0→L1 lift transports. Everything hangs here.
-2. **F2/GAP-5:** quantify lattice charge-violation rate vs stiffness K (controlled simulation; matters for proton stability claims).
-3. **G0b:** cure the X < 0 branch of P(X) (candidate: DBI completion) — unblocks the ladder.
-4. **F4:** literature confirmation of odd-N O(7) GN spectrum (blocked by environment; retry when WebSearch works).
-5. F3: redo Q = 1 saturation on disk geometry.
-6. New assignment table under the corrected law — only after (1), under pre-registered rules + null tests.
+0. ~~F1 substrate ambiguity~~ **RESOLVED** (homotopy chain theorem `derivation_substrate_resolution_20260709.md`: π₂(G/H)=π₁(H); S⁶ matterless, S² = matter stage; new falsifiers S-P1..S-P3); ~~F3~~ **RESOLVED** (disk protocol, Q=1 saturation 0.9952–0.9986); F2 **QUANTIFIED** (t_c(ρ) = 10 → 15,465 for ρ = 5 → 12, ln t_c ≈ 1.1ρ); referee verdict upgraded **MAJOR → MINOR REVISION** (conditional on F4 + F2 exponent refinement)
+1. **GAP-B (was GAP-1, now reduced): the dimensional lift** — the substrate sequence is fixed; what remains is which energy–charge law (linear 2D vs Q^{3/4} 3D) the L0→L1 lift transports, and the scale assignment of the CP²/S² stages.
+2. **G0b:** cure the X < 0 branch of P(X) (candidate: DBI completion) — unblocks the gate ladder.
+3. **F4:** literature confirmation of odd-N O(7) GN spectrum (blocked by environment; retry when WebSearch works).
+4. **F2 refinement:** dt- and L-dependence of the violation exponent; map ρ to physical healing length to bound proton-lifetime implications.
+5. New assignment table under the corrected law — only after (1), under pre-registered rules + null tests (H-2species: CP²-stage vs S²-stage charges).
 
 ## 3. MANUSCRIPT REVISION MAP (finding → file → action)
 
