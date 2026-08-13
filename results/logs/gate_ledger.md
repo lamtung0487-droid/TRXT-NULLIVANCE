@@ -131,3 +131,37 @@ Code state: 3f6a830 Standardization campaign: verified data, real-data figures, 
 | G3 SPARC rotation curves (held-out) | **PASS** | a0 fitted on train half only; held-out test chi2_red < 5.0 | results\logs\G3_20260813.log |
 
 ### Verdict: **LADDER CLEAR**
+
+## CRITERION CHANGE 2026-08-14 (logged BEFORE rerun): G2 quantitative upgrade
+
+Old G2 (npl_pk_growth_gate2.py): qualitative growth-ODE check, criterion
+self-described as "qualitative - needs quantitative upgrade". No real data.
+
+New G2 (Gate2_CMB_RealData.py), pre-registered criteria (declared here BEFORE
+first run):
+ 1. CAMB (v2.x, standard Boltzmann) run with Planck 2018 best-fit parameters
+    read from data/Planck_2018.json (published values, no tuning) must match
+    the REAL Planck binned spectra in data/COM_PowerSpect_CMB-EE-binned/
+    (TT R3.01, TE R3.02, EE R3.02) with diagonal reduced chi2 < 1.5 for each
+    spectrum (diagonal-covariance approximation; bins nearly independent).
+ 2. TRXT matter sector must be SHOWN (not assumed) CDM-indistinguishable:
+    free-streaming scale of the M(1,1) = 184 TeV tower relic (theory constant,
+    Genesis chain, zero tuning) computed by integration; PASS requires
+    k_fs > 1e3 h/Mpc (i.e. no observable deviation on Planck/BOSS scales).
+ 3. sigma_8 from the same CAMB run within 3 sigma of the Planck published
+    0.8111 +/- 0.0060 (S8 not worsened in the CDM-limit).
+Honest scope: the dark-energy relaxation dynamics w(a) is not yet specified
+quantitatively (open register); G2 tests the w = -1 limit. Any future w(a)
+spec must rerun this gate.
+Rationale: replaces a toy ODE with a real-data confrontation; thresholds set
+from published bin errors before execution.
+
+## GATE REPORT 2026-08-14 00:07 (scripts/run_gates.py)
+
+Code state: 9ec6ffe RESEARCH_LOG: record Seifert downgrade + H0 correction from formula audit  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G2 CMB TT/TE/EE + P(k) vs real Planck 2018 binned spectra | **PASS** | UPGRADED (ledger 2026-08-14, pre-registered): CAMB w/ published Planck params vs real binned TT/TE/EE, diagonal chi2_red < 1.5 each; tower k_fs > 1e3 h/Mpc derived; sigma_8 within 3 sigma of 0.8111+/-0.0060 | results\logs\G2_20260814.log |
+
+### Verdict: **LADDER CLEAR**

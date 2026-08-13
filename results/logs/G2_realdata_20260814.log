@@ -1,0 +1,24 @@
+--- GATE 2 (REAL DATA): CMB spectra vs Planck 2018 binned TT/TE/EE ---
+  params (Planck 2018 VI, published): H0=67.36, Obh2=0.02237, Och2=0.12,
+    tau=0.0544, ns=0.9649, As=2.0989e-09
+
+  [1] spectra vs REAL binned Planck data (diagonal chi2):
+    TT: chi2 =     83.7 /  83 bins -> reduced  1.008  [ok]
+    TE: chi2 =     77.3 /  66 bins -> reduced  1.171  [ok]
+    EE: chi2 =     73.8 /  66 bins -> reduced  1.118  [ok]
+    (diagonal-covariance approximation, symmetric errors; declared in ledger)
+
+  [2] tower-relic free-streaming (M(1,1) = 184 TeV, Genesis chain):
+    T_f = 7360.0 GeV, a_f = 3.19e-17, v_f = 0.346c
+    lambda_fs = 1.604e-10 Mpc (comoving)  ->  k_fs = 5.81e+10 h/Mpc
+    criterion k_fs > 1e3 h/Mpc: ok
+    -> tower DM is CDM-indistinguishable on all Planck/BOSS scales (derived)
+
+  [3] sigma_8 consistency:
+    CAMB sigma_8 = 0.8111 vs published 0.8111 +/- 0.006
+    deviation = 0.01 sigma (criterion < 3): ok
+
+  Honest scope: dark-energy relaxation dynamics w(a) unspecified -> tested
+  in the w = -1 limit (open-problem register); any future w(a) spec reruns G2.
+
+>>> GATE 2 STATUS: PASS (real-data criteria pre-registered 2026-08-14) <<<

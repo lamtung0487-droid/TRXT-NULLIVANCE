@@ -30,12 +30,12 @@
     },
     {
       "id": "G2",
-      "name": "Structure growth P(k)",
-      "script": "experiments/npl_gates/npl_pk_growth_gate2.py",
+      "name": "CMB TT/TE/EE + P(k) vs real Planck 2018 binned spectra",
+      "script": "experiments/v17_gates/Gate2_CMB_RealData.py",
       "pass_marker": "GATE 2 STATUS: PASS",
       "fail_marker": "GATE 2 STATUS: FAIL",
-      "criterion": "LSS growth retained; S8 not worsened (qualitative - needs quantitative upgrade)",
-      "timeout_s": 600
+      "criterion": "UPGRADED (ledger 2026-08-14, pre-registered): CAMB w/ published Planck params vs real binned TT/TE/EE, diagonal chi2_red < 1.5 each; tower k_fs > 1e3 h/Mpc derived; sigma_8 within 3 sigma of 0.8111+/-0.0060",
+      "timeout_s": 900
     },
     {
       "id": "G3",

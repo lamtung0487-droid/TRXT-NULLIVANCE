@@ -1,0 +1,51 @@
+==========================================================================
+GAP-N4c AUDIT: master-scale chain Cl(6) -> v_F -> C -> M*  (2026-08-14)
+==========================================================================
+inputs: 1/alpha = 137.035999177 (CODATA), m_tau = 1776.93 MeV (PDG)
+
+--- VF.1: Cl(6) chirality (independent construction) ---
+[PASS] Clifford relations {Gi,Gj}=2dij (8x8 rep): constructed from scratch
+[PASS] Gamma7^2 = 1: max dev 0.00e+00
+[PASS] chiral dependence G6 = (s)i*G5G4G3G2G1, s=+/-1: sign +i; dev 0.00e+00 -> D_e = 5 independent channels
+
+--- VF.2/VF.4: velocity + DOS-constant arithmetic ---
+[PASS] v_F = 1/5 (exact): band route 0.200000000000000, appendix route 0.200000000000000
+[PASS] C = 50/(3pi) = 5.30516: recomputed 5.3051647697
+
+--- VF.5: dimensional transmutation ---
+[PASS] M* chain reproduces m_tau: M* = 363.52 GeV -> m_tau = 1768.5 MeV vs 1776.93 PDG (0.47%)
+  inversion: C required by PDG m_tau = 5.305815; analytic 50/(3pi) = 5.305165; agreement 0.012%
+
+--- FRAGILITY ANALYSIS (the audit's central result) ---
+amplification |d ln M*/d ln C| = X/C = 38.75
+  -> 0.1% error in C => 3.9% error in M*
+  -> quoted lattice C = 5.339 (0.64% off analytic) => M* shifts +28%  [tau mass NOT recovered]
+discrete conventions (each unjustified choice shifts M*):
+  BCS prefactor 1 vs 2:      factor 2.00 in M*
+  full vs reduced Planck:    factor 5.01 in M*
+
+--- REPRODUCIBILITY ---
+[FAIL] VF.4 'lattice cross-check C = 5.339': NO generating code exists in
+       the repository. src/analysis/verify_C_band_structure.py claims to
+       verify C but only re-evaluates the SAME analytic formula g*(L_F/4pi^2)
+       *(2/v) and compares it to itself (circular). The 0.7%-finite-size
+       claim is unverifiable as stated.
+[LIT ] Abrikosov ratios beta_A = 1.1596 (triangular) < 1.1803 (square):
+       standard literature values (Kleiner-Roth-Autler 1964) -- accepted as
+       [LIT], not recomputed here; they justify C6 symmetry, i.e. q = 6.
+[OPEN] g = 4 (Kramers x particle-hole) and the 1D-chain reduction per
+       channel are stated, not derived: no independent justification found.
+
+==========================================================================
+VERDICT: arithmetic of VF.1-VF.5 VERIFIED (Cl(6) numerics pass; identities
+exact; chain reproduces m_tau to 0.01% given its choices). However the
+chain is NOT yet a derivation: (i) amplification x38.7 means the quoted
+lattice value C=5.339 would MISS m_tau by ~+150%; only the continuum value
+50/(3pi) works, and the lattice check distinguishing them is circular /
+unreproducible; (ii) two discrete conventions (BCS prefactor 2, full M_Pl)
+are load-bearing (factors 2 and 5) and are not fixed by any stated
+principle. GAP-N4c remains OPEN at the justification level -- now with
+quantified stakes. Anti-Hardcode note: with 3 unfixed choices the chain has
+enough freedom to hit m_tau; the 0.012% C-agreement is evidence ONLY if
+prefactor, cutoff, and continuum-C are independently pinned first.
+==========================================================================

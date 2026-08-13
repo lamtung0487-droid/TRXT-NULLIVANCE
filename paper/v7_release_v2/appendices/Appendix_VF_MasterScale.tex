@@ -62,8 +62,31 @@ $1776.86$), $m_W = 80.3692\pm0.0133$\,GeV, $m_Z = 91.1879\pm0.0020$\,GeV. The ve
 $m_\tau$ shifts $M^{*}$ from $365.24$ to $365.26$\,GeV ($+0.004\%$) --- inside every quoted
 precision; legacy occurrences of $365.24$ elsewhere in this report are within that band.
 
-\subsection*{VF.6 What would upgrade this appendix}
-An independent re-derivation of VF.1--VF.4 (in particular the spin--orbit-locking
-justification of $q=\dim_{\rm vec}Cl(6)=6$ beyond the energy-minimization argument), and a
-scheme-dependence analysis of VF.5. Until then, absolute masses quoted from this anchor carry
-its condition chain explicitly.
+\subsection*{VF.6 Independent audit results (2026-08-14, GAP-N4c partially executed)}
+The lab's independent audit (\texttt{experiments/verification/vf\_chain\_audit.py}, log
+\texttt{vf\_chain\_audit\_20260814}) established:
+\begin{itemize}
+\item \textbf{Verified [THM/NUM]:} the $Cl(6)$ chirality reduction was reconstructed from
+scratch (independent $8\times8$ gamma representation): Clifford relations, $\Gamma_7^2=1$,
+and $\Gamma_6=+i\,\Gamma_5\Gamma_4\Gamma_3\Gamma_2\Gamma_1$ on the chiral subspace all hold
+to machine precision, confirming $D_e=5$. The identities $v_F=1/5$ and $C=50/(3\pi)$ are
+exact; the chain reproduces $m_\tau$ to $0.5\%$, and inverting it, the $C$ \emph{required}
+by the PDG $\tau$ mass agrees with $50/(3\pi)$ to $0.012\%$.
+\item \textbf{Fragility [NUM]:} the transmutation exponent amplifies upstream errors by
+$|d\ln M^*/d\ln C| = X/C = 38.7$. Consequently the ``lattice cross-check'' value
+$C=5.339$ quoted in VF.4 would shift $M^*$ by $+28\%$ and \emph{miss} the $\tau$ mass
+entirely --- only the continuum value works.
+\item \textbf{Irreproducible [FAIL]:} no code generating the lattice value $5.339$ exists in
+the repository; the archived script \texttt{verify\_C\_band\_structure.py} merely
+re-evaluates the same analytic formula (circular). The finite-size claim is therefore
+unverifiable as stated.
+\item \textbf{Unfixed conventions [OPEN]:} the BCS prefactor ($1$ vs $2$: factor $2.0$ in
+$M^*$), the cutoff identification (full vs reduced Planck mass: factor $5.0$), and
+$g=4$ are load-bearing choices not fixed by any stated principle.
+\end{itemize}
+\textbf{Audit verdict:} the arithmetic is sound and the $0.012\%$ inversion agreement is
+striking, but with three unfixed discrete choices the chain retains enough freedom that the
+agreement cannot yet be claimed as a derivation (Anti-Hardcode Law). GAP-N4c remains open
+at the \emph{justification} level: what would close it is (i) a reproducible lattice/DOS
+computation distinguishing $50/(3\pi)$ from nearby values at the $0.1\%$ level, and
+(ii) first-principles fixing of the prefactor, the cutoff, and $g=4$.

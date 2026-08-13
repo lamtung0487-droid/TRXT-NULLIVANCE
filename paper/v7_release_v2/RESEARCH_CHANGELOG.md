@@ -139,3 +139,26 @@ REAL DATA (Bullet Cluster, first real-survey data in repo):
   Honest scope in caption: location only, substructure needs Chandra.
   Inserted after the extreme-environment figure (label fig:bullet_realdata).
 - data/README.md raw/ row corrected (was mislabeled "Chandra + weak-lensing").
+
+## 2026-08-14: GAP-N4c audit + G2 real-data upgrade
+
+VF CHAIN AUDIT (experiments/verification/vf_chain_audit.py; log
+vf_chain_audit_20260814.log; review theory/reviews/audit_vf_chain_20260814.md):
+- Cl(6) chirality reconstructed independently (8x8 rep): D_e=5 confirmed exact.
+- Chain reproduces m_tau to 0.5%; inversion agreement C_req vs 50/(3pi): 0.012%.
+- CRITICAL: amplification X/C = 38.7; quoted lattice C=5.339 would miss m_tau
+  by +28%; verify_C_band_structure.py found CIRCULAR; prefactor/cutoff/g=4
+  are unfixed load-bearing choices (x2-x5). GAP-N4c open at justification level.
+- Appendix VF.6 replaced with audit results; Appendix AC register updated.
+
+GATE 2 REAL-DATA UPGRADE (criteria pre-registered in gate_ledger.md BEFORE run):
+- New Gate2_CMB_RealData.py: CAMB (published Planck 2018 params from
+  data/Planck_2018.json, zero tuned parameters) vs real Planck binned TT/TE/EE.
+  Result: chi2_nu = 1.008/1.171/1.118 -> PASS; k_fs = 5.8e10 h/Mpc derived;
+  sigma_8 0.01 sigma from published. gates_criteria.json G2 entry upgraded.
+- data/Planck_2018.json: ln(1e10 As) = 3.044 +/- 0.014 added (published value,
+  Planck 2018 VI Table 2, provenance noted).
+- New figure fig_g2_cmb_realdata.png (make_g2_cmb_figure.py) inserted in the
+  V9-status section; Gate-2 summary line updated (old "1.8 sigma" claim
+  replaced); Unification table dark-energy cell aligned with the relaxation
+  erratum (was still "kinetic tension").
