@@ -2,6 +2,13 @@
 
 % --- Language & Font Configuration ---
 \usepackage[utf8]{inputenc}
+\usepackage[T5,T1]{fontenc} % T1 default; T5 for Vietnamese fragments (vntex)
+\newcommand{\vntext}[1]{{\fontencoding{T5}\selectfont #1}} % Vietnamese quote wrapper
+% \slashed (Feynman slash) -- local definition, avoids extra package dependency
+\newcommand{\slashed}[1]{\ensuremath{#1\!\!\!/}}
+\providecommand{\qed}{\ensuremath{\Box}}
+\usepackage{alphalph} % appendix sections beyond Z
+\usepackage{tcolorbox} % proof boxes in Chapter X
 \usepackage[english]{babel}
 \usepackage{times}
 
@@ -118,7 +125,7 @@ In this work, we attempt to make this idea concrete through a specific microscop
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/fig_1_2_trxt_roadmap.png}
-    \caption{Bottom-up approach roadmap of the Nullivance model.\protect\footnote{``TRXT-Nullivance'' is a working title chosen by the author. ``TRXT'' stands for ``Trục Rung Xuyên Tầng'' (Vietnamese), and ``Nullivance'' is coined from ``null'' (void) + ``-ivance'' (genesis). In this version, we refine the definition: \textbf{Nullivance is the dynamical gradient-flow towards the void state}. Matter emerges as the topological remainder of this flow.}}
+    \caption{Bottom-up approach roadmap of the Nullivance model.\protect\footnote{``TRXT-Nullivance'' is a working title chosen by the author. ``TRXT'' stands for ``\vntext{Trục Rung Xuyên Tầng}'' (Vietnamese), and ``Nullivance'' is coined from ``null'' (void) + ``-ivance'' (genesis). In this version, we refine the definition: \textbf{Nullivance is the dynamical gradient-flow towards the void state}. Matter emerges as the topological remainder of this flow.}}
 \end{figure}
 
 \textbf{Note:} This is a theoretical proposal. Many aspects require independent verification and may not survive rigorous scrutiny.
@@ -292,7 +299,7 @@ The rank-2 tensor $g_{\mu\nu}$ represents the deformation of logic flows in spac
 \paragraph{Resolution of the Weak Equivalence Principle (Soliton Center-of-Mass)}
 The TRXT framework provides a fundamental derivation of the Weak Equivalence Principle (WEP). In the macroscopic limit, test bodies are not ad-hoc point particles but \textbf{collective topological excitations} (solitons) of the underlying superfluid field $\Phi$.
 
-As rigorously proven in Appendix T.5, the equation of motion for the center-of-mass (COM) $\mathbf{X}(t)$ of a stable soliton core in a slowly varying background metric $g_{\mu\nu}$ is exactly the **geodesic equation**:
+As rigorously proven in Appendix T.5, the equation of motion for the center-of-mass (COM) $\mathbf{X}(t)$ of a stable soliton core in a slowly varying background metric $g_{\mu\nu}$ is exactly the \textbf{geodesic equation}:
 \begin{equation}
     \frac{d^2 X^\mu}{d\tau^2} + \Gamma^\mu_{\nu\sigma} \frac{dX^\nu}{d\tau} \frac{dX^\sigma}{d\tau} = 0
 \end{equation}
@@ -467,7 +474,7 @@ The geometric variation $\delta A \propto -R_{\mu\nu} l^\mu l^\nu$ equates the t
 In this unimodular framework, any uniform vacuum energy shift $T_{\mu\nu} \to T_{\mu\nu} + C g_{\mu\nu}$ is identically canceled from both sides of the equation. The cosmological constant $\Lambda$ appears only as a \textbf{constant of integration}, fixed by the global boundary conditions of the isolated condensate (Microcanonical Ensemble, see Appendix N).
 
 \subsubsection{The Covariant Sequestering Theorem (Nullification of $\Lambda$)}
-The primary mathematical achievement of the TRXT entropic derivation is the **Covariant Sequestering Theorem**. Because the Einstein Tensor in TRXT is strictly a response to \textbf{entropy gradients} (energy flux), a uniform static vacuum energy density ($\rho_{vac} \sim 10^{74} \text{ GeV}^4$) does not produce heat flow across local horizons ($\delta Q_{vac} = 0$) and thus \textbf{cannot produce curvature}. 
+The primary mathematical achievement of the TRXT entropic derivation is the \textbf{Covariant Sequestering Theorem}. Because the Einstein Tensor in TRXT is strictly a response to \textbf{entropy gradients} (energy flux), a uniform static vacuum energy density ($\rho_{vac} \sim 10^{74} \text{ GeV}^4$) does not produce heat flow across local horizons ($\delta Q_{vac} = 0$) and thus \textbf{cannot produce curvature}. 
 
 \subsubsection{Unified Sequestering Theorem}
 
@@ -566,7 +573,7 @@ Since the angular diameter distance $D_A \propto 1/H_0$, a decrease in required 
 
 \textbf{Result:}
 The critical percolation transition dictates a fractal Hausdorff dimension $D \approx 2.53$ for the initial logic network. This shifts the effective sound speed to $c_s^2 = 1/(2D-1) \approx 0.246$.
-As shown in Figure \ref{fig:h0_shift}, this predicts $H_0 \approx 70.6$ km/s/Mpc. While this does not yet reach the local SH0ES value ($73.04$), it **significantly reduces the tension** (by $> 60\%$) without introducing arbitrary new degrees of freedom. This honest mathematical inference provides the most robust baseline for the model.
+As shown in Figure \ref{fig:h0_shift}, this predicts $H_0 \approx 70.6$ km/s/Mpc. While this does not yet reach the local SH0ES value ($73.04$), it \textbf{significantly reduces the tension} (by $> 60\%$) without introducing arbitrary new degrees of freedom. This honest mathematical inference provides the most robust baseline for the model.
 
 \subsection{Origin of the CMB: Condensation Radiation}
 
@@ -657,11 +664,11 @@ $q = \mathrm{round}(5 \times 365.24 / (5 \times 80.38 - 365.24)) = \mathrm{round
 
 
 \textbf{Calibration (Physical Anchor - Expert Defense E.3):}
-To avoid ambiguity regarding circularity and "numerology," we explicitly anchor the theory to the **BCS/Dimensional Transmutation gap**. The theory has one fundamental scale $\Lambda_{UV}$ (Planck scale). The Electroweak scale $M^*$ emerges via the gap equation:
+To avoid ambiguity regarding circularity and "numerology," we explicitly anchor the theory to the \textbf{BCS/Dimensional Transmutation gap}. The theory has one fundamental scale $\Lambda_{UV}$ (Planck scale). The Electroweak scale $M^*$ emerges via the gap equation:
 \begin{equation}
  M^* \approx \Lambda_{UV} \cdot \exp\left(-\frac{1}{g_{eff}}\right)
 \end{equation}
-where $g_{eff} \approx 0.026$ is the effective coupling of the vacuum logic field. Once $M^*$ is identified as this dynamical gap, the subsequent matching to the **Tau mass** ($m_\tau = \alpha \cdot \frac{2}{3} M^*$) becomes a **derived consistency check (V1 Validation)** rather than a postulate. This proves the internal resonance of the theory's coupling constants: the same $M^*$ that predicts the W/Z/Higgs boson masses via integer topological sectoral laws also recovers the heaviest lepton mass through its electromagnetic coupling to the vacuum.
+where $g_{eff} \approx 0.026$ is the effective coupling of the vacuum logic field. Once $M^*$ is identified as this dynamical gap, the subsequent matching to the \textbf{Tau mass} ($m_\tau = \alpha \cdot \frac{2}{3} M^*$) becomes a \textbf{derived consistency check (V1 Validation)} rather than a postulate. This proves the internal resonance of the theory's coupling constants: the same $M^*$ that predicts the W/Z/Higgs boson masses via integer topological sectoral laws also recovers the heaviest lepton mass through its electromagnetic coupling to the vacuum.
 
 \textbf{Rigorous Derivation of the $3/(2\alpha)$ Factor (Resolving the Ansatz):}
 Previously, the factor $X = 3/(2\alpha) \approx 205.55$ was treated as a phenomenological ansatz to connect the fine-structure constant to the condensate scale $M^*$. We now present the first-principles derivation of this factor.
@@ -738,11 +745,11 @@ As derived in the \textit{Logic Tension Synthesis} (see Appendix Z), the $S^3$ v
 
 \textbf{2. The Mass Operator and the $Z_3$ Symmetry:}
 Standard QFT assumes a Yukawa coupling $y \bar{\psi}\Phi\psi$. In V12, we derive the mass operator $M$ as the \textbf{Circulant Operator} of the $Z_3$ cyclic symmetry of the 3 generations. 
-The eigenvalues of this circulant operator $M = \text{circ}(a, b, c)$ must satisfy the **Koide Constraint**:
+The eigenvalues of this circulant operator $M = \text{circ}(a, b, c)$ must satisfy the \textbf{Koide Constraint}:
 \begin{equation}
     K = \frac{(\sum \sqrt{m_i})^2}{2 (\sum m_i)} = \frac{2}{3} + \delta
 \end{equation}
-The specific value $K = 2/3$ is the exact geometric result of the **Clifford Torus projection** of the $S^3$ manifold.
+The specific value $K = 2/3$ is the exact geometric result of the \textbf{Clifford Torus projection} of the $S^3$ manifold.
 
 \textbf{Geometric Derivation of Koide Constants:}
 \begin{itemize}
@@ -758,7 +765,7 @@ While bosons follow the additive geometric law $E \propto 1/p$, fermions acquire
 where $M^* = 365.24$ GeV is the master scale and $X = 3/(2\alpha) \approx 205.55$ is the $\alpha$-quenching factor.
 
 \textbf{Quantitative Resolution of "Problem C":}
-By substituting the Seifert parameters into the gap equation, we derive the relative mass ratios without arbitrary Yukawa couplings. The predicted ratio $m_{\tau}/m_{\mu} \approx 16.8$ matches the observed **16.81** ($<1\%$ deviation).
+By substituting the Seifert parameters into the gap equation, we derive the relative mass ratios without arbitrary Yukawa couplings. The predicted ratio $m_{\tau}/m_{\mu} \approx 16.8$ matches the observed \textbf{16.81} ($<1\%$ deviation).
 
 \begin{figure}[H]
     \centering
@@ -814,16 +821,16 @@ The association of specific $p$-values to physical sectors (e.g., $p=5$ for elec
 \subsection{Dark Matter: The Dark Tower and Invisibility Proofs}
 \label{sec:dark_matter_v12}
 
-The TRXT Dark Matter candidate, the **Dark Tower (DT-1)** at $5.71$ GeV, is a macroscopic topological soliton. We now present the first-principles derivation of its interaction profile and the resolution of its experimental invisibility.
+The TRXT Dark Matter candidate, the \textbf{Dark Tower (DT-1)} at $5.71$ GeV, is a macroscopic topological soliton. We now present the first-principles derivation of its interaction profile and the resolution of its experimental invisibility.
 
 \textbf{1. SIDM Cross-Section Derivation (Module 4):}
-Unlike previous fits, the self-interaction cross-section $\sigma/m$ is derived from the **Geometric Form Factor** of the $p=128$ soliton.
+Unlike previous fits, the self-interaction cross-section $\sigma/m$ is derived from the \textbf{Geometric Form Factor} of the $p=128$ soliton.
 \begin{itemize}
     \item \textbf{Numerical Result:} The integrated geometric cross-section for DT-1 yields:
     \begin{equation}
         \sigma/m \approx \mathbf{0.24 \text{ cm}^2/\text{g}}
     \end{equation}
-    This matches the specific value required to solve the **Cusp-Core problem** in Dwarf Galaxies without violating Cluster-scale bounds ($\sigma/m < 1$).
+    This matches the specific value required to solve the \textbf{Cusp-Core problem} in Dwarf Galaxies without violating Cluster-scale bounds ($\sigma/m < 1$).
 \end{itemize}
 
 \textbf{2. The Collider Invisibility Proofs (Modules 4.b, 4.c):}
@@ -837,13 +844,13 @@ Because DT-1 is a macroscopic soliton ($R \approx 10^3$ fm, see Module 4.b), its
 Modern detectors "pass through" the soliton like a ghost because they lack the geometric area to couple with the entire $p=128$ structure.
 
 \textbf{B. Volume Overlap Penalty (Production Invisibility):}
-Collisions in accelerators occur at a point-like vertex ($V_{vertex} \sim 10^{-9}$ fm$^3$). Creating a DT-1 soliton requires coherence across its effective production volume ($V_{soliton} \sim 1$ fm$^3$), corresponding to the core overlap of a $p=128$ structure. The probability of producing such a correlated object from a microscopic collision is suppressed by the **Volume Overlap Ratio**:
+Collisions in accelerators occur at a point-like vertex ($V_{vertex} \sim 10^{-9}$ fm$^3$). Creating a DT-1 soliton requires coherence across its effective production volume ($V_{soliton} \sim 1$ fm$^3$), corresponding to the core overlap of a $p=128$ structure. The probability of producing such a correlated object from a microscopic collision is suppressed by the \textbf{Volume Overlap Ratio}:
 \begin{equation}
     P_{prod} \propto \frac{V_{vertex}}{V_{soliton}} \approx 10^{-9}
 \end{equation}
-This "Volume Penalty" (estimated at 1 in a billion collisions) explains why the Dark Tower has never been produced in vacuum, despite its relatively low mass. It can only be born during the **Great Condensation Phase Transition** across the entire universe volume.
+This "Volume Penalty" (estimated at 1 in a billion collisions) explains why the Dark Tower has never been produced in vacuum, despite its relatively low mass. It can only be born during the \textbf{Great Condensation Phase Transition} across the entire universe volume.
 
-\subsubsection{Galaxy Dynamics & Cusp-Core Problem}
+\subsubsection{Galaxy Dynamics \& Cusp-Core Problem}
 Nullivance dark matter is a self-interacting fluid (SIDM). The equation of state approximates a polytrope $P = K\rho^{1+1/n}$ ($n \approx 1.37$), leading to a Core (flat) density profile rather than Cusp (peaked).
 
 \begin{figure}[H]
@@ -941,7 +948,7 @@ where $\langle T_m \rangle$ is the spacetime-averaged matter trace. This matches
 
 \textbf{Caveat:} The \emph{numerical prediction} of $\rho_{DE}^{eff}$ from first principles requires integrating the full cosmic history $T_m(t)$, which is deferred to future work.
 
-\subsubsection{Weakness Assessment & Risk Mitigation}
+\subsubsection{Weakness Assessment \& Risk Mitigation}
 We acknowledge the following open challenges:
 \begin{itemize}
     \item \textbf{Ad-hoc selection:} Addressed in Appendix C by showing $q$ is a unique solution to the optimization problem.
@@ -1494,7 +1501,7 @@ To construct a physical action without relying on metric-dependent scalar invari
 \begin{itemize}
     \item \textbf{3D Boundary (Chern-Simons):} The braid topology and surgeries on the $S^3$ manifold (Module 3.b) are exactly described by the Chern-Simons invariant: $S_{CS} = \frac{k}{4\pi} \int_{S^3} \text{Tr}(A \wedge dA + \frac{2}{3} A \wedge A \wedge A)$.
     \item \textbf{4D Bulk (BF Theory \& Cobordism):} The 4D spacetime evolution between these 3D topological configurations (cobordisms) is natively described by topological BF theory: $S_{BF} = \int \text{Tr}(B \wedge F)$.
-    \item \textbf{Yang-Mills Dynamics as Instanton Gradient Flow:} The standard metric-dependent Yang-Mills action $S_{YM} = \int \text{Tr}(F \wedge *F)$ is recovered when the emergent elastic metric of the superfluid condensate induces Plebanski (simplicity) constraints on the topological $B$-field. Importantly, this replaces the problematic semi-classical **Heat Kernel expansion**, where higher-derivative ghost artifacts (stabilities) are shown to be mere EFT approximations beyond the UV cutoff. In TRXT, the TQFT/Entanglement structure is intrinsically stable and ghost-free by construction.
+    \item \textbf{Yang-Mills Dynamics as Instanton Gradient Flow:} The standard metric-dependent Yang-Mills action $S_{YM} = \int \text{Tr}(F \wedge *F)$ is recovered when the emergent elastic metric of the superfluid condensate induces Plebanski (simplicity) constraints on the topological $B$-field. Importantly, this replaces the problematic semi-classical \textbf{Heat Kernel expansion}, where higher-derivative ghost artifacts (stabilities) are shown to be mere EFT approximations beyond the UV cutoff. In TRXT, the TQFT/Entanglement structure is intrinsically stable and ghost-free by construction.
 \end{itemize}
 This mechanism ensures that TRXT QCD is fundamentally derived from pure geometry, transitioning from an EFT approximation directly into a mathematically rigorous TQFT structure. \textbf{Status: Resolved.}
 
@@ -1612,6 +1619,7 @@ Gravity & Fundamental force (GR) & Induced from $\Phi$ condensate \\
 % ==========================================================================================
 \newpage
 \appendix
+\renewcommand{\thesection}{\AlphAlph{\value{section}}}
 \section{Appendix A: Scale Hierarchy Mechanism}
 
 \subsection{The Hierarchy Problem}

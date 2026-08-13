@@ -84,7 +84,7 @@ The mass term arises not from the algebra's geometry, but from the interaction w
 \begin{equation}
     \mathcal{L}_{mass} = g_Y \bar{\Psi}_L \Phi_{vac} \Psi_R
 \end{equation}
-This proves the User's hypothesis: the Higgs field is not just another gauge field component, but a distinct excitation of the background condensate required to connect the topologically distinct chiral sectors. Furthermore, the residual kinetic tension of $\Phi$ provides the **Dynamical Quintessence** signal ($w \approx -1$) which serves as a secondary observational tracer for the sequestered vacuum energy (see Section 4).
+This proves the User's hypothesis: the Higgs field is not just another gauge field component, but a distinct excitation of the background condensate required to connect the topologically distinct chiral sectors. Furthermore, the residual kinetic tension of $\Phi$ provides the \textbf{Dynamical Quintessence} signal ($w \approx -1$) which serves as a secondary observational tracer for the sequestered vacuum energy (see Section 4).
 
 \subsection{The Physical Origin of Internal Space}
 Why does the TRXT Condensate choose the specific internal geometry $\mathbb{C} \otimes \mathbb{H} \otimes \mathbb{O}$? 
@@ -94,12 +94,12 @@ For the condensate wavefunction $\Psi$ to support consistent self-interaction wh
 \begin{equation}
     |x \cdot y| = |x| \cdot |y|
 \end{equation}
-Our rigorous numerical stability analysis (`src/phase_j_expert_audit_recovery/v14_j7_acoustic_de.py`) confirms that this condition can \textit{only} be satisfied in dimensions $n=1, 2, 4, 8$ (corresponding to $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$).
+Our rigorous numerical stability analysis (\texttt{src/phase\_j\_expert\_audit\_recovery/v14\_j7\_acoustic\_de.py}) confirms that this condition can \textit{only} be satisfied in dimensions $n=1, 2, 4, 8$ (corresponding to $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$).
 In any other dimension (tested $n=3, 5, 9$), the interaction generates an irreducible error term ($\sim 10\%$), which would manifest as a violation of unitarity or rapid vacuum decay.
 Thus, the division algebra structure of the Standard Model is not an arbitrary choice, but the unique solution for a stable, unitary spinor condensate in maximal dimensions.
 
 \subsection{Gauge Fields as Topological Defects}
-We have explicitly demonstrated (`src/phase_v12_pure_geometry/v12_braid_confinement.py`) that the Yang-Mills gauge fields $A_\mu$ are not fundamental, but emerge from the topological texture of the TRXT condensate.
+We have explicitly demonstrated (\texttt{src/phase\_v12\_pure\_geometry/v12\_braid\_confinement.py}) that the Yang-Mills gauge fields $A_\mu$ are not fundamental, but emerge from the topological texture of the TRXT condensate.
 Modeling a generic vortex defect in the Octonionic order parameter:
 \begin{equation}
     \Psi(r, \theta) = \cos f(r) + \sin f(r) e^{n \theta \cdot \mathbf{e}_{12}}

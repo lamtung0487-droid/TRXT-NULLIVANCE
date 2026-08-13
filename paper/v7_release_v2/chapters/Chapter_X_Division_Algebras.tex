@@ -8,15 +8,15 @@
 
 Historically, attempts to unify the fundamental forces have relied on postulating larger Lie groups (such as $SU(5)$ or $SO(10)$) that spontaneously break down to the Standard Model group $G_{SM} = SU(3)_C \times SU(2)_L \times U(1)_Y$. While elegant, these ``Grand Unified Theories'' (GUTs) suffer from two fatal flaws:
 \begin{enumerate}
-    \item **Arbitrariness:** There is no fundamental mathematical reason to choose $SU(5)$ over any other group. The choice is dictated solely by the need to fit experimental data.
-    \item **Proton Decay:** These groups invariably predict gauge bosons (Leptoquarks $X, Y$) that mediate rapid proton decay, which has been ruled out by experiment to high precision ($\tau_p > 10^{34}$ years).
+    \item \textbf{Arbitrariness:} There is no fundamental mathematical reason to choose $SU(5)$ over any other group. The choice is dictated solely by the need to fit experimental data.
+    \item \textbf{Proton Decay:} These groups invariably predict gauge bosons (Leptoquarks $X, Y$) that mediate rapid proton decay, which has been ruled out by experiment to high precision ($\tau_p > 10^{34}$ years).
 \end{enumerate}
 
 In the TRXT framework, we reject the postulation of arbitrary groups. We instead ask: \textit{What are the unique mathematical structures compatible with a vacuum condensate?}
 
-The answer lies in **Hurwitz's Theorem (1898)**, which proves that there exist exactly four normed division algebras: the Real numbers ($\mathbb{R}$), Complex numbers ($\mathbb{C}$), Quaternions ($\mathbb{H}$), and Octonions ($\mathbb{O}$).
+The answer lies in \textbf{Hurwitz's Theorem (1898)}, which proves that there exist exactly four normed division algebras: the Real numbers ($\mathbb{R}$), Complex numbers ($\mathbb{C}$), Quaternions ($\mathbb{H}$), and Octonions ($\mathbb{O}$).
 
-This chapter demonstrates that the Standard Model is not an arbitrary choice, but the **unique maximal symmetry** preservable by the joint structure of these algebras.
+This chapter demonstrates that the Standard Model is not an arbitrary choice, but the \textbf{unique maximal symmetry} preservable by the joint structure of these algebras.
 
 \subsection{The Mathematical Chain: $\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$}
 
@@ -36,7 +36,7 @@ However, in the physical vacuum, a specific algebraic direction is selected (sym
 \begin{equation}
     \text{Stab}_{G_2}(e_1) \cong SU(3) \quad (\text{dim } 8)
 \end{equation}
-This $SU(3)$ acts on the remaining 6-dimensional imaginary space, preserving the multiplication table. We identify this with the **Color Symmetry ($SU(3)_C$)**.
+This $SU(3)$ acts on the remaining 6-dimensional imaginary space, preserving the multiplication table. We identify this with the \textbf{Color Symmetry ($SU(3)_C$)}.
 
 \textbf{Verification:} We computationally verified this by constructing the structure constants of $\mathbb{O}$, solving the derivation condition $D(xy) = D(x)y + xD(y)$ to find $G_2$, and computing the nullspace of the stabilizer condition. The resulting 8 generators satisfy the Lie algebra of $SU(3)$ to machine precision ($10^{-16}$).
 
@@ -49,7 +49,7 @@ We extracted the stabilizer of a quaternionic subalgebra $\mathbb{H} \subset \ma
 \begin{equation}
     \text{Stab}_{G_2}(\mathbb{H}) \cong SO(4) \cong (SU(2)_L \times SU(2)_R) / \mathbb{Z}_2
 \end{equation}
-This $SO(4)$ group (dim 6) rotates the orthogonal complement of $\mathbb{H}$ within $\mathbb{O}$. To recover the Standard Model $SU(2)_L$, we invoke the **Chiral Orientation Principle** (detailed in Appendix O): the $S^3$ vacuum holonomy selects only the Left-handed sector ($SU(2)_L$) as a gauge-coupled symmetry, while the $SU(2)_R$ remains an ungauged, global symmetry (or is screened by the orientation of the topological torsion).
+This $SO(4)$ group (dim 6) rotates the orthogonal complement of $\mathbb{H}$ within $\mathbb{O}$. To recover the Standard Model $SU(2)_L$, we invoke the \textbf{Chiral Orientation Principle} (detailed in Appendix O): the $S^3$ vacuum holonomy selects only the Left-handed sector ($SU(2)_L$) as a gauge-coupled symmetry, while the $SU(2)_R$ remains an ungauged, global symmetry (or is screened by the orientation of the topological torsion).
 
 \textbf{Topological Chirality Proof (V12):}
 A long-standing mystery of the Standard Model is the "maximal parity violation" of the weak interaction ($SU(2)_L$). In TRXT, this is not a choice of Lagrangian but a \textbf{Topological Asymmetry} of the $S^3$ manifold.
@@ -60,10 +60,10 @@ Through the V12-Module-2 campaign, we derived that the vacuum holonomy is govern
     \item \textbf{Right-Handed Braid ($B_R$):} The Linking number is destructive/null: $L_k(B_R, \mathcal{R}) \to 0$. The $SU(2)$ connection cannot "see" the right-handed knot due to geometric decoherence.
 \end{enumerate}
 
-\textbf{Canonical Verification:** Unlike previous ad-hoc approaches, we derived this $SO(4)$ directly as a stabilizer subgroup and then applied the topological selection rule. The computed generators strictly satisfy the Lie algebra of $SO(4)$, and the $SU(2)_L$ projection is consistent with the $S^3$ orientation.
+\textbf{Canonical Verification:} Unlike previous ad-hoc approaches, we derived this $SO(4)$ directly as a stabilizer subgroup and then applied the topological selection rule. The computed generators strictly satisfy the Lie algebra of $SO(4)$, and the $SU(2)_L$ projection is consistent with the $S^3$ orientation.
 
 \subsubsection{Phase C3: The Emergence of Clifford Algebra $Cl(6)$}
-The final component of our algebra is the complex tensor product structure. While $\mathbb{C}$ provides the $U(1)$ phase freedom, the crucial mathematical feature for particle physics is the emergence of a **Clifford Algebra** structure from the tensor product.
+The final component of our algebra is the complex tensor product structure. While $\mathbb{C}$ provides the $U(1)$ phase freedom, the crucial mathematical feature for particle physics is the emergence of a \textbf{Clifford Algebra} structure from the tensor product.
 
 We define the physical algebra as:
 \begin{equation}
@@ -121,29 +121,29 @@ We constructed the primitive idempotent (projector) $P$:
     P = \frac{1}{2} (1 + i_{\mathbb{C}} e_7)
 \end{equation}
 This projector splits the octonion space into a complex direction ($1, e_7$) and a vector direction ($e_1 \dots e_6$).
-Multiplication of the full algebra $\mathcal{A}$ by $P$ generates the **Minimal Left Ideal** $S = \mathcal{A}P$.
+Multiplication of the full algebra $\mathcal{A}$ by $P$ generates the \textbf{Minimal Left Ideal} $S = \mathcal{A}P$.
 \begin{itemize}
-    \item \textbf{Result:} Our computational derivation confirms that the dimension of $S$ is exactly **32 Real Dimensions** (16 Complex Dimensions).
+    \item \textbf{Result:} Our computational derivation confirms that the dimension of $S$ is exactly \textbf{32 Real Dimensions} (16 Complex Dimensions).
     \item \textbf{Interpretation:} This ideal contains exactly one generation of standard model fermions.
 \end{itemize}
 
 \subsection{Spectral Derivation of Fermion Generations}
 We now prove that the 16 complex states in $S$ correspond exactly to the Standard Model fermions.
-Instead of fitting quantum numbers, we **derive** them by diagonalizing the Casimir operators associated with the sub-symmetries we identified.
+Instead of fitting quantum numbers, we \textbf{derive} them by diagonalizing the Casimir operators associated with the sub-symmetries we identified.
 
 \subsubsection{Chirality Decomposition}
-First, we construct the **Chirality Operator** (or volume element) using the derived Clifford generators:
+First, we construct the \textbf{Chirality Operator} (or volume element) using the derived Clifford generators:
 \begin{equation}
     \Gamma_7 = i \Gamma_1 \Gamma_2 \Gamma_3 \Gamma_4 \Gamma_5 \Gamma_6
 \end{equation}
 Diagonalizing $\Gamma_7$ on the ideal $S$ splits the 32-dimensional real space into two eigenspaces:
 \begin{itemize}
-    \item **Left-Handed Sector ($S_L$):** eigenvalue $+1$ (16 Real Dimensions).
-    \item **Right-Handed Sector ($S_R$):** eigenvalue $-1$ (16 Real Dimensions).
+    \item \textbf{Left-Handed Sector ($S_L$):} eigenvalue $+1$ (16 Real Dimensions).
+    \item \textbf{Right-Handed Sector ($S_R$):} eigenvalue $-1$ (16 Real Dimensions).
 \end{itemize}
 
 \subsubsection{Color Charge Analysis}
-To distinguish Leptons from Quarks, we construct the **Color Projector** $P_{color}$. This operator projects states onto the subspace spanned by the octonion units $e_2 \dots e_7$ (the "quark" directions), orthogonal to the "lepton/condensate" direction ($1, e_1$).
+To distinguish Leptons from Quarks, we construct the \textbf{Color Projector} $P_{color}$. This operator projects states onto the subspace spanned by the octonion units $e_2 \dots e_7$ (the "quark" directions), orthogonal to the "lepton/condensate" direction ($1, e_1$).
 Mathematically, this corresponds to the Casimir invariant of the $SU(3)$ subgroup of $G_2$ that stabilizes $e_1$ (consistent with the derivation in Section~\ref{sec:division_algebras} and Appendix~O: $\mathrm{Stab}_{G_2}(e_1) \cong SU(3)$).
 
 \textbf{Rigorous Result from V11 Script:}
@@ -165,8 +165,8 @@ Right ($S_R$) & Quark ($u_R, d_R$) & $\sim 1$ & 12 \\
 \subsubsection{Interpretation of the Spectrum}
 The derived spectrum matches the Standard Model expectation perfectly:
 \begin{enumerate}
-    \item **Leptons (4 Real DOFs per sector):** Corresponding to one complex doublet in the Left sector ($\nu_L, e_L$) and two complex singlets in the Right sector ($\nu_R, e_R$).
-    \item **Quarks (12 Real DOFs per sector):** Corresponding to 3 colors $\times$ one complex doublet in the Left sector ($u_L, d_L$) and 3 colors $\times$ two complex singlets in the Right sector ($u_R, d_R$).
+    \item \textbf{Leptons (4 Real DOFs per sector):} Corresponding to one complex doublet in the Left sector ($\nu_L, e_L$) and two complex singlets in the Right sector ($\nu_R, e_R$).
+    \item \textbf{Quarks (12 Real DOFs per sector):} Corresponding to 3 colors $\times$ one complex doublet in the Left sector ($u_L, d_L$) and 3 colors $\times$ two complex singlets in the Right sector ($u_R, d_R$).
 \end{enumerate}
 This derivation proves that the structure of a single generation of fermions (16 spinors) is structurally encoded in the algebra $\mathbb{C} \otimes \mathbb{H} \otimes \mathbb{O}$. No other partition (e.g., 5 Leptons, 11 Quarks) is algebraically possible.
 
@@ -251,8 +251,8 @@ into a numerically stable form $\tfrac{dW}{dx} = -\langle\sigma v\rangle \tfrac{
 The TRXT Division Algebra derivation successfully recovers the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$ and its matter content without arbitrary group postulation.
 By replacing the ``Grand Unified'' paradigm with a ``Division Algebra'' paradigm, we obtain a theory that is:
 \begin{itemize}
-    \item **Unique:** Mandated by Hurwitz's Theorem.
-    \item **Predictive:** Fixes the number of fermions per generation (16).
-    \item **Safe:** Avoids proton decay by excluding leptoquark gauge bosons from the algebra.
+    \item \textbf{Unique:} Mandated by Hurwitz's Theorem.
+    \item \textbf{Predictive:} Fixes the number of fermions per generation (16).
+    \item \textbf{Safe:} Avoids proton decay by excluding leptoquark gauge bosons from the algebra.
 \end{itemize}
 The Standard Model is not an accident; it is a mathematical inevitability.

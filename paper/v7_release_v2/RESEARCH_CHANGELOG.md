@@ -30,3 +30,29 @@ dimensional_lift / njl_quartic / mass_constant / stage_gaps / screening_branch
 (+ audits, all 2026-07-09/08-13); referee_report_layer0_mass (final ACCEPT);
 results/logs/gate_ledger.md (LADDER CLEAR 2026-08-13).
 - Note: pre-existing dangling ref fig:h0_shift (present in HEAD; not introduced by this revision) - fix when the H0 figure is regenerated.
+
+## 2026-08-13 (later) — Full local compile achieved: 0 errors, 165 pages
+
+Toolchain: TinyTeX v2025.07 installed at %LOCALAPPDATA%\TinyTeX (same pdfTeX
+engine family as the author's original build); packages from the era-matched
+tlnet-archive snapshot (2025/07/15; tcolorbox version-pinned to match kernel).
+
+Source fixes (content-preserving, all flagged):
+- Preamble: +fontenc [T5,T1] (Vietnamese via vntex), \slashed local macro,
+  \qed providecommand, alphalph (appendix sections beyond Z), tcolorbox.
+- Vietnamese fragments wrapped in \vntext{}: the "Trục Rung Xuyên Tầng"
+  footnote, the Appendix Y void quote, "nảy sinh" in Appendix Z.
+- Markdown leakage converted to LaTeX: 61 `**bold**` -> \textbf, 7 `code`
+  spans -> \texttt (11 files); mixed `\textbf{...**` on Chapter_X l.63.
+- Equation fix: \cdot inside \text{} (Appendix Q r_0 formula).
+- \& escaped in two subsubsection titles; Br_3 -> $Br_3$; beta char -> $\beta$;
+  underscore escape in Appendix_S path.
+- DISCOVERY: chapters/Chapter_{X,Y,Z} sources EXIST (the earlier
+  "missing section 5" was a compile-order illusion); only the AB/AC/AD/VF
+  appendix blocks remain PDF-only.
+- Remaining warnings (non-blocking, tracked): duplicate \input of
+  Appendix_AA (pre-existing), dangling fig:h0_shift (pre-existing),
+  some undefined/multiply-defined label warnings.
+
+Build: pdflatex -interaction=nonstopmode TRXT_Research_Report_V14_FINAL.tex (x2)
+Output: TRXT_Research_Report_V14_FINAL.pdf — 165 pages, 4.7 MB, 0 errors.

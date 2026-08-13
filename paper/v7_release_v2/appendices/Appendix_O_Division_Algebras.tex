@@ -12,7 +12,7 @@ The Octonions ($\mathbb{O}$) have the automorphism group $G_2$. However, the imp
 \begin{equation}
     Stab_{G_2}(e_1) \cong SU(3)
 \end{equation}
-We laid out the explicit 64-dimensional basis and computationally verified (`src/phase_v12_pure_geometry/v12_weak_chirality_pde.py`) that the stabilizers form a Lie algebra with structure constants exactly matching $su(3)$.
+We laid out the explicit 64-dimensional basis and computationally verified (\texttt{src/phase\_v12\_pure\_geometry/v12\_weak\_chirality\_pde.py}) that the stabilizers form a Lie algebra with structure constants exactly matching $su(3)$.
 
 \subsubsection{Derivation of SU(2) (Weak)}
 Similarly, the Quaternionic subalgebra $\mathbb{H}$ is stabilized within the Octonionic automorphism structure by:
@@ -25,10 +25,10 @@ The 6-dimensional stabilizer algebra consists of two independent $su(2)$ sectors
 
 \subsection{O.2 The Fermion Spectrum (16 States)}
 We constructed the Minimal Left Ideal $S = \mathcal{A}P$ using the projector $P = \frac{1}{2}(1 + i e_7)$.
-Spectral analysis of the Chirality operator $\Gamma_7$ and Color projector confirms exactly **16 independent states** per generation:
+Spectral analysis of the Chirality operator $\Gamma_7$ and Color projector confirms exactly \textbf{16 independent states} per generation:
 \begin{itemize}
-    \item **Leptons:** 4 states ($L_L, \nu_L, e_R, \nu_R$) -- Color Singlets.
-    \item **Quarks:** 12 states ($u_L, d_L, u_R, d_R \times 3$ colors) -- Color Triplets.
+    \item \textbf{Leptons:} 4 states ($L_L, \nu_L, e_R, \nu_R$) -- Color Singlets.
+    \item \textbf{Quarks:} 12 states ($u_L, d_L, u_R, d_R \times 3$ colors) -- Color Triplets.
 \end{itemize}
 The quantum numbers $(Y, I_3, Q)$ were purely derived from the algebraic generators, yielding the exact Standard Model assignments (e.g., $Q(d_R) = -1/3$) without fitting.
 
@@ -49,7 +49,7 @@ $[Grav]^2 U(1)$  & $\sum Y$         & 0.00 \\ \hline
 This zero-sum result is a non-trivial proof that the algebraic construction $S = \mathcal{A}P$ carries the necessary topological structure for a consistent Quantum Field Theory.
 
 The geometric unification implies that all couplings inherit their normalization from the same trace metric on the algebra. 
-At the **Unification Scale** ($M_{GUT}$), the weights are:
+At the \textbf{Unification Scale} ($M_{GUT}$), the weights are:
 \begin{equation}
     k_3 = 32, \quad k_2 = 4, \quad k_1 = 20/3
 \end{equation}
@@ -59,26 +59,26 @@ Leading to the canonical predicted Weinberg angle:
 \end{equation}
 matching the $SU(5)$ symmetry requirement derived solely from the division algebra. 
 
-\textbf{RG Running to IR:} While the value $\sin^2 \theta_W = 0.2312 \text{ (after RG flow)}$ is fixed at the UV, standard Renormalization Group (RG) flow (accounting for the 16 derived fermion states) evolves the effective weights. At the **Electroweak Scale** ($M_Z$), the $U(1)$ weight shifts to $k_1' = 40/3$, yielding:
+\textbf{RG Running to IR:} While the value $\sin^2 \theta_W = 0.2312 \text{ (after RG flow)}$ is fixed at the UV, standard Renormalization Group (RG) flow (accounting for the 16 derived fermion states) evolves the effective weights. At the \textbf{Electroweak Scale} ($M_Z$), the $U(1)$ weight shifts to $k_1' = 40/3$, yielding:
 \begin{equation}
     \sin^2 \theta_W(M_Z) = \frac{g_1^2}{g_1^2 + g_2^2} = \frac{k_2}{k_1' + k_2} = \frac{4}{40/3 + 4} = \frac{3}{13} \approx 0.2307
 \end{equation}
 This evolves the theoretical prediction into perfect alignment with the PDG 2024 experimental consensus.
 
 \subsection{O.4 The Origin of Mass (Algebraic No-Go Theorem)}
-Our computational scan proved that the Left ($S_L$) and Right ($S_R$) chiral sectors are **algebraically disjoint** under automorphisms:
+Our computational scan proved that the Left ($S_L$) and Right ($S_R$) chiral sectors are \textbf{algebraically disjoint} under automorphisms:
 \begin{equation}
     \langle S_L | \hat{O} | S_R \rangle = 0 \quad \forall \hat{O} \in Aut(\mathcal{A})
 \end{equation}
-This proves that mass terms $m \bar{\psi}\psi$ cannot arise from the division algebra itself. Mass **requires** an external bridge: the TRXT Condensate ($\Phi$). Thus, the Higgs mechanism is proven to be a necessary consequence of the algebraic structure, identified physically as the condensate order parameter.
+This proves that mass terms $m \bar{\psi}\psi$ cannot arise from the division algebra itself. Mass \textbf{requires} an external bridge: the TRXT Condensate ($\Phi$). Thus, the Higgs mechanism is proven to be a necessary consequence of the algebraic structure, identified physically as the condensate order parameter.
 
 \subsection{O.5 Physical Origin of the Algebra (Module 5)}
-Why $\mathbb{O}$? We theoretically investigated vacuum stability (`src/phase_j_expert_audit_recovery/v14_j7_acoustic_de.py`) and found that the requirement of **Vacuum Unitarity** (norm preservation $|xy|=|x||y|$) is satisfied **only** in dimensions $n=1, 2, 4, 8$.
+Why $\mathbb{O}$? We theoretically investigated vacuum stability (\texttt{src/phase\_j\_expert\_audit\_recovery/v14\_j7\_acoustic\_de.py}) and found that the requirement of \textbf{Vacuum Unitarity} (norm preservation $|xy|=|x||y|$) is satisfied \textbf{only} in dimensions $n=1, 2, 4, 8$.
 Any other dimension leads to probabilistic violations in the vacuum ground state. Thus, the choice of Division Algebras is a stability requirement of the superfluid vacuum.
-Yang-Mills gauge fields were effectively simulated (`src/phase_v12_pure_geometry/v12_braid_confinement.py`) as curvature originating from topological vortices in this condensate.
+Yang-Mills gauge fields were effectively simulated (\texttt{src/phase\_v12\_pure\_geometry/v12\_braid\_confinement.py}) as curvature originating from topological vortices in this condensate.
 
 \subsection{O.6 Experimental Constraints (Module 6)}
 \begin{itemize}
-    \item **CMB:** A phase transition at $z \sim 1100$ resolves the Hubble Tension only if energetic enough ($\Delta \Omega \sim 10\%$), which is strongly constrained by $r_s$.
-    \item **Gravitational Waves:** A strong first-order transition ($\alpha > 0.05$) is ruled out by Planck B-mode limits ($\Omega_{GW} < 10^{-16}$). This constrains the TRXT condensation to be a Crossover or Weak Transition.
+    \item \textbf{CMB:} A phase transition at $z \sim 1100$ resolves the Hubble Tension only if energetic enough ($\Delta \Omega \sim 10\%$), which is strongly constrained by $r_s$.
+    \item \textbf{Gravitational Waves:} A strong first-order transition ($\alpha > 0.05$) is ruled out by Planck B-mode limits ($\Omega_{GW} < 10^{-16}$). This constrains the TRXT condensation to be a Crossover or Weak Transition.
 \end{itemize}
