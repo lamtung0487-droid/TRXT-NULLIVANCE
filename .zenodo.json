@@ -1,0 +1,26 @@
+{
+  "title": "Induced Superfluid Cosmology: A Unified Framework for Emergent Gravity, Matter, and Dark Energy — Research Report (Standardization Edition, August 2026)",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Trinh, Tung Lam",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "description": "Research report (191 pp) and complete reproducibility package for the TRXT-Nullivance framework: induced gravity and matter as topological solitons in a superfluid vacuum condensate. Includes the full verification suite (13 committed audit scripts with logs), the validation-gate runner with frozen, ledger-logged criteria, real-data confrontations (Planck 2018 binned CMB spectra, SPARC rotation curves, Cassini bounds, PRyMordial BBN), and a 111-entry verified bibliography. Every quantitative claim traces to committed code; items under active research are explicitly marked with an epistemic-grade tag system.",
+  "keywords": [
+    "emergent gravity",
+    "superfluid vacuum",
+    "topological solitons",
+    "dark matter",
+    "dark energy",
+    "MOND phenomenology",
+    "Hopf solitons",
+    "induced gravity",
+    "reproducible research"
+  ],
+  "license": "MIT",
+  "language": "eng",
+  "notes": "Compiled PDF: paper/v7_release_v2/TRXT_Research_Report_V14_FINAL.pdf. Reproducibility index: README.md. Gate criteria: scripts/gates_criteria.json; pre-registration ledger: results/logs/gate_ledger.md."
+}
