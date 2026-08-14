@@ -71,7 +71,7 @@ Core laws: parameters must emerge from theory, never be tuned to data (**Anti-Ha
 
 ## Citation
 
-See  (GitHub renders a "Cite this repository" button) or the concept DOI [10.5281/zenodo.18195546](https://doi.org/10.5281/zenodo.18195546).
+See `CITATION.cff` (GitHub renders a "Cite this repository" button) or the concept DOI [10.5281/zenodo.18195546](https://doi.org/10.5281/zenodo.18195546).
 
 ## License
 
