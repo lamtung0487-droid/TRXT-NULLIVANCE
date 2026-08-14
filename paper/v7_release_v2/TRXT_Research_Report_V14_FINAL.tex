@@ -63,10 +63,13 @@
     urlcolor=blue
 }
 
+% Marker for items under active research (archive-edition convention)
+\newcommand{\underresearch}[1]{\par\medskip\noindent\fcolorbox{orange!70}{orange!8}{\parbox{0.96\linewidth}{\small\textbf{[UNDER ACTIVE RESEARCH]} #1 \textit{(Open-Problem Register, Appendix~AC)}}}\par\medskip}
+
 % --- Article Information ---
-\title{\textbf{Induced Superfluid Cosmology: A Unified Framework (V7.1)}\\ \large \textit{V14 Research Integration: From Logic Condensation to Validated Galactic Dynamics}}
+\title{\textbf{Induced Superfluid Cosmology: A Unified Framework for Emergent Gravity, Matter, and Dark Energy}\\ \large \textit{Research Report --- Standardization Edition (August 2026)}}
 \author{\textbf{Tung Lam Trinh} \\ Independent Researcher \\ \texttt{lamtung0481@gmail.com}}
-\date{February 27, 2026}
+\date{August 14, 2026}
 
 \begin{document}
 
@@ -78,11 +81,11 @@
 \begin{abstract}
 This work proposes a theoretical framework that unifies aspects of the Standard Model and General Relativity through the mechanism of \textbf{Induced Gravity} and a \textbf{Superfluid Vacuum}. Starting from the hypothesis that the physical vacuum is described as a condensate of chiral fermions at the Planck scale (NJL-type Lagrangian), we show how spacetime geometry, gauge bosons, matter (as topological excitations), dark matter (as the condensate body), and dark energy (as the relaxed ground state of the condensate) all emerge as collective degrees of freedom of a \textit{single} underlying entity.
 
-This Version 7.1 (V14 Integration) incorporates the rigorous results of the \textbf{multi-scale topological validation protocol}. We provide a first-principles derivation of fermions and gauge structures as \textbf{Structural Obstructions} of the Nullivance flow (Harmonic Map Heat Flow) on the $S^d$ manifold. This replaces the metaphysical "logic incompleteness" with a dynamical proof of matter emergence (Gate 5). We demonstrate that the framework passes all independent observational benchmarks, from Solar System screening to precision CMB cosmology. Complete algorithmic verifications and source code audits are provided in \textbf{Appendix S}.
+This Version 7.1 (V14 Integration) incorporates the rigorous results of the \textbf{multi-scale topological validation protocol}. We provide a first-principles derivation of fermions and gauge structures as \textbf{Structural Obstructions} of the Nullivance flow (Harmonic Map Heat Flow) on the $S^d$ manifold. This replaces the metaphysical "logic incompleteness" with a dynamical proof of matter emergence (Gate 5). We demonstrate that the framework passes its full validation-gate ladder, with real-data criteria wherever the data exist (Planck 2018 binned spectra, SPARC rotation curves, Cassini bounds). Complete algorithmic verifications are indexed in the repository's reproducibility table and Appendix~S; items still under active research are marked as such throughout.
 
 We present these results as a theoretical proposal backed by quantitative simulations, and encourage independent verification, criticism, and further development by the scientific community.
 
-\begin{mdframed}[backgroundcolor=blue!5, frametitle={V7.1 Status Update (V17 Verification Campaign --- Feb 2026)}]
+\begin{mdframed}[backgroundcolor=blue!5, frametitle={Status Update (Verification Campaign, February 2026 --- historical; see the Reader's Guide for the current status table)}]
 \textbf{Theoretical Consistency Checks:}
 \begin{enumerate}
     \item[(i)] \textbf{Standard Model Structure:} $SU(3) \times SU(2) \times U(1)$ derived from TQFT (Chern-Simons/BF Theory) and 3-Strand Braid Stability.
@@ -222,7 +225,7 @@ To avoid over-claiming, we separate "validation" into four levels:
 \end{itemize}
 
 
-\textbf{A.5 Epistemic tags used throughout the 2026 revisions.}
+\textbf{A.4 Epistemic tags used throughout the 2026 revisions.}
 \begin{table}[H]
 \centering
 \small
@@ -243,7 +246,7 @@ the global referee review (2026-08-14) certifies that no claim is stated above
 its grade.}
 \end{table}
 
-\textbf{A.6 Master notation.}
+\textbf{A.5 Master notation.}
 \begin{table}[H]
 \centering
 \small
@@ -265,14 +268,14 @@ $Y_\Delta$ & required topological asymmetry & $2.4\times10^{-15}$ & Sec.~\ref{se
 without re-definition; appendix-level symbols are defined locally.}
 \end{table}
 
-\textbf{A.7 Figure provenance.} Figures fall into two classes, distinguished in
+\textbf{A.6 Figure provenance.} Figures fall into two classes, distinguished in
 their captions: \emph{data-driven} figures cite their generating script and log
 (e.g.\ the CMB spectra, the real Bullet-Cluster field, the audited screening
 curve, and the four Genesis-chain figures), and are reproducible from the
 repository; all other figures are \emph{schematic illustrations} of mechanisms
 and carry no quantitative claim.
 
-\textbf{A.4 Classification of Major Claims:}
+\textbf{A.7 Classification of Major Claims:}
 \begin{table}[H]
 \centering
 \small
@@ -297,6 +300,41 @@ Topology $\to$ Gauge mapping & -- & -- & $\checkmark$ \\
 % ==========================================================================================
 % SECTION 2: MICROSCOPIC FOUNDATIONS
 % ==========================================================================================
+
+\textbf{A.8 Current validation status (authoritative snapshot, 2026-08-14).}
+All earlier per-campaign summaries in this report are historical; this table is
+the single authoritative status surface.
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+\textbf{Gate} & \textbf{Test} & \textbf{Criterion} & \textbf{Result} \\
+\midrule
+G0/G0b & stability (ghosts, $c_s$; DBI branch) & branch-wide health & PASS \\
+G1s & SM chiral spectrum from $Cl(6)$ & exact counts, anomaly $=0$ & PASS \\
+G2 & CMB TT/TE/EE vs \emph{real} Planck binned & $\chi^2_\nu < 1.5$ each & $1.008/1.171/1.118$ \\
+G3 & SPARC held-out (175 galaxies) & test $\chi^2_\nu < 5$ & $4.746$; zero-param $4.918$ \\
+G4 & solar-system suppression & Cassini $2.3\times10^{-5}$ & $\delta_{\rm Sat}=1.4\times10^{-12}$ \\
+G5 & fermion emergence + BBN & structural + PRyMordial & PASS; $Y_p$ at $0.5\sigma$ \\
+\midrule
+\multicolumn{4}{l}{\textbf{Ladder verdict: CLEAR} (gate runner, frozen criteria, ledger-logged changes)} \\
+\bottomrule
+\end{tabular}
+\caption{Validation snapshot at the archive date. Criteria are frozen in
+\texttt{scripts/gates\_criteria.json}; every criterion change is ledger-logged
+\emph{before} reruns (\texttt{results/logs/gate\_ledger.md}).}
+\end{table}
+
+\textbf{A.9 Data and code availability.} All quantitative claims in this report
+trace to committed code and logs in the accompanying repository: a 13-script
+verification suite (indexed in the repository \texttt{README}), the gate runner
+with frozen criteria, and a pre-registration ledger. Observational inputs:
+SPARC rotation curves (Lelli et al.\ 2016), Planck 2018 binned spectra and
+parameters (PLA R3), PDG 2024 / CODATA 2022 constant tables with provenance
+blocks, and Bullet-Cluster survey imagery acquired by a committed script.
+Figures marked data-driven cite their generating script and log in the caption.
+
 \section{Microscopic Foundations (EFT Definition)}
 
 \textit{Note: The ontological interpretation of the "Logic Layer" (Layer 0) has been moved to \textbf{Appendix Z} to strictly separate the physical Effective Field Theory from metaphysical hypotheses.}
@@ -825,6 +863,7 @@ The specific value $K = 2/3$ is the exact geometric result of the \textbf{Cliffo
 \begin{itemize}
     \item \textbf{Prefactor $\sqrt{2}$:} Arises from the normalization of the Clifford surface $S^1 \times S^1$ embedded in $S^3$. The area ratio is $1/\sqrt{2}$.
     \item \textbf{Phase $2/9$:} we identify this phase with the \textbf{Topological Spin} $h = 2/9$ of the $k=3$ (3 generations) Chern-Simons vacuum [HYP --- the identification is not yet derived in this repository; the numerical fact is however exceptional: the phase extracted from PDG masses is $\theta = 0.222225$ vs $2/9 = 0.222222$, a $0.001\%$ agreement (2026 audit, log \texttt{audit\_sweep2\_20260814})].
+\underresearch{Derivation of the Koide phase $2/9$ from the $k=3$ Chern--Simons vacuum: currently an identification supported by a $0.001\%$ numerical agreement, not a proof.}
 \end{itemize}
 
 \textbf{3. Mass Hierarchy via Exponential Gap (BCS/Tunneling):}
@@ -836,6 +875,7 @@ where $M^* = 365.24$ GeV is the master scale and $X = 3/(2\alpha) \approx 205.55
 
 \textbf{Partial Resolution of ``Problem C'' (2026 audited):}
 Substituting the Seifert parameters into the gap equation yields mass ratios without arbitrary Yukawa couplings, but only at the qualitative level. Independent recomputation with the stated $X=3/(2\alpha)$ gives $m_{\tau}/m_{\mu} = e^{4X(1/32-1/36)} = 17.4$ versus the observed $16.82$ ($3.3\%$ deviation --- not the ``$<1\%$'' quoted in earlier drafts), while the same exponents give $m_{\mu}/m_{e} = e^{4X(1/27-1/32)} = 117$ versus the observed $206.8$ ($44\%$ deviation). The Seifert-exponential mechanism therefore reproduces the \emph{ordering and rough magnitude} of the charged-lepton hierarchy but is not a quantitative mass formula; it is retained as a candidate organizing principle (audit note in Appendix~Z).
+\underresearch{The quantitative origin of the charged-lepton mass hierarchy: the Seifert exponents reproduce $m_\tau/m_\mu$ at $3.3\%$ but fail $m_\mu/m_e$ by $44\%$; a replacement mechanism is being sought within the Genesis dynamical sector.}
 
 \begin{figure}[H]
     \centering
@@ -1342,6 +1382,7 @@ condensate hydrodynamics (energy balance of the relaxation flow against the bary
 field energy) --- the constitutive layer below this note [HYP-micro]; and the
 $\mathcal{O}(1)$ factor in the $a_0$ identification. Any such derivation must evade the
 branch-dichotomy theorem above and reproduce $n = 1$.
+\underresearch{The hydrodynamic derivation of the participation law (Eq.~\ref{eq:participation}) from condensate energy balance, and the $\mathcal{O}(1)$ factor in $a_0 = cH_0/2\pi$.}
 
 \textbf{Cross-Scale Consistency:}
 The same EFT parameters $(c_2, c_4, \rho_0)$ that produce screening at 1 AU also govern galactic dynamics. The transition from the screened regime ($\epsilon \ll 1$) to the unscreened regime ($\epsilon \sim \mathcal{O}(1)$) occurs at $r \sim r_V$. For a typical galaxy with $M_{halo} \sim 10^{12} M_\odot$, the Vainshtein radius is $r_V \sim 10^4$ kpc, which is \textit{larger} than galactic scales ($\sim 10$--$50$ kpc). This means the entire galaxy sits \textit{inside} the screening zone of its own halo. The SPARC rotation curve fits (Gate 3) therefore use the \textbf{unmodified Lane-Emden profile}, which describes the condensate density without fifth-force modifications. The galactic dynamics arise from the \textit{density profile} of the superfluid halo, not from a fifth force. This resolves the apparent contradiction: screening suppresses the \textit{scalar force}, but the \textit{gravitational} effect of the condensate's mass distribution is unaffected.
@@ -1657,6 +1698,31 @@ A minimal falsification set (near-term):
 % SECTION 7: HONEST LIMITATIONS AND OPEN PROBLEMS
 % ==========================================================================================
 \section{Honest Limitations and Open Problems}
+
+\noindent\textbf{Open-Research Register (snapshot, 2026-08-14).} Items below are
+\emph{under active research} and deliberately excluded from the validated-claim
+set of this edition; each carries a falsifier in Appendix~AC.
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+\textbf{ID} & \textbf{Item} & \textbf{Status} \\
+\midrule
+GAP-N4d-asym & topological asymmetry mechanism ($Y_\Delta = 2.4\times10^{-15}$) & open target \\
+GAP-S (micro) & hydrodynamic derivation of the participation law & [HYP-micro] \\
+--- & $\mathcal{O}(1)$ factor in $a_0 = cH_0/2\pi$ & open \\
+GAP-N4c (2D) & Bogoliubov--de Gennes on the true Abrikosov lattice & formality \\
+--- & charged-lepton mass law (Seifert demoted) & open \\
+--- & Koide phase $2/9$ derivation (identification only) & [HYP] \\
+GAP-N4b & $\mathbb{CP}^2$-stage superheavy tower & open \\
+--- & dark-energy relaxation dynamics $w(a)$ & open \\
+\bottomrule
+\end{tabular}
+\caption{Single authoritative register of items under active research at the
+archive date. Nothing in the validated-claim set depends on resolving these.}
+\end{table}
+
 \label{sec:limitations}
 While TRXT V9 has successfully passed six critical observational Gates, we explicitly acknowledge the following limitations to ensure strict adherence to the Master Protocol V2.0. These areas require either full numerical execution or new theoretical derivations in V10.
 

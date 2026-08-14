@@ -326,3 +326,24 @@ PACKAGING:
   current!); replaced with 2026 state + full reproducibility index
   (13 verification scripts <-> logs) + gate-runner instructions.
 - 186 pages, 0 errors, 0 undefined.
+
+## 2026-08-14 (phase 7): DEEP EDITORIAL PASS -- archive edition
+
+- Title page: internal version codes removed; "Standardization Edition
+  (August 2026)"; date updated to the archive date.
+- Abstract: "passes all independent observational benchmarks" tightened to
+  the gate-ladder statement with real-data qualifier; stale Appendix-S-only
+  pointer replaced (reproducibility index + under-research marking note).
+- Feb-2026 status box marked historical, pointing to the new authoritative
+  table.
+- Reader's Guide: A.4-A.7 numbering repaired (was out of order after the
+  phase-6 insertion); NEW A.8 authoritative current-validation-status table
+  (single source of truth for gate results); NEW A.9 Data & Code
+  Availability statement (archive-standard requirement).
+- NEW convention: \underresearch{} marker (orange box) for items under
+  active research; applied at the three key open spots (lepton mass law,
+  participation-law hydrodynamics + a0 O(1) factor, Koide 2/9 derivation).
+- NEW Open-Research Register snapshot table at the head of "Honest
+  Limitations and Open Problems": 8 active items with IDs and status;
+  states explicitly that no validated claim depends on them.
+- 187 pages, 0 errors, 0 undefined. ARCHIVE-READY.
