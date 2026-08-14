@@ -55,3 +55,9 @@ experiments/v12_geometry/
 experiments/v14_phase_j/
 experiments/cosmology/
 experiments/mass_spectrum/
+theory/specs/
+theory/RESEARCH_ATLAS.md
+neutrino/
+paper/v7_release_v2/source_code/src/
+paper/v7_release_v2/source_code/simulations*
+paper/v7_release_v2/TRXT_Academic_Critique.tex
