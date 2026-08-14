@@ -300,3 +300,29 @@ SIDM AUDIT (sidm_crosssection_audit.py, log sidm_audit_20260814):
   cited at the participation-law subsection (novelty delimited).
 - Referee statement: with F1-F5, no claim in the manuscript is stated above
   its evidential grade. Preprint-ready pending PI decision on packaging.
+
+## 2026-08-14 (phase 6): academic-presentation restructuring + packaging
+
+STRUCTURE (restructure_patches, all anchored single-match edits):
+- Genesis chapter moved AFTER Mathematical Formalism (foundations ->
+  formalism -> genesis -> cosmology reading order).
+- Headings de-jargonized: "(V9)"/"(V9 Proof)"/"(V9 Update)"/"(NPL
+  Integration)"/"V12.5 Master Patch" removed or dated; "Hubble Tension
+  (Resolved...)" -> "(Partial Mitigation...; 2026 audit ~23%)" for
+  claim-grade consistency; relic heading marked historical.
+- Reader's Guide upgraded: \item bug fixed; stale screening dependency
+  updated; NEW A.5 epistemic-tag definitions table ([THM]/[NUM]/[LIT]/
+  [HYP]/[ARG]); NEW A.6 master notation table; NEW A.7 figure-provenance
+  statement (data-driven vs schematic classes).
+FIGURES:
+- Figure inventory: all referenced files exist. Legacy SPARC figure
+  (caption admitted "data reconstructed") REPLACED by real-data
+  fig_sparc_examples.png (make_sparc_examples_figure.py): NGC3198/NGC2403/
+  DDO154, SPARC errors, fitted vs zero-parameter a0 curves + baryons-only.
+  Stale "validation in progress" prose replaced with executed G3/T3 numbers.
+PACKAGING:
+- requirements.txt: camb, astropy, astroquery added.
+- README: demoted mass law removed from the banner (was still advertised as
+  current!); replaced with 2026 state + full reproducibility index
+  (13 verification scripts <-> logs) + gate-runner instructions.
+- 186 pages, 0 errors, 0 undefined.

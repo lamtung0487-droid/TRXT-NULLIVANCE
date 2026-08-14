@@ -216,10 +216,61 @@ To avoid over-claiming, we separate "validation" into four levels:
 \begin{itemize}
     \item \textbf{Induced gravity:} depends on \textbf{A1--A3}.
     \item \textbf{Particle spectrum:} depends on \textbf{A4--A5} and $M^*$ audit.
-    \textbf{Solar System viability:} depends on \textbf{Endogenous Screening} (derived in Sec 6.2).
+    \item \textbf{Solar System viability:} depends on the high-acceleration limit of the participation law (Section~\ref{sec:screening}; the earlier ``endogenous screening'' mechanism was struck by the 2026 audit).
     \item \textbf{Cosmological constant:} depends on \textbf{A7} (Entropic Gravity Sequestering).
     \item \textbf{BAO comparison:} Currently \textbf{V2 (Anchored)}. V3 prediction requires Boltzmann solver.
 \end{itemize}
+
+
+\textbf{A.5 Epistemic tags used throughout the 2026 revisions.}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Tag} & \textbf{Meaning} \\
+\midrule
+{[THM]} & proven within this work (machine-verified where applicable) \\
+{[NUM]} & established by a committed, reproducible numerical computation \\
+{[LIT]} & imported from peer-reviewed literature (cited at point of use) \\
+{[HYP]} & hypothesis: stated, motivated, and falsifiable, but not derived \\
+{[ARG]} & plausibility argument selecting among discrete conventions \\
+\bottomrule
+\end{tabular}
+\caption{Epistemic grading used in all 2026 sections and audit boxes. Every
+quantitative claim carries (or inherits from its section) exactly one grade;
+the global referee review (2026-08-14) certifies that no claim is stated above
+its grade.}
+\end{table}
+
+\textbf{A.6 Master notation.}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+\textbf{Symbol} & \textbf{Meaning} & \textbf{Value/origin} & \textbf{Where} \\
+\midrule
+$M^*$ & master mass scale & $365.26$ GeV (Cl(6) chain) & App.~VF \\
+$X$ & $\alpha$-quenching factor $3/(2\alpha)$ & $205.55$ & App.~VF \\
+$C$ & BCS coupling numerator & $50/(3\pi)$ [quasi-1D law] & App.~VF \\
+$(D_e, q, g)$ & channels / comb period / degeneracy & $(5, 6, 4)$ from Cl(6) & App.~VF \\
+$M(1,1)$ & tower ground state & $184$--$201$ TeV & Sec.~\ref{sec:genesis} \\
+$a_0$ & participation-law scale & $cH_0/2\pi$ [HYP] & Sec.~\ref{sec:screening} \\
+$u, u_N, u_0$ & field-energy densities $g^2, g_N^2, a_0^2$ & --- & Eq.~\ref{eq:participation} \\
+$Y_\Delta$ & required topological asymmetry & $2.4\times10^{-15}$ & Sec.~\ref{sec:genesis} \\
+\bottomrule
+\end{tabular}
+\caption{Master notation. Symbols defined here are used across the main text
+without re-definition; appendix-level symbols are defined locally.}
+\end{table}
+
+\textbf{A.7 Figure provenance.} Figures fall into two classes, distinguished in
+their captions: \emph{data-driven} figures cite their generating script and log
+(e.g.\ the CMB spectra, the real Bullet-Cluster field, the audited screening
+curve, and the four Genesis-chain figures), and are reproducible from the
+repository; all other figures are \emph{schematic illustrations} of mechanisms
+and carry no quantitative claim.
 
 \textbf{A.4 Classification of Major Claims:}
 \begin{table}[H]
@@ -279,7 +330,7 @@ This serves as the physical starting point for all subsequent derivations (Induc
 % ==========================================================================================
 \section{Early Universe Dynamics: From Logic to Spacetime}
 
-\subsection{Layer 0-3 Dynamics: The Pre-Geometric Phase (NPL Integration)}
+\subsection{Layer 0--3 Dynamics: The Pre-Geometric Phase}
 
 In prior versions, the TRXT framework postulated the existence of pre-fermions ($\Psi$) at the Planck scale, which weakened the monistic claim of the theory. By integrating the \textbf{Nullivance Propositional Logic (NPL V2.0)} framework, we now provide a foundational mathematical derivation where both fermions and spacetime geometry emerge from a purely logical tensor field. This replaces the ``Big Bang'' singularity with a \textbf{Big Condensation} of logical existence.
 
@@ -456,7 +507,6 @@ Thus, while $\Lambda$CDM faces a ``crisis'' with JWST data, the TRXT superfluid 
 % ==========================================================================================
 % SECTION 4: MATHEMATICAL FORMALISM
 % ==========================================================================================
-\input{chapters/Chapter_Genesis_MassChain.tex}
 
 \section{Mathematical Formalism}
 
@@ -523,7 +573,9 @@ This bound ensures that $\Lambda_{eff}$ remains on the order of the matter densi
 \include{chapters/Chapter_Z_Predictions}
 
 
-\section{Cosmology} % Changed to Section 7, as it's a new top-level section.
+\input{chapters/Chapter_Genesis_MassChain.tex}
+
+\section{Cosmology}
 
 \subsection{Precision Cosmology: The BAO Anchor Check}
 A rigorous test of the TRXT-Nullivance model is its ability to reproduce the Baryon Acoustic Oscillation (BAO) scale without arbitrary parameter tuning.
@@ -985,7 +1037,7 @@ Note: The transfer cross-section $\sigma_T$ (momentum-weighted) is the relevant 
 \textbf{Mechanism: Screened Phonon Mediated Scattering}
 The mediator $\phi$ is the derived Goldstone mode of the condensate ($m_\phi \approx 30$ MeV, see Appendix F). This generates a Yukawa potential $V(r) = -\frac{\alpha_\chi}{r} e^{-m_\phi r}$ with $\alpha_\chi \approx 0.01$. The scattering is computed non-perturbatively using the partial-wave Schrödinger equation (Numerov algorithm).
 
-\textbf{Numerical Results (V12.5 Master Patch):}
+\textbf{Numerical Results (legacy computation; superseded --- see the audit box below):}
 Unlike classical fits, the numerical solution correctly captures the resonant enhancement at low velocities.
 
 \begin{table}[H]
@@ -1064,7 +1116,7 @@ Indirect (Fermi-LAT $\gamma$-ray) & No signal & MeV missions \\
 % ==========================================================================================
 % V9 R1: FULL BOLTZMANN FREEZE-OUT (Relic Density Calculation)
 % ==========================================================================================
-\subsection{Relic Density: Full Boltzmann Freeze-Out (V9)}
+\subsection{Relic Density of the Superseded 5.71 GeV Candidate (historical record)}
 
 A key criticism of the DT-1 dark matter candidate was the absence of a rigorous freeze-out calculation. The V8 estimate ($\Omega h^2 \approx 0.09$--$0.14$) relied on the analytical approximation $x_f = 23$ (hardcoded) and the approximate formula $\Omega h^2 \approx 3 \times 10^{-27} / \langle\sigma v\rangle$. The V9 Campaign replaces this with a \textbf{full numerical solution} of the Lee-Weinberg Boltzmann equation.
 
@@ -1138,20 +1190,29 @@ Using the SPARC sample (175 galaxies) \cite{lelli} and our global PDE solver (se
 Algorithm S.3), we obtain a best-fit effective polytropic index $n \simeq 1.37$
 under our minimal superfluid profile ansatz.
 
-\textbf{Goodness-of-fit:} Validation across the full sample with standard threshold
-$\chi^2_{\rm red}<3.0$ is in progress following the correction of a gradient-array
-bug in the PDE solver (\texttt{np.gradient(r2F,~r)} replacing
-\texttt{np.gradient(r2F,~dr)}, 2026-03-01).  The fit employs two free parameters
-per galaxy ($\Upsilon_\star$, $r_0$), consistent with Appendix~L.
-% CORRECTION 2026-03-01: previous chi2<5.0 threshold was below standard;
-% corrected to chi2<3.0. Reference to n_eff=20.74 removed from SPARC context
-% (it was a neutrino-scale claim unrelated to galactic fitting).
-
+\textbf{Goodness-of-fit (2026 status, executed).} The held-out protocol (Gate~3:
+universal $a_0$ fitted on the alphabetical-even training half only, scored on the
+untouched test half) gives test $\chi^2_\nu = 4.746$ at the fitted
+$a_0 = 3350\ {\rm (km/s)^2/kpc}$, and $\chi^2_\nu = 4.918$ with $a_0$ \emph{frozen} at
+the zero-parameter value $cH_0/2\pi$ (ledger-preregistered test T3, log
+\texttt{mu\_participation\_20260814}); per-galaxy nuisances are the standard
+mass-to-light ratios and a distance factor with a $15\%$ prior.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/fig_6_1_sparc_fit.png}
-    \caption{Typical fit result for galaxy NGC 3198 (Data reconstructed from Lelli et al.\ 2016).}
+    % generated by experiments/figures/make_sparc_examples_figure.py (2026-08-14)
+    \includegraphics[width=0.98\textwidth]{figures/fig_sparc_examples.png}
+    \caption{Real SPARC rotation curves (data with observational errors, Lelli et
+    al.\ 2016 \cite{lelli}) for a high-surface-brightness spiral (NGC~3198), an
+    intermediate spiral (NGC~2403), and a gas-rich dwarf (DDO~154), versus the
+    participation-law prediction at the fitted $a_0 = 3350$ (solid) and at the
+    zero-parameter $a_0 = cH_0/2\pi$ (dashed) --- the two are nearly
+    indistinguishable. Dotted: baryons-only expectation. Per-galaxy nuisances per
+    the Gate-3 protocol, fitted once at the fitted $a_0$ and \emph{reused} for the
+    zero-parameter curve (no re-optimization in its favor). Generated by
+    \texttt{make\_sparc\_examples\_figure.py}; replaces a legacy illustration that
+    used reconstructed data.}
+    \label{fig:sparc_examples}
 \end{figure}
 
 %%--------------------------------------------------------------------
@@ -1319,7 +1380,7 @@ The same EFT parameters $(c_2, c_4, \rho_0)$ that produce screening at 1 AU also
     \label{fig:bullet_realdata}
 \end{figure}
 
-\subsection{Emergent Lorentz Invariance (V9 Proof)}
+\subsection{Emergent Lorentz Invariance}
 
 \subsubsection{Sound Speed from the k-essence Lagrangian}
 The TRXT condensate phase mode $\theta$ is governed by the effective Lagrangian $P(X) = c_2 X + c_4 X^2$ (Appendix X), where $X = g^{\mu\nu}\partial_\mu\theta\,\partial_\nu\theta$. The sound speed for perturbations follows from the general formula (Babichev, Mukhanov \& Vikman 2008):
@@ -1439,7 +1500,7 @@ We perform a Hubbard-Stratonovich transformation by introducing an auxiliary sca
 \end{itemize}
 This matches the Standard Model Higgs Lagrangian, identifying the amplitude mode $h$ as the Higgs boson and the condensate scale $v$ with the electroweak scale. This demonstrates that the TRXT model is consistent with SM phenomenology at low energies.
 
-\subsection{A Geometric Framework for the Hubble Tension (Resolved via Fractal Logic)}
+\subsection{A Geometric Framework for the Hubble Tension (Partial Mitigation via Fractal Logic; 2026 audit: ${\sim}23\%$)}
 One of the most persistent anomalies in modern cosmology is the Hubble Tension ($4\sigma$ discrepancy). In TRXT, this is resolved not by new particles, but by the \textbf{Fractal Sound Speed} of the early universe condensate.
 
 As derived in \textbf{Appendix R}, the pre-geometric percolation transition dictates a fractal Hausdorff dimension $D \approx 2.53$ for the initial logic network. This shifts the effective sound speed to $c_s^2 = 1/(2D-1) \approx 0.246$.
@@ -1448,7 +1509,7 @@ As derived in \textbf{Appendix R}, the pre-geometric percolation transition dict
     \item \textbf{Verification}: This result is a purely geometric consequence of the 3D percolation universality class, removing the need for ad-hoc Early Dark Energy models.
 \end{itemize}
 
-\subsection{Neutrino Mass Hypothesis (Resolved via Geometric Elastic Strain)}
+\subsection{Neutrino Mass Hypothesis (Geometric Elastic Strain)}
 The mechanism of neutrino mass generation is identified with the \textbf{Geometric Elastic Strain} of the $S^3$ manifold (MaVaN Phenomenology). 
 \begin{itemize}
     \item \textbf{Derivation}: See \textbf{Appendix U} for the first-principles derivation of the environment-dependent neutrino mass $m_\nu(\rho)$.
@@ -1556,7 +1617,7 @@ Three critical constraints emerge:
 
 \textbf{Outcome:} \textbf{PASS (Preliminary --- 83 TT data points only)}. The TRXT condensate survives the Planck TT test \textit{if and only if} it is CDM-like at recombination. Full validation against TT+TE+EE+Lensing ($\sim$2500 data points) using the hi\_class Boltzmann solver is required to upgrade this to ``Full PASS'' status.
 
-\subsection{Constraint Audit and Open Problems (V9 Update)}
+\subsection{Constraint Audit and Open Problems (2024 status; see Revision Record for 2026 updates)}
 This section consolidates the known vulnerabilities and tracks their resolution status as of V9.
 
 \subsubsection{Hard dependencies (must be either derived or replaced)}

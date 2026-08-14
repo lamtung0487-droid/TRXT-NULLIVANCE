@@ -2,11 +2,31 @@
 
 **Induced Superfluid Cosmology: A Theoretical Framework for Emergent Gravity and Dark Matter**
 
-A research program exploring a unified framework in which gravity is induced and fundamental particles emerge as topological solitons (knots) in a superfluid vacuum condensate. The working mass law under investigation:
+A research program exploring a unified framework in which gravity is induced and fundamental particles emerge as topological solitons in a superfluid vacuum condensate.
 
-$$ m(p,q) = M^* \left( \frac{1}{p} + \frac{1}{q} \right) $$
+**Current state (2026-08 standardization campaign):** the topological mass tower $M(p,q) = 3.95\,N_f M\sqrt{\ln}\,(pq)^{3/4}$ (ground state 184–201 TeV; the legacy harmonic law $M^*(1/p+1/q)$ is demoted to breathing-mode fine structure); galaxy dynamics from the participation law $u = u_N + u_0\,u_N/u$ with $a_0 = cH_0/2\pi$ (zero globally fitted parameters, ledger-preregistered pass); the CMB gate runs on real Planck 2018 binned spectra; every quantitative claim traces to committed code and a log. See `theory/RESEARCH_LOG.md` and the global referee report (`theory/reviews/referee_report_global_20260814.md`).
 
-with $p, q$ topological winding numbers on a toroidal manifold $T^2$.
+## Reproducibility index (verification suite)
+
+Run from repo root with `PYTHONIOENCODING=utf-8`. Each script writes a committed log to `results/logs/`:
+
+| Script (`experiments/verification/`) | Verifies | Log |
+|---|---|---|
+| `formula_audit.py` | 21 report formulas/numbers | `formula_audit_20260813.log` |
+| `vf_chain_audit.py` | Cl(6)→M* chain + fragility | `vf_chain_audit_20260814.log` |
+| `lattice_C_computation.py` | C = 50/(3π); 5.339 struck | `lattice_C_computation_20260814.log` |
+| `quasi1d_C_model.py` | quasi-1D frame; locking; 1/q | `quasi1d_C_model_20260814.log` |
+| `bcs_gap_equation_comb.py` | transmutation slope protection | `bcs_gap_comb_20260814.log` |
+| `vortex_state_counting.py` | one core state per cell | `vortex_state_counting_20260814.log` |
+| `bdg_vortex_comb.py` | BdG: self-consistency; CdGM count | `bdg_vortex_comb_20260814.log` |
+| `scheme_conventions_audit.py` | prefactor/g=4/look-elsewhere | `scheme_conventions_20260814.log` |
+| `gap_s_screening.py` | screening dichotomy theorem | `gap_s_screening_20260814.log` |
+| `mu_participation_law.py` | participation law; zero-param SPARC | `mu_participation_20260814.log` |
+| `gap_n4d_relic.py` | tower relic: symmetric excluded | `gap_n4d_relic_20260814.log` |
+| `sidm_crosssection_audit.py` | SIDM table audit (FAIL recorded) | `sidm_audit_20260814.log` |
+| `audit_sweep2.py` | Koide/neutrino/BBN sweep | `audit_sweep2_20260814.log` |
+
+Gates: `python scripts/run_gates.py` (criteria frozen in `scripts/gates_criteria.json`; changes ledger-logged in `results/logs/gate_ledger.md`).
 
 ## Repository structure
 
