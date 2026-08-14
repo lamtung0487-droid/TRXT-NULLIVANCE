@@ -1,7 +1,7 @@
 """
-TRXT Mathematical Verification Suite: Claude's Topological Claims
+TRXT Mathematical Verification Suite: the report's Topological Claims
 ==================================================================
-This script verifies several key mathematical claims from Claude's analysis.
+This script verifies several key mathematical claims from the report's analysis.
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -216,7 +216,7 @@ def verify_mass_spectrum():
 if __name__ == "__main__":
     print("="*60)
     print("TRXT MATHEMATICAL VERIFICATION SUITE")
-    print("Based on Claude's Topological Analysis")
+    print("Based on the report's Topological Analysis")
     print("="*60)
     
     results = {}
@@ -236,7 +236,7 @@ if __name__ == "__main__":
     all_passed = all(results.values())
     print("\n" + "="*60)
     if all_passed:
-        print("ALL CLAUDE'S CLAIMS COMPUTATIONALLY VERIFIED!")
+        print("ALL the report'S CLAIMS COMPUTATIONALLY VERIFIED!")
     else:
         print("SOME CLAIMS REQUIRE FURTHER INVESTIGATION")
     print("="*60)
