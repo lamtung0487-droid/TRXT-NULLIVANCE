@@ -31,29 +31,23 @@ Gates: `python scripts/run_gates.py` (criteria frozen in `scripts/gates_criteria
 ## Repository structure
 
 ```
-├── theory/
-│   ├── specs/           Model specifications (current: specs/v17/TRXT_V17_Master_Spec.md)
-│   ├── protocols/       Research laws, derivation checklist, RESEARCH_WORKFLOW.md
-│   └── reviews/         Audit & referee reports
+├── theory/              Scientific record: protocols, derivation notes, audits
+│   ├── protocols/       Research laws, derivation checklist, workflow
+│   └── reviews/         Audit & referee reports (incl. the global referee review)
 ├── src/                 Core Python package (engine, analysis, visualization)
-├── experiments/         Phase-organized research scripts
-│   ├── v11_npl/         Non-perturbative logic transition
-│   ├── v12_geometry/    Topological derivations (Koide phase, chirality, knot masses)
-│   ├── v14_phase_j/     Expert-audit recovery derivations (J1–J9)
-│   ├── npl_gates/       Gate 2–5 PDE validation scripts
-│   ├── v17_gates/       Gate 0–5 suite (current)
-│   ├── bullet_cluster/  Bullet Cluster global PDE simulations (Gate 1)
-│   ├── cosmology/       Baryogenesis, decoherence, DESI w(z) fits
-│   ├── mass_spectrum/   Mass solution, defect census, Layer-0 validation
-│   └── misc/            Cross-checks and debug scripts
+├── experiments/
+│   ├── verification/    13-script independent verification suite (see index above)
+│   ├── v17_gates/       Validation gates G0-G5 (current suite)
+│   ├── npl_gates/       Gate PDE cross-check implementations
+│   ├── figures/         Generators for every data-driven figure in the report
+│   ├── bullet_cluster/  Real-survey data acquisition + figure (Gate 1 context)
+│   └── layer0/          Layer-0 substrate verification (Genesis chapter)
 ├── validation/          Self-contained expert-validation package
-├── neutrino/            Neutrino sector sub-project
-├── data/                Observational datasets (see data/README.md)
-├── results/             figures/ and logs/ — all generated output
-├── paper/               Manuscript trees: v7_release, v7_release_v2 (newest),
-│                        v8_release, v9_campaign, submission_v16
-├── external/            Third-party code (CLASS) — gitignored
-└── archive/             Superseded scripts and working notes
+├── neutrino/            Neutrino-sector computations
+├── scripts/             Gate runner + frozen criteria (gates_criteria.json)
+├── data/                Reference datasets (SPARC, Planck/PDG/CODATA tables)
+├── results/             figures/ + logs/ — the committed evidence trail
+└── paper/v7_release_v2/ The published manuscript (tex, figures, changelog)
 ```
 
 ## Getting started

@@ -41,3 +41,17 @@ archive/notes/path_claude_nullivance.md
 archive/
 docs/handover/
 paper/submission_v16/archive/
+
+# internal working trees (not part of the scientific source package)
+docs/
+paper/early_drafts_v25/
+paper/v7_release/
+paper/v8_release/
+paper/v9_campaign/
+paper/submission_v16/
+experiments/misc/
+experiments/v11_npl/
+experiments/v12_geometry/
+experiments/v14_phase_j/
+experiments/cosmology/
+experiments/mass_spectrum/
