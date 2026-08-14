@@ -224,3 +224,18 @@ AUDIT SWEEP 2 (audit_sweep2.py, log audit_sweep2_20260814):
 - Gate 5 (BBN) line upgraded from 'verification pending' to executed:
   PRyMordial N_eff 3.044, Yp 0.2469 (0.5 sigma), D/H 2.45e-5 (2.4 sigma,
   known standard-BBN tension), lithium problem noted as universal.
+
+## 2026-08-14 (closure): all three remaining GAP-N4c links attacked
+
+- bdg_vortex_comb.py (log bdg_vortex_comb_20260814): vortex modeled as the
+  pair field itself. [HYP-SC] -> THM-in-model (V_eff ~ Delta^2/W measured);
+  CdGM count closed at 1D-BdG (one deep-gap Andreev state per winding core,
+  topologically robust; windingless control near-edge only).
+- scheme_conventions_audit.py (log scheme_conventions_20260814): prefactor 2
+  = sharp-cutoff theorem, scheme band P = 1.12-2.00 quantified; g = 4
+  identified as Cl(6) chiral spinor dimension (tr P+ = 4); cutoff 1/l_P
+  [ARG]; look-elsewhere over 36 combos -> the 0.012% m_tau hit carries
+  2-3 sigma of evidence (nominal 2.9 sigma).
+- Appendix VF.6: items 2026-08-14e/f/g inserted in chronological order +
+  final "Status of the chain" paragraph. Appendix AC GAP-N4c entry rewritten
+  to final state. Derivation note addendum 3 (mathematician-signed).

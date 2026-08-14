@@ -1,0 +1,58 @@
+============================================================================
+CONVENTION TRIO: prefactor / g = 4 / cutoff + look-elsewhere  (2026-08-14)
+============================================================================
+
+--- A. BCS prefactor: theorem + scheme band ---
+  sharp cutoff: 1/lam = int_0^wc dxi/sqrt(xi^2+D^2) = asinh(wc/D)
+  => D = wc/sinh(1/lam) -> 2 wc e^{-1/lam} for lam << 1: the '2' is the
+  EXACT sharp-cutoff prefactor [THM], not a free choice.
+  smooth schemes (numerical, lam = 0.05 and 0.03; P := D e^{1/lam}/wc):
+    sharp       : P = 2.0000  (lam-independence check: 1.5e-08)
+    gaussian    : P = 1.4986  (lam-independence check: 0.0e+00)
+    lorentzian  : P = 1.9997  (lam-independence check: 2.1e-13)
+    exponential : P = 1.1229  (lam-independence check: 2.3e-09)
+  scheme band: P in [1.123, 2.000] -> factor 1.78 spread in M*.
+  [STATUS] '2' = sharp-cutoff theorem [THM]; residual freedom = scheme
+  choice, band quantified above. A physical substrate with a hard lattice
+  cutoff (Planck spacing) NATURALLY selects the sharp scheme [ARG].
+
+--- B. g = 4 from Cl(6): chiral spinor dimension ---
+  tr P+ = 4: the chiral (Gamma7 = +1) spinor space of Cl(6) is
+  4-dimensional -- the SAME subspace whose generator-dependence gives
+  D_e = 5. Identification: g = dim S+ = 4 [THM-identification]. The
+  channel fermion is the chiral spinor; its 4 components are degenerate
+  by Spin(6) isotropy (Schur) -- the same assumption already used for
+  t = 1/D_e. Upgrade: g = 4 from [OPEN] to [THM-identification + Schur].
+  (Legacy label 'Kramers x particle-hole' is superseded by this origin.)
+
+--- C. cutoff identifications + look-elsewhere analysis ---
+  C required by m_tau for each convention combo; theory C = 5.30516
+  (g enters C = g*D_e/(q*pi*vF): C_th(g) = g/4 * 50/(3pi))
+    sharp        | M_Pl (1/l_P)  | g=4: dev = +0.012%  <- the chain's combo
+    gaussian     | M_Pl (1/l_P)  | g=4: dev = +0.763%
+    lorentzian   | M_Pl (1/l_P)  | g=4: dev = +0.013%
+  combos: 36; best (the chain's): dev = 0.012%;
+  next-best dev = 0.013% (the lorentzian combo -- NOT an
+  independent trial: P_lorentzian = 2.000 duplicates the sharp scheme);
+  median dev = 49.8%
+  look-elsewhere: expected chance hits within +/-0.012% over the
+  enumerated space ~ 0.004 -> nominal p ~ 0.4% (~2.9 sigma).
+  Caveats (both directions): (i) the duplicate lorentzian direction
+  inflates the combo count without adding volume; (ii) the enumeration
+  of 'natural' conventions is itself a modeling choice and could be
+  larger. Conservative statement: the agreement carries >= 2 sigma and
+  < 3 sigma of evidence -- strong support, NOT proof.
+
+============================================================================
+VERDICT (link 3)
+============================================================================
+- Prefactor 2: sharp-cutoff BCS theorem [THM]; scheme band quantified;
+  hard-lattice substrate argues for sharp [ARG].
+- g = 4: identified as the chiral spinor dimension of Cl(6) [THM-ident +
+  Schur isotropy] -- no longer a free choice.
+- Cutoff: full M_Pl = 1/l_P is the natural hard-lattice identification
+  [ARG]; reduced-Planck and pi-variants enumerated; with all conventions
+  enumerated, the look-elsewhere-corrected weight of the 0.012% agreement
+  is ~2 sigma: supportive, not conclusive. The chain's honest status:
+  a STRUCTURED DERIVATION with two [ARG]-level selections (scheme,
+  cutoff) and quantified evidential weight.

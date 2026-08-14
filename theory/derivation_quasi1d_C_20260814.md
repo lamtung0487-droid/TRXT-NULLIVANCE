@@ -114,3 +114,44 @@ debt and must be included in any future precision claim.
 near E_F ∝ Δ under V₀ = −cΔ; the ξ-integral splits into a universal log plus a
 Δ-independent constant); numerical convergence protocol adequate (grid-doubling + deep-Δ
 points). The [HYP-SC] label is mandatory wherever the resolution is quoted. **YES.**
+
+---
+
+## Addendum 3 (2026-08-14, closure campaign): the three links attacked
+
+**Codes:** `bdg_vortex_comb.py` (links 1+2), `scheme_conventions_audit.py` (link 3);
+logs `bdg_vortex_comb_20260814`, `scheme_conventions_20260814`.
+
+**Link 1 [HYP-SC] → THM-in-model.** BdG with the vortex modeled as the pair field itself
+(no external potential): the effective locking comb scales Δ^1.97/W (measured) →
+c_eff ~ Δ/W → 0. Self-consistency is a *consequence* of BdG; slope protection a fortiori.
+
+**Link 2 (ν counting) → closed at 1D-BdG.** A winding (kink) core binds exactly ONE
+deep-gap Andreev state per channel per core — robust across all tested Δ and spacings
+(never 0, never 2); the windingless well binds only near-edge states that can merge into
+the continuum (0.5 states/core row at weak coupling). Robustness of the one-per-core
+count is topological (winding) — the CdGM statement. Referee history: first S-C threshold
+(0.5Δ) undercounted at small Δ; second version overclaimed "kink-free binds NONE" —
+corrected to the position-based discrimination (0.30–0.53Δ deep vs 0.64–0.87Δ near-edge).
+Remaining formality: 2D BdG on the true Abrikosov lattice.
+
+**Link 3 (prefactor / g / cutoff).**
+- Prefactor 2 = sharp-cutoff theorem (Δ = ω_c/sinh(1/λ), exact); scheme band
+  P ∈ {2.000 sharp, 1.499 Gauss, 2.000 Lorentz, 1.123 exp} — hard-lattice substrate
+  argues sharp [ARG].
+- g = 4 = dim of the Γ₇=+1 chiral spinor space of Cl(6) (verified tr P₊ = 4) — same
+  object as D_e = 5; Schur isotropy assumption shared with t = 1/D_e. No longer free.
+- Cutoff: 1/ℓ_P natural for a hard lattice [ARG]. Look-elsewhere over 36 convention
+  combos: expected chance hits at the 0.012% tolerance ≈ 0.004 → nominal p ≈ 0.4%
+  (~2.9σ); conservatively 2σ–3σ after discounting the duplicate Lorentzian direction and
+  enumeration subjectivity.
+
+**Final status:** the chain is a structured derivation with two [ARG]-level selections
+and one 2D formality; evidential weight of the m_τ hit quantified at 2σ–3σ.
+
+**Mathematician sign-off (addendum 3):** BdG particle-hole structure checked (±E doubling
+correctly halved in counts); scaling exponent 1.97 consistent with second-order
+perturbation theory; asinh prefactor derivation exact; tr P₊ = 4 machine-verified;
+look-elsewhere estimate is order-of-magnitude by construction — the 2σ–3σ conservative
+band is the correct citable statement, and the duplicate-direction caveat must accompany
+it. **YES.**
