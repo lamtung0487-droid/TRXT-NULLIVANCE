@@ -14,10 +14,11 @@ but recovers its full density at late times (T << Tc ~ 1 eV).
 import sys, os
 import numpy as np
 
-# Setup: Point to PRyMordial directory
-# Adjust this path to match your environment
+# Setup: PRyMordial is an external third-party dependency (see data/README.md).
+# Clone it into external/PRyMordial to enable the BBN gate; the gate skips
+# gracefully if it is absent.
 PRYM_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                        "../../paper/v7_release/source_code/bbn_prymordial/PRyMordial"))
+                                        "../../external/PRyMordial"))
 if os.path.exists(PRYM_DIR):
     os.chdir(PRYM_DIR)
     sys.path.insert(0, PRYM_DIR)

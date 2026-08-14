@@ -19,6 +19,7 @@ Observational inputs for TRXT-Nullivance. Committed files are small reference ta
 | `raw/` | Bullet Cluster (1E 0657-56): DSS optical + ROSAT All-Sky Survey broad-band counts (`bullet_optical.fits`, `bullet_xray.fits`), 30'×30' @ 6"/px, fetched 2026-08-13 via astroquery SkyView | `python experiments/bullet_cluster/fetch_bullet_fits.py` from repo root. Note: RASS is shallow (location only); merger substructure needs Chandra (obsid 3184 et al., not auto-fetchable). Figure: `experiments/bullet_cluster/plot_bullet_realdata.py` → log `results/logs/bullet_realdata_20260813.log` |
 | `../validation/data/` | Planck 2018 plc_3.0 likelihood (clik) | See `validation/MANUAL_DOWNLOAD_INSTRUCTIONS.md` |
 | `../external/class_public/` | CLASS Boltzmann solver | `git clone https://github.com/lesgourg/class_public` into `external/` |
+| `../external/PRyMordial/` | PRyMordial BBN code (Burns, Tait & Valli 2024) | `git clone https://github.com/vallima/PRyMordial` into `external/`. Required only for the BBN gate (Gate 5); the audit scripts skip it gracefully if absent. |
 
 ## Rules (see theory/protocols/MASTER-PROTOCOL-V2.md)
 

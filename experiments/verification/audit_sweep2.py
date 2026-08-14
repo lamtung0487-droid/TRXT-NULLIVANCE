@@ -99,8 +99,7 @@ emit(f"  the Section 8.4 erratum banner (breathing-mode fine structure).]")
 # --------------------------------------------------------------- F. BBN
 emit("")
 emit("--- F. BBN: PRyMordial (standard physics) vs measurements ---")
-prym_dir = os.path.join("paper", "v7_release_v2", "source_code",
-                        "bbn_prymordial", "PRyMordial")
+prym_dir = os.path.join("external", "PRyMordial")
 code = ("import PRyM.PRyM_main as pm; import numpy as np; "
         "r = pm.PRyMclass().PRyMresults(); "
         "print('RES', ' '.join(f'{x:.6f}' for x in r))")
