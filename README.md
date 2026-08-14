@@ -34,7 +34,7 @@ Gates: `python scripts/run_gates.py` (criteria frozen in `scripts/gates_criteria
 ├── theory/              Scientific record: protocols, derivation notes, audits
 │   ├── protocols/       Research laws, derivation checklist, workflow
 │   └── reviews/         Audit & referee reports (incl. the global referee review)
-├── src/                 Core Python package (engine, analysis, visualization)
+├── src/                 Core Python package (physics engine + analysis)
 ├── experiments/
 │   ├── verification/    13-script independent verification suite (see index above)
 │   ├── v17_gates/       Validation gates G0-G5 (current suite)
@@ -68,6 +68,10 @@ The project runs as a multi-agent research lab (see `theory/protocols/`). Every 
 > derivation → mathematical audit → implementation → gate validation (G0–G5) → data confrontation → adversarial peer review → publication
 
 Core laws: parameters must emerge from theory, never be tuned to data (**Anti-Hardcode**); a failed gate falsifies the action rather than triggering a patch (**Anti-Frankenstein**); every claim declares its observables and failure conditions; all validation runs against real data (SPARC, Planck 2018, PDG 2024, Bullet Cluster).
+
+## Citation
+
+See  (GitHub renders a "Cite this repository" button) or the concept DOI [10.5281/zenodo.18195546](https://doi.org/10.5281/zenodo.18195546).
 
 ## License
 
