@@ -71,3 +71,11 @@ src/legacy/
 src/vis/
 src/phase2_dm_verification.py
 src/phase3_liv_verification.py
+paper/v7_release_v2/figures_old/
+paper/v7_release_v2/source_code/artifacts/
+paper/v7_release_v2/source_code/data/
+paper/v7_release_v2/source_code/proofs/
+paper/v7_release_v2/source_code/results/
+paper/v7_release_v2/source_code/*.py
+paper/v7_release_v2/source_code/*.png
+paper/v7_release_v2/source_code/*.md
