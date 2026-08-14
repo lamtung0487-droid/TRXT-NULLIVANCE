@@ -1,0 +1,70 @@
+============================================================================
+GAP-N4d: TOWER RELIC FROM THE GREAT CONDENSATION   (2026-08-14)
+============================================================================
+  scales: T_c = 2.3e+16 GeV, M(1,1) = 1.84e+05 GeV, size ~ 1/M* = 1/365.26 GeV
+  required yield for Omega h^2 = 0.12:  Y_req = 2.38e-15
+
+--- A. Kibble-Zurek production at the transition ---
+  quench ratio tau_Q/tau0 = T_c/H(T_c):
+    g* =   10: H_c = 2.27e+14 GeV, tau_Q/tau0 = 101.1
+    g* =  100: H_c = 7.19e+14 GeV, tau_Q/tau0 = 32.0
+    g* = 1000: H_c = 2.27e+15 GeV, tau_Q/tau0 = 10.1
+  (near-Planckian transition -> only a moderately slow quench)
+  Y_KZ band (over z, f, g*): [1.3e-07, 3.9e-04]
+  vs Y_req = 2.4e-15: OVERPRODUCTION by 8-11 orders
+  (the classic monopole-problem situation -- annihilation must be examined)
+
+--- B. annihilation burn-down (one-way Boltzmann; production suppressed) ---
+  thermal creation of coherent solitons is exponentially suppressed
+  (Drukier-Nussinov class) -> Y_eq term dropped; annihilation geometric.
+  x_i = M/T_c = 8.0e-12
+  g* =  10, R = 1/M* (365 GeV)     : Y_f = 1.81e-31 -> Omega h^2 = 9.1e-18
+  g* =  10, R = 1/M(1,1) (compact) : Y_f = 4.59e-26 -> Omega h^2 = 2.3e-12
+  g* = 100, R = 1/M* (365 GeV)     : Y_f = 5.72e-32 -> Omega h^2 = 2.9e-18
+  g* = 100, R = 1/M(1,1) (compact) : Y_f = 1.45e-26 -> Omega h^2 = 7.3e-13
+  full band: Omega h^2 (symmetric) in [3e-18, 2e-12]
+  -> the SYMMETRIC tower component annihilates to irrelevance:
+     11+ orders BELOW the observed dark matter.
+  (Y_f is an attractor ~ H/(s sigma v) at T_c: INDEPENDENT of Y_KZ --
+   the KZ overproduction is erased, robustly across all bands.)
+
+--- C. what CAN make the tower the dark matter: topological asymmetry ---
+  required net-charge yield: Y_Delta = 2.38e-15
+  = (Omega_DM/Omega_B)(m_p/M) x Y_B: check 2.38e-15  (identity verified)
+  i.e. eta_top/eta_B = 2.7e-05 ~ 5.4 m_p/M(1,1).
+  If the Great Condensation generates a NET topological charge with this
+  yield (cogenesis with the baryon asymmetry suppressed by m_p/M), the
+  anti-solitons annihilate away and the excess survives EXACTLY as
+  asymmetric dark matter. This is now a sharp, falsifiable TARGET, not a
+  free story. Prediction: NO annihilation signals today (no partners) --
+  consistent with, indeed demanded by, the indirect-detection nulls.
+
+--- D. the 'unitarity-regime thermal relic' phrasing (Genesis) ---
+  IF the tower were a point particle in thermal equilibrium with
+  unitarity-saturating annihilation: Omega h^2 ~ 0.25 -- the
+  famous ~100 TeV coincidence. BUT solitons cannot reach thermal
+  equilibrium from below (coherent-object production is exponentially
+  suppressed), so this channel is UNAVAILABLE: the phrasing must be
+  revised in the manuscript.
+
+--- E. isocurvature note ---
+  Production at a post-inflationary transition with uniform T_c inherits
+  the adiabatic curvature perturbations; no isocurvature component at
+  leading order for either the KZ or the asymmetric channel. [OK]
+
+============================================================================
+VERDICT (GAP-N4d)
+============================================================================
+1. [COMPUTED] KZ production at the Great Condensation OVERPRODUCES the
+   tower by 8-11 orders; geometric soliton annihilation then erases the
+   symmetric component to Omega h^2 ~ 1e-17..1e-12 -- robustly, across
+   all uncertainty bands. THE SYMMETRIC SCENARIO IS EXCLUDED.
+2. [TARGET] The tower is viable as dark matter ONLY with a primordial
+   topological asymmetry Y_Delta = 2.4e-15 (eta_top ~ 5.4 (m_p/M) eta_B):
+   a quantitative cogenesis target, falsifiable, and predicting null
+   indirect-detection signals.
+3. [REVISION] Genesis's 'unitarity-regime thermal relic' phrasing is
+   unavailable to solitons and must be corrected.
+4. NEW REGISTER ITEM (GAP-N4d-asym): a mechanism generating the net
+   topological charge at the transition (CP-violating condensation
+   dynamics) with the target yield.

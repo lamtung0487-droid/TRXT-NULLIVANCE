@@ -273,3 +273,16 @@ SIDM AUDIT (sidm_crosssection_audit.py, log sidm_audit_20260814):
   PASS: chi2 = 4.918 with ZERO globally fitted parameters.
 - Sec 9.3: participation-law subsection added (eq:participation);
   open-register paragraph updated. G3 gate protocol unchanged.
+
+## 2026-08-14 (phase 4): GAP-N4d -- tower relic abundance computed
+
+- gap_n4d_relic.py (log gap_n4d_relic_20260814) + derivation note
+  (mathematician-signed): KZ production at the Great Condensation
+  overproduces by 8-11 orders; geometric annihilation burn-down erases the
+  symmetric component to Omega h^2 ~ 1e-18..1e-12 (all bands) ->
+  SYMMETRIC SCENARIO EXCLUDED.
+- Tower-as-DM requires topological asymmetry, exact target
+  Y_Delta = 2.4e-15 = (Om_DM/Om_B)(m_p/M) Y_B; new register item
+  GAP-N4d-asym. Asymmetric channel predicts null indirect detection.
+- Genesis DM bullet rewritten (unitarity-thermal phrasing retracted);
+  Appendix AC GAP-N4d entry updated.
