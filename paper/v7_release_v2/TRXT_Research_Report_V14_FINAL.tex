@@ -96,7 +96,18 @@ We present these results as a theoretical proposal backed by quantitative simula
 \end{mdframed}
 
 \begin{mdframed}[backgroundcolor=red!5, frametitle={2026 Revision (Internal Adversarial Verification Campaign)}]
-This revision integrates a full adversarial re-verification of the framework (Section~\ref{sec:genesis} and the Revision Record, Section~\ref{sec:revisionrecord}). Principal changes: \textbf{(1)} the origin of mass is rebuilt from Layer~0 upward --- Bogomolny principle $E=4\pi K|Q|$ (``Mass $=4\pi K\times$Incompleteness''), homotopy selection of the matter stages, forced dimensional lift, and the one-loop NJL quartic theorem --- yielding the explicit tower law $M=3.95\,N_f M\sqrt{\ln}\,(pq)^{3/4}$ with zero fitted numbers; \textbf{(2)} the harmonic law $M^*(1/p{+}1/q)$ is demoted to breathing-mode fine structure, and the Standard Model is \emph{structurally excluded} from the topological tower --- SM masses are dynamical; \textbf{(3)} the topological sector becomes a genuine prediction: absolutely stable states from $184$--$201$\,TeV, superseding the earlier $5.7$\,GeV candidate; \textbf{(4)} the validation gates were rebuilt so they can fail, and currently clear. All claims carry machine-checked derivations and an auditable git trail.
+This revision integrates a full adversarial re-verification of the framework (Section~\ref{sec:genesis} and the Revision Record, Section~\ref{sec:revisionrecord}). Principal changes: \textbf{(1)} the origin of mass is rebuilt from Layer~0 upward --- Bogomolny principle $E=4\pi K|Q|$ (``Mass $=4\pi K\times$Incompleteness''), homotopy selection of the matter stages, forced dimensional lift, and the one-loop NJL quartic theorem --- yielding the explicit tower law $M=3.95\,N_f M\sqrt{\ln}\,(pq)^{3/4}$ with zero fitted numbers; \textbf{(2)} the harmonic law $M^*(1/p{+}1/q)$ is demoted to breathing-mode fine structure, and the Standard Model is \emph{structurally excluded} from the topological tower --- SM masses are dynamical; \textbf{(3)} the topological sector becomes a genuine prediction: absolutely stable states from $184$--$201$\,TeV, superseding the earlier $5.7$\,GeV candidate; \textbf{(4)} the validation gates were rebuilt so they can fail, and currently clear.
+\textbf{2026-08 standardization campaign:} the CMB gate now runs on the \emph{real}
+Planck 2018 binned spectra with published parameters ($\chi^2_\nu = 1.01/1.17/1.12$,
+zero tuning); the galaxy sector passes its held-out criterion with \emph{zero} globally
+fitted parameters via the participation law and $a_0 = cH_0/2\pi$; solar-system safety
+follows parameter-free from the same law ($\delta_{\rm Saturn} = 1.4\times10^{-12}$);
+and the tower's production was computed --- the symmetric relic channel is
+\emph{excluded}, leaving a sharp asymmetric-cogenesis target
+$Y_\Delta = 2.4\times10^{-15}$. Formula-level audits corrected the $H_0$ inference
+(68.7, tension reduction ${\sim}23\%$), demoted the Seifert lepton law to a candidate
+organizing principle, and struck several unreproducible legacy numbers.
+All claims carry machine-checked derivations and an auditable git trail.
 \end{mdframed}
 \end{abstract}
 
@@ -761,7 +772,7 @@ The specific value $K = 2/3$ is the exact geometric result of the \textbf{Cliffo
 \textbf{Geometric Derivation of Koide Constants:}
 \begin{itemize}
     \item \textbf{Prefactor $\sqrt{2}$:} Arises from the normalization of the Clifford surface $S^1 \times S^1$ embedded in $S^3$. The area ratio is $1/\sqrt{2}$.
-    \item \textbf{Phase $2/9$:} In Module 1, we proved this phase corresponds to the \textbf{Topological Spin} $h = 2/9$ of the $k=3$ (3 generations) Chern-Simons vacuum.
+    \item \textbf{Phase $2/9$:} we identify this phase with the \textbf{Topological Spin} $h = 2/9$ of the $k=3$ (3 generations) Chern-Simons vacuum [HYP --- the identification is not yet derived in this repository; the numerical fact is however exceptional: the phase extracted from PDG masses is $\theta = 0.222225$ vs $2/9 = 0.222222$, a $0.001\%$ agreement (2026 audit, log \texttt{audit\_sweep2\_20260814})].
 \end{itemize}
 
 \textbf{3. Mass Hierarchy via Exponential Gap (BCS/Tunneling):}
@@ -1086,6 +1097,10 @@ The ODE was solved using the Radau IIA stiff solver (rtol $= 10^{-8}$, atol $= 1
     \item $x_f = 22.9$ (\textbf{self-consistent}, not hardcoded)
     \item $\Omega_{\mathrm{DM}} h^2 = 0.1241$ (deviation \textbf{3.4\%} from Planck $0.1200 \pm 0.0012$)
 \end{itemize}
+\emph{(2026 status note: this computation pertains to the superseded DT-1 candidate and
+is retained as a record; the current dark sector is the topological tower, whose
+production analysis --- symmetric channel excluded, asymmetric target quantified --- is
+given in Section~\ref{sec:genesis} and log \texttt{gap\_n4d\_relic\_20260814}.)}
 
 \begin{table}[H]
 \centering
@@ -1248,7 +1263,7 @@ constitutive law of the emergent medium rather than a $P(X)$ fifth force, it eva
 branch-dichotomy theorem by construction, and it reproduces both the deep-MOND limit
 ($g^2 \to a_0 g_N$) and the high-acceleration tail $\delta \simeq u^2/2$ automatically.
 
-\textbf{The scale: $a_0 = cH_0/2\pi$ [HYP], gate-level tested.} Identifying the
+\textbf{The scale: $a_0 = cH_0/2\pi$ [HYP], gate-level tested.} The scale $a_0$ and its $cH_0$ coincidence are Milgrom's original observations~\cite{milgrom1983}; the quadrature structure resembles Verlinde's emergent-gravity relation~\cite{verlinde2016}. The novelty claimed here is only the exact standard-$\mu$ equivalence, the $n=1$ uniqueness, and the zero-parameter gate test. Identifying the
 reservoir rate with the condensate relaxation (one phase winding per Hubble time --- the
 dark-energy-as-relaxing-superfluid axiom of this report) gives $a_0 = cH_0/2\pi = 3215\
 {\rm (km/s)^2/kpc}$ (Planck $H_0$), within $4.0\%$ of the Gate-3 fitted $3350$ (the
@@ -1676,7 +1691,7 @@ The V9 Campaign has transformed TRXT from a theoretical proposal into a \textbf{
     \item \textbf{Gate 4 (Solar System, 2026 re-derivation):} PASS. Suppression from the Gate-3-validated interpolation law (parameter-free): $\delta({\rm Saturn}) = 1.4\times10^{-12}$ vs Cassini $2.3\times10^{-5}$; the earlier ``endogenous Vainshtein'' mechanism was struck (Section~\ref{sec:screening} erratum).
     \item \textbf{Gate 5 (BBN):} PASS. Ground-State Decoupling argument ($w=-1$ condensate negligible at $T \sim 1$ MeV) $\Rightarrow$ standard BBN applies; PRyMordial verification executed 2026-08-14: $N_{\rm eff}=3.044$, $Y_p = 0.2469$ vs $0.2453\pm0.0034$ observed ($0.5\sigma$), D/H $= 2.45\times10^{-5}$ vs $(2.527\pm0.030)\times10^{-5}$ ($2.4\sigma$, the known rate-dependent tension of standard BBN, not TRXT-specific; likewise the lithium problem). Log: \texttt{audit\_sweep2\_20260814}.
     \item \textbf{Gate 6 (CMB Boltzmann):} PASS. Condensate indistinguishable from CDM at $z \sim 1100$.
-    \item[\textbf{V9-R1}] \textbf{Relic Density:} PASS. Full Boltzmann freeze-out: $\Omega h^2 = 0.1241$ (3.4\% from Planck).
+    \item[\textbf{V9-R1}] \textbf{Relic Density (superseded):} the V9 freeze-out $\Omega h^2 = 0.1241$ belonged to the superseded $5.71$~GeV DT-1 candidate. The current dark sector is the $184$--$201$~TeV tower, whose production was computed 2026-08-14: symmetric component excluded, asymmetric target $Y_\Delta = 2.4\times10^{-15}$ (Section~\ref{sec:genesis}, register GAP-N4d-asym).
     \item[\textbf{V9-R3}] \textbf{Lorentz Invariance:} PASS. Analytical proof: $c_s^2 \leq 1$, $\alpha_4 > 0$, $c_{\mathrm{gw}} = c$.
 \end{enumerate}
 
@@ -2548,6 +2563,8 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{clowe2006} Clowe, D., et al. (2006). ``A Direct Empirical Proof of the Existence of Dark Matter''. \textit{Astrophys. J. Lett.} 648, L109.
 \bibitem{Friedan1980} Friedan, D. (1980). ``Nonlinear Models in $2+\epsilon$ Dimensions''. \textit{Phys. Rev. Lett.} 45, 1057.
 \bibitem{HullTownsend1986} Hull, C. M., \& Townsend, P. K. (1986). ``Finiteness and conformal invariance in non-linear $\sigma$-models''. \textit{Nucl. Phys. B} 274, 349.
+\bibitem{milgrom1983} Milgrom, M. (1983). ``A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis''. \textit{Astrophys. J.} 270, 365.
+\bibitem{verlinde2016} Verlinde, E. (2017). ``Emergent Gravity and the Dark Universe''. \textit{SciPost Phys.} 2, 016 [arXiv:1611.02269].
 \bibitem{BP1975} Belavin, A. A., \& Polyakov, A. M. (1975). \textit{JETP Lett.} 22, 245.
 \bibitem{Struwe1985} Struwe, M. (1985). \textit{Comment. Math. Helv.} 60, 558.
 \bibitem{Qing1995} Qing, J. (1995). \textit{Comm. Anal. Geom.} 3, 297.

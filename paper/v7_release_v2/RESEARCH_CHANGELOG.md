@@ -286,3 +286,17 @@ SIDM AUDIT (sidm_crosssection_audit.py, log sidm_audit_20260814):
   GAP-N4d-asym. Asymmetric channel predicts null indirect detection.
 - Genesis DM bullet rewritten (unitarity-thermal phrasing retracted);
   Appendix AC GAP-N4d entry updated.
+
+## 2026-08-14 (phase 5): GLOBAL REFEREE REVIEW -- verdict MINOR REVISION, F1-F5 applied
+
+- theory/reviews/referee_report_global_20260814.md: full-protocol adversarial
+  review of the 184-page state. Hardcode/circularity/reproduction audits PASS
+  with named residuals; risks ranked (thin margins: 2-3 sigma anchor weight,
+  T3 at 4.92 vs 5.0; GAP-N4d-asym now load-bearing for the DM identity).
+- Mandatory fixes applied: F1 V9-R1 relic line flagged superseded; F2 DT-1
+  relic subsection status note; F3 Koide 2/9 "proved" -> identification [HYP]
+  (with the 0.001% numerical fact); F4 abstract 2026-box refreshed with the
+  standardization-campaign results; F5 Milgrom 1983 + Verlinde 2016 added and
+  cited at the participation-law subsection (novelty delimited).
+- Referee statement: with F1-F5, no claim in the manuscript is stated above
+  its evidential grade. Preprint-ready pending PI decision on packaging.
