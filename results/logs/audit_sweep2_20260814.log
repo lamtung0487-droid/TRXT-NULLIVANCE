@@ -1,0 +1,53 @@
+============================================================================
+AUDIT SWEEP 2: Koide / neutrino / BBN   (2026-08-14)
+============================================================================
+
+--- A. Koide relation (l.752-761) ---
+  standard Koide Q = (sum m)/(sum sqrt(m))^2 = 0.666664 (2/3 = 0.666667; dev 0.0003%)  [PASS, famous]
+  PRINTED formula K = (sum sqrt m)^2/(2 sum m) = 0.750002 = 3/4-ish,
+  NOT 2/3: the printed expression is the reciprocal form; as written it
+  equals 1/(2Q) = 0.750002. [FAIL - transcription error in the
+  formula; the CLAIM K=2/3 is right for the standard form]
+  phase from PDG masses (assignment (e,mu,tau)): theta = 0.222225 rad
+  vs claimed 2/9 = 0.222222: dev 0.00%  [PASS]
+
+--- B. Appendix F: n_d = (M*/ln(M*/m_nu))^3 ~ 1880 GeV^3 ---
+  m_nu = 0.05 eV: n_d =    1875 GeV^3   <- matches 1880 (input m_nu inferred ~0.05 eV)
+  m_nu = 0.06 eV: n_d =    1910 GeV^3
+  m_nu = 0.1 eV: n_d =    2013 GeV^3
+  [NOTE] arithmetic verified for m_nu ~ 0.05 eV, but Appendix F does not
+  STATE the m_nu input -- provenance gap to fix in the text.
+
+--- C. Dark-phonon Delta N_eff (l.908): 'T_dec > 200 MeV => T/T < 0.5' ---
+  T_dec = 200 MeV (QCD)   : T_phi/T_gamma = 0.558, dN_eff = 0.0555
+  T_dec = ~1 GeV          : T_phi/T_gamma = 0.528, dN_eff = 0.0444
+  T_dec = ~100 GeV (EW)   : T_phi/T_gamma = 0.482, dN_eff = 0.0307
+  T_dec = >EW full SM     : T_phi/T_gamma = 0.465, dN_eff = 0.0268
+  [NOTE] at the stated T_dec > 200 MeV the ratio is 0.56, NOT < 0.5 as
+  printed; '<0.5' needs T_dec above the EW scale (g* > 86). The physical
+  CONCLUSION dN_eff < 0.3 holds either way (0.056 at QCD decoupling).
+
+--- D. MaVaN coupling beta = 2/(n+1) (l.1363) ---
+  n = 1.37: beta = 0.8439 vs claimed 0.844  [PASS]
+
+--- E. W-boson mode arithmetic (l.723; interpretation demoted by erratum) ---
+  M*(1/5+1/50) = 80.36 GeV vs printed 80.35, observed 80.3692
+  [PASS arithmetic; NOTE: printed '80.35' vs recomputed 80.36 -- uses
+  legacy M* = 365.24: 80.35. Interpretive claim covered by
+  the Section 8.4 erratum banner (breathing-mode fine structure).]
+
+--- F. BBN: PRyMordial (standard physics) vs measurements ---
+  PRyMordial: N_eff = 3.0444, Yp(BBN) = 0.24689, D/H = 2.4545e-5, Li/H = 5.439e-10
+  Yp: theory 0.2469 vs observed 0.2453 +/- 0.0034 (Aver+ 2021): 0.5 sigma  [PASS]
+  D/H x1e5: theory 2.4545 vs observed 2.527 +/- 0.03 (Cooke+ 2018): 2.4 sigma  [NOTE]
+  Li/H: 5.44e-10 vs ~1.6e-10 observed -- the standard
+  cosmological lithium problem (universal to standard BBN, not
+  TRXT-specific). N_eff = 3.0444 = standard value. TRXT claim
+  (ground-state condensate w = -1, negligible at BBN) => standard
+  BBN predictions apply unchanged: CONSISTENT with data at the
+  usual level. Gate-5 'PRyMordial verification pending' can now
+  cite these numbers.
+
+============================================================================
+SWEEP-2 SUMMARY: 1 FAIL (Koide printed formula -- transcription), 4 NOTE (phase 2/9 dev, n_d provenance, dN_eff 0.5 vs 0.56, W legacy M*), rest PASS.
+============================================================================

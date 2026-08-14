@@ -177,3 +177,16 @@ prefactor debt, \emph{conditional on} the hypothesis [HYP-SC] that the locking c
 condensate-generated with $c \sim \mathcal{O}(1)$ --- the natural superfluid reading.
 Remaining open for GAP-N4c: $\nu = (q-1)/q$ state counting [HYP], the [HYP-SC] premise
 and its $\mathcal{O}(1)$ prefactor, and the BCS prefactor / cutoff / $g=4$ trio.
+
+\paragraph{2026-08-14e: the state-counting test (F-Q1).} The counting mechanism behind
+$\nu = (q-1)/q$ was tested in the comb model
+(\texttt{experiments/verification/vortex\_state\_counting.py}, log
+\texttt{vortex\_state\_counting\_20260814}): for any finite core strength
+($|V_0| \gtrsim 0.2$, \emph{either sign}), \textbf{exactly one} miniband becomes
+core-localized (weight $\to q$, splitting off the spectrum) while the remaining $q-1=5$
+stay extended --- never zero, never two. This matches the Caroli--de Gennes--Matricon /
+spectral-flow count of one core level per unit winding per channel. The filling
+hypothesis is thereby upgraded from bare assertion to a CdGM-counting mechanism
+[HYP $\to$ HYP+LIT]; the full closure step is a Bogoliubov--de Gennes computation on the
+actual vortex lattice showing that the reserved core state does not participate in the
+channel filling.

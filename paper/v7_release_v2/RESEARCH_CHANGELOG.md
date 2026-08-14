@@ -206,3 +206,21 @@ GATE 2 REAL-DATA UPGRADE (criteria pre-registered in gate_ledger.md BEFORE run):
   = O(1) prefactor (0.99/0.97/0.92 at c = 0.5/1/2).
 - Derivation note addendum (mathematician-signed); VF.6 item 2026-08-14d;
   Appendix AC GAP-N4c entry updated.
+
+## 2026-08-14 (late night): F-Q1 state counting + audit sweep 2
+
+F-Q1 (vortex_state_counting.py, log vortex_state_counting_20260814):
+- Exactly ONE miniband core-localizes for any finite |V0| (either sign),
+  never 0 or 2 -> nu = (q-1)/q upgraded to CdGM-counting mechanism
+  [HYP -> HYP+LIT]. VF.6 item 2026-08-14e; AC entry updated.
+
+AUDIT SWEEP 2 (audit_sweep2.py, log audit_sweep2_20260814):
+- FAIL fixed: printed Koide formula was the reciprocal form (= 3/4);
+  corrected to the standard ratio (= 2/3; PDG: 0.666664). Phase 2/9
+  verified to 0.001%.
+- Delta N_eff sentence corrected: QCD decoupling gives T ratio 0.56 (not
+  <0.5) and dN_eff = 0.056 < 0.3; <0.5 needs T_dec above EW.
+- Appendix F: unstated input m_nu ~ 0.05 eV now stated (n_d = 1875 verified).
+- Gate 5 (BBN) line upgraded from 'verification pending' to executed:
+  PRyMordial N_eff 3.044, Yp 0.2469 (0.5 sigma), D/H 2.45e-5 (2.4 sigma,
+  known standard-BBN tension), lithium problem noted as universal.

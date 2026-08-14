@@ -1,0 +1,44 @@
+============================================================================
+F-Q1: VORTEX-CORE STATE COUNTING ON THE q=6 COMB   (2026-08-14)
+============================================================================
+
+  per-band mean core weight q<|psi(0)|^2> (1 = uniform, 6 = fully localized)
+       V0 | band 1 | band 2 | band 3 | band 4 | band 5 | band 6 | localized bands (>2)
+    -2.00 |  5.883 |  0.011 |  0.031 |  0.038 |  0.027 |  0.009 |   1
+    -1.00 |  5.571 |  0.050 |  0.120 |  0.136 |  0.093 |  0.030 |   1
+    -0.50 |  4.686 |  0.211 |  0.372 |  0.376 |  0.263 |  0.091 |   1
+    -0.20 |  2.816 |  0.714 |  0.797 |  0.771 |  0.625 |  0.277 |   1
+    -0.05 |  1.466 |  0.968 |  0.981 |  0.981 |  0.951 |  0.653 |   0
+    +0.05 |  0.653 |  0.951 |  0.981 |  0.981 |  0.968 |  1.466 |   0
+    +0.20 |  0.277 |  0.625 |  0.771 |  0.797 |  0.714 |  2.816 |   1
+    +0.50 |  0.091 |  0.263 |  0.376 |  0.372 |  0.211 |  4.686 |   1
+    +1.00 |  0.030 |  0.093 |  0.136 |  0.120 |  0.050 |  5.571 |   1
+    +2.00 |  0.009 |  0.027 |  0.038 |  0.031 |  0.011 |  5.883 |   1
+
+  band-energy separation of the split-off band (|V0| = 1):
+    V0 = -1: bound band BELOW spectrum, separation 0.7305 (core weight 5.57)
+    V0 = +1: antibound band ABOVE spectrum, separation 0.7305 (core weight 5.57)
+
+  weak-V0 limit (relevant [HYP-SC] regime, V0 = -c*Delta -> 0):
+    V0 = -0.020: max band weight 1.202 -> localization is
+    V0 = -0.005: max band weight 1.060 -> localization is
+    perturbative (no split band) at weak coupling; the ONE-state count is
+    a strong-coupling/topological statement (CdGM level inside the core),
+    not visible in the weak-comb spectrum itself.
+
+============================================================================
+VERDICT
+============================================================================
+[NUM] For any finite |V0| >~ 0.2 (either sign), EXACTLY ONE miniband
+      becomes core-localized (weight -> q, splits off the spectrum); the
+      remaining q-1 = 5 stay extended (weight ~ 1). Never 0, never 2.
+[LIT] This matches the CdGM/spectral-flow count: one core level per unit
+      winding per channel.
+=> The counting mechanism 'vortex reserves one state per cell -> filling
+   nu = (q-1)/q' is CONSISTENT in the model (F-Q1 survives). Remaining
+   honest condition: in the [HYP-SC] weak-comb regime the reserved state
+   is a statement about the UNDERLYING vortex (CdGM level bound in the
+   full gap structure), not about the weak comb itself -- i.e. nu = 5/6
+   is upgraded from bare assertion to a CdGM-counting hypothesis
+   [HYP -> HYP+LIT], with the full BdG-on-vortex-lattice computation as
+   the future closure step.
