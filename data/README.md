@@ -20,7 +20,7 @@ Observational inputs for TRXT-Nullivance. Committed files are small reference ta
 | `../validation/data/` | Planck 2018 plc_3.0 likelihood (clik) | See `validation/MANUAL_DOWNLOAD_INSTRUCTIONS.md` |
 | `../external/class_public/` | CLASS Boltzmann solver | `git clone https://github.com/lesgourg/class_public` into `external/` |
 
-## Rules (see CLAUDE.md)
+## Rules (see theory/protocols/MASTER-PROTOCOL-V2.md)
 
 - Every new dataset gets a row here with source, release version, and download date.
 - Raw data is never edited in place; derived/processed data goes to `results/`.

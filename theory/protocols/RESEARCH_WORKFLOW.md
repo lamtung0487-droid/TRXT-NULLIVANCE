@@ -1,6 +1,6 @@
 # TRXT-Nullivance Research Workflow
 
-The pipeline every research thread follows. Each stage has an owner (a lab agent from `.claude/agents/`), an entry condition, and a written artifact. No stage may be skipped; a stage without its artifact did not happen.
+The pipeline every research thread follows. Each stage has an owner (a lab agent from the lab roster), an entry condition, and a written artifact. No stage may be skipped; a stage without its artifact did not happen.
 
 ```
  Hypothesis

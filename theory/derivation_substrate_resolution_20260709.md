@@ -1,6 +1,6 @@
 # Derivation Note — Substrate Resolution: One Breaking Chain, Two Stages (Referee F1)
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Target:** referee finding F1 (`referee_report_layer0_mass_20260709.md`): the numerical evidence for the mass principle lives on S² (report App. AL) while the golden-ratio spectrum lives on S⁶ = G₂/SU(3) (report p. 181) — "different theories" until unified.
 
 > **Result:** the two targets are not rival substrates but **sequential stages of the single G₂ symmetry-breaking chain the framework already declares**, distinguished by an exact homotopy criterion: **matter (π₂ ≠ 0) can exist at a stage iff the unbroken group at that stage contains a U(1) factor.** The S⁶ stage is matterless by theorem (condensation/scale physics only); the S² stage is the matter substrate — exactly the division of labor the two bodies of evidence already exhibit.

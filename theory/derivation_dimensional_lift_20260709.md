@@ -1,6 +1,6 @@
 # Derivation Note — The Dimensional Lift L0 → L1: from M = 4πK|Q| to M = C·(pq)^{3/4}
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Target:** GAP-B (RESEARCH_LOG problem #1) — which energy–charge law does the lift from the 2D substrate to 3+1D particles transport?
 
 > **Result:** the lift is forced, not chosen. Derrick's theorem forbids the linear 2D law from surviving unchanged in 3D; the framework's own quartic EFT term supplies the mandatory stabilizer; the fibration charge algebra is **Q_Hopf = p·q** (numerically verified today); and the exact Vakulenko–Kapitanskii bound then fixes the L1 working mass law:

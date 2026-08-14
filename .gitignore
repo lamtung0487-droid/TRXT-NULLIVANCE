@@ -33,3 +33,7 @@ validation/data/
 *.tmp
 *.bak
 .tmp/
+
+# internal tooling (never published)
+.claude/
+CLAUDE.md

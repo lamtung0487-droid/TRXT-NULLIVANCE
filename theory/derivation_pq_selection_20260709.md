@@ -1,6 +1,6 @@
 # Derivation Note — Topological Selection of (p,q) Mode Assignments
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Status after derivation: PARTIAL — see GAP/ERROR list. This note derives selection rules; the derived rules partially falsify the current Standard-Model assignments and yield one clean pre-registered prediction.**
 
 ---

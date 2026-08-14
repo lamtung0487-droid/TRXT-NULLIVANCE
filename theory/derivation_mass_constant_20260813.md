@@ -1,6 +1,6 @@
 # Derivation Note — Quantitative Closure: the Mass Constant C (GAP-N3) and the Protection-Law Exponent (F2 final)
 
-**Author:** lab theorist role · **Date:** 2026-08-13 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-08-13 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Targets:** GAP-N3 (the Faddeev–Niemi minimizer prefactor in the lab's declared units) and the referee's final F2 residual (dt/L dependence of the charge-violation exponent).
 
 > **Results:** with the literature normalization pinned from the source paper, the L1 mass law becomes fully numerical up to the per-stage gap M:

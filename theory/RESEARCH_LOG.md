@@ -23,7 +23,7 @@ Companion to `theory/RESEARCH_ATLAS.md` (knowledge map of the old report). Every
 
 | Commit | What happened |
 |---|---|
-| `f21e4f1` | Repo restructured into research-lab layout; ~1.9 GB junk removed; lab system created (CLAUDE.md charter, 5 agents, 5 skills, RESEARCH_WORKFLOW) |
+| `f21e4f1` | Repo restructured into research-lab layout; ~1.9 GB junk removed; lab system created (lab charter, 5 roles, 5 protocol skills, RESEARCH_WORKFLOW) |
 | `1f76acb` | **Full-framework verification campaign**: gate ladder re-run; MC null test kills the unconstrained mass-law statistics (W p=0.225, Z p=0.590, H p=0.090; 52.5% of random masses match at 0.1%); J1 relic circularity exposed; referee verdict REJECT-as-validated / encourage-as-exploratory |
 | `448e62c` | **/derive (p,q) selection**: rigid-torus axiom A2′ (SL(2,ℤ) obstruction); ERROR-1 antiparticle cascade; Hurwitz selection d ∈ {1,2,4,8} (W excluded, margins 18–158×; Z at 58.4σ); Bott endpoint 2⁷ = 128; conditional DT-1 prediction 5.707 GeV |
 | `1f76acb`→`589c54d` | **E_core incompatibility theorem** (mass law ⊕ stable vacuum: σ₀ ≥ 13.5 GeV vs ≤ 3.5×10⁻⁶ GeV, gap 6.6 orders; SIGNED-OFF) |

@@ -1,6 +1,6 @@
 # Derivation Note — Per-Stage Gaps, the Absolute Tower, and the Structural Exclusion of the SM from the Tower (GAP-N4)
 
-**Author:** lab theorist role · **Date:** 2026-08-13 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-08-13 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Target:** GAP-N4 — the per-stage constituent gap M, hence absolute masses; and the first, structure-only half of the assignment question.
 
 > **Results:** (i) with the framework's own two anchors, the S²-stage topological tower is absolute: **M(pq) ≈ (184–201 TeV)·(pq)^{3/4}**; (ii) a completeness-constrained, pre-registered scan **excludes the SM bosons from the tower at ≥ 6σ (typically 10²–10³σ)** — the tower is a *new heavy sector*, not a re-derivation of W/Z/H; (iii) the SM masses remain with the framework's dynamical mechanisms (amplitude mode + Seifert-exponential), which is where its genuinely successful numerics always lived. The assignment question is thereby *answered structurally*, with no fitting ever performed.

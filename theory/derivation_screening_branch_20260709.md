@@ -1,6 +1,6 @@
 # Derivation Note — Stability of the Screening Branch and the DBI Completion (G0b)
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Target:** the G0b gate failure (X < 0 ghost/superluminal window of P(X) = c₂X + c₄X²) — the last blocker of the gate ladder.
 
 > **Results:** (i) a small theorem shows the *naive* G0 criterion ("c_s ≤ 1 in all environments") is unsatisfiable by ANY nontrivial P(X) — the criterion itself must be refined, with justification logged; (ii) the **DBI completion P = Λ⁴(1 − √(1 − 2X/Λ⁴))** matches the derived EFT coefficients (c₂ = 1, c₄ = 1/(2Λ⁴) > 0) and is ghost-free and gradient-stable on the **entire** branch, with the X < 0 superluminality of the causally benign DBI class; (iii) a new bookkeeping inconsistency (I-12) is registered: the report's k-mouflage screening needs re-derivation because P_X *decreases* on the screening branch for c₄ > 0.

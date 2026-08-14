@@ -1,6 +1,6 @@
 # Derivation Note — Resolving I-1/I-2: Soliton Geometry and the Fate of the Static Energy
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Targets:** Atlas registry items I-1 (R ∝ p vs R ∝ 1/p²) and I-2 (static energy discarded by fiat). Sources: report §8.4 (p. 44), App. K.2 (p. 92), App. T.1 (p. 104), App. Q Hopfions (p. 102), App. T.5/WEP (p. 19).
 
 ---

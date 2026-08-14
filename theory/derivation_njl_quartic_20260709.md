@@ -1,6 +1,6 @@
 # Derivation Note — The S²-Sector Quartic from the NJL Determinant (GAP-L2) and the Mass Constant C (GAP-L1)
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Targets:** GAP-L2 (turn hypothesis H-c₄ into a theorem: derive the Skyrme-type stabilizer of the n̂-sector from the same one-loop NJL determinant that produced c₂, c₄) and GAP-L1 (the absolute mass constant C of M = C·(pq)^{3/4}).
 
 > **Result:** the one-loop NJL determinant with hedgehog coupling produces **exactly the Faddeev–Niemi quartic with positive coefficient**

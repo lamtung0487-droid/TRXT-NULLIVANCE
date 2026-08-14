@@ -1,6 +1,6 @@
 # Derivation Note — The Layer-0 Root Principle of Mass
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Charge from the PI:** rebuild the origin of mass from Layer 0 upward, guided by the beauty of exact equations and symmetry.
 
 > **Result — the principle, in one line:**

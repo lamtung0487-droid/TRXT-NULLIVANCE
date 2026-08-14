@@ -31,7 +31,6 @@ Gates: `python scripts/run_gates.py` (criteria frozen in `scripts/gates_criteria
 ## Repository structure
 
 ```
-├── CLAUDE.md            Lab charter: laws, gate system, agent roster
 ├── theory/
 │   ├── specs/           Model specifications (current: specs/v17/TRXT_V17_Master_Spec.md)
 │   ├── protocols/       Research laws, derivation checklist, RESEARCH_WORKFLOW.md
@@ -69,7 +68,7 @@ Large datasets (Planck spectra, Bullet Cluster FITS, CLASS) are not committed �
 
 ## Research methodology
 
-The project runs as a multi-agent research lab (see `CLAUDE.md`). Every result flows through the pipeline in `theory/protocols/RESEARCH_WORKFLOW.md`:
+The project runs as a multi-agent research lab (see `theory/protocols/`). Every result flows through the pipeline in `theory/protocols/RESEARCH_WORKFLOW.md`:
 
 > derivation → mathematical audit → implementation → gate validation (G0–G5) → data confrontation → adversarial peer review → publication
 

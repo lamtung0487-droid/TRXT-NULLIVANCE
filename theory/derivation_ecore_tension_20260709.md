@@ -1,6 +1,6 @@
 # Derivation Note — Core/Tension Energy E_core of the (p,q) Worldvolume Defect
 
-**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `.claude/skills/derive/SKILL.md`
+**Author:** lab theorist role · **Date:** 2026-07-09 · **Protocol:** `theory/protocols/workflow-v5-checklist.md`
 **Question:** what is the classical gradient/tension energy of a (p,q) winding, using the framework's **own** tension sector (Layer 1: E ∝ Ξ|∇θ|², report §3.1.2 p.18; abstract: "dark energy as the condensate tension"), and can any value of the tension make the vacuum stable while preserving the mass law m = M\*(1/p + 1/q)?
 
 **Result: NO — the two requirements are incompatible by ≥ 6.6 orders of magnitude. This closes the dilemma of `report_reading_three_problems_20260709.md` in the negative for the pure inverse-winding mass law.**

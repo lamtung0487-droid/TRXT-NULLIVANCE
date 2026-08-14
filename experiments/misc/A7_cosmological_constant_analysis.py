@@ -4,7 +4,7 @@ NGHIÊN CỨU NGHIÊM NGẶT: A7 - COSMOLOGICAL CONSTANT PROBLEM
 ============================================================
 Vấn đề chí mạng của TRXT: Tại sao vacuum energy không gravitate?
 
-Tác giả: Claude (phân tích cho Lâm)
+Phân tích bổ trợ (2026)
 Mục đích: Tìm "lối thoát" toán học cho A7
 """
 
