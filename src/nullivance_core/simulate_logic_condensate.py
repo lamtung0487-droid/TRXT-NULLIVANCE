@@ -113,4 +113,4 @@ if __name__ == "__main__":
     # Parameters chosen to be near the critical point
     sim = LogicFieldSimulation(size=100, dim_D=3, coupling=1.5, feedback_strength=2.5)
     sim.run(steps=200)
-    sim.plot_results("c:/Users/NC/Music/trxt nullivance v14/paper/submission_v16/figures/fig_simulation_v17.png")
+    sim.plot_results("results/figures/fig_logic_condensate.png")

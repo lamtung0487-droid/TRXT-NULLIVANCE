@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying report, please cite it as below."
+title: "Induced Superfluid Cosmology: A Unified Framework for Emergent Gravity, Matter, and Dark Energy"
+abstract: >-
+  Research report and complete reproducibility package for the TRXT-Nullivance
+  framework: induced gravity and matter as topological solitons in a superfluid
+  vacuum condensate. Includes a 13-script independent verification suite with
+  committed logs, a validation-gate runner with frozen ledger-logged criteria,
+  and real-data confrontations (Planck 2018 CMB spectra, SPARC rotation curves,
+  Cassini bounds, PRyMordial BBN).
+type: software
+authors:
+  - family-names: "Trinh"
+    given-names: "Tung Lam"
+    affiliation: "Independent Researcher"
+version: "v2026.08-standardization"
+date-released: "2026-08-14"
+license: MIT
+repository-code: "https://github.com/lamtung0487-droid/TRXT-NULLIVANCE"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18195546"
+    description: "Concept DOI (resolves to the latest version)"
+keywords:
+  - "emergent gravity"
+  - "superfluid vacuum"
+  - "topological solitons"
+  - "dark matter"
+  - "dark energy"
+  - "MOND phenomenology"
+  - "reproducible research"

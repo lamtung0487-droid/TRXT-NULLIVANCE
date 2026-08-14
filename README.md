@@ -53,6 +53,7 @@ Gates: `python scripts/run_gates.py` (criteria frozen in `scripts/gates_criteria
 ## Getting started
 
 ```bash
+# Python 3.9+ (tested on 3.11/3.12)
 pip install -r requirements.txt
 # Run everything from the repository root (scripts use relative data/ paths)
 python experiments/npl_gates/npl_sparc_pde_gate3.py      # example: Gate 3 (SPARC)

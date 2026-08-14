@@ -1,3 +1,4 @@
+# Python >= 3.9 required (tested on 3.11/3.12)
 numpy>=1.20.0
 scipy>=1.7.0
 matplotlib>=3.4.0

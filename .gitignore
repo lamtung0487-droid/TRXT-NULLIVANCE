@@ -67,3 +67,7 @@ theory/protocols/workflow-v4.md
 theory/protocols/workflow_v3.md
 theory/protocols/workflow-v5-checklist.txt
 theory/protocols/Validation-Protocol.md
+src/legacy/
+src/vis/
+src/phase2_dm_verification.py
+src/phase3_liv_verification.py

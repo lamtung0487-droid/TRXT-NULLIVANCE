@@ -67,7 +67,7 @@ def plot_phase_transition():
     
     plt.legend()
     plt.tight_layout()
-    plt.savefig('c:/Users/NC/Music/trxt nullivance v14/paper/submission_v16/figures/fig_3_0_phase_transition.png', dpi=300)
+    plt.savefig('results/figures/fig_3_0_phase_transition.png', dpi=300)
     print("Saved fig_3_0_phase_transition.png")
 
 def plot_fractal_sound_speed():
@@ -113,7 +113,7 @@ def plot_fractal_sound_speed():
     
     plt.legend()
     plt.tight_layout()
-    plt.savefig('c:/Users/NC/Music/trxt nullivance v14/paper/submission_v16/figures/fig_3_1_fractal_sound_speed.png', dpi=300)
+    plt.savefig('results/figures/fig_3_1_fractal_sound_speed.png', dpi=300)
     print("Saved fig_3_1_fractal_sound_speed.png")
 
 if __name__ == "__main__":

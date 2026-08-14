@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import json
 import os
 
-def load_planck_data(filepath="c:/Users/NC/Music/trxt nullivance v14/data/Planck_2018.json"):
+def load_planck_data(filepath="data/Planck_2018.json"):
     """Load Planck 2018 parameters from JSON file."""
     with open(filepath, 'r') as f:
         data = json.load(f)
@@ -71,7 +71,7 @@ def check_bao_anchor():
     plt.grid(True)
     plt.axvline(x=period_k_h, color='r', linestyle='--', label=f'Fundamental Mode {period_k_h:.3f} h/Mpc')
     plt.legend()
-    output_path = "c:/Users/NC/Music/trxt nullivance v14/paper/submission_v16/figures/fig_bao_anchor_v17_realdata.png"
+    output_path = "results/figures/fig_bao_anchor.png"
     plt.savefig(output_path)
     print(f"Plot saved to {output_path}")
 
