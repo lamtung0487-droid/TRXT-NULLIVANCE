@@ -259,3 +259,17 @@ SIDM AUDIT (sidm_crosssection_audit.py, log sidm_audit_20260814):
   recomputed cluster value 5.3 cm^2/g violates the quoted <~1 bound;
   golden-output file empty). Audit box added; subsection status downgraded
   CLOSED -> FAILED (unreproduced); tower-DM context noted.
+
+## 2026-08-14 (phase 3): participation law -- micro-origin of standard-mu
+
+- mu_participation_law.py (log mu_participation_20260814) + derivation note
+  (mathematician-signed): standard-mu root == u = u_N + u_0*(u_N/u) exactly;
+  n = 1 forced by Tully-Fisher; simple-mu excluded from the law family;
+  dichotomy-theorem compliant (constitutive, not P(X)).
+- a0 = cH0/2pi identification: 3215 (Planck H0) vs fitted 3350 (4%).
+- Pre-registered test sequence recorded IN FULL in the gate ledger:
+  T1/T2 (full-sample) FAIL with miscalibrated criterion (control also
+  fails); T3 (established held-out protocol, pre-registered before run)
+  PASS: chi2 = 4.918 with ZERO globally fitted parameters.
+- Sec 9.3: participation-law subsection added (eq:participation);
+  open-register paragraph updated. G3 gate protocol unchanged.

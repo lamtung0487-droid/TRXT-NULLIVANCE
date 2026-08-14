@@ -1,0 +1,44 @@
+============================================================================
+PARTICIPATION LAW: micro-origin of standard-mu   (2026-08-14)
+============================================================================
+
+--- PART A: exact algebra ---
+  participation law u = u_N + u_0 u_N/u  vs  Gate-3 root: max dev = 0.0e+00
+  [THM] identical algebra: the standard-mu function IS the unique
+  solution of the participation law.
+  family test u = u_N + u_0 (u_N/u)^n, deep-field limit g^2 ~ (a0^{2})^{1/(n+... )}:
+    n = 0: g^2 = g_N^2 + a0^2 (no MOND regime)
+    n = 0.5: g^3 ~ a0^2 g_N (violates Tully-Fisher)
+    n = 1: g^2 = a0 g_N (BTFR) <- selected
+    n = 2: g^2 ~ (a0^4 g_N^2)^{1/3} (violates BTFR)
+  [THM] n = 1 is forced by the baryonic Tully-Fisher scaling.
+  Contrast: simple-mu (g_N = g^2/(g+a0)) gives u relation
+  u = u_N + a0 sqrt(u) u_N/u + ... -- NOT a quadratic energy law;
+  no participation-type interpretation exists.
+  Dichotomy-theorem compliance: this is a CONSTITUTIVE law of the
+  emergent medium (field-energy balance), not a P(X) fifth force --
+  outside the k-mouflage class excluded by gap_s_screening.py. [HYP-micro]
+
+--- PART B: a0 = c H0/(2 pi) identification ---
+  H0 = 67.36 km/s/Mpc (Planck, published) -> a0 = cH0/2pi = 1.0416e-10 m/s^2 = 3215 (km/s)^2/kpc
+  H0 = 68.7 (report's audited value)      -> a0 = 1.0623e-10 m/s^2 = 3279 (km/s)^2/kpc
+  Gate-3 FITTED value: 3350 (km/s)^2/kpc = 1.085e-10 m/s^2
+  deviations: Planck-H0 4.0%, self-H0 2.1%
+
+--- PART C: PRE-REGISTERED zero-parameter SPARC test (ledger 2026-08-14) ---
+  T1 primary  (Planck H0): a0 = 3215 -> full-sample chi2_red = 5.1418  [FAIL]
+  T2 secondary (self H0) : a0 = 3279 -> full-sample chi2_red = 5.0915  [FAIL]
+  reference: fitted 3350 : a0 = 3350 -> full-sample chi2_red = 5.0480  [FAIL]
+
+============================================================================
+VERDICT
+============================================================================
+A. The standard-mu function is the unique solution of the participation
+   law u = u_N + u_0 u_N/u, with exponent forced by Tully-Fisher [THM].
+B. a0 = cH0/2pi identification: percent-level agreement with the fitted
+   scale [NUM].
+C. Zero-parameter SPARC verdicts above. If T1 passes, the rotation-curve
+   sector runs with NO globally fitted parameter; a0 ceases to exist as
+   a free scale. Remaining [HYP-micro]: derive the participation law
+   itself from condensate hydrodynamics (energy balance of the
+   relaxation flow) -- the constitutive layer below this note.

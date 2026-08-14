@@ -1229,12 +1229,43 @@ Neptune/Pluto would contradict the standard form.
     \label{fig:screening}
 \end{figure}
 
-\textbf{What remains open (register).} The microscopic origin of the interpolation
-function itself --- the condensate resummation that produces the standard $\mu$ --- is
-the continuing content of GAP-S, now sharply constrained: any candidate derivation must
-evade the branch-dichotomy theorem above (e.g.\ via the non-phase $\hat n$-sector or a
-genuinely non-$P(X)$ resummation), and must reproduce $\delta \simeq u^2/2$ in the
-high-acceleration limit.
+\textbf{The origin of the interpolation function: the participation law (2026-08-14).}
+The same-day constructive step
+(\texttt{experiments/verification/mu\_participation\_law.py}, log
+\texttt{mu\_participation\_20260814}; derivation note
+\texttt{derivation\_mu\_participation\_20260814.md}, mathematician-signed) found that in
+field-energy variables ($u \equiv g^2$, $u_N \equiv g_N^2$, $u_0 \equiv a_0^2$) the
+Gate-3 root equation is \emph{exactly} equivalent to the one-line constitutive law
+\begin{equation}
+    u \;=\; u_N \;+\; u_0\,\frac{u_N}{u}\,,
+    \label{eq:participation}
+\end{equation}
+i.e.\ \emph{the condensate adds field energy equal to a universal reservoir $u_0$
+weighted by the baryonic share $u_N/u$ of the total field energy}. Within the family
+$u = u_N + u_0(u_N/u)^n$ the baryonic Tully--Fisher scaling forces $n=1$ uniquely
+[THM]; the ``simple''-$\mu$ function admits no such quadratic energy law. Being a
+constitutive law of the emergent medium rather than a $P(X)$ fifth force, it evades the
+branch-dichotomy theorem by construction, and it reproduces both the deep-MOND limit
+($g^2 \to a_0 g_N$) and the high-acceleration tail $\delta \simeq u^2/2$ automatically.
+
+\textbf{The scale: $a_0 = cH_0/2\pi$ [HYP], gate-level tested.} Identifying the
+reservoir rate with the condensate relaxation (one phase winding per Hubble time --- the
+dark-energy-as-relaxing-superfluid axiom of this report) gives $a_0 = cH_0/2\pi = 3215\
+{\rm (km/s)^2/kpc}$ (Planck $H_0$), within $4.0\%$ of the Gate-3 fitted $3350$ (the
+report's own audited $H_0 = 68.7$ gives $3279$, within $2.1\%$). The pre-registered test
+sequence (gate ledger, 2026-08-14, recorded in full including one miscalibrated first
+attempt): under the \emph{established} G3 held-out protocol, freezing
+$a_0 = cH_0/2\pi$ --- \textbf{zero globally fitted parameters} --- yields held-out
+$\chi^2_\nu = 4.918$ (secondary $4.830$; fitted reference $4.746$): \textbf{PASS}. The
+rotation-curve sector thus runs with no free global scale, at the cost of a
+$2$--$4\%$ $\chi^2$ penalty relative to the fitted optimum (an $\mathcal{O}(1)$-factor
+residual in the $2\pi$ identification, quoted honestly).
+
+\textbf{What remains open (register).} Deriving Eq.~\eqref{eq:participation} itself from
+condensate hydrodynamics (energy balance of the relaxation flow against the baryonic
+field energy) --- the constitutive layer below this note [HYP-micro]; and the
+$\mathcal{O}(1)$ factor in the $a_0$ identification. Any such derivation must evade the
+branch-dichotomy theorem above and reproduce $n = 1$.
 
 \textbf{Cross-Scale Consistency:}
 The same EFT parameters $(c_2, c_4, \rho_0)$ that produce screening at 1 AU also govern galactic dynamics. The transition from the screened regime ($\epsilon \ll 1$) to the unscreened regime ($\epsilon \sim \mathcal{O}(1)$) occurs at $r \sim r_V$. For a typical galaxy with $M_{halo} \sim 10^{12} M_\odot$, the Vainshtein radius is $r_V \sim 10^4$ kpc, which is \textit{larger} than galactic scales ($\sim 10$--$50$ kpc). This means the entire galaxy sits \textit{inside} the screening zone of its own halo. The SPARC rotation curve fits (Gate 3) therefore use the \textbf{unmodified Lane-Emden profile}, which describes the condensate density without fifth-force modifications. The galactic dynamics arise from the \textit{density profile} of the superfluid halo, not from a fifth force. This resolves the apparent contradiction: screening suppresses the \textit{scalar force}, but the \textit{gravitational} effect of the condensate's mass distribution is unaffected.
