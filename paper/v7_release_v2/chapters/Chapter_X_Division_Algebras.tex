@@ -90,7 +90,7 @@ This derivation justifies the previously heuristic claim that "spinors arise fro
 
 \textbf{Ghost Criterion (decisive):} A physical algebra must contain \emph{exactly one} independent $Cl(6)$ embedding; a second would double the fermion spectrum. The MLI projector $P_\mathrm{vac} = \tfrac{1}{2}(1 + i_\mathbb{C} e_7)$ is used as the correct primitive idempotent throughout.
 
-\textbf{Scorecard — all 8 candidates} (see \texttt{source\_code/proofs/proof\_O2\_algebra\_uniqueness\_v2.py}):
+\textbf{Scorecard — all 8 candidates} (see \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak O2\_\allowbreak algebra\_\allowbreak uniqueness\_\allowbreak v2.py}):
 \begin{center}
 \small
 \begin{tabular}{lrccccc l}
@@ -111,7 +111,7 @@ $\mathbb{C}\otimes\mathbb{H}$ & 8 & $\times$ & $\checkmark$ & $\checkmark$ & $\c
 
 \textbf{Conclusion:} Only $\mathbb{C}\otimes\mathbb{H}\otimes\mathbb{O}$ achieves a perfect 5/5 score. Uniqueness is proven; $n_\text{perfect} = 1/8$.
 
-\textit{Status:} UNIQUENESS PROVEN. Artifact: \texttt{artifacts/gate\_O2\_full\_uniqueness\_v2\_result.json} \cite{baez,schafer1966}.
+\textit{Status:} UNIQUENESS PROVEN. Artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak O2\_\allowbreak full\_\allowbreak uniqueness\_\allowbreak v2\_\allowbreak result.json} \cite{baez,schafer1966}.
 \end{tcolorbox}
 
 \subsubsection{Phase C4: The Vacuum Projector}
@@ -181,7 +181,7 @@ This derivation proves that the structure of a single generation of fermions (16
 \end{equation}
 and the spinor representations $\mathbf{8}_s$, $\mathbf{8}_c$ are obtained by replacing $(L_a, L_b)$ with $(L_a, R_b)$ and $(R_a, R_b)$ respectively \cite{baez}.
 
-\textbf{Verified Claims} (see \texttt{source\_code/proofs/proof\_O1\_spin8\_triality.py}):
+\textbf{Verified Claims} (see \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak O1\_\allowbreak spin8\_\allowbreak triality.py}):
 \begin{enumerate}
     \item \emph{Clifford span:} $\mathrm{span}\{L_a, R_b\} = M_8(\mathbb{R})$, $\dim = 64/64$. \hfill $\checkmark$
     \item \emph{so(8) algebra:} All three reps satisfy $[\Sigma_{ab},\Sigma_{cd}] = \delta_{bc}\Sigma_{ad} - \ldots$ to machine precision ($\max\,\mathrm{err} = 0$). \hfill $\checkmark$
@@ -197,7 +197,7 @@ and the spinor representations $\mathbf{8}_s$, $\mathbf{8}_c$ are obtained by re
 \end{equation}
 This is now derived from first principles, not an empirical input.
 
-\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/gate\_O1\_spin8\_triality\_result.json}.
+\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak O1\_\allowbreak spin8\_\allowbreak triality\_\allowbreak result.json}.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=orange!5!white, colframe=orange!60!black,
@@ -210,7 +210,7 @@ where $L_k^{\mathbb{H}}$ denotes the $4\times4$ antisymmetric left-multiplicatio
 
 \textbf{Theorem G1:} Every state in $S$ is an eigenstate of the $SU(2)_L$ Casimir operator $C_2 = T_1^2 + T_2^2 + T_3^2$ with eigenvalue $-\tfrac{3}{4}$ (i.e.\ $j = \tfrac{1}{2}$, antihermitian convention). No $j \geq \tfrac{3}{2}$ representation appears; the eigenvalue gap to the next possible representation ($j=\tfrac{3}{2}$, $C_2=-\tfrac{15}{4}$) is $\Delta = 3.0$.
 
-\textbf{Verified Claims} (see \texttt{source\_code/proofs/proof\_G1\_sl\_doublet\_structure.py}):
+\textbf{Verified Claims} (see \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak G1\_\allowbreak sl\_\allowbreak doublet\_\allowbreak structure.py}):
 \begin{enumerate}
     \item \emph{Generator algebra:} $[T_i, T_j] = \varepsilon_{ijk}\,T_k$ to machine precision ($\max\,\mathrm{err} < 10^{-14}$). \hfill $\checkmark$
     \item \emph{Casimir spectrum:} All 32 real dimensions of $S$ have $C_2 = -\tfrac{3}{4}$ (eigenvalue spread $< 10^{-12}$). \hfill $\checkmark$
@@ -222,7 +222,7 @@ where $L_k^{\mathbb{H}}$ denotes the $4\times4$ antisymmetric left-multiplicatio
 
 \textbf{Physical implication:} Maximal parity violation (V--A weak interaction) is \emph{not} an assumption in TRXT: it follows mathematically from the fact that $P_\mathrm{vac}$ selects the left-chiral ideal. SU(2)$_L$ coupling to fermions is a theorem of $\mathbb{C}\otimes\mathbb{H}\otimes\mathbb{O}$, not a postulate.
 
-\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/gate\_G1\_sl\_doublet\_result.json}.
+\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak G1\_\allowbreak sl\_\allowbreak doublet\_\allowbreak result.json}.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=purple!5!white, colframe=purple!60!black,
@@ -233,7 +233,7 @@ where $L_k^{\mathbb{H}}$ denotes the $4\times4$ antisymmetric left-multiplicatio
 $\tfrac{dY}{dx} = -\langle\sigma v\rangle \tfrac{s}{H x}(Y^2 - Y_\mathrm{eq}^2)$
 into a numerically stable form $\tfrac{dW}{dx} = -\langle\sigma v\rangle \tfrac{s}{H x}(Y - Y_\mathrm{eq}^2/Y)$ whose integration error does not grow exponentially near freeze-out.
 
-\textbf{Verified Claims} (see \texttt{source\_code/proofs/proof\_O6\_boltzmann\_log.py}):
+\textbf{Verified Claims} (see \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak O6\_\allowbreak boltzmann\_\allowbreak log.py}):
 \begin{enumerate}
     \item \emph{Numerical stability:} Relative integration error $\leq 10^{-9}$ across $x = m_\chi/T \in [1, 10^4]$ with log-transform; direct $Y$ integration diverges for $\langle\sigma v\rangle \gtrsim 10^{-25}\ \mathrm{cm^3\ s^{-1}}$. \hfill $\checkmark$
     \item \emph{Freeze-out yield:} $Y_\infty$ converges to within $0.1\%$ of the semi-analytic approximation $Y_\infty \approx \tfrac{3.79\,x_f}{g_{*S}^{1/2}\,m_{Pl}\,m_\chi\,\langle\sigma v\rangle}$. \hfill $\checkmark$
@@ -242,7 +242,7 @@ into a numerically stable form $\tfrac{dW}{dx} = -\langle\sigma v\rangle \tfrac{
 
 \textbf{Note:} The value $\Omega h^2 = 0.037$ is a stability-regime test point, not the final TRXT relic-abundance prediction. The canonical prediction $\Omega h^2 = 0.1198$--$0.1241$ is obtained from the full thermal history computation (Appendix L).
 
-\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/gate\_O6\_boltzmann\_log\_result.json}.
+\textit{Status:} RESOLVED. Artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak O6\_\allowbreak boltzmann\_\allowbreak log\_\allowbreak result.json}.
 \end{tcolorbox}
 
 

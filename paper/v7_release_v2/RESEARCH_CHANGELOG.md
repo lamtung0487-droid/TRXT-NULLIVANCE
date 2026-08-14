@@ -382,3 +382,24 @@ PACKAGING:
   Witten 1989 CS invariants, three uncited "Lelli et al. 2016" mentions.
 - Compile check: 190 pages, 0 errors, 0 undefined citations, 0 undefined
   references, 26 Overfull hboxes (5 exceeding 100pt) remaining -> phase 8b.
+
+## 2026-08-14 (phase 8b): OVERFULL-HBOX REMEDIATION -- archive edition
+
+- All 24 fixable Overfull hboxes eliminated (26 -> 2), no content deleted:
+  * Appendix Z (392pt) + Appendix T validation tables: \footnotesize,
+    \tabcolsep=4pt, Result column -> p{6.2cm}.
+  * Genesis chain diagram (151pt): \resizebox{0.98\linewidth}.
+  * 10 long \texttt{} script/artifact paths in Chapters X/Y (146/134/130/86/
+    55/45/38/17/12/5pt): \allowbreak hints after "/" and "_".
+  * Unification table (75pt): \small + p{5.2cm} mechanism column.
+  * MaVaN validation table (57pt): \footnotesize + \tabcolsep=4pt.
+  * Gate-snapshot + assumptions tables (26/15pt): \small -> \footnotesize.
+  * AB register (16pt): column widths 0.34/0.14/0.42 -> 0.305/0.175/0.42
+    (bold SUPERSEDED overflowed the status column).
+  * Toy gauge-mapping table (9pt): \small. eq:njlquartic (6pt): \qquad->\quad.
+- Honest residuals: 2 Overfull hboxes in the auto-generated .toc (4.7pt and
+  2.0pt, long appendix titles AD.10 and VF -- invisible at print scale) and
+  1 Overfull vbox (20.1pt too high, float-page artifact). Not fixable without
+  renaming headings; left as-is.
+- FINAL QA: pdflatex x2 from clean aux state: 0 errors, 0 undefined
+  citations, 0 undefined references, 191 pages, 111 bibliography entries.
