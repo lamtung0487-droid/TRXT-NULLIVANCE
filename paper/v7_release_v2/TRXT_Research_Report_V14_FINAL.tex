@@ -163,7 +163,7 @@ The following assumptions underpin the Nullivance framework. We classify each by
     \textbf{A0} & \textbf{Microscopic Substrate (Discrete NLSM)} & \textbf{Validated} & Harmonic Heat Flow \\
     \textbf{A1} & Planck vacuum = chiral fermion condensate (NJL-type) & Postulate & Indirect \\
     \textbf{A2} & $G > G_{crit}$: Spontaneous symmetry breaking occurs & Required & Theory \\
-    \textbf{A3} & RT Network Entanglement $\to$ $S \propto A$ Area Law & \textbf{Validated} & Ryu-Takayanagi \\
+    \textbf{A3} & RT Network Entanglement $\to$ $S \propto A$ Area Law & \textbf{Validated} & Ryu-Takayanagi~\cite{ryu2006} \\
     \textbf{A4} & $S^d$ Layer 0 topology (Structural Obstruction) & \textbf{Validated} & $I \equiv \rho_{foam} > 0$ \\
     \textbf{A5} & Spectrum: $E(p,q) = M^*(1/p + 1/q)$ (Breathing Modes) & \textbf{Derived} (V7) & Masses \\
     \textbf{A6} & Vainshtein screening from Superfluid EFT & Derived & Coeff. Match \\
@@ -335,7 +335,7 @@ G5 & fermion emergence + BBN & structural + PRyMordial & PASS; $Y_p$ at $0.5\sig
 trace to committed code and logs in the accompanying repository: a 13-script
 verification suite (indexed in the repository \texttt{README}), the gate runner
 with frozen criteria, and a pre-registration ledger. Observational inputs:
-SPARC rotation curves (Lelli et al.\ 2016), Planck 2018 binned spectra and
+SPARC rotation curves (Lelli et al.\ 2016 \cite{lelli}), Planck 2018 binned spectra and
 parameters (PLA R3), PDG 2024 / CODATA 2022 constant tables with provenance
 blocks, and Bullet-Cluster survey imagery acquired by a committed script.
 Figures marked data-driven cite their generating script and log in the caption.
@@ -353,7 +353,7 @@ We postulate a generic superfluid action with $U(1)$ symmetry breaking:
 
 \textbf{Important Clarification on Metric Status (Addressing Circularity):}
 
-The question of circularity in induced gravity is well-known in the literature (Sakharov 1968, Visser 2002, Barcel\'o et al. 2011). Our procedure follows the standard Sakharov approach:
+The question of circularity in induced gravity is well-known in the literature (Sakharov 1968~\cite{sakharov}, Visser 2002~\cite{visser2002}, Barcel\'o et al.\ 2011~\cite{blv2011}). Our procedure follows the standard Sakharov approach:
 \begin{itemize}
     \item \textbf{Step 0: The Algebraic Substrate:} We begin with the NJL Lagrangian $\mathcal{L}_{UV} = \bar{\Psi} i \gamma^\mu \partial_\mu \Psi + G(\bar{\Psi}\Psi)^2$ in \emph{flat Minkowski space} ($g_{\mu\nu} = \eta_{\mu\nu}$). No metric dynamics exist at this stage.
     \item \textbf{Step 1: Fundamental TQFT Derivation (Cobordism/BF Theory):} The correct formulation of the macroscopic action does not rely on perturbative Heat Kernel expansions. Instead, the geometric evolution of the topological knots (matter) on the $S^3$ manifold boundary over time creates a 4D bulk Cobordism $W: S^3_{t_1} \to S^3_{t_2}$. The dynamics of this bulk are governed by the \textbf{Topological BF Theory}:
@@ -361,7 +361,7 @@ The question of circularity in induced gravity is well-known in the literature (
         S_{BF} = \int_W \text{Tr}(B \wedge F)
     \end{equation}
     where $F$ is the curvature 2-form of the logic connection and $B$ is the topological area 2-form.
-    \item \textbf{Step 2: Metric Emergence via Plebanski Constraints:} The macroscopic acoustic metric $g_{\mu\nu}$ emerges when the internal logic tension imposes \textbf{Simplicity (Plebanski) Constraints} on the $B$-field ($B = e \wedge e$). Under these constraints, the topological BF theory rigorously descends into the \textbf{Einstein-Cartan action} (gravity) coupled to \textbf{Yang-Mills} (instanton gradient flow):
+    \item \textbf{Step 2: Metric Emergence via Plebanski Constraints:} The macroscopic acoustic metric $g_{\mu\nu}$ emerges when the internal logic tension imposes \textbf{Simplicity (Plebanski) Constraints}~\cite{plebanski1977} on the $B$-field ($B = e \wedge e$). Under these constraints, the topological BF theory rigorously descends into the \textbf{Einstein-Cartan action} (gravity) coupled to \textbf{Yang-Mills} (instanton gradient flow):
     \begin{equation}
         S_{eff} = \int d^4x \sqrt{-g} \left[ \frac{M_{Pl}^2}{2} R(e,\omega) - \frac{1}{4g^2} \text{Tr}(F \wedge *F) \right]
     \end{equation}
@@ -395,7 +395,7 @@ A primary mathematical challenge is the divergence of $|\nabla \Theta|^2 \propto
 This ensures a finite maximum energy density at the core, serving as an intrinsic "Healing Length" for the logic lattice.
 
 \paragraph{4D Lorentzian Metric Emergence}
-The transition from a 3D potential $\Phi$ to a 4D Lorentzian tensor $g_{\mu\nu}$ is achieved via the \textbf{Acoustic Metric} formalism (Unruh/Volovik). The metric is "woven" from the Existence Intensity $\alpha$ and the logic velocity $v_i \propto \partial_i \Theta$:
+The transition from a 3D potential $\Phi$ to a 4D Lorentzian tensor $g_{\mu\nu}$ is achieved via the \textbf{Acoustic Metric} formalism (Unruh/Volovik)~\cite{unruh1981,volovik}. The metric is "woven" from the Existence Intensity $\alpha$ and the logic velocity $v_i \propto \partial_i \Theta$:
 \begin{equation}
     ds^2 = \frac{\alpha}{c} \left[ c^2 dt^2 - (dx_i - v_i dt)(dx_j - v_j dt) \right]
 \end{equation}
@@ -414,7 +414,7 @@ Because the soliton mass $m$ (the integral of the energy density) appears on bot
 The emergence of particles and non-Abelian forces from a $U(1)$ logical grid is a result of topological complexity.
 
 \paragraph{Fermionization via Core Bound States}
-While the vortex-defect itself is a Bosonic configuration, the hollow core ($r \to 0, \alpha \to 0$) acts as a trap for logical information. Per the Bogoliubov-de Gennes equations, the vibrational excitations trapped within these unresolvable "logic eyes-of-the-storm" behave as \textbf{Weyl or Majorana Fermions} (spin-1/2 quasiparticles). Matter is not the vortex, but the logical state trapped within the storm.
+While the vortex-defect itself is a Bosonic configuration, the hollow core ($r \to 0, \alpha \to 0$) acts as a trap for logical information. Per the Bogoliubov-de Gennes equations~\cite{cdgm1964}, the vibrational excitations trapped within these unresolvable "logic eyes-of-the-storm" behave as \textbf{Weyl or Majorana Fermions} (spin-1/2 quasiparticles). Matter is not the vortex, but the logical state trapped within the storm.
 
 \paragraph{Topological Linking and $SU(N)$ Symmetries}
 The transition from $U(1)$ to $SU(2)$ and $SU(3)$ gauge symmetries is not achieved by adding dimensions, but by the \textbf{Braiding and Linking} of defects:
@@ -485,7 +485,7 @@ At temperature $T \sim \Lambda_{QCD} \approx 200$ MeV (corresponding to $t \sim 
 \end{figure}
 
 \subsection{Big Bang Nucleosynthesis (Gate 5 Preview)}
-The synthesis of light nuclei ($^2H, ^3He, ^4He, ^7Li$) occurs at $t \sim 3$ minutes. Standard calculations yield $Y_p \approx 0.245$, $D/H \approx 2.5 \times 10^{-5}$.
+The synthesis of light nuclei ($^2H, ^3He, ^4He, ^7Li$) occurs at $t \sim 3$ minutes. Standard calculations yield $Y_p \approx 0.245$, $D/H \approx 2.5 \times 10^{-5}$~\cite{fields2020}.
 
 Rigorous Gate 5 verification (Section 6) analyzes the BBN constraints:
 \begin{itemize}
@@ -571,7 +571,7 @@ When the macroscopic acoustic metric $g_{\mu\nu}$ emerges (Step 2 of the EFT def
     S_{eff}^{YM} = - \frac{1}{4g^2} \int d^4x \sqrt{-g} \text{Tr}(F_{\mu\nu} F^{\mu\nu})
 \end{equation}
 This derivation (detailed in Appendix T) proves that the strong and electroweak forces are the necessary geometric rigidity of the macroscopic manifold responding to the microscopic braiding of logic strands.
-Following Jacobson (1995), the Einstein equations emerge from the thermodynamics of local causal horizons. However, to solve the Cosmological Constant Problem rigorously, we adopt the \textbf{Unimodular / Sequestering} formulation of this entropic response.
+Following Jacobson (1995)~\cite{jacobson}, the Einstein equations emerge from the thermodynamics of local causal horizons. However, to solve the Cosmological Constant Problem rigorously, we adopt the \textbf{Unimodular / Sequestering} formulation of this entropic response.
 
 The geometric variation $\delta A \propto -R_{\mu\nu} l^\mu l^\nu$ equates the thermodynamic flux $\delta Q$ via the \textbf{traceless} field equations:
 \begin{equation}
@@ -977,7 +977,7 @@ Nullivance dark matter is a self-interacting fluid (SIDM). The equation of state
 \end{figure}
 
 \subsubsection{Direct Detection and Derivative (Phonon-Mediated) Suppression}
-To address direct detection constraints from first principles, we construct the effective Lagrangian for interaction between Dark Matter and Nucleons.
+To address direct detection constraints~\cite{goodmanwitten1985} from first principles, we construct the effective Lagrangian for interaction between Dark Matter and Nucleons.
 
 \textbf{EFT Setup (Two-Vertex Process):}
 The DM-nucleon scattering proceeds via phonon exchange with \emph{two} derivative-coupled vertices:
@@ -1165,7 +1165,7 @@ Indirect (Fermi-LAT $\gamma$-ray) & No signal & MeV missions \\
 % ==========================================================================================
 \subsection{Relic Density of the Superseded 5.71 GeV Candidate (historical record)}
 
-A key criticism of the DT-1 dark matter candidate was the absence of a rigorous freeze-out calculation. The V8 estimate ($\Omega h^2 \approx 0.09$--$0.14$) relied on the analytical approximation $x_f = 23$ (hardcoded) and the approximate formula $\Omega h^2 \approx 3 \times 10^{-27} / \langle\sigma v\rangle$. The V9 Campaign replaces this with a \textbf{full numerical solution} of the Lee-Weinberg Boltzmann equation.
+A key criticism of the DT-1 dark matter candidate was the absence of a rigorous freeze-out calculation. The V8 estimate ($\Omega h^2 \approx 0.09$--$0.14$) relied on the analytical approximation $x_f = 23$ (hardcoded) and the approximate formula $\Omega h^2 \approx 3 \times 10^{-27} / \langle\sigma v\rangle$. The V9 Campaign replaces this with a \textbf{full numerical solution} of the Lee-Weinberg Boltzmann equation~\cite{leeweinberg1977}.
 
 \subsubsection{The Boltzmann Equation}
 The comoving number density $Y = n/s$ evolves as:
@@ -1367,9 +1367,9 @@ i.e.\ \emph{the condensate adds field energy equal to a universal reservoir $u_0
 weighted by the baryonic share $u_N/u$ of the total field energy}. Within the family
 $u = u_N + u_0(u_N/u)^n$ the baryonic Tully--Fisher scaling forces $n=1$ uniquely
 [THM]; the ``simple''-$\mu$ function admits no such quadratic energy law. Being a
-constitutive law of the emergent medium rather than a $P(X)$ fifth force, it evades the
-branch-dichotomy theorem by construction, and it reproduces both the deep-MOND limit
-($g^2 \to a_0 g_N$) and the high-acceleration tail $\delta \simeq u^2/2$ automatically.
+constitutive law of the emergent medium rather than a $P(X)$ fifth force~\cite{bekensteinmilgrom1984}, it evades the
+branch-dichotomy theorem by construction, and it reproduces both the deep-MOND limit~\cite{famaey2012}
+($g^2 \to a_0 g_N$) and the high-acceleration tail $\delta \simeq u^2/2$ automatically, consistent with the observed radial-acceleration relation~\cite{mcgaugh2016}.
 
 \textbf{The scale: $a_0 = cH_0/2\pi$ [HYP], gate-level tested.} The scale $a_0$ and its $cH_0$ coincidence are Milgrom's original observations~\cite{milgrom1983}; the quadrature structure resembles Verlinde's emergent-gravity relation~\cite{verlinde2016}. The novelty claimed here is only the exact standard-$\mu$ equivalence, the $n=1$ uniqueness, and the zero-parameter gate test. Identifying the
 reservoir rate with the condensate relaxation (one phase winding per Hubble time --- the
@@ -1823,9 +1823,9 @@ The V9 Campaign has transformed TRXT from a theoretical proposal into a \textbf{
     \item \textbf{Gate 2 (CMB, 2026 real-data upgrade):} PASS. CAMB with the published Planck 2018 parameters (no tuning) versus the \emph{real} Planck binned TT/TE/EE spectra: $\chi^2_\nu = 1.008/1.171/1.118$ (Figure~\ref{fig:g2_cmb_realdata}); tower-relic free-streaming $k_{\rm fs} = 5.8\times10^{10}\,h$/Mpc \emph{derived}, confirming CDM-indistinguishability. ($H_0$: audited residual tension ${\sim}3\sigma$, audit note Section~7.4.)
     \item \textbf{Gate 3 (Galaxy Rotation):} PASS. SPARC $\chi^2_{\rm red} < 3.0$ (corrected industry-standard threshold; PDE gradient-array bug fixed 2026-03-01, see \S6.1); re-run pending.
     \item \textbf{Gate 4 (Solar System, 2026 re-derivation):} PASS. Suppression from the Gate-3-validated interpolation law (parameter-free): $\delta({\rm Saturn}) = 1.4\times10^{-12}$ vs Cassini $2.3\times10^{-5}$; the earlier ``endogenous Vainshtein'' mechanism was struck (Section~\ref{sec:screening} erratum).
-    \item \textbf{Gate 5 (BBN):} PASS. Ground-State Decoupling argument ($w=-1$ condensate negligible at $T \sim 1$ MeV) $\Rightarrow$ standard BBN applies; PRyMordial verification executed 2026-08-14: $N_{\rm eff}=3.044$, $Y_p = 0.2469$ vs $0.2453\pm0.0034$ observed ($0.5\sigma$), D/H $= 2.45\times10^{-5}$ vs $(2.527\pm0.030)\times10^{-5}$ ($2.4\sigma$, the known rate-dependent tension of standard BBN, not TRXT-specific; likewise the lithium problem). Log: \texttt{audit\_sweep2\_20260814}.
+    \item \textbf{Gate 5 (BBN):} PASS. Ground-State Decoupling argument ($w=-1$ condensate negligible at $T \sim 1$ MeV) $\Rightarrow$ standard BBN applies; PRyMordial verification executed 2026-08-14: $N_{\rm eff}=3.044$, $Y_p = 0.2469$ vs $0.2453\pm0.0034$ observed~\cite{aver2021} ($0.5\sigma$), D/H $= 2.45\times10^{-5}$ vs $(2.527\pm0.030)\times10^{-5}$~\cite{cooke2018} ($2.4\sigma$, the known rate-dependent tension of standard BBN, not TRXT-specific; likewise the lithium problem). Log: \texttt{audit\_sweep2\_20260814}.
     \item \textbf{Gate 6 (CMB Boltzmann):} PASS. Condensate indistinguishable from CDM at $z \sim 1100$.
-    \item[\textbf{V9-R1}] \textbf{Relic Density (superseded):} the V9 freeze-out $\Omega h^2 = 0.1241$ belonged to the superseded $5.71$~GeV DT-1 candidate. The current dark sector is the $184$--$201$~TeV tower, whose production was computed 2026-08-14: symmetric component excluded, asymmetric target $Y_\Delta = 2.4\times10^{-15}$ (Section~\ref{sec:genesis}, register GAP-N4d-asym).
+    \item[\textbf{V9-R1}] \textbf{Relic Density (superseded):} the V9 freeze-out $\Omega h^2 = 0.1241$ belonged to the superseded $5.71$~GeV DT-1 candidate. The current dark sector is the $184$--$201$~TeV tower, whose production was computed 2026-08-14: symmetric component excluded, asymmetric target $Y_\Delta = 2.4\times10^{-15}$ (Section~\ref{sec:genesis}, register GAP-N4d-asym; asymmetric-DM framework~\cite{zurek2014}).
     \item[\textbf{V9-R3}] \textbf{Lorentz Invariance:} PASS. Analytical proof: $c_s^2 \leq 1$, $\alpha_4 > 0$, $c_{\mathrm{gw}} = c$.
 \end{enumerate}
 
@@ -1873,7 +1873,7 @@ Gravity & Fundamental force (GR) & Induced from $\Phi$ condensate \\
     \item \textbf{$SU(3)_c$ Gauge Emergence:} \textbf{Resolved (V11)}. Derived from Octonionic Fiber Curvature (Section 10).
     \item \textbf{Baryogenesis $\eta$:} Completed (V10). Bounce solver confirms exact match $\eta = 6.14 \times 10^{-10}$ (Order of Magnitude Truth: $7.73 \times 10^{-10}$).
     \item \textbf{hi\_class Full CMB:} Implement TRXT fluid module in hi\_class and test against full Planck $C_\ell^{TT,TE,EE}$ likelihood.
-    \item \textbf{Layer 0 S$^3$ Census:} Completed. $L = 256$ Kibble-Zurek lattice simulations yielded a 1.85\% stable topological relic survival rate.
+    \item \textbf{Layer 0 S$^3$ Census:} Completed. $L = 256$ Kibble-Zurek~\cite{kibble1976,zurek1985} lattice simulations yielded a 1.85\% stable topological relic survival rate.
 \end{enumerate}
 
 \textbf{Status:} QUANTITATIVELY CONSTRAINED AND FALSIFIABLE (Post-V9).
@@ -2158,7 +2158,7 @@ Based on the topological analysis (following Perelman and Wick rotation argument
     \item \textbf{Pre-Geometric Phase (Layer 3):} The universe begins as a "Quantum Foam" of unconnected logical qubits (random phase, high symmetry $G_{full}$). Topological defects (vortices) are abundant and fluctuating.
     \item \textbf{Crystallization (Layer 4):} As the "Logic Temperature" drops below the critical threshold $T_c$, the superfluid condensate forms. The metric emerges ($g_{\mu\nu} \sim \eta_{\mu\nu}$).
     \item \textbf{Trapped Topology (Origin of Matter):} Crucially, not all defects annihilate during this cooling. A residual density of topological defects is "frozen" into the spacetime manifold due to the non-trivial topology of the vacuum ($\pi_1(T^2) \neq 0$).
-    \item \textbf{Simulation Proof:} Our rigorous $256 \times 256$ lattice simulation of this Kibble-Zurek mechanism confirms that despite heavy annihilation, approximately 1.85\% of initial quantum foam defects remain trapped as stable relics (particles) after the transition, yielding a non-empty vacuum.
+    \item \textbf{Simulation Proof:} Our rigorous $256 \times 256$ lattice simulation of this Kibble-Zurek mechanism~\cite{kibble1976,zurek1985} confirms that despite heavy annihilation, approximately 1.85\% of initial quantum foam defects remain trapped as stable relics (particles) after the transition, yielding a non-empty vacuum.
 \end{enumerate}
 
 \subsubsection{Resolution of the Singularity}
@@ -2225,7 +2225,7 @@ From the NJL/BCS gap equation and topological DOS definition:
 \end{equation}
 where $\Xi$ is a purely geometric constant, $X = 205.5$, and $g_{eff} \approx 0.026$ from the 17-order gap. Thus $t$ is not free but locked by NJL/BCS self-consistency.
 
-\textbf{H.23 - Locking $q = 6$ (Abrikosov Lattice):}
+\textbf{H.23 - Locking $q = 6$ (Abrikosov Lattice~\cite{abrikosov1957}):}
 In superfluids/superconductors, the minimum energy vortex configuration is the triangular lattice with $C_6$ symmetry. This leads to:
 \begin{itemize}
     \item Holonomy: $\mathrm{Hol}(T^2) \cong \mathbb{Z}_6$
@@ -2236,7 +2236,7 @@ In superfluids/superconductors, the minimum energy vortex configuration is the t
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figures/fig_abrikosov_lattice.png}
-    \caption{Abrikosov vortex lattice energy comparison: Triangular lattice ($C_6$, $\beta_A = 1.1596$) has lower energy than square lattice ($C_4$, $\beta_A = 1.1803$). Thus holonomy $\mathbb{Z}_6$ and $k_F = 5/6$ are consequences of energy minimization.}
+    \caption{Abrikosov vortex lattice energy comparison: Triangular lattice ($C_6$, $\beta_A = 1.1596$) has lower energy than square lattice ($C_4$, $\beta_A = 1.1803$)~\cite{kleiner1964}. Thus holonomy $\mathbb{Z}_6$ and $k_F = 5/6$ are consequences of energy minimization.}
 \end{figure}
 
 \textbf{H.24 - Complete Deterministic Chain:}
@@ -2393,7 +2393,7 @@ We performed a strict ``zero-parameter'' test on 175 galaxies under the correcte
 Nullivance (Pure Lane-Emden) & 91.4\% (pre-correction, $\chi^2<5.0$) & 0.54 \\
 \bottomrule
 \end{tabular}
-\caption{Validation results on 175 SPARC galaxies (Lelli et al. 2016).}
+\caption{Validation results on 175 SPARC galaxies (Lelli et al. 2016 \cite{lelli}).}
 \end{table}
 
 \begin{figure}[H]
@@ -2534,7 +2534,7 @@ The vacuum manifold is $\mathcal{M} = S^1$ (Phase). While $\pi_1(S^1) = \mathbb{
 \begin{enumerate}
     \item \textbf{Structure:} A "Dark Tower" particle is a stable toroidal soliton (vortex ring with twist).
     \item \textbf{Quantum Numbers:} The integers $(p,q)$ describe the toroidal winding ($p$) and poloidal winding ($q$) of the phase field on the torus surface of the soliton core.
-    \item \textbf{Stability:} These "Hopfions" are stabilized against collapse by the hydrodynamical helicity constraint $\mathcal{H} = \int \mathbf{v} \cdot (\nabla \times \mathbf{v}) d^3x$, as demonstrated in Faddeev-Niemi models and two-component superfluids \cite{faddeev, babaev}.
+    \item \textbf{Stability:} These "Hopfions" are stabilized against collapse by the hydrodynamical helicity constraint $\mathcal{H} = \int \mathbf{v} \cdot (\nabla \times \mathbf{v}) d^3x$, as demonstrated in Faddeev-Niemi models and two-component superfluids \cite{faddeev,babaev,battye1998,manton2004}.
 \end{enumerate}
 This framework preserves Lepton Number and Gauge Symmetry, as it requires only the standard scalar order parameter of the superfluid.
 
@@ -2847,6 +2847,54 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{kolbturner} Kolb, E. W. \& Turner, M. S. (1990). \textit{The Early Universe}. Addison-Wesley. ISBN: 9780201626742. [Ch.~5.2: freeze-out Boltzmann equation.]
 \bibitem{gondologelmini} Gondolo, P. \& Gelmini, G. (1991). ``Cosmic abundances of stable particles: improved analysis''. \textit{Nucl. Phys. B} 360, 145--179. DOI: 10.1016/0550-3213(91)90438-4
 \bibitem{steigman2012} Steigman, G., Dasgupta, B., \& Beacom, J. F. (2012). ``Precise relic WIMP abundance and its impact on searches for dark matter annihilation''. \textit{Phys. Rev. D} 86, 023506. DOI: 10.1103/PhysRevD.86.023506
+
+% === ARCHIVE EDITION BIBLIOGRAPHY EXPANSION (2026-08-14; every entry web-verified) ===
+
+% Topological defect formation & relic abundance
+\bibitem{kibble1976} Kibble, T. W. B. (1976). ``Topology of cosmic domains and strings''. \textit{J. Phys. A: Math. Gen.} 9, 1387. DOI: 10.1088/0305-4470/9/8/029
+\bibitem{zurek1985} Zurek, W. H. (1985). ``Cosmological experiments in superfluid helium?''. \textit{Nature} 317, 505--508. DOI: 10.1038/317505a0
+\bibitem{preskill1979} Preskill, J. P. (1979). ``Cosmological production of superheavy magnetic monopoles''. \textit{Phys. Rev. Lett.} 43, 1365. DOI: 10.1103/PhysRevLett.43.1365
+\bibitem{thooft1974} 't Hooft, G. (1974). ``Magnetic monopoles in unified gauge theories''. \textit{Nucl. Phys. B} 79, 276--284.
+\bibitem{polyakov1974} Polyakov, A. M. (1974). ``Particle spectrum in quantum field theory''. \textit{JETP Lett.} 20, 194--195.
+
+% Vortex-lattice and vortex-core physics
+\bibitem{abrikosov1957} Abrikosov, A. A. (1957). ``On the magnetic properties of superconductors of the second group''. \textit{Sov. Phys. JETP} 5, 1174--1182.
+\bibitem{kleiner1964} Kleiner, W. H., Roth, L. M., \& Autler, S. H. (1964). ``Bulk solution of Ginzburg--Landau equations for type II superconductors: upper critical field region''. \textit{Phys. Rev.} 133, A1226. DOI: 10.1103/PhysRev.133.A1226
+\bibitem{cdgm1964} Caroli, C., de Gennes, P. G., \& Matricon, J. (1964). ``Bound Fermion states on a vortex line in a type II superconductor''. \textit{Phys. Lett.} 9, 307--309. DOI: 10.1016/0031-9163(64)90375-0
+
+% Solitons and topological field theory
+\bibitem{derrick1964} Derrick, G. H. (1964). ``Comments on nonlinear wave equations as models for elementary particles''. \textit{J. Math. Phys.} 5, 1252--1254. DOI: 10.1063/1.1704233
+\bibitem{skyrme1961} Skyrme, T. H. R. (1961). ``A non-linear field theory''. \textit{Proc. Roy. Soc. Lond. A} 260, 127--138.
+\bibitem{grossneveu1974} Gross, D. J. \& Neveu, A. (1974). ``Dynamical symmetry breaking in asymptotically free field theories''. \textit{Phys. Rev. D} 10, 3235. DOI: 10.1103/PhysRevD.10.3235
+\bibitem{witten1979} Witten, E. (1979). ``Baryons in the $1/N$ expansion''. \textit{Nucl. Phys. B} 160, 57--115.
+\bibitem{witten1989} Witten, E. (1989). ``Quantum field theory and the Jones polynomial''. \textit{Commun. Math. Phys.} 121, 351--399. DOI: 10.1007/BF01217730
+\bibitem{battye1998} Battye, R. A. \& Sutcliffe, P. M. (1998). ``Knots as stable soliton solutions in a three-dimensional classical field theory''. \textit{Phys. Rev. Lett.} 81, 4798. DOI: 10.1103/PhysRevLett.81.4798
+\bibitem{whitehead1947} Whitehead, J. H. C. (1947). ``An expression of Hopf's invariant as an integral''. \textit{Proc. Nat. Acad. Sci. USA} 33, 117--123. DOI: 10.1073/pnas.33.5.117
+\bibitem{manton2004} Manton, N. \& Sutcliffe, P. (2004). \textit{Topological Solitons}. Cambridge University Press. ISBN: 9780521838368.
+
+% Emergent/analogue gravity and holography
+\bibitem{unruh1981} Unruh, W. G. (1981). ``Experimental black-hole evaporation?''. \textit{Phys. Rev. Lett.} 46, 1351. DOI: 10.1103/PhysRevLett.46.1351
+\bibitem{blv2011} Barcel\'o, C., Liberati, S., \& Visser, M. (2011). ``Analogue gravity''. \textit{Living Rev. Relativ.} 14, 3. DOI: 10.12942/lrr-2011-3
+\bibitem{visser2002} Visser, M. (2002). ``Sakharov's induced gravity: a modern perspective''. \textit{Mod. Phys. Lett. A} 17, 977--991. [arXiv:gr-qc/0204062]
+\bibitem{plebanski1977} Pleba\'nski, J. F. (1977). ``On the separation of Einsteinian substructures''. \textit{J. Math. Phys.} 18, 2511--2520.
+\bibitem{ryu2006} Ryu, S. \& Takayanagi, T. (2006). ``Holographic derivation of entanglement entropy from AdS/CFT''. \textit{Phys. Rev. Lett.} 96, 181602. DOI: 10.1103/PhysRevLett.96.181602
+\bibitem{bekenstein1981} Bekenstein, J. D. (1981). ``Universal upper bound on the entropy-to-energy ratio for bounded systems''. \textit{Phys. Rev. D} 23, 287--298. DOI: 10.1103/PhysRevD.23.287
+
+% Dark-matter phenomenology and cosmological abundances
+\bibitem{leeweinberg1977} Lee, B. W. \& Weinberg, S. (1977). ``Cosmological lower bound on heavy-neutrino masses''. \textit{Phys. Rev. Lett.} 39, 165. DOI: 10.1103/PhysRevLett.39.165
+\bibitem{griest1990} Griest, K. \& Kamionkowski, M. (1990). ``Unitarity limits on the mass and radius of dark-matter particles''. \textit{Phys. Rev. Lett.} 64, 615. DOI: 10.1103/PhysRevLett.64.615
+\bibitem{goodmanwitten1985} Goodman, M. W. \& Witten, E. (1985). ``Detectability of certain dark-matter candidates''. \textit{Phys. Rev. D} 31, 3059--3063. DOI: 10.1103/PhysRevD.31.3059
+\bibitem{zurek2014} Zurek, K. M. (2014). ``Asymmetric Dark Matter: Theories, signatures, and constraints''. \textit{Phys. Rept.} 537, 91--121.
+\bibitem{markevitch2002} Markevitch, M., et al. (2002). ``A textbook example of a bow shock in the merging galaxy cluster 1E 0657-56''. \textit{Astrophys. J. Lett.} 567, L27. DOI: 10.1086/339619
+\bibitem{markevitch2006} Markevitch, M. (2006). ``Chandra observation of the most interesting cluster in the universe''. In \textit{The X-ray Universe 2005}, ESA SP-604, 723. [arXiv:astro-ph/0511345]
+\bibitem{aver2021} Aver, E., Berg, D. A., Olive, K. A., Pogge, R. W., Salzer, J. J., \& Skillman, E. D. (2021). ``Improving helium abundance determinations with Leo P as a case study''. \textit{JCAP} 03 (2021), 027. DOI: 10.1088/1475-7516/2021/03/027
+\bibitem{cooke2018} Cooke, R. J., Pettini, M., \& Steidel, C. C. (2018). ``One percent determination of the primordial deuterium abundance''. \textit{Astrophys. J.} 855, 102. DOI: 10.3847/1538-4357/aaab53
+\bibitem{fields2020} Fields, B. D., Olive, K. A., Yeh, T.-H., \& Young, C. (2020). ``Big-Bang Nucleosynthesis after Planck''. \textit{JCAP} 03 (2020), 010. DOI: 10.1088/1475-7516/2020/03/010
+
+% Galactic dynamics
+\bibitem{mcgaugh2016} McGaugh, S. S., Lelli, F., \& Schombert, J. M. (2016). ``Radial acceleration relation in rotationally supported galaxies''. \textit{Phys. Rev. Lett.} 117, 201101. DOI: 10.1103/PhysRevLett.117.201101
+\bibitem{famaey2012} Famaey, B. \& McGaugh, S. S. (2012). ``Modified Newtonian Dynamics (MOND): observational phenomenology and relativistic extensions''. \textit{Living Rev. Relativ.} 15, 10. DOI: 10.12942/lrr-2012-10
+\bibitem{bekensteinmilgrom1984} Bekenstein, J. \& Milgrom, M. (1984). ``Does the missing mass problem signal the breakdown of Newtonian gravity?''. \textit{Astrophys. J.} 286, 7--14. DOI: 10.1086/162570
 
 \end{thebibliography}
 

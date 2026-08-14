@@ -347,3 +347,38 @@ PACKAGING:
   Limitations and Open Problems": 8 active items with IDs and status;
   states explicitly that no validated claim depends on them.
 - 187 pages, 0 errors, 0 undefined. ARCHIVE-READY.
+
+## 2026-08-14 (phase 8a): BIBLIOGRAPHY EXPANSION -- archive edition
+
+- Missing-figure fix: fig_genesis_{quantization,protection,hopf,tower}.pdf
+  were gitignored (paper/**/*.pdf) and absent from fresh checkouts, causing
+  4 pdftex "File not found" errors. Copied from results/figures/ and
+  force-added so the archive tree compiles standalone.
+- Bibliography expanded 77 -> 111 entries. All 34 new entries web-verified
+  (journal/volume/year confirmed) before insertion; grouped and commented in
+  thebibliography: Kibble 1976; Zurek 1985; Preskill 1979; 't Hooft 1974;
+  Polyakov 1974; Abrikosov 1957; Kleiner-Roth-Autler 1964;
+  Caroli-de Gennes-Matricon 1964; Derrick 1964; Skyrme 1961;
+  Gross-Neveu 1974; Witten 1979; Witten 1989; Battye-Sutcliffe 1998;
+  Whitehead 1947; Manton-Sutcliffe 2004 (book); Unruh 1981;
+  Barcelo-Liberati-Visser 2011; Visser 2002; Plebanski 1977;
+  Ryu-Takayanagi 2006; Bekenstein 1981; Lee-Weinberg 1977;
+  Griest-Kamionkowski 1990; Goodman-Witten 1985; Zurek 2014 (ADM review);
+  Markevitch 2002; Markevitch 2006; Aver et al. 2021; Cooke et al. 2018;
+  Fields et al. 2020; McGaugh-Lelli-Schombert 2016; Famaey-McGaugh 2012;
+  Bekenstein-Milgrom 1984.
+- NOTE (honest verification): the requested "Drukier-Nussinov 1982,
+  PRL 49, 102" does NOT exist (PRL 49, 102 is an unrelated paper); the
+  canonical direct-detection foundation Goodman-Witten 1985 (PRD 31, 3059)
+  was added instead.
+- 45 plain-text source mentions converted to \cite across the main report,
+  Chapter_Genesis_MassChain, and appendices R/S(Bullet)/T(Topology)/VF/
+  W(ModeSelection)/W(Dictionary): Kibble-Zurek mentions, Abrikosov lattice +
+  beta_A values, BdG/CdGM vortex-core counts, Derrick/Skyrme/monopole/
+  baryon-as-soliton statements, Jacobson 1995 + Ryu-Takayanagi plain
+  mentions, BBN observed abundances (Aver/Cooke/Fields), MOND limit +
+  P(X)/AQUAL + radial-acceleration relation, asymmetric-DM and
+  unitarity-bound statements, Markevitch ICM parameters, Bekenstein bound,
+  Witten 1989 CS invariants, three uncited "Lelli et al. 2016" mentions.
+- Compile check: 190 pages, 0 errors, 0 undefined citations, 0 undefined
+  references, 26 Overfull hboxes (5 exceeding 100pt) remaining -> phase 8b.
