@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 G = 6.674e-11 # m^3 kg^-1 s^-2
 M_sun = 1.989e30 # kg
 AU = 1.496e11 # m
-a0_universal_si = 1.15e-10 # m/s^2 (converted from Gate 3: 3550 (km/s)^2/kpc)
+a0_universal_si = 1.0854e-10 # m/s^2 (Gate 3 2026-08-13 rerun: 3350 (km/s)^2/kpc)
 
-# Gate 3 Value: 3550 (km/s)^2 / kpc
+# Gate 3 Value: 3350 (km/s)^2 / kpc (extended-grid rerun, interior optimum)
 # 1 (km/s)^2 / kpc = (1e3 m/s)^2 / (3.086e19 m) = 1e6 / 3.086e19 = 3.24e-14 m/s^2
-# 3550 * 3.24e-14 = 1.15e-10 m/s^2. Correct.
+# 3350 * 3.24e-14 = 1.0854e-10 m/s^2.
 
 def solve_field_equation_si(g_bar, a0):
     """

@@ -1001,7 +1001,31 @@ Unlike classical fits, the numerical solution correctly captures the resonant en
     \label{fig:sidm_v12}
 \end{figure}
 
-The low-velocity enhancement naturally solves the cusp-core problem in dwarfs, while the velocity-dependent suppression ensures safety at cluster scales. \textbf{Status: CLOSED (Quantitative).}
+The low-velocity enhancement naturally solves the cusp-core problem in dwarfs, while the velocity-dependent suppression ensures safety at cluster scales.
+
+\begin{mdframed}[backgroundcolor=yellow!8, frametitle={2026 audit: Table~\ref{tab:sidm_v12} not reproduced --- status downgraded}]
+The 2026 independent recomputation
+(\texttt{experiments/verification/sidm\_crosssection\_audit.py}, log
+\texttt{sidm\_audit\_20260814}; solver validated against the Born limit to $0.8\%$ and
+convergence-checked) could not reproduce this table: (i) no committed numerical backing
+exists (the validation package's golden-output file contains only null placeholders);
+(ii) with the stated benchmark ($\alpha_\chi = 0.01$) the recomputed values are
+$64.4 / 45.9 / 5.31 / 0.356$ cm$^2$/g at $20/200/1000/3000$ km/s --- factors of
+$6.0$ and $5.4$ off at the intermediate velocities, and the recomputed cluster-scale
+value $5.3$ cm$^2$/g \textbf{violates} the $\lesssim 1$ cm$^2$/g bound the table itself
+invokes; (iii) no nearby $\alpha_\chi$ reproduces the whole table
+($\alpha_\chi = 0.008$ matches the Bullet row but is $\times4$ off at $1000$ km/s);
+(iv) the benchmark straddles the first Yukawa bound-state threshold
+($b = 2\mu\alpha_\chi/m_\phi = 1.52$--$2.09$ across $\alpha_\chi = 0.008$--$0.011$, vs
+the threshold $1.680$), making $\sigma/m$ at galactic velocities swing between $19$ and
+$129$ cm$^2$/g --- the phenomenology is resonance-fragile. \textbf{Status: the
+quantitative SIDM claims of this subsection are downgraded from CLOSED to FAILED
+(unreproduced) for the stated benchmark.} Context: the DT-1 ($5.71$ GeV) candidate was
+already demoted to conditional-only ($P2'$); the framework's current dark-matter sector
+is the $184$--$201$ TeV topological tower, whose geometric $\sigma/m \sim 10^{-19}$
+cm$^2$/g satisfies every SIDM bound trivially --- the failed table belongs to the
+superseded candidate's phenomenology.
+\end{mdframed}
 
 
 
@@ -1151,47 +1175,66 @@ $n_0>1110$ is a strong, falsifiable target.
 \textbf{Current status: PARTIALLY VERIFIED} (physically motivated;
 quantitative derivation pending).
 
-\subsection{Solar System Constraints: Endogenous Screening}\label{sec:screening}
-Unlike previous approaches that ``borrowed'' the Vainshtein mechanism from Galileon/Horndeski theories, TRXT derives screening directly from the microscopic action (see Algorithm S.4).
+\subsection{Solar System Constraints: Screening (2026 re-derivation)}\label{sec:screening}
 
-\textbf{Mechanism: k-mouflage from $P(X)$ EFT}
-The one-loop Effective Action (Section 4.1) inevitably generates higher-order derivative terms:
-\begin{equation}
-    \mathcal{L} \supset c_2 X + c_4 X^2 + \cdots, \quad X \equiv (\partial\theta)^2
-\end{equation}
-with $c_2, c_4 > 0$ (Appendix B). This defines a $P(X)$ theory (k-mouflage class).
+\begin{mdframed}[backgroundcolor=yellow!8, frametitle={2026 audit (GAP-S / registry item I-12): mechanism replaced}]
+Earlier versions of this section claimed an ``endogenous Vainshtein'' suppression
+$\epsilon = (r/r_V)^{3/2}$ with $r_V = (M/16\pi M_P^2\Lambda_{eff}^2)^{1/3} \approx
+2.38\times10^7$~AU, derived from the $P(X)$ EFT. The sign-consistent re-derivation
+(\texttt{experiments/verification/gap\_s\_screening.py}, log
+\texttt{gap\_s\_screening\_20260814}) found this untenable on three counts:
+(i) with the signature fixed globally ($X = \frac12 g^{\mu\nu}\partial\phi\partial\phi$,
+static $\Rightarrow X < 0$), the G0-healthy DBI branch has $P_X \le 1$ in statics ---
+\emph{anti}-screening, with a flux obstruction (no static solution where the source term
+exceeds $\Lambda^2$); (ii) the branch that does screen is superluminal in the timelike
+regime and fails Gate~0 --- within pure $P(X)$, \textbf{healthy and k-mouflage-screening
+are mutually exclusive branches} (the precise content of inconsistency I-12);
+(iii) the $3/2$ exponent is the cubic-galileon law --- no $(\partial\phi)^2\Box\phi$ term
+exists in the declared action (the $X^2$ branch would give $4/3$). The claim is struck.
+\end{mdframed}
 
-\textbf{Definig $\Lambda_{eff}$ from EFT (Closing the Mapping):}
-The effective screening scale is defined from the derived EFT coefficients:
+\textbf{The operative, consistent suppression.} Solar-system safety does not depend on
+the struck mechanism. The same interpolation law validated against SPARC data at Gate~3
+(the standard form, root of $g^4 - g_N^2 g^2 - g_N^2 a_0^2 = 0$) has the exact
+high-acceleration expansion
 \begin{equation}
-    \Lambda_{eff}^4 \equiv \frac{c_2 \rho_0^2}{c_4}
+    g_{\rm tot} \;=\; g_N\sqrt{1+u^2}\,, \qquad u \equiv \frac{a_0}{g_N}\,,
+    \qquad \delta \equiv \frac{g_{\rm tot}-g_N}{g_N} \;=\; \sqrt{1+u^2}-1
+    \;\simeq\; \frac{u^2}{2}\,,
 \end{equation}
-where $\rho_0 \approx M^{*2}$ is the condensate stiffness. This yields $\Lambda_{eff} \sim 0.1$ eV for natural values.
+which is \emph{parameter-free} given $a_0 = 3350\ {\rm (km/s)^2/kpc} = 1.085\times
+10^{-10}$~m/s$^2$ from Gate~3. Numbers (log \texttt{gap\_s\_screening\_20260814}):
+$\delta({\rm Earth}) = 2\times10^{-16}$, $\delta({\rm Saturn}) = 1.4\times10^{-12}$
+versus the Cassini bound $2.3\times10^{-5}$ --- a margin of \textbf{seven orders of
+magnitude}; $\delta({\rm Neptune}) = 1.4\times10^{-10}$,
+$\delta({\rm Pluto}) = 4.1\times10^{-10}$.
 
-\textbf{Screening Radius (Quartic Mainline):}
-Near a massive source $M$, the gradient $X$ becomes large. The Vainshtein radius where nonlinear terms dominate is:
-\begin{equation}
-    r_V = \left( \frac{M}{16\pi M_P^2 \Lambda_{eff}^2} \right)^{1/3}
-\end{equation}
-For the Sun ($M_\odot$), we obtain $r_V \approx 2.38 \times 10^7$ AU.
-
-\textbf{Fifth-Force Suppression:}
-Inside $r_V$, the scalar force is suppressed by:
-\begin{equation}
-    \epsilon_{fifth} \approx \left( \frac{r}{r_V} \right)^{3/2} \quad \text{(cubic-quartic mixing)}
-\end{equation}
-At Earth's orbit (1 AU):
-\begin{equation}
-    \epsilon_{fifth} \approx \left( \frac{1}{2.38 \times 10^7} \right)^{3/2} \approx 8.6 \times 10^{-12}
-\end{equation}
-This exceeds the Cassini precision requirement ($|\gamma-1| < 2.3 \times 10^{-5}$) by \textbf{seven orders of magnitude}. The screening is robust, endogenous, and guarantees Solar System viability.
+\textbf{Correction of pre-registered predictions.} The previously quoted outer-planet
+predictions ($1.8\times10^{-5}$ at Neptune, $3.2\times10^{-5}$ at Pluto) equal the
+\emph{first} power $u$ --- the tail of the ``simple'' $\mu$-function, inconsistent with
+the standard form validated at Gate~3. Since no ranging data exists at either precision,
+the predictions are corrected (dated, ledger-logged before any confrontation) to the
+values above. \emph{Falsifier:} a detected fifth-force fraction at the $10^{-5}$ level at
+Neptune/Pluto would contradict the standard form.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/fig_screening_mechanism.png}
-    \caption{Endogenous k-mouflage Screening. The fifth force $\epsilon_{fifth}$ is suppressed by $(r/r_V)^{3/2}$ inside the Vainshtein radius $r_V \approx 10^7$ AU. At 1 AU, suppression reaches $10^{-12}$, safely satisfying the Cassini limit (red dashed line).}
+    % generated by experiments/figures/make_g4_screening_figure.py (2026-08-14)
+    \includegraphics[width=0.8\textwidth]{figures/fig_g4_screening_audited.png}
+    \caption{Solar-system fifth-force fraction from the Gate-3-validated standard
+    interpolation law (blue, parameter-free, $\delta = \sqrt{1+u^2}-1$) with planetary
+    markers and the Cassini bound; the superseded $(r/r_V)^{3/2}$ claim (gray, dashed)
+    is shown struck by the 2026 audit. Generated by
+    \texttt{make\_g4\_screening\_figure.py}; log \texttt{gap\_s\_screening\_20260814}.}
     \label{fig:screening}
 \end{figure}
+
+\textbf{What remains open (register).} The microscopic origin of the interpolation
+function itself --- the condensate resummation that produces the standard $\mu$ --- is
+the continuing content of GAP-S, now sharply constrained: any candidate derivation must
+evade the branch-dichotomy theorem above (e.g.\ via the non-phase $\hat n$-sector or a
+genuinely non-$P(X)$ resummation), and must reproduce $\delta \simeq u^2/2$ in the
+high-acceleration limit.
 
 \textbf{Cross-Scale Consistency:}
 The same EFT parameters $(c_2, c_4, \rho_0)$ that produce screening at 1 AU also govern galactic dynamics. The transition from the screened regime ($\epsilon \ll 1$) to the unscreened regime ($\epsilon \sim \mathcal{O}(1)$) occurs at $r \sim r_V$. For a typical galaxy with $M_{halo} \sim 10^{12} M_\odot$, the Vainshtein radius is $r_V \sim 10^4$ kpc, which is \textit{larger} than galactic scales ($\sim 10$--$50$ kpc). This means the entire galaxy sits \textit{inside} the screening zone of its own halo. The SPARC rotation curve fits (Gate 3) therefore use the \textbf{unmodified Lane-Emden profile}, which describes the condensate density without fifth-force modifications. The galactic dynamics arise from the \textit{density profile} of the superfluid halo, not from a fifth force. This resolves the apparent contradiction: screening suppresses the \textit{scalar force}, but the \textit{gravitational} effect of the condensate's mass distribution is unaffected.
@@ -1599,7 +1642,7 @@ The V9 Campaign has transformed TRXT from a theoretical proposal into a \textbf{
     \item \textbf{Gate 1 (Bullet Cluster):} PASS. Lensing-gas separation reproduced.
     \item \textbf{Gate 2 (CMB, 2026 real-data upgrade):} PASS. CAMB with the published Planck 2018 parameters (no tuning) versus the \emph{real} Planck binned TT/TE/EE spectra: $\chi^2_\nu = 1.008/1.171/1.118$ (Figure~\ref{fig:g2_cmb_realdata}); tower-relic free-streaming $k_{\rm fs} = 5.8\times10^{10}\,h$/Mpc \emph{derived}, confirming CDM-indistinguishability. ($H_0$: audited residual tension ${\sim}3\sigma$, audit note Section~7.4.)
     \item \textbf{Gate 3 (Galaxy Rotation):} PASS. SPARC $\chi^2_{\rm red} < 3.0$ (corrected industry-standard threshold; PDE gradient-array bug fixed 2026-03-01, see \S6.1); re-run pending.
-    \item \textbf{Gate 4 (Solar System):} PASS. Vainshtein screening: $\epsilon < 10^{-11}$.
+    \item \textbf{Gate 4 (Solar System, 2026 re-derivation):} PASS. Suppression from the Gate-3-validated interpolation law (parameter-free): $\delta({\rm Saturn}) = 1.4\times10^{-12}$ vs Cassini $2.3\times10^{-5}$; the earlier ``endogenous Vainshtein'' mechanism was struck (Section~\ref{sec:screening} erratum).
     \item \textbf{Gate 5 (BBN):} PASS. Ground-State Decoupling argument ($w=-1$ condensate negligible at $T \sim 1$ MeV) $\Rightarrow$ standard BBN applies; PRyMordial verification executed 2026-08-14: $N_{\rm eff}=3.044$, $Y_p = 0.2469$ vs $0.2453\pm0.0034$ observed ($0.5\sigma$), D/H $= 2.45\times10^{-5}$ vs $(2.527\pm0.030)\times10^{-5}$ ($2.4\sigma$, the known rate-dependent tension of standard BBN, not TRXT-specific; likewise the lithium problem). Log: \texttt{audit\_sweep2\_20260814}.
     \item \textbf{Gate 6 (CMB Boltzmann):} PASS. Condensate indistinguishable from CDM at $z \sim 1100$.
     \item[\textbf{V9-R1}] \textbf{Relic Density:} PASS. Full Boltzmann freeze-out: $\Omega h^2 = 0.1241$ (3.4\% from Planck).
@@ -1706,9 +1749,15 @@ Expanding the effective potential $V_{eff}(\rho)$ around the condensate $\rho_0$
 Since $m_\rho^2 > 0$ (stable vacuum), $c_4$ is strictly positive, guaranteeing a healthy k-mouflage screening mechanism.
 
 \section{Appendix D: Solar System PPN Chain}
-1. \textbf{Screening Radius:} $r_V = (M / 16\pi M_P^2 \Lambda_{eff}^2)^{1/3}$.
-2. \textbf{Suppression:} $\epsilon_{fifth} = (r/r_V)^{3/2}$.
-3. \textbf{Cassini Check:} $|\gamma-1| \approx 2\epsilon_{fifth}$. For TRXT parameters, $\epsilon \sim 10^{-12} \ll 10^{-5}$.
+(2026 revision --- the $(r/r_V)^{3/2}$ chain was struck by the GAP-S audit; see the
+erratum box in Section~\ref{sec:screening}.)
+1. \textbf{Suppression law:} $\delta = \sqrt{1+u^2}-1 \simeq u^2/2$, $u = a_0/g_N$
+   (high-acceleration limit of the Gate-3-validated standard interpolation;
+   parameter-free).
+2. \textbf{Cassini Check:} $|\gamma-1| \approx 2\delta$; at Saturn
+   $\delta = 1.4\times10^{-12} \ll 2.3\times10^{-5}$ (seven orders of margin).
+3. \textbf{Outer-planet predictions (corrected, pre-registered):}
+   $\delta({\rm Neptune}) = 1.4\times10^{-10}$, $\delta({\rm Pluto}) = 4.1\times10^{-10}$.
 
 \section{Appendix E: Thermodynamics of Vacuum Energy (Volovik's Argument)}
 In the emergent gravity framework, the cosmological constant problem is resolved by thermodynamics.

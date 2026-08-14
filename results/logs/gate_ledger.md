@@ -165,3 +165,30 @@ Code state: 9ec6ffe RESEARCH_LOG: record Seifert downgrade + H0 correction from 
 | G2 CMB TT/TE/EE + P(k) vs real Planck 2018 binned spectra | **PASS** | UPGRADED (ledger 2026-08-14, pre-registered): CAMB w/ published Planck params vs real binned TT/TE/EE, diagonal chi2_red < 1.5 each; tower k_fs > 1e3 h/Mpc derived; sigma_8 within 3 sigma of 0.8111+/-0.0060 | results\logs\G2_20260814.log |
 
 ### Verdict: **LADDER CLEAR**
+
+## PARAMETER/PREDICTION UPDATE 2026-08-14 (logged BEFORE G4 rerun): GAP-S resolution
+
+- I-12 resolved as a theorem (gap_s_screening_20260814.log): pure P(X) cannot
+  simultaneously satisfy G0 (subluminal healthy branch) and k-mouflage
+  screening (superluminal branch) -- the old Sec 9.3 "(r/r_V)^{3/2} endogenous
+  Vainshtein" derivation is struck (3/2 exponent = cubic galileon, absent from
+  the action; X^2 branch would give 4/3).
+- Operative screening = high-acceleration limit of the G3-validated standard
+  interpolation: delta = sqrt(1+u^2)-1 ~ u^2/2, u = a0/g_N. Parameter-free.
+- Gate4 script a0 refreshed 1.15e-10 -> 1.0854e-10 m/s^2 (G3 2026-08-13
+  interior optimum 3350). Criterion UNCHANGED (Cassini 2.3e-5 at Saturn).
+- PRE-REGISTERED PREDICTION CORRECTION (no ranging data exists at these
+  precisions; correction dated before any confrontation): Neptune/Pluto
+  fifth-force fraction 1.8e-5/3.2e-5 (simple-mu tail, inconsistent with the
+  G3-validated standard form) -> 1.4e-10/4.1e-10 (standard form). Falsifier:
+  a detection at ~1e-5 level would contradict the standard form.
+
+## GATE REPORT 2026-08-14 08:43 (scripts/run_gates.py)
+
+Code state: 0890921 Three-link closure: [HYP-SC]->THM-in-model, CdGM count 1D-closed, conventions fixed  [dirty tree]
+
+| Gate | Status | Criterion | Log |
+|---|---|---|---|
+| G4 Solar-system screening (v17) | **PASS** | deviation at Saturn below Cassini 2e-5 | results\logs\G4_20260814.log |
+
+### Verdict: **LADDER CLEAR**

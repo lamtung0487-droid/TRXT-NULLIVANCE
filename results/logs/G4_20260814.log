@@ -1,0 +1,18 @@
+--- GATE 4: THE SOLAR SCREEN (Vainshtein Limits) ---
+  Using Unified Parameter a0 = 1.09e-10 m/s^2 (from Gate 3)
+
+Planet          | Radius (AU)  | g_Newton (m/s2)    | g_TRXT (m/s2)      | Delta g/g      
+------------------------------------------------------------------------------------------
+Mercury         | 0.39         | 3.89968e-02        | 3.89968e-02        | 0.00e+00       
+Earth           | 1.00         | 5.93141e-03        | 5.93141e-03        | 1.46e-16       
+Saturn          | 9.54         | 6.51720e-05        | 6.51720e-05        | 1.39e-12       
+Kuiper Cliff    | 50.00        | 2.37256e-06        | 2.37256e-06        | 1.05e-09       
+
+[Gate 4 Analysis]
+  Max Deviation (Saturn/Kuiper): 1.05e-09
+  Cassini Bound (Saturn): ~ 2.00e-05
+
+>>> GATE 4 STATUS: PASS <<<
+  √ Solar System Screening is effective.
+  √ Deviation at Saturn (1.39e-12) is below Cassini limit (2e-5).
+

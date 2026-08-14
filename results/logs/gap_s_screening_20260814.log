@@ -1,0 +1,55 @@
+============================================================================
+GAP-S: SCREENING RE-DERIVATION (I-12 resolution)   (2026-08-14)
+============================================================================
+
+--- PART 1: branch dichotomy (pure P(X), statics vs timelike) ---
+     S/L^2 |     phi_A  F_A/F_lin |     phi_B  F_B/F_lin
+     0.030 |     0.030      1.000 |    0.0300     0.9996
+     0.300 |     0.314      1.048 |    0.2873     0.9578
+     0.900 |     2.065      2.294 |    0.6690     0.7433
+     0.999 |    22.344     22.366 |    0.7068     0.7075
+     1.500 |   NO SOLUTION (flux>L^2) |    0.8321     0.5547
+    10.000 |   NO SOLUTION (flux>L^2) |    0.9950     0.0995
+  Branch A (G0b-healthy): force/linear >= 1 and DIVERGES as S -> L^2;
+    beyond that no static solution: ANTI-screening + obstruction.
+  Branch B: force saturates at L^2 -> screening eps ~ (r/r_K)^2; but its
+    timelike c_s^2 = 1 + phidot^2/L^4 > 1: fails the G0 criterion.
+  [THEOREM] pure P(X): G0-healthy XOR k-mouflage-screening. I-12 is a
+  real obstruction, not a sign slip. The X^2-EFT limit gives eps ~ r^{4/3}
+  in the screening branch; the manuscript's 3/2 exponent matches NEITHER
+  (it is the cubic-galileon law; no such term exists in the action).
+
+--- PART 2: operative screening from the G3-validated law ---
+  a0 = 3350 (km/s)^2/kpc = 1.0854e-10 m/s^2 (Gate-3 provenance)
+  g_tot = g_N sqrt(1+u^2), u = a0/g_N  =>  delta = sqrt(1+u^2)-1 ~ u^2/2
+  body        r (AU)  g_N (m/s^2)   u=a0/g_N delta (exact) old presc. (u)
+  Mercury       0.39    3.961e-02   2.74e-09      0.00e+00       2.74e-09
+  Earth         1.00    5.932e-03   1.83e-08      2.22e-16       1.83e-08
+  Saturn        9.54    6.522e-05   1.66e-06      1.38e-12       1.66e-06
+  Uranus       19.19    1.611e-05   6.74e-06      2.27e-11       6.74e-06
+  Neptune      30.07    6.560e-06   1.65e-05      1.37e-10       1.65e-05
+  Pluto        39.48    3.806e-06   2.85e-05      4.07e-10       2.85e-05
+  Cassini bound at Saturn: 2.3e-5; predicted delta = 1.4e-12
+  -> margin 2e+07x. PASS with seven orders to spare.
+  CORRECTION OF PRE-REGISTERED PREDICTIONS: the earlier Neptune/Pluto
+  values 1.8e-5/3.2e-5 equal u (the 'simple'-mu tail) -- inconsistent
+  with the standard form validated at G3. Corrected predictions:
+    Neptune: delta = 1.4e-10   Pluto: delta = 4.1e-10
+  (no ranging data at either precision exists; the update is dated and
+  ledger-logged BEFORE any confrontation -- Honest Null compliant.)
+  FALSIFIER: any future detection of a fifth-force fraction ~ 1e-5 at
+  Neptune/Pluto would CONTRADICT the standard form and revive simple-mu.
+
+============================================================================
+VERDICT
+============================================================================
+1. I-12 RESOLVED as a theorem: the declared action's healthy branch does
+   not k-mouflage-screen; the screening branch is superluminal. The old
+   Sec 9.3 'endogenous Vainshtein (r/r_V)^{3/2}' derivation is struck.
+2. Solar-system safety does NOT depend on that mechanism: the
+   G3-validated interpolation law itself suppresses the fifth force as
+   u^2/2 (parameter-free), passing Cassini by ~7 orders.
+3. OPEN (register): the microscopic origin of the interpolation function
+   (the resummation that produces the standard mu from the condensate)
+   -- GAP-S continues at that level, now with the dichotomy theorem as a
+   hard constraint on any candidate derivation.

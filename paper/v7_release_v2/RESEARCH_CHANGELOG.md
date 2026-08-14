@@ -239,3 +239,23 @@ AUDIT SWEEP 2 (audit_sweep2.py, log audit_sweep2_20260814):
 - Appendix VF.6: items 2026-08-14e/f/g inserted in chronological order +
   final "Status of the chain" paragraph. Appendix AC GAP-N4c entry rewritten
   to final state. Derivation note addendum 3 (mathematician-signed).
+
+## 2026-08-14 (phase 2): GAP-S resolution + SIDM audit
+
+GAP-S (gap_s_screening.py, log gap_s_screening_20260814):
+- I-12 proven a theorem: pure P(X) healthy XOR k-mouflage-screening.
+  Sec 9.3 rewritten: old (r/r_V)^{3/2} mechanism struck (erratum box);
+  operative screening = G3-validated standard law, delta ~ u^2/2,
+  parameter-free, 7 orders inside Cassini. New figure
+  fig_g4_screening_audited.png (make_g4_screening_figure.py).
+- Pre-registered Neptune/Pluto predictions corrected (1.8e-5/3.2e-5 ->
+  1.4e-10/4.1e-10), ledger-logged before any data confrontation.
+- Appendix D PPN chain updated; Gate-4 summary line updated; Gate4 script
+  a0 3550->3350 provenance refresh; G4 rerun PASS (LADDER CLEAR).
+
+SIDM AUDIT (sidm_crosssection_audit.py, log sidm_audit_20260814):
+- Independent partial-wave solver (RK45, Born-validated 0.8%, convergence
+  checked): the V12.5 table is NOT reproduced (x6/x5.4 at 200/1000 km/s;
+  recomputed cluster value 5.3 cm^2/g violates the quoted <~1 bound;
+  golden-output file empty). Audit box added; subsection status downgraded
+  CLOSED -> FAILED (unreproduced); tower-DM context noted.
