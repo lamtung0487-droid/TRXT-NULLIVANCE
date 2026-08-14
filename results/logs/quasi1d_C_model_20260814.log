@@ -1,0 +1,67 @@
+============================================================================
+QUASI-1D FRAME FOR C: construction + numerical tests   (2026-08-14)
+============================================================================
+  C = g*D_e/(q*pi*v_F) = 5.305164769730   (50/(3pi) = 5.305164769730)
+  identity requires D_e = q-1: Cl(6) gives D_e = 5, q = 6  [holds]
+
+--- B1: gap location and Fermi-level pinning at filling 5/6 ---
+  V0 = -0.02: gap between minibands 5 and 6 = 0.006477 (delta-comb estimate 2|V0|/q = 0.006667)
+  top of miniband 5:  E = +0.339933
+  free chain at k=5pi/6: E = +0.346410  (shift -6.48e-03 = O(V0))
+  -> filling nu = 5/6 fills minibands 1..5 exactly: E_F pinned at the
+     band-5 top edge = unfolded k_F = 5pi/6. LOCKING DERIVED from the
+     q-periodic core comb (assertion 'edge-locking k_F = 1-1/q' replaced
+     by commensuration).
+  v_F(5pi/6) = 2t sin(5pi/6) = 0.200000 = 1/5  [consistent units]
+
+--- B2: core-projected weight -> 1/q (dilution factor) ---
+  V0 = -0.001: <|psi(core)|^2> near E_F = 0.16864 (1/q = 0.16667, ratio 1.0118)
+  V0 = -0.010: <|psi(core)|^2> near E_F = 0.17324 (1/q = 0.16667, ratio 1.0394)
+  V0 = -0.050: <|psi(core)|^2> near E_F = 0.16318 (1/q = 0.16667, ratio 0.9791)
+  -> dilution 1/q emerges in the weak-core limit; pairing supported on
+     the core sees (1/q) of each channel's DOS.
+
+--- B3: finite-V0 corrections to C and the precision constraint ---
+  pairing window 0.02 (2% of channel bandwidth):
+    V0 = -0.001: C_eff/C - 1 = +5.314%
+    V0 = -0.002: C_eff/C - 1 = +9.350%
+    V0 = -0.005: C_eff/C - 1 = +19.139%
+    V0 = -0.010: C_eff/C - 1 = +31.654%
+    V0 = -0.020: C_eff/C - 1 = +49.629%
+  pairing window 0.05 (6% of channel bandwidth):
+    V0 = -0.001: C_eff/C - 1 = +2.414%
+    V0 = -0.002: C_eff/C - 1 = +4.266%
+    V0 = -0.005: C_eff/C - 1 = +8.777%
+    V0 = -0.010: C_eff/C - 1 = +14.570%
+    V0 = -0.020: C_eff/C - 1 = +22.847%
+  empirical scaling: C_eff/C - 1 ~ 4.57 * |V0|^0.75 (window 0.05)
+  to preserve the 0.012% C-agreement: |V0| < 8.41e-07 (= 0.0001% of the channel bandwidth)
+  and the commensuration gap is then 2|V0|/q < 2.8e-07:
+  the frame requires an extremely weak core potential -- an honest,
+  falsifiable structural constraint (or: the 0.012% agreement is partly
+  absorbed into the V0-correction, to be examined next).
+
+============================================================================
+VERDICT
+============================================================================
+1. The unit-consistent quasi-1D expression C = g*D_e/(q*pi*v_F) equals
+   50/(3pi) EXACTLY and coincides with the appendix's mixed-unit formula
+   precisely because Cl(6) gives D_e = q-1 = 5. The unit-mixing debt is
+   RESOLVED by reinterpretation: the 2D isotropic formula was a
+   numerically coincident rewriting; no 2D Fermi circle is needed, so the
+   van Hove obstruction to the 2D realization is MOOT in this frame.
+2. Edge-locking k_F = 5pi/6 is DERIVED (commensuration: filling 5/6 of
+   q=6 minibands from the core comb), replacing an assertion.
+3. The dilution 1/q is DERIVED from core-supported pairing (weak-V limit).
+4. NEW COSTS (explicit, falsifiable): (i) filling must be nu = (q-1)/q --
+   pushed down to vortex state-counting, still open; (ii) SHARP TENSION:
+   the attractive core piles the locked edge states onto itself (van Hove
+   + core-binding), enhancing the pairing DOS as ~4.6|V0|^0.75; keeping
+   the 0.012% C-agreement requires |V0| < 1e-6 of the bandwidth -- 
+   physically implausible for a vortex core. Either a compensation
+   mechanism exists (e.g. the enhancement renormalizes into X or the
+   prefactor) or the 0.012% agreement is partly accidental. This is now
+   the frame's primary falsifier. (iii) prefactor/cutoff/g=4 unchanged.
+NET: two of the four unfixed choices (unit convention; 2D-model validity)
+are closed by the quasi-1D frame; the locking assertion becomes a theorem
+modulo filling; the frame pays with one new quantified constraint.

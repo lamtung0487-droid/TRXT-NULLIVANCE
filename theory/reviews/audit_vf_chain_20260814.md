@@ -91,3 +91,14 @@ isotropic model to 1e-6 (single Γ circle, no spurious branches).
 **Updated GAP-N4c closure list:** honest 2D model compatible with Γ-circle locking;
 principled unit convention; prefactor/cutoff/g=4. The anchor survives 5.339 but its
 "derivation" status is further away, not closer, after honest scrutiny.
+
+---
+
+## Addendum 2 (same day, evening): quasi-1D frame — the constructive answer
+
+`experiments/verification/quasi1d_C_model.py` + `theory/derivation_quasi1d_C_20260814.md`.
+C = g·De/(q·π·vF) (unit-consistent) = 50/(3π) exactly; coincides with the legacy formula
+iff De = q−1 (the Cl(6) identity). Closes the unit and 2D-model debts; derives locking
+(commensuration, ν = 5/6 [HYP]) and 1/q dilution. New primary falsifier: core-strength
+tension (|V0| ≲ 1e-6 bandwidth required; enhancement ≈ 4.6|V0|^0.75). Remaining:
+ν-filling, core tension, prefactor/cutoff/g=4.

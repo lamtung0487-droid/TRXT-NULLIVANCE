@@ -119,3 +119,36 @@ GAP-N4c status after the computation: the anchor survives the $5.339$ threat, bu
 justification debt grows --- what would close the gap is (i) a first-principles 2D model
 compatible with $\Gamma$-circle locking, (ii) a principled fixing of the momentum-unit
 convention, and (iii) fixing of the BCS prefactor, the cutoff identification, and $g=4$.
+
+\paragraph{2026-08-14c: the quasi-1D frame (constructive resolution of (i) and (ii)).}
+The same-day constructive step (\texttt{experiments/verification/quasi1d\_C\_model.py},
+log \texttt{quasi1d\_C\_model\_20260814}; derivation note
+\texttt{derivation\_quasi1d\_C\_20260814.md}, mathematician-signed) found that the
+unit-consistent quasi-1D expression
+\begin{equation}
+C \;=\; g\,D_e\,\frac{1}{q}\,\frac{1}{\pi v_F},
+\qquad v_F = 2t\sin\frac{\pi}{q}\ \ \text{(radian units throughout)},
+\end{equation}
+--- $D_e$ independent 1D channels from the $Cl(6)$ generators, BCS pairing supported on
+the vortex core (one site per $q$-site magnetic cell), per-channel 1D DOS at the locked
+Fermi momentum --- equals $50/(3\pi)$ \emph{exactly}, and coincides with the legacy 2D
+formula precisely because $Cl(6)$ gives $D_e = q-1$ (counterfactual $(D_e,q)$ pairs break
+the degeneracy). Consequences:
+\begin{itemize}
+\item The unit-mixing pathology and the van Hove obstruction both belonged to the
+\emph{discarded 2D reading}; in the quasi-1D frame no Fermi circle exists and all units
+are consistent. Debts (i) and (ii) above are \textbf{closed by reinterpretation}.
+\item The edge-locking $k_F = 5\pi/6$ is \emph{derived} (commensuration: the core comb
+folds each channel into $q$ minibands with gaps at $n\pi/6$; filling $\nu = (q-1)/q$ pins
+$E_F$ at the fifth gap), conditional on $\nu = (q-1)/q$, which remains a hypothesis to be
+fixed by vortex-core state counting.
+\item The dilution $1/q$ is derived: the core-projected spectral weight
+$q\,\langle|\psi(\mathrm{core})|^2\rangle \to 1$ in the weak-core limit (verified).
+\item \textbf{Primary falsifier (new, quantified):} at finite core strength the locked
+edge states pile onto the attractive core, enhancing the pairing DOS by
+${\approx}\,4.6\,|V_0|^{0.75}$ (empirical, window $6\%$ of bandwidth); preserving the
+$0.012\%$ $C$-agreement with $m_\tau$ requires $|V_0| \lesssim 10^{-6}$ of the channel
+bandwidth --- physically implausible for a vortex core. Either a compensation mechanism
+exists, or the $0.012\%$ agreement is partly accidental. This tension, together with the
+prefactor, cutoff, $g=4$, and $\nu$, is what now separates the chain from a derivation.
+\end{itemize}

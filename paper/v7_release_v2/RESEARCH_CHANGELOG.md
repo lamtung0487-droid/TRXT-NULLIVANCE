@@ -178,3 +178,17 @@ GATE 2 REAL-DATA UPGRADE (criteria pre-registered in gate_ledger.md BEFORE run):
   (2) unit mixing in C -- consistent evaluations give 50/3 or 50/(3pi^2),
   missing m_tau by >10 orders; only the mixed 50/(3pi) works.
 - Appendix AC GAP-N4c entry updated with the 3-item closure list.
+
+## 2026-08-14 (evening): quasi-1D frame for C -- constructive GAP-N4c step
+
+- New model + verification experiments/verification/quasi1d_C_model.py (log
+  quasi1d_C_model_20260814); derivation note theory/derivation_quasi1d_C_20260814.md
+  (mathematician-signed with conditions).
+- C = g*De/(q*pi*vF), unit-consistent, equals 50/(3pi) EXACTLY; coincides
+  with legacy 2D formula iff De = q-1 = Cl(6) value. Unit-mixing and 2D-model
+  debts CLOSED by reinterpretation; van Hove obstruction moot.
+- Edge-locking k_F = 5pi/6 DERIVED (commensuration, conditional on filling
+  nu = 5/6 [HYP]); 1/q dilution DERIVED (core-projected weight, verified).
+- NEW primary falsifier: core-strength tension (|V0| < 1e-6 bandwidth needed
+  for the 0.012% agreement; enhancement ~4.6|V0|^0.75).
+- Appendix VF.6 item 2026-08-14c added; Appendix AC GAP-N4c entry updated.
