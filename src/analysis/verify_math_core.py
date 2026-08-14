@@ -13,7 +13,7 @@ def verify_eft_scale():
     
     # Formula derived: M* = hbar * c_s * g_c / (2*pi) approx
     # Let's drop 2pi for order of magnitude or keep it if strictly following derivation
-    # ChatGPT derivation: M* = hbar * c_s * g_c  (defined A.10)
+    # Chatthe external computation derivation: M* = hbar * c_s * g_c  (defined A.10)
     # But usually omega = 2pi c / L, and L = 2pi n / g_c => omega = c g_c / n. 
     # So E = hbar omega = hbar c g_c / n.
     # So M* = hbar * c * g_c. Matches A.10.

@@ -1,7 +1,7 @@
 """
 NULLIVANCE FINAL VERIFICATION: H.21 Numerical Check
 ====================================================
-Verifying GPT's computation of:
+Verifying the externally reported computation of:
 - L_F = 14.998
 - I_F = 26.345  
 - η = 0.569
@@ -15,13 +15,13 @@ def verify_H21():
     print("🏆 NULLIVANCE H.21 FINAL VERIFICATION")
     print("=" * 60)
     
-    # GPT's numerical results
+    # externally reported numerical results
     L_F = 14.997959677
     I_F = 26.345339545
     eta = L_F / I_F
     g = 4  # spin × valley
     
-    print(f"\n[GPT NUMERICAL RESULTS]")
+    print(f"\n[EXTERNALLY REPORTED RESULTS]")
     print(f"  Contour length L_F    = {L_F:.6f}")
     print(f"  DOS integral I_F      = {I_F:.6f}")
     print(f"  Anisotropy factor η   = {eta:.6f}")
@@ -38,12 +38,12 @@ def verify_H21():
     
     # Comparison
     C_target = 5.30
-    C_gpt = 5.338681972
+    C_ext = 5.338681972
     error_percent = abs(C - C_target) / C_target * 100
     
     print(f"\n[COMPARISON]")
     print(f"  Calculated C    = {C:.6f}")
-    print(f"  GPT reported C  = {C_gpt:.6f}")
+    print(f"  reported C       = {C_ext:.6f}")
     print(f"  Target C        = {C_target:.2f}")
     print(f"  Error           = {error_percent:.2f}%")
     

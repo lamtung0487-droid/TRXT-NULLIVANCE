@@ -31,7 +31,7 @@ Giải quyết triệt để 9 phản biện từ chuyên gia học thuật.
 ## Version 7.0 - 2026-02-02
 
 ### Mục tiêu
-Tích hợp nhánh MaVaN và các appendix mới từ GPT review.
+Tích hợp nhánh MaVaN và các appendix mới từ vòng phản biện ngoài.
 
 ### Các Nâng cấp Hoàn thành
 | Appendix | Nội dung | Đóng góp |

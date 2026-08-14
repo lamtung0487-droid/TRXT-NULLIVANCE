@@ -2,7 +2,7 @@
 """
 NULLIVANCE BREAKTHROUGH: BAND STRUCTURE VERIFICATION
 =====================================================
-Verifying GPT's derivation: C = 50/(3π) ≈ 5.305
+Verifying the analytic derivation: C = 50/(3π) ≈ 5.305
 
 Parameters:
 - g = 4 (spin × valley degeneracy)
@@ -20,7 +20,7 @@ def verify_band_structure_C():
     print("🔬 NULLIVANCE BAND STRUCTURE VERIFICATION")
     print("=" * 60)
     
-    # Parameters from GPT derivation
+    # Parameters from the analytic derivation
     g = 4           # Degeneracy: spin (2) × valley (2)
     v = 1/5         # Dirac slope (near-flat band)
     k_F = 5/6       # Fermi momentum (locking fraction)
