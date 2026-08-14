@@ -192,3 +192,17 @@ GATE 2 REAL-DATA UPGRADE (criteria pre-registered in gate_ledger.md BEFORE run):
 - NEW primary falsifier: core-strength tension (|V0| < 1e-6 bandwidth needed
   for the 0.012% agreement; enhancement ~4.6|V0|^0.75).
 - Appendix VF.6 item 2026-08-14c added; Appendix AC GAP-N4c entry updated.
+
+## 2026-08-14 (night): gap equation resolves the core-strength tension
+
+- New experiments/verification/bcs_gap_equation_comb.py (log
+  bcs_gap_comb_20260814, incl. referee convergence addendum): linearized T=0
+  BCS gap equation on the q=6 comb, three scenarios.
+- S1 calibration: slope = 1/(pi vF) to +0.06%. S2 external comb: BCS log
+  saturates below E_gap -> external-potential reading dead as precision
+  derivation (bound sharpened 1e-6 -> 1e-17 W). S3 self-consistent comb
+  V0 = -c*Delta [HYP-SC]: slope -> 100.02% of N0 (Delta = 2e-6,
+  grid-independent) -> transmutation exponent exactly protected; comb effect
+  = O(1) prefactor (0.99/0.97/0.92 at c = 0.5/1/2).
+- Derivation note addendum (mathematician-signed); VF.6 item 2026-08-14d;
+  Appendix AC GAP-N4c entry updated.

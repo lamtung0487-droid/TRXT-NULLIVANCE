@@ -81,3 +81,36 @@ obstruction is moot); (iii) edge-locking upgraded from assertion to conditional 
   is labeled [HYP], (b) the core-strength tension is presented as the frame's primary
   falsifier, and (c) the coincidence theorem is stated as motivation, not proof, of the
   quasi-1D reading.
+
+---
+
+## Addendum (same day, night): the BCS gap equation — core-strength tension RESOLVED
+
+**Code:** `experiments/verification/bcs_gap_equation_comb.py` → `results/logs/bcs_gap_comb_20260814.log`
+
+The linearized T=0 gap equation for core-supported pairing was solved on the comb model
+in three scenarios:
+
+- **S1 (V₀ = 0, calibration):** slope d(1/U)/d(lnΔ) = 1.59248 vs N₀ = 1/(πv_F) = 1.59155
+  (+0.06%) — method calibrated.
+- **S2 (external fixed comb, filling 5/6, μ mid-gap):** the BCS log SATURATES for
+  Δ ≪ E_gap (slope → 0.1% of baseline): exponential transmutation is destroyed unless
+  |V₀| < qΔ/2 ~ 3×10⁻¹⁷ W. **The external-potential reading is dead as a precision
+  derivation** (tension sharpened from the 1e-6 estimate to 1e-17).
+- **S3 (self-consistent comb V₀ = −cΔ — the vortex lattice is made of the condensate):**
+  the spectrum near E_F scales linearly with Δ, so S(Δ) = N₀ln(W̃/Δ) + a(c) + O(Δ/W)
+  exactly. Numerics: slope → 100.08% → **100.02% of N₀** at Δ = 2×10⁻⁶ (grid-independence
+  verified: NK 20001 vs 60001 identical; deep points at NK = 200001). The entire comb
+  effect compresses into the O(1) prefactor factor e^{a(c)/N₀} = 0.99/0.97/0.92 at
+  c = 0.5/1/2.
+
+**Resolution:** the core-strength tension (F-Q2) dissolves **conditional on [HYP-SC]**:
+the locking comb is condensate-generated (V₀ ∝ Δ, c ~ O(1)) — the natural superfluid
+reading (vortices are made of the condensate). The transmutation exponent — hence C and
+M* — is exactly protected; the O(1) prefactor correction joins the already-open prefactor
+debt and must be included in any future precision claim.
+
+**Mathematician sign-off (addendum):** scale-invariance argument checked (comb spectrum
+near E_F ∝ Δ under V₀ = −cΔ; the ξ-integral splits into a universal log plus a
+Δ-independent constant); numerical convergence protocol adequate (grid-doubling + deep-Δ
+points). The [HYP-SC] label is mandatory wherever the resolution is quoted. **YES.**

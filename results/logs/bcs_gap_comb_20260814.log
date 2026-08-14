@@ -1,0 +1,63 @@
+============================================================================
+BCS GAP EQUATION ON THE q=6 COMB: slope vs intercept   (2026-08-14)
+============================================================================
+
+--- S1: V0 = 0 (metal), calibration ---
+  expected slope N0 = 1/(pi vF) = 1.59155
+  Delta = 3.2e-02: S = 3.9573, local slope = 1.65442
+  Delta = 1.8e-03: S = 8.6183, local slope = 1.59287
+  Delta = 5.6e-05: S = 14.1166, local slope = 1.59155
+  mean slope (mid decades) = 1.59248 (dev from N0: +0.06%)  [CALIBRATED]
+
+--- S2: fixed V0, filling 5/6 (mu mid-gap) ---
+  V0 = -0.01: E_gap = 0.00329
+    Delta = 3.2e-02: local slope = 1.58733 (99.7% of baseline)
+    Delta = 3.2e-03: local slope = 1.03419 (64.9% of baseline)
+    Delta = 3.2e-04: local slope = 0.03302 (2.1% of baseline)
+    Delta = 5.6e-05: local slope = 0.00107 (0.1% of baseline)
+    -> slope collapses once Delta << E_gap: the BCS log SATURATES;
+       exponential transmutation requires Delta >> E_gap, i.e.
+       |V0| << q*Delta/2 ~ 3e-17 * W for the physical
+       Delta/W ~ 1e-17. Fixed external comb: tension CONFIRMED and
+       sharpened (1e-6 -> 1e-17 level).
+
+--- S3: self-consistent comb V0 = -c*Delta (condensate-generated) ---
+  (vortex lattice is made of the condensate; comb tracks the gap)
+  c = 0.5: mean slope = 1.60283 (100.65% of baseline); intercept shift dS = -0.01962
+         -> prefactor factor exp(dS/N0) = 0.9877
+  c = 1.0: mean slope = 1.61303 (101.29% of baseline); intercept shift dS = -0.04989
+         -> prefactor factor exp(dS/N0) = 0.9691
+  c = 2.0: mean slope = 1.63271 (102.53% of baseline); intercept shift dS = -0.13908
+         -> prefactor factor exp(dS/N0) = 0.9163
+
+============================================================================
+VERDICT
+============================================================================
+S1: method calibrated (slope = 1/(pi vF) to sub-percent).
+S2: an EXTERNAL fixed comb kills exponential transmutation unless
+    |V0| < q*Delta/2 -- for Delta/W ~ 1e-17 this is absurd; the naive
+    frame (external potential) is DEAD as a precision derivation.
+S3: if the comb is condensate-generated (V0 = -c*Delta), the gap scale
+    tracks Delta: the BCS log runs all the way down, the SLOPE (i.e. C)
+    reverts to baseline, and the entire V0-effect compresses into an O(1)
+    prefactor factor (numbers above). The core-strength tension then
+    DISSOLVES into the already-open prefactor debt, at the price of one
+    new physical hypothesis [HYP-SC]: the locking comb is the condensate's
+    own vortex structure, so its strength is proportional to the gap.
+    This is the natural TRXT reading (vortices are made of the superfluid),
+    and it is falsifiable: c ~ O(1) predicts a specific O(1) prefactor
+    correction that must be included in any future precision claim.
+
+ADDENDUM (same run, referee convergence pass):
+- Grid check: NK = 20001 vs 60001 give IDENTICAL S3 slopes -> the 1-2.5%
+  drift at large Delta is a physical O(Delta/W) transient, not discretization.
+- Deep-Delta points (c = 1, NK = 200001):
+    slope over Delta 5.6e-5 -> 1e-5:  1.59275  (100.08% of N0)
+    slope over Delta 1e-5   -> 2e-6:  1.59183  (100.02% of N0)
+- Scale-invariance argument: with V0 = -c*Delta the spectrum near E_F scales
+  linearly with Delta, hence S(Delta) = N0*ln(W~/Delta) + a(c) + O(Delta/W)
+  EXACTLY: the transmutation exponent (C, hence M*) is asymptotically
+  protected; the entire comb effect is the O(1) intercept a(c)
+  (prefactor factor 0.99/0.97/0.92 at c = 0.5/1/2).
+CONCLUSION: core-strength tension RESOLVED conditional on [HYP-SC]
+(condensate-generated comb, c ~ O(1)) -- the natural superfluid reading.

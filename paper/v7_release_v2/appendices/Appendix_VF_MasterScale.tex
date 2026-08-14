@@ -152,3 +152,28 @@ bandwidth --- physically implausible for a vortex core. Either a compensation me
 exists, or the $0.012\%$ agreement is partly accidental. This tension, together with the
 prefactor, cutoff, $g=4$, and $\nu$, is what now separates the chain from a derivation.
 \end{itemize}
+
+\paragraph{2026-08-14d: the gap equation --- core-strength tension resolved under
+self-consistency.} Solving the linearized $T=0$ BCS gap equation on the comb model
+(\texttt{experiments/verification/bcs\_gap\_equation\_comb.py}, log
+\texttt{bcs\_gap\_comb\_20260814}; calibration: slope $= 1/(\pi v_F)$ to $+0.06\%$)
+settled where the enhancement enters:
+\begin{itemize}
+\item \emph{External fixed comb:} the BCS logarithm \textbf{saturates} for
+$\Delta \ll E_{\rm gap}$ (slope collapses to $0.1\%$ of baseline) --- exponential
+transmutation would require $|V_0| < q\Delta/2 \sim 10^{-17}W$. The external-potential
+reading is dead as a precision derivation.
+\item \emph{Self-consistent comb} $V_0 = -c\,\Delta$ (the vortex lattice is made of the
+condensate itself, so the locking potential tracks the gap): the near-$E_F$ spectrum
+scales linearly with $\Delta$, giving $S(\Delta) = N_0\ln(\tilde W/\Delta) + a(c) +
+\mathcal{O}(\Delta/W)$ \emph{exactly}. Numerically the slope converges to
+$\mathbf{100.02\%}$ of $N_0$ at $\Delta = 2\times10^{-6}$ (grid-independence verified);
+the entire comb effect compresses into the $\mathcal{O}(1)$ prefactor factor
+$e^{a(c)/N_0} = 0.99/0.97/0.92$ at $c = 0.5/1/2$.
+\end{itemize}
+\textbf{Conclusion:} the transmutation exponent --- hence $C$ and $M^*$ --- is
+asymptotically protected, and the core-strength tension dissolves into the already-open
+prefactor debt, \emph{conditional on} the hypothesis [HYP-SC] that the locking comb is
+condensate-generated with $c \sim \mathcal{O}(1)$ --- the natural superfluid reading.
+Remaining open for GAP-N4c: $\nu = (q-1)/q$ state counting [HYP], the [HYP-SC] premise
+and its $\mathcal{O}(1)$ prefactor, and the BCS prefactor / cutoff / $g=4$ trio.
