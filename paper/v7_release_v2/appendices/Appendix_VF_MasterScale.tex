@@ -64,8 +64,8 @@ $m_\tau$ shifts $M^{*}$ from $365.24$ to $365.26$\,GeV ($+0.004\%$) --- inside e
 precision; legacy occurrences of $365.24$ elsewhere in this report are within that band.
 
 \subsection*{VF.6 Independent audit results (2026-08-14, GAP-N4c partially executed)}
-The lab's independent audit (\texttt{experiments/verification/vf\_chain\_audit.py}, log
-\texttt{vf\_chain\_audit\_20260814}) established:
+The lab's independent audit (\texttt{experiments/\allowbreak verification/\allowbreak vf\_\allowbreak chain\_\allowbreak audit.py}, log
+\texttt{vf\_\allowbreak chain\_\allowbreak audit\_\allowbreak 20260814}) established:
 \begin{itemize}
 \item \textbf{Verified [THM/NUM]:} the $Cl(6)$ chirality reduction was reconstructed from
 scratch (independent $8\times8$ gamma representation): Clifford relations, $\Gamma_7^2=1$,
@@ -78,7 +78,7 @@ $|d\ln M^*/d\ln C| = X/C = 38.7$. Consequently the ``lattice cross-check'' value
 $C=5.339$ quoted in VF.4 would shift $M^*$ by $+28\%$ and \emph{miss} the $\tau$ mass
 entirely --- only the continuum value works.
 \item \textbf{Irreproducible [FAIL]:} no code generating the lattice value $5.339$ exists in
-the repository; the archived script \texttt{verify\_C\_band\_structure.py} merely
+the repository; the archived script \texttt{verify\_\allowbreak C\_\allowbreak band\_\allowbreak structure.py} merely
 re-evaluates the same analytic formula (circular). The finite-size claim is therefore
 unverifiable as stated.
 \item \textbf{Unfixed conventions [OPEN]:} the BCS prefactor ($1$ vs $2$: factor $2.0$ in
@@ -91,8 +91,8 @@ agreement cannot yet be claimed as a derivation (Anti-Hardcode Law).
 
 \paragraph{2026-08-14b: the decisive lattice computation (executed).}
 The reproducible lattice/DOS computation requested above now exists
-(\texttt{experiments/verification/lattice\_C\_computation.py}, log
-\texttt{lattice\_C\_computation\_20260814}; contour-integral method validated to
+(\texttt{experiments/\allowbreak verification/\allowbreak lattice\_\allowbreak C\_\allowbreak computation.py}, log
+\texttt{lattice\_\allowbreak C\_\allowbreak computation\_\allowbreak 20260814}; contour-integral method validated to
 $10^{-6}$ on a case with known exact answer). Results:
 \begin{itemize}
 \item \textbf{No lattice correction exists for the model actually evaluated.} For the
@@ -121,9 +121,9 @@ compatible with $\Gamma$-circle locking, (ii) a principled fixing of the momentu
 convention, and (iii) fixing of the BCS prefactor, the cutoff identification, and $g=4$.
 
 \paragraph{2026-08-14c: the quasi-1D frame (constructive resolution of (i) and (ii)).}
-The same-day constructive step (\texttt{experiments/verification/quasi1d\_C\_model.py},
-log \texttt{quasi1d\_C\_model\_20260814}; derivation note
-\texttt{derivation\_quasi1d\_C\_20260814.md}, mathematician-signed) found that the
+The same-day constructive step (\texttt{experiments/\allowbreak verification/\allowbreak quasi1d\_\allowbreak C\_\allowbreak model.py},
+log \texttt{quasi1d\_\allowbreak C\_\allowbreak model\_\allowbreak 20260814}; derivation note
+\texttt{derivation\_\allowbreak quasi1d\_\allowbreak C\_\allowbreak 20260814.md}, mathematician-signed) found that the
 unit-consistent quasi-1D expression
 \begin{equation}
 C \;=\; g\,D_e\,\frac{1}{q}\,\frac{1}{\pi v_F},
@@ -155,7 +155,7 @@ prefactor, cutoff, $g=4$, and $\nu$, is what now separates the chain from a deri
 
 \paragraph{2026-08-14d: the gap equation --- core-strength tension resolved under
 self-consistency.} Solving the linearized $T=0$ BCS gap equation on the comb model
-(\texttt{experiments/verification/bcs\_gap\_equation\_comb.py}, log
+(\texttt{experiments/\allowbreak verification/\allowbreak bcs\_\allowbreak gap\_\allowbreak equation\_\allowbreak comb.py}, log
 \texttt{bcs\_gap\_comb\_20260814}; calibration: slope $= 1/(\pi v_F)$ to $+0.06\%$)
 settled where the enhancement enters:
 \begin{itemize}
@@ -180,8 +180,8 @@ and its $\mathcal{O}(1)$ prefactor, and the BCS prefactor / cutoff / $g=4$ trio.
 
 \paragraph{2026-08-14e: the state-counting test (F-Q1).} The counting mechanism behind
 $\nu = (q-1)/q$ was tested in the comb model
-(\texttt{experiments/verification/vortex\_state\_counting.py}, log
-\texttt{vortex\_state\_counting\_20260814}): for any finite core strength
+(\texttt{experiments/\allowbreak verification/\allowbreak vortex\_\allowbreak state\_\allowbreak counting.py}, log
+\texttt{vortex\_\allowbreak state\_\allowbreak counting\_\allowbreak 20260814}): for any finite core strength
 ($|V_0| \gtrsim 0.2$, \emph{either sign}), \textbf{exactly one} miniband becomes
 core-localized (weight $\to q$, splitting off the spectrum) while the remaining $q-1=5$
 stay extended --- never zero, never two. This matches the Caroli--de Gennes--Matricon /
@@ -192,8 +192,8 @@ hypothesis is upgraded from bare assertion to a CdGM-counting mechanism [HYP+LIT
 Replacing the phenomenological comb $V_0$ with the physically correct object --- the pair
 field $\Delta(x)$ itself (a vortex core \emph{is} a suppression and phase winding of
 $\Delta$, not an external potential) --- the BdG computation
-(\texttt{experiments/verification/bdg\_vortex\_comb.py}, log
-\texttt{bdg\_vortex\_comb\_20260814}) established:
+(\texttt{experiments/\allowbreak verification/\allowbreak bdg\_\allowbreak vortex\_\allowbreak comb.py}, log
+\texttt{bdg\_\allowbreak vortex\_\allowbreak comb\_\allowbreak 20260814}) established:
 \begin{itemize}
 \item \textbf{[HYP-SC] upgraded to a theorem-in-model:} the effective locking comb
 generated by the pair-field landscape scales as $\Delta^{1.97}/W$ (measured exponent), so
@@ -210,8 +210,8 @@ formality.)
 \end{itemize}
 
 \paragraph{2026-08-14g: the convention trio (link 3).}
-(\texttt{experiments/verification/scheme\_conventions\_audit.py}, log
-\texttt{scheme\_conventions\_20260814}.)
+(\texttt{experiments/\allowbreak verification/\allowbreak scheme\_\allowbreak conventions\_\allowbreak audit.py}, log
+\texttt{scheme\_\allowbreak conventions\_\allowbreak 20260814}.)
 \begin{itemize}
 \item \textbf{Prefactor $2$ = theorem:} the sharp-cutoff BCS gap equation gives
 $\Delta = \omega_c/\sinh(1/\lambda) \to 2\omega_c e^{-1/\lambda}$ exactly. Residual

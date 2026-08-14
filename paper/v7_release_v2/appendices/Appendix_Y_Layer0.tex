@@ -69,7 +69,7 @@ The V14 simulation (Appendix S.11) confirms that for any random initial configur
 
 \subsection{Source Code Implementation}
 
-The following Python code implements the \textbf{core} Nullivance Kernel algorithm. For the complete verification suite, including energy tracking, topological invariant counting, and visualization logic, please refer to the supplementary script \texttt{verify\_layer0\_emergence.py} provided in the source code package.
+The following Python code implements the \textbf{core} Nullivance Kernel algorithm. For the complete verification suite, including energy tracking, topological invariant counting, and visualization logic, please refer to the supplementary script \texttt{verify\_\allowbreak layer0\_\allowbreak emergence.py} provided in the source code package.
 
 \begin{lstlisting}[language=Python, caption=The Geometric Langevin Kernel (SimEngine)]
 class NullivanceKernel:
@@ -107,7 +107,7 @@ class NullivanceKernel:
 
 \subsection{Verification Results}
 
-Independent verification (see \texttt{verify\_layer0\_emergence.py}) using the \textbf{Geometric Langevin Algorithm} confirmed:
+Independent verification (see \texttt{verify\_\allowbreak layer0\_\allowbreak emergence.py}) using the \textbf{Geometric Langevin Algorithm} confirmed:
 \begin{enumerate}
     \item \textbf{Energy Decay:} Monotonic decrease ($dE/dt \le 0$) in the cooling phase, proving the system naturally seeks a ground state.
     \item \textbf{Quantum Foam:} In the equilibrium phase ($T>0$), the system maintains a stationary topological foam density of $\rho \approx 0.007$ (approx. 1 unstable Skyrmion per 140 lattice sites), proving the vacuum is dynamically active.
@@ -136,7 +136,7 @@ where $M_{\mathrm{cond}}$ is the condensation scale at which Layer~0 topology fr
     t_* = \frac{\hbar}{M_{\mathrm{cond}} c^2} \sim 3.3 \times 10^{-40}\,\mathrm{s}
     \quad \text{for } M_{\mathrm{cond}} \sim M_{\mathrm{GUT}} \approx 2 \times 10^{15}\,\mathrm{GeV}.
 \end{equation}
-This places the Layer~0 $\to$ Layer~1 transition at the GUT epoch, consistent with inflationary physics. For the full numerical derivation see \texttt{proof\_gate\_C\_time\_mapping.py} (Evidence ID: GATE-C-TIME-MAPPING-2026-03).
+This places the Layer~0 $\to$ Layer~1 transition at the GUT epoch, consistent with inflationary physics. For the full numerical derivation see \texttt{proof\_\allowbreak gate\_\allowbreak C\_\allowbreak time\_\allowbreak mapping.py} (Evidence ID: GATE-C-TIME-MAPPING-2026-03).
 
 \subsection{Y.7 Physical Derivation of $M_{\mathrm{cond}} \equiv M_{\mathrm{GUT}}$}
 \label{sec:y7_mcond_derivation}
@@ -149,12 +149,12 @@ Setting $\alpha_2(M_{\mathrm{GUT}}) = \alpha_3(M_{\mathrm{GUT}})$ (SM one-loop),
     \approx 34.6
     \quad \Longrightarrow \quad M_{\mathrm{GUT}} \approx 9.6\times 10^{16}\,\mathrm{GeV},
 \end{equation}
-where $b_2 = -19/6$, $b_3 = -7$ are the SM one-loop $\beta$-function coefficients. All inputs are PDG 2022 observables. Numerical verification: \texttt{proof\_gate\_C\_mcond\_derivation.py} (Evidence ID: GATE-C-MCOND-DERIVATION-2026-03, artifact: \texttt{artifacts/gate\_C\_mcond\_result.json}).
+where $b_2 = -19/6$, $b_3 = -7$ are the SM one-loop $\beta$-function coefficients. All inputs are PDG 2022 observables. Numerical verification: \texttt{proof\_\allowbreak gate\_\allowbreak C\_\allowbreak mcond\_\allowbreak derivation.py} (Evidence ID: GATE-C-MCOND-DERIVATION-2026-03, artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak C\_\allowbreak mcond\_\allowbreak result.json}).
 
 \begin{mdframed}[backgroundcolor=blue!5, linecolor=blue!60, linewidth=1pt]
 \textbf{Open problem (resolved at order of magnitude, Gate P2 v2):} The \emph{dynamical mechanism} that forces the Layer~0 NLSM condensate to form at approximately $M_{\mathrm{GUT}}$ has been derived at 1-loop. The NLSM on $G_2/\mathrm{SU}(3)$ has UV-free boundary condition $\alpha_{\rm NLSM}(M_{\rm Pl}) \to 0$ (analogous to QCD asymptotic freedom). The 1-loop running \cite{Friedan1980} gives strong coupling at:
 \begin{equation}
 M_{\rm cond} = M_{\rm Pl}\cdot\exp\!\left(-\frac{4\pi}{\beta_1}\right),\quad \beta_1 = \tfrac{h^\vee(G_2)}{2} = \tfrac{C_2(G_2)}{2} = 2,
 \end{equation}
-where $h^\vee(G_2) = 4$ is the dual Coxeter number derived from the $G_2$ Cartan matrix $A_{G_2} = \bigl[\begin{smallmatrix}2&-1\\-3&2\end{smallmatrix}\bigr]$ via affine comarks $[a_0^\vee, a_1^\vee, a_2^\vee] = [1,2,1]\!$, $h^\vee = \sum a_k^\vee$ (Kac 1990 Table~Aff$_1$; PDG~2022~\S9.10). Yielding $M_{\rm cond} \approx 2.3\times10^{16}$ GeV: order-of-magnitude consistent with $M_{\rm GUT} = 9.6\times10^{16}$ GeV; the factor-4.2 gap at 1-loop requires $\delta\beta_1 \approx 0.56$ from 2-loop NLSM corrections ($\approx 22\%$ NLO, within QCD precedent; cf.\ Hull--Townsend 1986 \cite{HullTownsend1986}). \textit{Note: the 2-loop coefficient $\beta_2$ for $G_2/\mathrm{SU}(3)$ is an estimate; a derived value requires the full 2-loop formula of Chen 1986.} Numerical verification: \texttt{source\_code/proofs/proof\_P2\_freezeout\_mechanism\_v2.py} (artifact: \texttt{artifacts/gate\_P2\_freezeout\_result\_v2.json}).
+where $h^\vee(G_2) = 4$ is the dual Coxeter number derived from the $G_2$ Cartan matrix $A_{G_2} = \bigl[\begin{smallmatrix}2&-1\\-3&2\end{smallmatrix}\bigr]$ via affine comarks $[a_0^\vee, a_1^\vee, a_2^\vee] = [1,2,1]\!$, $h^\vee = \sum a_k^\vee$ (Kac 1990 Table~Aff$_1$; PDG~2022~\S9.10). Yielding $M_{\rm cond} \approx 2.3\times10^{16}$ GeV: order-of-magnitude consistent with $M_{\rm GUT} = 9.6\times10^{16}$ GeV; the factor-4.2 gap at 1-loop requires $\delta\beta_1 \approx 0.56$ from 2-loop NLSM corrections ($\approx 22\%$ NLO, within QCD precedent; cf.\ Hull--Townsend 1986 \cite{HullTownsend1986}). \textit{Note: the 2-loop coefficient $\beta_2$ for $G_2/\mathrm{SU}(3)$ is an estimate; a derived value requires the full 2-loop formula of Chen 1986.} Numerical verification: \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak P2\_\allowbreak freezeout\_\allowbreak mechanism\_\allowbreak v2.py} (artifact: \texttt{artifacts/\allowbreak gate\_\allowbreak P2\_\allowbreak freezeout\_\allowbreak result\_\allowbreak v2.json}).
 \end{mdframed}

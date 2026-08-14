@@ -9,7 +9,7 @@
 
 \subsection*{AD.1 The rebuilt gate system}
 All validation now runs through a central runner with \emph{frozen, pre-declared criteria}
-(\texttt{scripts/run\_gates.py} + \texttt{scripts/gates\_criteria.json}); individual scripts
+(\texttt{scripts/run\_gates.py} + \texttt{scripts/\allowbreak gates\_\allowbreak criteria.json}); individual scripts
 cannot self-declare ladder success, criterion changes must be logged in the gate ledger
 \emph{before} any rerun, and every status is earned by a computation. Current ladder status
 (2026-08-13): \textbf{all gates clear}.
@@ -58,6 +58,6 @@ its role as a \emph{gate} is superseded by the held-out protocol of AD.1.
 
 \subsection*{AD.4 Reproduction}
 \texttt{pip install -r requirements.txt}; then from the repository root:
-\texttt{python scripts/run\_gates.py} (full ladder; per-gate logs and an appended ledger
+\texttt{python scripts/\allowbreak run\_\allowbreak gates.py} (full ladder; per-gate logs and an appended ledger
 entry in \texttt{results/logs/}), and the Layer-0 suite via the scripts in
 \texttt{experiments/layer0/}. Every table entry above regenerates from these two commands.

@@ -12,7 +12,7 @@ The Octonions ($\mathbb{O}$) have the automorphism group $G_2$. However, the imp
 \begin{equation}
     Stab_{G_2}(e_1) \cong SU(3)
 \end{equation}
-We laid out the explicit 64-dimensional basis and computationally verified (\texttt{src/phase\_v12\_pure\_geometry/v12\_weak\_chirality\_pde.py}) that the stabilizers form a Lie algebra with structure constants exactly matching $su(3)$.
+We laid out the explicit 64-dimensional basis and computationally verified (\texttt{src/\allowbreak phase\_\allowbreak v12\_\allowbreak pure\_\allowbreak geometry/\allowbreak v12\_\allowbreak weak\_\allowbreak chirality\_\allowbreak pde.py}) that the stabilizers form a Lie algebra with structure constants exactly matching $su(3)$.
 
 \subsubsection{Derivation of SU(2) (Weak)}
 Similarly, the Quaternionic subalgebra $\mathbb{H}$ is stabilized within the Octonionic automorphism structure by:
@@ -21,7 +21,7 @@ Similarly, the Quaternionic subalgebra $\mathbb{H}$ is stabilized within the Oct
 \end{equation}
 The 6-dimensional stabilizer algebra consists of two independent $su(2)$ sectors. The identification of the physical Weak force with $SU(2)_L$ — and the absence of $SU(2)_R$ coupling to fermions — is now a \textbf{rigorous theorem} (Proof G1), not a heuristic principle.
 
-\textbf{Theorem G1 (Parity violation from algebra):} Let $S = \mathcal{A}P_\mathrm{vac}$ be the Minimal Left Ideal with $P_\mathrm{vac} = \tfrac{1}{2}(1 + i_\mathbb{C} e_7)$. The $SU(2)$ generators $T_k = \tfrac{1}{2}(I_2 \otimes L_k^{\mathbb{H}} \otimes I_8)$ act on $S$ with Casimir eigenvalue $C_2 = -\tfrac{3}{4}$ ($j = \tfrac{1}{2}$) on \emph{all} 32 real dimensions. Higher representations ($j \geq \tfrac{3}{2}$) are excluded by an eigenvalue gap $\Delta = 3.0$. Right-quaternion generators produce the wrong signature ($C_2 = +\tfrac{3}{4}$) and do not couple to $S$. Hence $SU(2)_L$ is the \emph{unique} physical weak-isospin symmetry — maximal parity violation is a mathematical consequence of left-ideal selection, not an empirical assumption. (See \texttt{source\_code/proofs/proof\_G1\_sl\_doublet\_structure.py} and \texttt{artifacts/gate\_G1\_sl\_doublet\_result.json}.)
+\textbf{Theorem G1 (Parity violation from algebra):} Let $S = \mathcal{A}P_\mathrm{vac}$ be the Minimal Left Ideal with $P_\mathrm{vac} = \tfrac{1}{2}(1 + i_\mathbb{C} e_7)$. The $SU(2)$ generators $T_k = \tfrac{1}{2}(I_2 \otimes L_k^{\mathbb{H}} \otimes I_8)$ act on $S$ with Casimir eigenvalue $C_2 = -\tfrac{3}{4}$ ($j = \tfrac{1}{2}$) on \emph{all} 32 real dimensions. Higher representations ($j \geq \tfrac{3}{2}$) are excluded by an eigenvalue gap $\Delta = 3.0$. Right-quaternion generators produce the wrong signature ($C_2 = +\tfrac{3}{4}$) and do not couple to $S$. Hence $SU(2)_L$ is the \emph{unique} physical weak-isospin symmetry — maximal parity violation is a mathematical consequence of left-ideal selection, not an empirical assumption. (See \texttt{source\_\allowbreak code/\allowbreak proofs/\allowbreak proof\_\allowbreak G1\_\allowbreak sl\_\allowbreak doublet\_\allowbreak structure.py} and \texttt{artifacts/\allowbreak gate\_\allowbreak G1\_\allowbreak sl\_\allowbreak doublet\_\allowbreak result.json}.)
 
 \subsection{O.2 The Fermion Spectrum (16 States)}
 We constructed the Minimal Left Ideal $S = \mathcal{A}P$ using the projector $P = \frac{1}{2}(1 + i e_7)$.
@@ -73,9 +73,9 @@ Our computational scan proved that the Left ($S_L$) and Right ($S_R$) chiral sec
 This proves that mass terms $m \bar{\psi}\psi$ cannot arise from the division algebra itself. Mass \textbf{requires} an external bridge: the TRXT Condensate ($\Phi$). Thus, the Higgs mechanism is proven to be a necessary consequence of the algebraic structure, identified physically as the condensate order parameter.
 
 \subsection{O.5 Physical Origin of the Algebra (Module 5)}
-Why $\mathbb{O}$? We theoretically investigated vacuum stability (\texttt{src/phase\_j\_expert\_audit\_recovery/v14\_j7\_acoustic\_de.py}) and found that the requirement of \textbf{Vacuum Unitarity} (norm preservation $|xy|=|x||y|$) is satisfied \textbf{only} in dimensions $n=1, 2, 4, 8$.
+Why $\mathbb{O}$? We theoretically investigated vacuum stability (\texttt{src/\allowbreak phase\_\allowbreak j\_\allowbreak expert\_\allowbreak audit\_\allowbreak recovery/\allowbreak v14\_\allowbreak j7\_\allowbreak acoustic\_\allowbreak de.py}) and found that the requirement of \textbf{Vacuum Unitarity} (norm preservation $|xy|=|x||y|$) is satisfied \textbf{only} in dimensions $n=1, 2, 4, 8$.
 Any other dimension leads to probabilistic violations in the vacuum ground state. Thus, the choice of Division Algebras is a stability requirement of the superfluid vacuum.
-Yang-Mills gauge fields were effectively simulated (\texttt{src/phase\_v12\_pure\_geometry/v12\_braid\_confinement.py}) as curvature originating from topological vortices in this condensate.
+Yang-Mills gauge fields were effectively simulated (\texttt{src/\allowbreak phase\_\allowbreak v12\_\allowbreak pure\_\allowbreak geometry/\allowbreak v12\_\allowbreak braid\_\allowbreak confinement.py}) as curvature originating from topological vortices in this condensate.
 
 \subsection{O.6 Experimental Constraints (Module 6)}
 \begin{itemize}

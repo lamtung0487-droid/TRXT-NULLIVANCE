@@ -63,6 +63,11 @@
     urlcolor=blue
 }
 
+% Overflow relief (archive edition): allow modest interword stretching before
+% overfull boxes; standard remedy, does not affect display-math layout.
+\emergencystretch=2.5em
+\tolerance=2000
+
 % Marker for items under active research (archive-edition convention)
 \newcommand{\underresearch}[1]{\par\medskip\noindent\fcolorbox{orange!70}{orange!8}{\parbox{0.96\linewidth}{\small\textbf{[UNDER ACTIVE RESEARCH]} #1 \textit{(Open-Problem Register, Appendix~AC)}}}\par\medskip}
 
@@ -322,8 +327,8 @@ G5 & fermion emergence + BBN & structural + PRyMordial & PASS; $Y_p$ at $0.5\sig
 \bottomrule
 \end{tabular}
 \caption{Validation snapshot at the archive date. Criteria are frozen in
-\texttt{scripts/gates\_criteria.json}; every criterion change is ledger-logged
-\emph{before} reruns (\texttt{results/logs/gate\_ledger.md}).}
+\texttt{scripts/\allowbreak gates\_\allowbreak criteria.json}; every criterion change is ledger-logged
+\emph{before} reruns (\texttt{results/\allowbreak logs/\allowbreak gate\_\allowbreak ledger.md}).}
 \end{table}
 
 \textbf{A.9 Data and code availability.} All quantitative claims in this report
@@ -502,6 +507,8 @@ The TRXT model predicts a specific chronological history, driven by the thermal 
 \centering
 \caption{The TRXT Cosmic Timeline: One Field, All Epochs. \textit{Note: $w$ refers to the Equation of State of the \textbf{dominant energy component} at each epoch (radiation, matter, or vacuum), not the condensate ground state which remains $w_{gs} = -1$ throughout.}}
 \label{tab:timeline}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{@{}lllllc@{}}
 \toprule
 \textbf{Time} & \textbf{Temperature} & \textbf{Event} & \textbf{Dominant} & \textbf{$w_{eff}$} & \textbf{Gate} \\
@@ -677,7 +684,7 @@ The critical percolation transition dictates a fractal Hausdorff dimension $D \a
 Propagating this through Eq.~\ref{eq:da_inference} predicts $H_0 = 67.4 \times (13800/13544) \approx 68.7$ km/s/Mpc. This does not reach the local SH0ES value ($73.04$): it reduces the Planck--SH0ES gap by ${\approx}23\%$ without introducing arbitrary new degrees of freedom.
 
 \begin{mdframed}[backgroundcolor=yellow!8, frametitle={2026 numerical audit ($H_0$ inference)}]
-Earlier versions of this section quoted $H_0 \approx 70.6$ km/s/Mpc and a tension reduction ``$>60\%$''. Independent recomputation (\texttt{experiments/verification/formula\_audit.py}, log \texttt{formula\_audit\_20260813}) traced the $70.6$ to two inconsistent anchors: the scaling used the drag-epoch horizon $r_{\rm drag}=147.09$ Mpc, while the distance baseline $D_A \approx 13800$ Mpc corresponds to the recombination horizon $r_*=144.43$ Mpc. Using this section's own numbers self-consistently ($r_s \approx 141$ Mpc, $\theta_* = 0.01041$) gives $H_0 \approx 68.7$ km/s/Mpc --- a ${\approx}23\%$ reduction of the $5.6$ km/s/Mpc Planck--SH0ES gap (roughly $4\sigma \to 3\sigma$), a partial mitigation rather than a near-resolution. All downstream statements in this report are aligned with the audited value.
+Earlier versions of this section quoted $H_0 \approx 70.6$ km/s/Mpc and a tension reduction ``$>60\%$''. Independent recomputation (\texttt{experiments/\allowbreak verification/\allowbreak formula\_\allowbreak audit.py}, log \texttt{formula\_audit\_20260813}) traced the $70.6$ to two inconsistent anchors: the scaling used the drag-epoch horizon $r_{\rm drag}=147.09$ Mpc, while the distance baseline $D_A \approx 13800$ Mpc corresponds to the recombination horizon $r_*=144.43$ Mpc. Using this section's own numbers self-consistently ($r_s \approx 141$ Mpc, $\theta_* = 0.01041$) gives $H_0 \approx 68.7$ km/s/Mpc --- a ${\approx}23\%$ reduction of the $5.6$ km/s/Mpc Planck--SH0ES gap (roughly $4\sigma \to 3\sigma$), a partial mitigation rather than a near-resolution. All downstream statements in this report are aligned with the audited value.
 \end{mdframed}
 
 \subsection{Origin of the CMB: Condensation Radiation}
@@ -1108,7 +1115,7 @@ The low-velocity enhancement naturally solves the cusp-core problem in dwarfs, w
 
 \begin{mdframed}[backgroundcolor=yellow!8, frametitle={2026 audit: Table~\ref{tab:sidm_v12} not reproduced --- status downgraded}]
 The 2026 independent recomputation
-(\texttt{experiments/verification/sidm\_crosssection\_audit.py}, log
+(\texttt{experiments/\allowbreak verification/\allowbreak sidm\_\allowbreak crosssection\_\allowbreak audit.py}, log
 \texttt{sidm\_audit\_20260814}; solver validated against the Born limit to $0.8\%$ and
 convergence-checked) could not reproduce this table: (i) no committed numerical backing
 exists (the validation package's golden-output file contains only null placeholders);
@@ -1210,7 +1217,7 @@ $m_\phi$ [GeV] & $\alpha_{\mathrm{DM}}$ & $x_f$ & $\Omega h^2$ & Status \\
 \textbf{Protocol compliance:} No quantity was hardcoded. The freeze-out temperature $x_f$ was determined self-consistently by the departure criterion $Y/Y_{\mathrm{eq}} > 2.5$.
 
 \textbf{V15 Erratum --- Honest Assessment of $\alpha_{\mathrm{DM}}$:}
-Independent verification (\texttt{proof\_relic\_density\_v2.py}) using the Kolb--Turner analytic freeze-out formula confirms that for a p-wave derivative coupling with $m_\phi = 10$~GeV, the required coupling is $\alpha_\chi \approx 1.00 \times 10^{-3}$, giving $\Omega h^2 = 0.1200$ (exact Planck match).  However:
+Independent verification (\texttt{proof\_\allowbreak relic\_\allowbreak density\_\allowbreak v2.py}) using the Kolb--Turner analytic freeze-out formula confirms that for a p-wave derivative coupling with $m_\phi = 10$~GeV, the required coupling is $\alpha_\chi \approx 1.00 \times 10^{-3}$, giving $\Omega h^2 = 0.1200$ (exact Planck match).  However:
 \begin{itemize}
     \item The coupling $\alpha_{\mathrm{DM}}$ is a \textbf{fit parameter}, not derived from the TRXT Lagrangian.
     \item The na\"ive k-essence estimate gives $\alpha_\chi \sim 10^{-10}$, which is $\sim 10^7\times$ too small.
@@ -1235,7 +1242,7 @@ universal $a_0$ fitted on the alphabetical-even training half only, scored on th
 untouched test half) gives test $\chi^2_\nu = 4.746$ at the fitted
 $a_0 = 3350\ {\rm (km/s)^2/kpc}$, and $\chi^2_\nu = 4.918$ with $a_0$ \emph{frozen} at
 the zero-parameter value $cH_0/2\pi$ (ledger-preregistered test T3, log
-\texttt{mu\_participation\_20260814}); per-galaxy nuisances are the standard
+\texttt{mu\_\allowbreak participation\_\allowbreak 20260814}); per-galaxy nuisances are the standard
 mass-to-light ratios and a distance factor with a $15\%$ prior.
 
 \begin{figure}[H]
@@ -1250,7 +1257,7 @@ mass-to-light ratios and a distance factor with a $15\%$ prior.
     indistinguishable. Dotted: baryons-only expectation. Per-galaxy nuisances per
     the Gate-3 protocol, fitted once at the fitted $a_0$ and \emph{reused} for the
     zero-parameter curve (no re-optimization in its favor). Generated by
-    \texttt{make\_sparc\_examples\_figure.py}; replaces a legacy illustration that
+    \texttt{make\_\allowbreak sparc\_\allowbreak examples\_\allowbreak figure.py}; replaces a legacy illustration that
     used reconstructed data.}
     \label{fig:sparc_examples}
 \end{figure}
@@ -1297,8 +1304,8 @@ quantitative derivation pending).
 Earlier versions of this section claimed an ``endogenous Vainshtein'' suppression
 $\epsilon = (r/r_V)^{3/2}$ with $r_V = (M/16\pi M_P^2\Lambda_{eff}^2)^{1/3} \approx
 2.38\times10^7$~AU, derived from the $P(X)$ EFT. The sign-consistent re-derivation
-(\texttt{experiments/verification/gap\_s\_screening.py}, log
-\texttt{gap\_s\_screening\_20260814}) found this untenable on three counts:
+(\texttt{experiments/\allowbreak verification/\allowbreak gap\_\allowbreak s\_\allowbreak screening.py}, log
+\texttt{gap\_\allowbreak s\_\allowbreak screening\_\allowbreak 20260814}) found this untenable on three counts:
 (i) with the signature fixed globally ($X = \frac12 g^{\mu\nu}\partial\phi\partial\phi$,
 static $\Rightarrow X < 0$), the G0-healthy DBI branch has $P_X \le 1$ in statics ---
 \emph{anti}-screening, with a flux obstruction (no static solution where the source term
@@ -1319,7 +1326,7 @@ high-acceleration expansion
     \;\simeq\; \frac{u^2}{2}\,,
 \end{equation}
 which is \emph{parameter-free} given $a_0 = 3350\ {\rm (km/s)^2/kpc} = 1.085\times
-10^{-10}$~m/s$^2$ from Gate~3. Numbers (log \texttt{gap\_s\_screening\_20260814}):
+10^{-10}$~m/s$^2$ from Gate~3. Numbers (log \texttt{gap\_\allowbreak s\_\allowbreak screening\_\allowbreak 20260814}):
 $\delta({\rm Earth}) = 2\times10^{-16}$, $\delta({\rm Saturn}) = 1.4\times10^{-12}$
 versus the Cassini bound $2.3\times10^{-5}$ --- a margin of \textbf{seven orders of
 magnitude}; $\delta({\rm Neptune}) = 1.4\times10^{-10}$,
@@ -1341,15 +1348,15 @@ Neptune/Pluto would contradict the standard form.
     interpolation law (blue, parameter-free, $\delta = \sqrt{1+u^2}-1$) with planetary
     markers and the Cassini bound; the superseded $(r/r_V)^{3/2}$ claim (gray, dashed)
     is shown struck by the 2026 audit. Generated by
-    \texttt{make\_g4\_screening\_figure.py}; log \texttt{gap\_s\_screening\_20260814}.}
+    \texttt{make\_\allowbreak g4\_\allowbreak screening\_\allowbreak figure.py}; log \texttt{gap\_\allowbreak s\_\allowbreak screening\_\allowbreak 20260814}.}
     \label{fig:screening}
 \end{figure}
 
 \textbf{The origin of the interpolation function: the participation law (2026-08-14).}
 The same-day constructive step
-(\texttt{experiments/verification/mu\_participation\_law.py}, log
-\texttt{mu\_participation\_20260814}; derivation note
-\texttt{derivation\_mu\_participation\_20260814.md}, mathematician-signed) found that in
+(\texttt{experiments/\allowbreak verification/\allowbreak mu\_\allowbreak participation\_\allowbreak law.py}, log
+\texttt{mu\_\allowbreak participation\_\allowbreak 20260814}; derivation note
+\texttt{derivation\_\allowbreak mu\_\allowbreak participation\_\allowbreak 20260814.md}, mathematician-signed) found that in
 field-energy variables ($u \equiv g^2$, $u_N \equiv g_N^2$, $u_0 \equiv a_0^2$) the
 Gate-3 root equation is \emph{exactly} equivalent to the one-line constitutive law
 \begin{equation}
@@ -2697,7 +2704,7 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{Qing1995} Qing, J. (1995). \textit{Comm. Anal. Geom.} 3, 297.
 \bibitem{HN1990} Hasenfratz, P., \& Niedermayer, F. (1990). \textit{Phys. Lett. B} 245, 529.
 \bibitem{KarowskiThun1981} Karowski, M., \& Thun, H. J. (1981). \textit{Nucl. Phys. B} 190, 61.
-\bibitem{GNkinks1995} ``Kinks and bound states in the Gross--Neveu model'', \textit{Phys. Rev. D} 51 (1995) 4503.
+\bibitem{GNkinks1995} Feinberg, J. (1995). ``Kinks and bound states in the Gross--Neveu model''. \textit{Phys. Rev. D} 51, 4503.
 \bibitem{Coldea2010} Coldea, R., et al. (2010). \textit{Science} 327, 177.
 \bibitem{VK1979} Vakulenko, A. F., \& Kapitanskii, L. V. (1979). \textit{Sov. Phys. Dokl.} 24, 433.
 \bibitem{Harland2013} Harland, D. (2014). arXiv:1311.2403.
@@ -2723,7 +2730,7 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{xenon2023} XENON Collaboration (2023). ``First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment''. \textit{Phys. Rev. Lett.} 131, 041003. DOI: 10.1103/PhysRevLett.131.041003
 \bibitem{cresst} CRESST Collaboration (2019). ``Results on light dark matter from CRESST-III''. \textit{Phys. Rev. D} 100, 102002.
 \bibitem{supercdms} SuperCDMS Collaboration (2020). ``Constraints on low-mass dark matter from SuperCDMS HVeV''. \textit{Phys. Rev. D} 102, 091101.
-\bibitem{pandax} PandaX-4T Collaboration (2022). ``Dark Matter Search Results from the PandaX-4T Commissioning Run''. \textit{Phys. Rev. Lett.} 129, 121801.
+\bibitem{pandax} PandaX-4T Collaboration (2021). ``Dark Matter Search Results from the PandaX-4T Commissioning Run''. \textit{Phys. Rev. Lett.} 127, 261802.
 
 % W-mass Measurements
 \bibitem{cdf2022} CDF Collaboration (2022). ``High-precision measurement of the W boson mass with the CDF II detector''. \textit{Science} 376, 170.
@@ -2760,7 +2767,7 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{planck} Planck Collaboration (2020). ``Planck 2018 results. VI. Cosmological parameters''. \textit{Astron. Astrophys.} 641, A6.
 
 % Collider / Belle II
-\bibitem{belle2} Belle II Collaboration (2023). ``Search for an invisible Z' in a final state with two muons and missing energy''. \textit{Phys. Rev. Lett.} 130, 181801.
+\bibitem{belle2} Belle II Collaboration (2020). ``Search for an Invisible $Z'$ in a Final State with Two Muons and Missing Energy''. \textit{Phys. Rev. Lett.} 124, 141801.
 
 % SIDM
 \bibitem{tulin} Tulin, S. \& Yu, H.-B. (2018). ``Dark Matter Self-interactions and Small Scale Structure''. \textit{Phys. Rept.} 730, 1.
@@ -2818,7 +2825,7 @@ golden-ratio condensation doublet; no stable topological state below $184$\,TeV.
 \bibitem{camb} Lewis, A., Challinor, A., \& Lasenby, A. (2000). ``Efficient Computation of Cosmic Microwave Background Anisotropies in Closed Friedmann-Robertson-Walker Models''. \textit{Astrophys. J.} 538, 473. arXiv:astro-ph/9911177. DOI: 10.1086/309179
 
 % PRyMordial BBN (Gate 5)
-\bibitem{prymordial} Burns, A. F. et al. (2024). ``PRyMordial: the first three minutes, \\textit{within} and beyond the Standard Model''. \textit{Eur. Phys. J. C} 84, 86. arXiv:2307.07061. DOI: 10.1140/epjc/s10052-024-12442-0
+\bibitem{prymordial} Burns, A.-K., Tait, T. M. P., \& Valli, M. (2024). ``PRyMordial: the first three minutes, \\textit{within} and beyond the Standard Model''. \textit{Eur. Phys. J. C} 84, 86. arXiv:2307.07061. DOI: 10.1140/epjc/s10052-024-12442-0
 
 % JWST Early Galaxies
 \bibitem{jwst_labbe} Labb\'{e}, I. et al. (2023). ``A population of red candidate massive galaxies $\sim$600 Myr after the Big Bang''. \textit{Nature} 616, 266--269. DOI: 10.1038/s41586-023-05786-2
